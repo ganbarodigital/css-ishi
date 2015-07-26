@@ -12,11 +12,15 @@ GROUPA_FILES="src/groupa/type.less"
 
 all: ishi-$(VERSION)-min.css
 
-ishi-$(VERSION).css: src/main.less $(GROUPA_FILES)
+ishi-$(VERSION).css: src/normalize.css src/main.less $(GROUPA_FILES)
 	lessc src/main.less > ishi-$(VERSION).css
 
 ishi-$(VERSION)-min.css: ishi-$(VERSION).css
 	lessc --clean-css="advanced" ishi-$(VERSION).css > ishi-$(VERSION)-min.css
+
+src/normalize.css:
+	npm install --save normalize.css
+	cp node_modules/normalize.css/normalize.css src/normalize.css
 
 tools:
 	sudo npm install -g less

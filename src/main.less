@@ -1,14 +1,47 @@
-@import "pre-groups/type.less";
+/**
+ * stage 0: resets
+ *
+ * we start by resetting the browser to improve consistency
+ */
 
+/* from https://github.com/necolas/normalize.css */
+@import (inline) "normalize.css";
+
+/* from https://github.com/cbracco/cardinal/blob/master/base/reset.less */
+@import (inline) "reset.less";
+
+/* stage 1: defaults for all screens
+ *
+ * these files provide CSS and/or LESS variables that apply to all supported
+ * screen sizes
+ */
+@import (inline) "pre-groups/type.less";
+
+/**
+ * stage 2: per-screen-size settings
+ *
+ * we support four screen sizes, based on the BBC Global Experience Language
+ * guideline - http://www.bbc.co.uk/gel
+ *
+ * - Group A: tiny devices (such as feature phones)
+ * - Group B: smart phones in portrait
+ * - Group C: tablets (and smart phones in landscape?)
+ * - Group D: laptops and desktops
+ *
+ * for each group, we load features in pairs:
+ *
+ * - <group>/<feature>.less: defines variables & mixins for this group
+ * - post-groups/<feature>.less: uses those variables to define CSS
+ */
 @media (max-width: 319px) {
     @import (reference) "groupa/type.less";
     @import (multiple) "post-groups/type.less";
 }
-@media (min-width: 320px) and (max-width: 600) {
+@media (min-width: 320px) and (max-width: 600px) {
     @import (reference) "groupb/type.less";
     @import (multiple) "post-groups/type.less";
 }
-@media (min-width: 601px) and (max-width: 1007) {
+@media (min-width: 601px) and (max-width: 1007px) {
     @import (reference) "groupc/type.less";
     @import (multiple) "post-groups/type.less";
 }
