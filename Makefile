@@ -14,6 +14,7 @@ all: ishi-$(VERSION)-min.css
 
 ishi-$(VERSION).css: src/normalize.css src/main.less $(GROUPA_FILES)
 	lessc src/main.less > ishi-$(VERSION).css
+	cp ishi-$(VERSION).css docs/assets/ishi.css
 
 ishi-$(VERSION)-min.css: ishi-$(VERSION).css
 	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION).css > ishi-$(VERSION)-min.css
