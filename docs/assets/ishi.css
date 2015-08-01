@@ -623,6 +623,36 @@ body {
     line-height: 20px;
     margin-bottom: 15px;
   }
+  p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  pre {
+    color: #000000;
+    background: #eeeeee;
+    border: 1px solid #9a9a9a;
+    padding: 7.5px;
+    border-radius: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+  }
+  code {
+    padding: 1px 2px;
+    font-size: 14px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    white-space: nowrap;
+    border-radius: 4px;
+  }
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: #000000;
+    background-color: #eeeeee;
+    white-space: pre-wrap;
+  }
   ul {
     list-style-type: disc;
     padding-left: 30px;
@@ -674,6 +704,36 @@ body {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 16px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  pre {
+    color: #000000;
+    background: #eeeeee;
+    border: 1px solid #9a9a9a;
+    padding: 8px;
+    border-radius: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-bottom: 16px;
+  }
+  code {
+    padding: 1px 2px;
+    font-size: 15px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    white-space: nowrap;
+    border-radius: 4px;
+  }
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: #000000;
+    background-color: #eeeeee;
+    white-space: pre-wrap;
   }
   ul {
     list-style-type: disc;
@@ -727,6 +787,36 @@ body {
     line-height: 24px;
     margin-bottom: 18px;
   }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+  pre {
+    color: #000000;
+    background: #eeeeee;
+    border: 1px solid #9a9a9a;
+    padding: 9px;
+    border-radius: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-bottom: 18px;
+  }
+  code {
+    padding: 1px 2px;
+    font-size: 17px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    white-space: nowrap;
+    border-radius: 4px;
+  }
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: #000000;
+    background-color: #eeeeee;
+    white-space: pre-wrap;
+  }
   ul {
     list-style-type: disc;
     padding-left: 36px;
@@ -778,6 +868,36 @@ body {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 16px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  pre {
+    color: #000000;
+    background: #eeeeee;
+    border: 1px solid #9a9a9a;
+    padding: 8px;
+    border-radius: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-bottom: 16px;
+  }
+  code {
+    padding: 1px 2px;
+    font-size: 15px;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    white-space: nowrap;
+    border-radius: 4px;
+  }
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: #000000;
+    background-color: #eeeeee;
+    white-space: pre-wrap;
   }
   ul {
     list-style-type: disc;
