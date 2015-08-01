@@ -10,11 +10,10 @@ GROUPA_FILES="src/groupa/type.less"
 
 .PHONY: $(GROUPA_FILES)
 
-all: ishi-$(VERSION)-min.css
+all: ishi-$(VERSION)-min.css docs
 
 ishi-$(VERSION).css: src/normalize.css src/main.less $(GROUPA_FILES)
 	lessc src/main.less > ishi-$(VERSION).css
-	cp ishi-$(VERSION).css docs/assets/ishi.css
 
 ishi-$(VERSION)-min.css: ishi-$(VERSION).css
 	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION).css > ishi-$(VERSION)-min.css
@@ -23,6 +22,11 @@ src/normalize.css:
 	npm install --save normalize.css
 	cp node_modules/normalize.css/normalize.css src/normalize.css
 
+docs: ishi-$(VERSION)-min.css
+	cp ishi-$(VERSION).css docs/assets-without-prefixes/ishi.css
+	postcss --use autoprefixer docs/assets-without-prefixes/*.css --dir docs/assets/
+
 tools:
 	sudo npm install -g less
+	sudo npm install --global postcss-cli autoprefixer
 	npm install less-plugin-clean-css

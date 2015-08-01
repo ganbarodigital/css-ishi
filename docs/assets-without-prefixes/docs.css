@@ -1,0 +1,77 @@
+/**
+ * edit:
+ *   - docs/assets-without-prefixes/docs.css
+ *
+ * do not edit:
+ *   - docs/assets/docs.css
+ *
+ * how to compile:
+ *   `make docs`
+ */
+@media (max-width: 319px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+    }
+    main {
+        order: 2;
+    }
+    aside.sidebar {
+        order: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+    }
+    main {
+        order: 2;
+    }
+    aside.sidebar {
+        order: 1;
+    }
+}
+@media (min-width: 601px) and (max-width: 1007px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    main {
+        order: 2;
+    }
+    aside.sidebar {
+        order: 1;
+    }
+}
+@media (min-width: 1008px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+    }
+    main {
+        order: 2;
+        flex-basis: 800px;
+    }
+    aside.sidebar {
+        order: 1;
+        flex-basis: 200px;
+    }
+}
