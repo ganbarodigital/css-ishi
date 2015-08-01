@@ -5,18 +5,18 @@
  */
 
 /* from https://github.com/necolas/normalize.css */
-@import (inline) "normalize.css";
+@import (inline) "00-normalize.css";
 
 /* from https://github.com/cbracco/cardinal/blob/master/base/reset.less */
-@import (inline) "reset.less";
+@import (inline) "00-reset.less";
 
 /* stage 1: defaults for all screens
  *
  * these files provide CSS and/or LESS variables that apply to all supported
  * screen sizes
  */
-@import (reference) "pre-groups/colors.less";
-@import (inline) "pre-groups/type.less";
+@import (reference) "01-pre-groups/colors.less";
+@import (inline) "01-pre-groups/type.less";
 
 /**
  * stage 2: per-screen-size settings
@@ -35,24 +35,24 @@
  * - post-groups/<feature>.less: uses those variables to define CSS
  */
 @media (max-width: 319px) {
-    @import (reference) "groupa/type.less";
-    @import (multiple) "post-groups/type.less";
-    @import (multiple) "post-groups/lists.less";
+    @import (reference) "02-group-a/type.less";
+    @import (multiple) "02-per-group/type.less";
+    @import (multiple) "02-per-group/lists.less";
 }
 @media (min-width: 320px) and (max-width: 600px) {
-    @import (reference) "groupb/type.less";
-    @import (multiple) "post-groups/type.less";
-    @import (multiple) "post-groups/lists.less";
+    @import (reference) "02-group-b/type.less";
+    @import (multiple) "02-per-group/type.less";
+    @import (multiple) "02-per-group/lists.less";
 }
 @media (min-width: 601px) and (max-width: 1007px) {
-    @import (reference) "groupc/type.less";
-    @import (multiple) "post-groups/type.less";
-    @import (multiple) "post-groups/lists.less";
+    @import (reference) "02-group-c/type.less";
+    @import (multiple) "02-per-group/type.less";
+    @import (multiple) "02-per-group/lists.less";
 }
 @media (min-width: 1008px) {
-    @import (reference) "groupd/type.less";
-    @import (multiple) "post-groups/type.less";
-    @import (multiple) "post-groups/lists.less";
+    @import (reference) "02-group-d/type.less";
+    @import (multiple) "02-per-group/type.less";
+    @import (multiple) "02-per-group/lists.less";
 }
 
 /**
@@ -60,4 +60,4 @@
  * need per-screen-size settings
  */
 
-// nothing yet
+@import (inline) "03-post-groups/panels.less";
