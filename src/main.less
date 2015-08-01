@@ -36,16 +36,27 @@
 @media (max-width: 319px) {
     @import (reference) "groupa/type.less";
     @import (multiple) "post-groups/type.less";
+    @import (multiple) "post-groups/lists.less";
 }
 @media (min-width: 320px) and (max-width: 600px) {
     @import (reference) "groupb/type.less";
     @import (multiple) "post-groups/type.less";
+    @import (multiple) "post-groups/lists.less";
 }
 @media (min-width: 601px) and (max-width: 1007px) {
     @import (reference) "groupc/type.less";
     @import (multiple) "post-groups/type.less";
+    @import (multiple) "post-groups/lists.less";
 }
-@media (min-width: 601px) {
+@media (min-width: 1008px) {
     @import (reference) "groupd/type.less";
     @import (multiple) "post-groups/type.less";
+    @import (multiple) "post-groups/lists.less";
 }
+
+/**
+ * stage 3: styles that inherit from the previous styles, but which don't
+ * need per-screen-size settings
+ */
+
+// nothing yet
