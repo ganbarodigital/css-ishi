@@ -5,10 +5,10 @@
  */
 
 /* from https://github.com/necolas/normalize.css */
-@import (inline) "00-normalize.css";
+@import (inline) "00-reset/normalize.css";
 
 /* from https://github.com/cbracco/cardinal/blob/master/base/reset.less */
-@import (inline) "00-reset.less";
+@import (inline) "00-reset/reset.less";
 
 /* stage 1: defaults for all screens
  *
@@ -38,21 +38,25 @@
     @import (reference) "02-group-a/type.less";
     @import (multiple) "02-per-group/type.less";
     @import (multiple) "02-per-group/lists.less";
+    @import (multiple) "02-per-group/panels.less";
 }
 @media (min-width: 320px) and (max-width: 600px) {
     @import (reference) "02-group-b/type.less";
     @import (multiple) "02-per-group/type.less";
     @import (multiple) "02-per-group/lists.less";
+    @import (multiple) "02-per-group/panels.less";
 }
 @media (min-width: 601px) and (max-width: 1007px) {
     @import (reference) "02-group-c/type.less";
     @import (multiple) "02-per-group/type.less";
     @import (multiple) "02-per-group/lists.less";
+    @import (multiple) "02-per-group/panels.less";
 }
 @media (min-width: 1008px) {
     @import (reference) "02-group-d/type.less";
     @import (multiple) "02-per-group/type.less";
     @import (multiple) "02-per-group/lists.less";
+    @import (multiple) "02-per-group/panels.less";
 }
 
 /**
@@ -60,4 +64,3 @@
  * need per-screen-size settings
  */
 
-@import (inline) "03-post-groups/panels.less";

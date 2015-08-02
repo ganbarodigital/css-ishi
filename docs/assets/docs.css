@@ -118,6 +118,8 @@
         -webkit-order: 2;
             -ms-flex-order: 2;
                 order: 2;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     aside.sidebar {
         -webkit-box-ordinal-group: 2;
@@ -160,6 +162,7 @@
         -webkit-flex-basis: 800px;
             -ms-flex-preferred-size: 800px;
                 flex-basis: 800px;
+        margin-right: 10px;
     }
     aside.sidebar {
         -webkit-box-ordinal-group: 2;
@@ -169,5 +172,7 @@
         -webkit-flex-basis: 200px;
             -ms-flex-preferred-size: 200px;
                 flex-basis: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
