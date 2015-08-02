@@ -34,7 +34,7 @@ Ishi offers several alternative styles of panel.
 
 ### An Outline Panel
 
-To create an outline panel, wrap your content in a `<div>` with the `panel outline` classes.
+To create an outline panel, wrap your content in a `<div>` or `<aside>` with the `panel outline` classes.
 
 <div class="panel outline" markdown="1">
 This is an outline panel.
