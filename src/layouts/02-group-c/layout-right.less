@@ -1,0 +1,39 @@
+/**
+ * variables
+ */
+
+/**
+ * styles
+ */
+.main-content {
+    order: 2;
+    min-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.main-content aside.sidebar {
+    order: 2;
+    flex-basis: 100%;
+}
+
+.main-content main {
+    order: 1;
+    flex-basis: 100%;
+    padding-left: @type-pica-font-size * 2;
+    padding-right: @type-pica-font-size * 2;
+}
+
+body > footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+}

@@ -39,14 +39,19 @@ COMMON_PERGROUP_FILES = \
 
 LAYOUT_FILES = \
 	src/layouts/02-group-a/layout-left.less \
+	src/layouts/02-group-a/layout-right.less \
 	src/layouts/02-group-b/layout-left.less \
+	src/layouts/02-group-b/layout-right.less \
 	src/layouts/02-group-c/layout-left.less \
+	src/layouts/02-group-c/layout-right.less \
 	src/layouts/02-group-d/layout-left.less \
-	src/layouts/layout-left.less
+	src/layouts/02-group-d/layout-right.less \
+	src/layouts/layout-left.less \
+	src/layouts/layout-right.less
 
 .PHONY: clean
 
-all: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css docs
+all: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css ishi-$(VERSION)-layout-right-min.css docs
 
 ishi-$(VERSION)-common.css: $(COMMON_FILES)
 	lessc src/common/main.less > ishi-$(VERSION)-common.css
@@ -60,6 +65,12 @@ ishi-$(VERSION)-layout-left.css: $(LAYOUT_FILES)
 ishi-$(VERSION)-layout-left-min.css: ishi-$(VERSION)-layout-left.css
 	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION)-layout-left.css > ishi-$(VERSION)-layout-left-min.css
 
+ishi-$(VERSION)-layout-right.css: $(LAYOUT_FILES)
+	lessc src/layouts/layout-right.less > ishi-$(VERSION)-layout-right.css
+
+ishi-$(VERSION)-layout-right-min.css: ishi-$(VERSION)-layout-right.css
+	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION)-layout-right.css > ishi-$(VERSION)-layout-right-min.css
+
 src/common/00-reset/normalize.css:
 	npm install --save normalize.css
 	cp node_modules/normalize.css/normalize.css src/common/00-reset/normalize.css
@@ -70,6 +81,7 @@ clean:
 docs: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css
 	cp ishi-$(VERSION)-common.css docs/assets-without-prefixes/ishi-common.css
 	cp ishi-$(VERSION)-layout-left.css docs/assets-without-prefixes/ishi-layout-left.css
+	cp ishi-$(VERSION)-layout-right.css docs/assets-without-prefixes/ishi-layout-right.css
 	postcss --use autoprefixer docs/assets-without-prefixes/*.css --dir docs/assets/
 
 tools:
