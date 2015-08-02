@@ -657,6 +657,31 @@ body {
   ul {
     margin-bottom: 15px;
   }
+  footer p,
+  footer ol,
+  footer ul,
+  footer address,
+  footer email {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+  footer h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  footer h2 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  footer h3 {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
   ul {
     list-style-type: disc;
     padding-left: 30px;
@@ -1033,6 +1058,15 @@ body {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px;
+  }
+  /**
+ * variables
+ */
+  /**
+ * styles
+ */
+  footer {
+    padding-bottom: 15px;
   }
 }
 @media (min-width: 320px) and (max-width: 600px) {
@@ -1098,6 +1132,31 @@ body {
   ul {
     margin-bottom: 16px;
   }
+  footer p,
+  footer ol,
+  footer ul,
+  footer address,
+  footer email {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+  footer h1 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  footer h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  footer h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
   ul {
     list-style-type: disc;
     padding-left: 32px;
@@ -1474,6 +1533,15 @@ body {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px;
+  }
+  /**
+ * variables
+ */
+  /**
+ * styles
+ */
+  footer {
+    padding-bottom: 16px;
   }
 }
 @media (min-width: 601px) and (max-width: 1007px) {
@@ -1539,6 +1607,31 @@ body {
   ul {
     margin-bottom: 18px;
   }
+  footer p,
+  footer ol,
+  footer ul,
+  footer address,
+  footer email {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+  footer h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 28px;
+    margin-bottom: 18px;
+  }
+  footer h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 18px;
+  }
+  footer h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
   ul {
     list-style-type: disc;
     padding-left: 36px;
@@ -1915,6 +2008,15 @@ body {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px;
+  }
+  /**
+ * variables
+ */
+  /**
+ * styles
+ */
+  footer {
+    padding-bottom: 18px;
   }
 }
 @media (min-width: 1008px) {
@@ -1980,6 +2082,31 @@ body {
   ul {
     margin-bottom: 16px;
   }
+  footer p,
+  footer ol,
+  footer ul,
+  footer address,
+  footer email {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+  footer h1 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  footer h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  footer h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
   ul {
     list-style-type: disc;
     padding-left: 32px;
@@ -2356,6 +2483,15 @@ body {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px;
+  }
+  /**
+ * variables
+ */
+  /**
+ * styles
+ */
+  footer {
+    padding-bottom: 16px;
   }
 }
 /**
