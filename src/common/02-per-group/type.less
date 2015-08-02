@@ -22,15 +22,15 @@ p {
     .type-pica;
 }
 
+ol + p, ul + p {
+    margin-top: @type-pica-font-size;
+}
+
+// Preformatted & Code
 pre {
-    color: @panel-fg-color;
-    background: @panel-bg-color;
-    border: 1px solid darken(@panel-bg-color, 33%);
-    padding: @type-pica-font-size / 2;
-    border-radius: 4px;
+    .panel;
     word-break: break-all;
     word-wrap: break-word;
-    margin-bottom: @type-pica-font-size;
 }
 
 code {
@@ -50,8 +50,20 @@ pre code {
     white-space: pre-wrap;
 }
 
-ol + p, ul + p {
-    margin-top: @type-pica-font-size;
+kbd {
+    font-size: @type-pica-font-size / 10 * 9;
+    padding: 1px 4px;
+    border: 1px solid darken(@panel-bg-color, 33%);
+    border-radius: 3px;
+    background-color: transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+samp {
+    padding: 1px 2px;
+    font-size: @type-pica-font-size - 1;
+    background-color: @panel-bg-color;
+    white-space: pre-wrap;
 }
 
 //// footer
