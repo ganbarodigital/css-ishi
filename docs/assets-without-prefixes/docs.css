@@ -8,104 +8,10 @@
  * how to compile:
  *   `make docs`
  */
-@media (max-width: 319px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: flex-start;
-    }
-    main {
-        order: 2;
-    }
-    aside.sidebar {
-        order: 1;
-    }
+footer div.contact-details {
+    order: 99;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: flex-start;
-    }
-    main {
-        order: 2;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    aside.sidebar {
-        order: 1;
-    }
-}
-@media (min-width: 601px) and (max-width: 1007px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
-        align-items: flex-start;
-    }
-    main {
-        order: 2;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    aside.sidebar {
-        order: 1;
-    }
-}
-@media (min-width: 1008px) {
-    .main-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: flex-start;
-    }
-    main {
-        order: 2;
-        flex-basis: 800px;
-        margin-right: 10px;
-    }
-    aside.sidebar {
-        order: 1;
-        flex-basis: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: stretch;
-        align-items: flex-start;
-
-        background-color: #232323;
-        color: #eeeeee;
-
-        border-top: 1px solid #232323;
-    }
-
-    footer div {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    footer div.contact-details {
-        order: 99;
-    }
-
-    footer div.contact-regdetails {
-        order: 2;
-    }
+footer div.contact-regdetails {
+    order: 2;
 }

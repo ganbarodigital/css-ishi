@@ -1,0 +1,46 @@
+/* stage 1: defaults for all screens
+ *
+ * these files provide CSS and/or LESS variables that apply to all supported
+ * screen sizes
+ */
+@import (reference) "01-pre-groups/colors.less";
+
+/**
+ * stage 2: per-screen-size settings
+ *
+ * we support four screen sizes, based on the BBC Global Experience Language
+ * guideline - http://www.bbc.co.uk/gel
+ *
+ * - Group A: tiny devices (such as feature phones)
+ * - Group B: smart phones in portrait
+ * - Group C: tablets (and smart phones in landscape?)
+ * - Group D: laptops and desktops
+ *
+ * for each group, we load features in pairs:
+ *
+ * - <group>/<feature>.less: defines variables & mixins for this group
+ * - post-groups/<feature>.less: uses those variables to define CSS
+ */
+@media (max-width: 319px) {
+    @import (reference) "02-group-a/type.less";
+    @import (multiple) "02-group-a/layout-right.less";
+}
+@media (min-width: 320px) and (max-width: 600px) {
+    @import (reference) "02-group-b/type.less";
+    @import (multiple) "02-group-b/layout-right.less";
+}
+@media (min-width: 601px) and (max-width: 1007px) {
+    @import (reference) "02-group-c/type.less";
+    @import (multiple) "02-group-c/layout-right.less";
+}
+@media (min-width: 1008px) {
+    @import (reference) "02-group-d/type.less";
+    @import (multiple) "02-group-d/layout-right.less";
+}
+
+/**
+ * stage 3: styles that inherit from the previous styles, but which don't
+ * need per-screen-size settings
+ */
+
+@import (inline) "03-post-groups/layout.less";

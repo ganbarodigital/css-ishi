@@ -6,24 +6,70 @@
 # @link      http://code.ganbarodigital.com/css-framework
 
 VERSION = 0.1.0
-GROUPA_FILES="src/groupa/type.less"
 
-.PHONY: $(GROUPA_FILES)
+COMMON_FILES = $(COMMON_GROUPA_FILES) $(COMMON_GROUPB_FILES) $(COMMON_GROUPC_FILES) $(COMMON_GROUPD_FILES) $(COMMON_RESET_FILES) $(COMMON_PREGROUP_FILES) $(COMMON_PERGROUP_FILES)
 
-all: ishi-$(VERSION)-min.css docs
+COMMON_RESET_FILES = \
+	src/common/00-reset/normalize.css \
+	src/common/00-reset/reset.less
 
-ishi-$(VERSION).css: src/00-reset/normalize.css src/main.less $(GROUPA_FILES)
-	lessc src/main.less > ishi-$(VERSION).css
+COMMON_PREGROUP_FILES = \
+	src/common/01-pre-groups/clearfix.less \
+	src/common/01-pre-groups/colors.less \
+	src/common/01-pre-groups/type.less
 
-ishi-$(VERSION)-min.css: ishi-$(VERSION).css
-	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION).css > ishi-$(VERSION)-min.css
+COMMON_GROUPA_FILES = \
+	src/common/02-group-a/type.less
 
-src/00-reset/normalize.css:
+COMMON_GROUPB_FILES = \
+	src/common/02-group-b/type.less
+
+COMMON_GROUPC_FILES = \
+	src/common/02-group-c/type.less
+
+COMMON_GROUPD_FILES = \
+	src/common/02-group-d/type.less
+
+COMMON_PERGROUP_FILES = \
+	src/common/02-per-group/callouts.less \
+	src/common/02-per-group/footer.less \
+	src/common/02-per-group/lists.less \
+	src/common/02-per-group/panels.less \
+	src/common/02-per-group/type.less
+
+LAYOUT_FILES = \
+	src/layouts/02-group-a/layout-left.less \
+	src/layouts/02-group-b/layout-left.less \
+	src/layouts/02-group-c/layout-left.less \
+	src/layouts/02-group-d/layout-left.less \
+	src/layouts/layout-left.less
+
+.PHONY: clean
+
+all: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css docs
+
+ishi-$(VERSION)-common.css: $(COMMON_FILES)
+	lessc src/common/main.less > ishi-$(VERSION)-common.css
+
+ishi-$(VERSION)-common-min.css: ishi-$(VERSION)-common.css
+	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION)-common.css > ishi-$(VERSION)-common-min.css
+
+ishi-$(VERSION)-layout-left.css: $(LAYOUT_FILES)
+	lessc src/layouts/layout-left.less > ishi-$(VERSION)-layout-left.css
+
+ishi-$(VERSION)-layout-left-min.css: ishi-$(VERSION)-layout-left.css
+	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION)-layout-left.css > ishi-$(VERSION)-layout-left-min.css
+
+src/common/00-reset/normalize.css:
 	npm install --save normalize.css
-	cp node_modules/normalize.css/normalize.css src/00-reset/normalize.css
+	cp node_modules/normalize.css/normalize.css src/common/00-reset/normalize.css
 
-docs: ishi-$(VERSION)-min.css
-	cp ishi-$(VERSION).css docs/assets-without-prefixes/ishi.css
+clean:
+	rm ishi-$(VERSION)-*.css
+
+docs: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css
+	cp ishi-$(VERSION)-common.css docs/assets-without-prefixes/ishi-common.css
+	cp ishi-$(VERSION)-layout-left.css docs/assets-without-prefixes/ishi-layout-left.css
 	postcss --use autoprefixer docs/assets-without-prefixes/*.css --dir docs/assets/
 
 tools:
