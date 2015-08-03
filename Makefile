@@ -49,9 +49,19 @@ LAYOUT_FILES = \
 	src/layouts/layout-left.less \
 	src/layouts/layout-right.less
 
+THEME_FILES = \
+	src/themes/common-styles.less \
+	src/themes/generic.less
+
+ALL_FILES = \
+	ishi-$(VERSION)-common-min.css \
+	ishi-$(VERSION)-layout-left-min.css \
+	ishi-$(VERSION)-layout-right-min.css \
+	ishi-$(VERSION)-theme-generic-min.css
+
 .PHONY: clean
 
-all: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css ishi-$(VERSION)-layout-right-min.css docs
+all: $(ALL_FILES) docs
 
 ishi-$(VERSION)-common.css: $(COMMON_FILES)
 	lessc src/common/main.less > ishi-$(VERSION)-common.css
@@ -71,6 +81,12 @@ ishi-$(VERSION)-layout-right.css: $(LAYOUT_FILES)
 ishi-$(VERSION)-layout-right-min.css: ishi-$(VERSION)-layout-right.css
 	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION)-layout-right.css > ishi-$(VERSION)-layout-right-min.css
 
+ishi-$(VERSION)-theme-generic.css: $(THEME_FILES)
+	lessc src/themes/generic.less > ishi-$(VERSION)-theme-generic.css
+
+ishi-$(VERSION)-theme-generic-min.css: ishi-$(VERSION)-theme-generic.css
+	lessc --clean-css="advanced keepSpecialComments=0" ishi-$(VERSION)-theme-generic.css > ishi-$(VERSION)-theme-generic-min.css
+
 src/common/00-reset/normalize.css:
 	npm install --save normalize.css
 	cp node_modules/normalize.css/normalize.css src/common/00-reset/normalize.css
@@ -79,9 +95,7 @@ clean:
 	rm ishi-$(VERSION)-*.css
 
 docs: ishi-$(VERSION)-common-min.css ishi-$(VERSION)-layout-left-min.css
-	cp ishi-$(VERSION)-common.css docs/assets-without-prefixes/ishi-common.css
-	cp ishi-$(VERSION)-layout-left.css docs/assets-without-prefixes/ishi-layout-left.css
-	cp ishi-$(VERSION)-layout-right.css docs/assets-without-prefixes/ishi-layout-right.css
+	cp $(ALL_FILES) docs/assets-without-prefixes/
 	postcss --use autoprefixer docs/assets-without-prefixes/*.css --dir docs/assets/
 
 tools:
