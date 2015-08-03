@@ -5,10 +5,7 @@
 /**
  * styles
  */
-.main-content {
-    order: 2;
-    min-width: 100%;
-
+body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,21 +14,26 @@
     align-items: stretch;
 }
 
-.main-content aside.sidebar {
+.sidebar {
     order: 2;
-    flex-basis: 250px;
+    width: 250px;
 
     .util-pad-column();
     .util-pad-flexbox();
 }
 
-.main-content main {
+main {
     order: 1;
     flex-grow: 1;
     flex-basis: 500px;
 
     .util-pad-column();
     .util-pad-flexbox();
+}
+
+footer {
+    order: 3;
+    flex-basis: 100%;
 }
 
 footer .content {

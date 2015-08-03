@@ -5,8 +5,7 @@
 /**
  * styles
  */
-.main-content {
-    order: 2;
+body {
     min-width: 100%;
 
     display: flex;
@@ -17,21 +16,24 @@
     align-items: flex-start;
 }
 
-.main-content aside.sidebar {
+.sidebar {
     order: 2;
     flex-basis: 100%;
 
     .util-pad-column();
 }
 
-.main-content main {
+main {
     order: 1;
     flex-basis: 100%;
 
     .util-pad-column();
 }
 
-body > footer {
+footer {
+    order: 3;
+    flex-basis: 100%;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
