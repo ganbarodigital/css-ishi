@@ -1,0 +1,38 @@
+pre {
+    .insert(@panel-fg-color, @panel-bg-color, @panel-border-color, @panel-border-radius, @type-pica-font-size, @type-pica-font-size);
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+code {
+    padding: 1px 2px;
+    font-size: @type-pica-font-size - 1;
+    color: @code-fg-color;
+    background-color: @code-bg-color;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: @panel-fg-color;
+    background-color: @panel-bg-color;
+    white-space: pre-wrap;
+}
+
+kbd {
+    font-size: @type-pica-font-size / 10 * 9;
+    padding: 1px 4px;
+    border: 1px solid darken(@panel-bg-color, 33%);
+    border-radius: 3px;
+    background-color: transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+samp {
+    padding: 1px 2px;
+    font-size: @type-pica-font-size - 1;
+    background-color: @panel-bg-color;
+    white-space: pre-wrap;
+}

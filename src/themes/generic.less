@@ -1,8 +1,23 @@
 /**
  * variables
  */
-@theme-footer-bg-color: #232323;
+@theme-footer-bg-color: #292929;
 @theme-footer-fg-color: #e8e8e8;
+
+@theme-footer-bootstrap-bg-color: #000;
+@theme-footer-bootstrap-fg-color: #bbb;
+
+.theme-footer-bootstrap-a() {
+    a:link {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    a:visited {
+        color: #fff;
+        font-weight: bold;
+    }
+}
 
 @theme-sidebar-bg-color: #eee;
 @theme-sidebar-fg-color: #444;
@@ -12,6 +27,14 @@
  */
 @import (multiple) "common-styles.less";
 @import (reference) "../common/01-pre-groups/media.less";
+
+@media @media-group-c {
+    @import (reference) "../common/02-group-c/include.less";
+
+    aside.sidebar {
+        padding-bottom: @type-pica-font-size * 2;
+    }
+}
 
 @media @media-group-d {
     @import (reference) "../common/02-group-d/include.less";
