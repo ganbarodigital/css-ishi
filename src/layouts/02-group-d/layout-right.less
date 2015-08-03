@@ -13,27 +13,36 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: stretch;
-    align-items: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
 }
 
 .main-content aside.sidebar {
     order: 2;
-    flex-basis: 200px;
+    flex-basis: 250px;
+    padding-left: @type-pica-font-size;
+    padding-right: @type-pica-font-size;
 }
 
 .main-content main {
     order: 1;
-    flex-basis: 800px;
+    flex-grow: 1;
+    flex-basis: 500px;
     padding-left: @type-pica-font-size * 2;
     padding-right: @type-pica-font-size * 2;
 }
 
 body > footer {
+    padding-left: @type-pica-font-size * 2;
+    padding-right: @type-pica-font-size * 2;
+}
+
+.footer-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-basis: 100%;
 }

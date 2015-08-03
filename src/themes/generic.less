@@ -4,7 +4,27 @@
 @theme-footer-bg-color: #232323;
 @theme-footer-fg-color: #e8e8e8;
 
+@theme-sidebar-bg-color: #eee;
+@theme-sidebar-fg-color: #444;
+
 /**
  * styles
  */
 @import (multiple) "common-styles.less";
+@import (reference) "../common/01-pre-groups/media.less";
+
+@media @media-group-d {
+    @import (reference) "../common/02-group-d/include.less";
+
+    main {
+        padding-bottom: @type-pica-font-size * 2;
+    }
+
+    aside.sidebar {
+        margin-bottom: @type-pica-font-size * 2;
+        border: 1px solid darken(@theme-sidebar-bg-color, 33%);
+        border-radius: 4px;
+        margin-left: @type-pica-font-size * 2;
+        margin-right: @type-pica-font-size * 2;
+    }
+}

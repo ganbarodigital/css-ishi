@@ -8,10 +8,12 @@
  * how to compile:
  *   `make docs`
  */
-footer div.contact-details {
+footer .contact-address {
     order: 99;
+    flex-basis: 20%;
 }
 
-footer div.contact-regdetails {
+footer .contact-regdetails {
     order: 2;
+    flex-basis: 20%;
 }

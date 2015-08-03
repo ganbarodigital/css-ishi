@@ -15,6 +15,7 @@
  * these files provide CSS and/or LESS variables that apply to all supported
  * screen sizes
  */
+@import (reference) "01-pre-groups/media.less";
 @import (reference) "01-pre-groups/colors.less";
 @import (inline) "01-pre-groups/type.less";
 
@@ -34,37 +35,21 @@
  * - <group>/<feature>.less: defines variables & mixins for this group
  * - post-groups/<feature>.less: uses those variables to define CSS
  */
-@media (max-width: 319px) {
-    @import (reference) "02-group-a/type.less";
-    @import (multiple) "02-per-group/type.less";
-    @import (multiple) "02-per-group/lists.less";
-    @import (multiple) "02-per-group/callouts.less";
-    @import (multiple) "02-per-group/panels.less";
-    @import (multiple) "02-per-group/footer.less";
+@media @media-group-a {
+    @import (reference) "02-group-a/include.less";
+    @import (multiple) "02-per-group/include.less";
 }
-@media (min-width: 320px) and (max-width: 600px) {
-    @import (reference) "02-group-b/type.less";
-    @import (multiple) "02-per-group/type.less";
-    @import (multiple) "02-per-group/lists.less";
-    @import (multiple) "02-per-group/callouts.less";
-    @import (multiple) "02-per-group/panels.less";
-    @import (multiple) "02-per-group/footer.less";
+@media @media-group-b {
+    @import (reference) "02-group-b/include.less";
+    @import (multiple) "02-per-group/include.less";
 }
-@media (min-width: 601px) and (max-width: 1007px) {
-    @import (reference) "02-group-c/type.less";
-    @import (multiple) "02-per-group/type.less";
-    @import (multiple) "02-per-group/lists.less";
-    @import (multiple) "02-per-group/callouts.less";
-    @import (multiple) "02-per-group/panels.less";
-    @import (multiple) "02-per-group/footer.less";
+@media @media-group-c {
+    @import (reference) "02-group-c/include.less";
+    @import (multiple) "02-per-group/include.less";
 }
-@media (min-width: 1008px) {
-    @import (reference) "02-group-d/type.less";
-    @import (multiple) "02-per-group/type.less";
-    @import (multiple) "02-per-group/lists.less";
-    @import (multiple) "02-per-group/callouts.less";
-    @import (multiple) "02-per-group/panels.less";
-    @import (multiple) "02-per-group/footer.less";
+@media @media-group-d {
+    @import (reference) "02-group-d/include.less";
+    @import (multiple) "02-per-group/include.less";
 }
 
 /**
