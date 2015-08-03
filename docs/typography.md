@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: typography
 title: Typography
 ---
 
 # Typography
 
-<div class="callout example" markdown="1">
-</div>
+## Introduction
 
+Ishi delivers beautiful

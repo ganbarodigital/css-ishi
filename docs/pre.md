@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: typography
 title: Preformatted &amp; Code
 ---
 
