@@ -1,4 +1,5 @@
+build/
 docs/_site
-ishi-*.css
+docs/_src/docs.css
 node_modules
-src/normalize.css
+src/00-base/styles/normalize.css
