@@ -33,21 +33,22 @@ main {
 footer {
     order: 3;
     flex-basis: 100%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: stretch;
 }
 
 footer .content {
-    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 footer .content > div, footer .content > section, footer .content > aside {
     .util-pad-column();
+}
+
+footer .content > * + * {
     .util-pad-flexbox();
 }
 
