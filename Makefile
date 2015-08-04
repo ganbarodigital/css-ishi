@@ -31,8 +31,8 @@ clean:
 	rm build/*
 
 docs: $(THEMES)
-	cp build/* docs/assets-without-prefixes/
-	postcss --use autoprefixer docs/assets-without-prefixes/*.css --dir docs/assets/
+	lessc docs/_src/docs.less > docs/_src/docs.css
+	postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
 
 tools:
 	sudo npm install -g less
