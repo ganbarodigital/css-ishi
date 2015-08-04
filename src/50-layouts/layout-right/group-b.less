@@ -6,8 +6,6 @@
  * styles
  */
 body {
-    min-width: 100%;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,6 +19,7 @@ body {
     flex-basis: 100%;
 
     .util-pad-column();
+    .util-pad-flexbox();
 }
 
 main {
@@ -28,6 +27,7 @@ main {
     flex-basis: 100%;
 
     .util-pad-column();
+    .util-pad-flexbox();
 }
 
 footer {
@@ -38,11 +38,15 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: stretch;
-    align-items: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
 }
 
 footer .content {
+    flex-basis: 100%;
+}
+
+footer .content > div, footer .content > section, footer .content > aside {
     .util-pad-column();
     .util-pad-flexbox();
 }
