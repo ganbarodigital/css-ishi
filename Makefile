@@ -13,11 +13,13 @@ THIRD_PARTY_DEPS = \
 THEMES = \
 	build/ishi-$(VERSION)-article-left-sidebar.min.css
 
+SRC_FILES = $(shell find src -name '*.less')
+
 .PHONY: clean
 
 all: $(THEMES) docs
 
-build/ishi-$(VERSION)-article-left-sidebar.css: $(THIRD_PARTY_DEPS)
+build/ishi-$(VERSION)-article-left-sidebar.css: $(THIRD_PARTY_DEPS) $(SRC_FILES)
 	lessc src/99-themes/article-left-sidebar/main.less > build/ishi-$(VERSION)-article-left-sidebar.css
 
 build/ishi-$(VERSION)-article-left-sidebar.min.css: build/ishi-$(VERSION)-article-left-sidebar.css
@@ -30,7 +32,7 @@ src/00-base/styles/normalize.css:
 clean:
 	rm build/*
 
-docs: $(THEMES)
+docs: $(SRC_FILES) docs/_src/docs.less
 	lessc docs/_src/docs.less > docs/_src/docs.css
 	postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
 
