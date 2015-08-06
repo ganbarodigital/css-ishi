@@ -20,3 +20,5 @@ The benefits of using Ishi include:
 * [themes](themes.html) for easily changing fonts and colors without having to change everything else
 
 Ishi is written in SASS. You can import it into your own SASS ruleset, and quickly build on top of it to get the look and feel that you want for your own websites and content.
+
+[Get started today](getting-started.html) and try Ishi for yourself.
