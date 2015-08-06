@@ -707,6 +707,93 @@ iframe {
   footer .strapline p {
     margin-bottom: 0px;
   }
+  .calltoaction {
+    border: 2px solid #9a9a9a;
+    padding: 7.5px;
+    font-weight: bolder;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .calltoaction.outline {
+    background-color: transparent;
+  }
+  .calltoaction.standout {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction.sunken {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction,
+  a.calltoaction:hover,
+  a.calltoaction:focus,
+  a.calltoaction:link,
+  a.calltoaction:visited {
+    text-decoration: none;
+  }
+  main .calltoaction {
+    border-color: #404040;
+    background-color: #404040;
+    color: #ffffff;
+  }
+  main .calltoaction.outline {
+    background-color: transparent;
+    color: #404040;
+  }
+  main .calltoaction.gradient {
+    background-image: -webkit-linear-gradient(top, #4d4d4d 0%, #333333 100%);
+    background-image: linear-gradient(to bottom, #4d4d4d 0%, #333333 100%);
+  }
+  .calltoaction.attention {
+    border: 2px solid #234f83;
+    background-color: #234f83;
+    color: #ffffff;
+  }
+  .calltoaction.attention.outline {
+    border: 2px solid #234f83;
+    background-color: transparent;
+    color: #234f83;
+  }
+  .calltoaction.info {
+    border: 2px solid #34789a;
+    background-color: #34789a;
+    color: #f4f8fa;
+  }
+  .calltoaction.info.outline {
+    border: 2px solid #34789a;
+    background-color: transparent;
+    color: #34789a;
+  }
+  .calltoaction.success {
+    border: 2px solid #3c763d;
+    background-color: #3c763d;
+    color: #ffffff;
+  }
+  .calltoaction.success.outline {
+    border: 2px solid #3c763d;
+    background-color: transparent;
+    color: #3c763d;
+  }
+  .calltoaction.warning {
+    border: 2px solid #8a6d3b;
+    background-color: #fcf8e3;
+    color: #000000;
+  }
+  .calltoaction.warning.outline {
+    border: 2px solid #8a6d3b;
+    background-color: transparent;
+    color: #8a6d3b;
+  }
+  .calltoaction.danger {
+    border: 2px solid #a94442;
+    background-color: #a94442;
+    color: #ffffff;
+  }
+  .calltoaction.danger.outline {
+    border: 2px solid #a94442;
+    background-color: transparent;
+    color: #a94442;
+  }
   /**
  * variables
  */
@@ -1172,8 +1259,6 @@ iframe {
   }
   main {
     background-color: #ffffff;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -1195,11 +1280,6 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
-  }
-}
-@media (max-width: 320px) and (min-width: 1007px) {
-  main {
-    margin-left: 20px;
   }
 }
 @media (min-width: 320px) and (max-width: 600px) {
@@ -1335,6 +1415,93 @@ iframe {
   }
   footer .strapline p {
     margin-bottom: 0px;
+  }
+  .calltoaction {
+    border: 2px solid #9a9a9a;
+    padding: 8px;
+    font-weight: bolder;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .calltoaction.outline {
+    background-color: transparent;
+  }
+  .calltoaction.standout {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction.sunken {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction,
+  a.calltoaction:hover,
+  a.calltoaction:focus,
+  a.calltoaction:link,
+  a.calltoaction:visited {
+    text-decoration: none;
+  }
+  main .calltoaction {
+    border-color: #404040;
+    background-color: #404040;
+    color: #ffffff;
+  }
+  main .calltoaction.outline {
+    background-color: transparent;
+    color: #404040;
+  }
+  main .calltoaction.gradient {
+    background-image: -webkit-linear-gradient(top, #4d4d4d 0%, #333333 100%);
+    background-image: linear-gradient(to bottom, #4d4d4d 0%, #333333 100%);
+  }
+  .calltoaction.attention {
+    border: 2px solid #234f83;
+    background-color: #234f83;
+    color: #ffffff;
+  }
+  .calltoaction.attention.outline {
+    border: 2px solid #234f83;
+    background-color: transparent;
+    color: #234f83;
+  }
+  .calltoaction.info {
+    border: 2px solid #34789a;
+    background-color: #34789a;
+    color: #f4f8fa;
+  }
+  .calltoaction.info.outline {
+    border: 2px solid #34789a;
+    background-color: transparent;
+    color: #34789a;
+  }
+  .calltoaction.success {
+    border: 2px solid #3c763d;
+    background-color: #3c763d;
+    color: #ffffff;
+  }
+  .calltoaction.success.outline {
+    border: 2px solid #3c763d;
+    background-color: transparent;
+    color: #3c763d;
+  }
+  .calltoaction.warning {
+    border: 2px solid #8a6d3b;
+    background-color: #fcf8e3;
+    color: #000000;
+  }
+  .calltoaction.warning.outline {
+    border: 2px solid #8a6d3b;
+    background-color: transparent;
+    color: #8a6d3b;
+  }
+  .calltoaction.danger {
+    border: 2px solid #a94442;
+    background-color: #a94442;
+    color: #ffffff;
+  }
+  .calltoaction.danger.outline {
+    border: 2px solid #a94442;
+    background-color: transparent;
+    color: #a94442;
   }
   /**
  * variables
@@ -1818,8 +1985,6 @@ iframe {
   }
   main {
     background-color: #ffffff;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -1841,11 +2006,6 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
-  }
-}
-@media (min-width: 320px) and (max-width: 600px) and (min-width: 1007px) {
-  main {
-    margin-left: 20px;
   }
 }
 @media (min-width: 601px) and (max-width: 1007px) {
@@ -1981,6 +2141,93 @@ iframe {
   }
   footer .strapline p {
     margin-bottom: 0px;
+  }
+  .calltoaction {
+    border: 2px solid #9a9a9a;
+    padding: 9px;
+    font-weight: bolder;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .calltoaction.outline {
+    background-color: transparent;
+  }
+  .calltoaction.standout {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction.sunken {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction,
+  a.calltoaction:hover,
+  a.calltoaction:focus,
+  a.calltoaction:link,
+  a.calltoaction:visited {
+    text-decoration: none;
+  }
+  main .calltoaction {
+    border-color: #404040;
+    background-color: #404040;
+    color: #ffffff;
+  }
+  main .calltoaction.outline {
+    background-color: transparent;
+    color: #404040;
+  }
+  main .calltoaction.gradient {
+    background-image: -webkit-linear-gradient(top, #4d4d4d 0%, #333333 100%);
+    background-image: linear-gradient(to bottom, #4d4d4d 0%, #333333 100%);
+  }
+  .calltoaction.attention {
+    border: 2px solid #234f83;
+    background-color: #234f83;
+    color: #ffffff;
+  }
+  .calltoaction.attention.outline {
+    border: 2px solid #234f83;
+    background-color: transparent;
+    color: #234f83;
+  }
+  .calltoaction.info {
+    border: 2px solid #34789a;
+    background-color: #34789a;
+    color: #f4f8fa;
+  }
+  .calltoaction.info.outline {
+    border: 2px solid #34789a;
+    background-color: transparent;
+    color: #34789a;
+  }
+  .calltoaction.success {
+    border: 2px solid #3c763d;
+    background-color: #3c763d;
+    color: #ffffff;
+  }
+  .calltoaction.success.outline {
+    border: 2px solid #3c763d;
+    background-color: transparent;
+    color: #3c763d;
+  }
+  .calltoaction.warning {
+    border: 2px solid #8a6d3b;
+    background-color: #fcf8e3;
+    color: #000000;
+  }
+  .calltoaction.warning.outline {
+    border: 2px solid #8a6d3b;
+    background-color: transparent;
+    color: #8a6d3b;
+  }
+  .calltoaction.danger {
+    border: 2px solid #a94442;
+    background-color: #a94442;
+    color: #ffffff;
+  }
+  .calltoaction.danger.outline {
+    border: 2px solid #a94442;
+    background-color: transparent;
+    color: #a94442;
   }
   /**
  * variables
@@ -2463,8 +2710,6 @@ iframe {
   }
   main {
     background-color: #ffffff;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -2486,11 +2731,6 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
-  }
-}
-@media (min-width: 601px) and (max-width: 1007px) and (min-width: 1007px) {
-  main {
-    margin-left: 20px;
   }
 }
 @media (min-width: 1007px) {
@@ -2626,6 +2866,93 @@ iframe {
   }
   footer .strapline p {
     margin-bottom: 0px;
+  }
+  .calltoaction {
+    border: 2px solid #9a9a9a;
+    padding: 8px;
+    font-weight: bolder;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .calltoaction.outline {
+    background-color: transparent;
+  }
+  .calltoaction.standout {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction.sunken {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+  .calltoaction,
+  a.calltoaction:hover,
+  a.calltoaction:focus,
+  a.calltoaction:link,
+  a.calltoaction:visited {
+    text-decoration: none;
+  }
+  main .calltoaction {
+    border-color: #404040;
+    background-color: #404040;
+    color: #ffffff;
+  }
+  main .calltoaction.outline {
+    background-color: transparent;
+    color: #404040;
+  }
+  main .calltoaction.gradient {
+    background-image: -webkit-linear-gradient(top, #4d4d4d 0%, #333333 100%);
+    background-image: linear-gradient(to bottom, #4d4d4d 0%, #333333 100%);
+  }
+  .calltoaction.attention {
+    border: 2px solid #234f83;
+    background-color: #234f83;
+    color: #ffffff;
+  }
+  .calltoaction.attention.outline {
+    border: 2px solid #234f83;
+    background-color: transparent;
+    color: #234f83;
+  }
+  .calltoaction.info {
+    border: 2px solid #34789a;
+    background-color: #34789a;
+    color: #f4f8fa;
+  }
+  .calltoaction.info.outline {
+    border: 2px solid #34789a;
+    background-color: transparent;
+    color: #34789a;
+  }
+  .calltoaction.success {
+    border: 2px solid #3c763d;
+    background-color: #3c763d;
+    color: #ffffff;
+  }
+  .calltoaction.success.outline {
+    border: 2px solid #3c763d;
+    background-color: transparent;
+    color: #3c763d;
+  }
+  .calltoaction.warning {
+    border: 2px solid #8a6d3b;
+    background-color: #fcf8e3;
+    color: #000000;
+  }
+  .calltoaction.warning.outline {
+    border: 2px solid #8a6d3b;
+    background-color: transparent;
+    color: #8a6d3b;
+  }
+  .calltoaction.danger {
+    border: 2px solid #a94442;
+    background-color: #a94442;
+    color: #ffffff;
+  }
+  .calltoaction.danger.outline {
+    border: 2px solid #a94442;
+    background-color: transparent;
+    color: #a94442;
   }
   /**
  * variables
@@ -3106,8 +3433,6 @@ iframe {
   }
   main {
     background-color: #ffffff;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -3129,11 +3454,6 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
-  }
-}
-@media (min-width: 1007px) and (min-width: 1007px) {
-  main {
-    margin-left: 20px;
   }
 }
 footer .contact-address {
