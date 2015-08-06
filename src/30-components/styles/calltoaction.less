@@ -6,10 +6,18 @@
     cursor: pointer;
     display: inline-block;
 //    margin-top: @type-p-spacing;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
 }
 
 .calltoaction.outline {
     background-color: transparent;
+}
+.calltoaction.outline:hover {
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
 }
 
 .calltoaction.standout {
@@ -39,6 +47,11 @@ main .calltoaction.outline {
     color: @main-p-color;
 }
 
+main .calltoaction.outline:hover {
+    background-color: @main-p-color;
+    color: contrast(@main-p-color);
+}
+
 main .calltoaction.gradient {
     background-image: linear-gradient(to bottom, lighten(@main-p-color, 5%) 0%, darken(@main-p-color, 5%) 100%);
 }
@@ -56,6 +69,9 @@ main .calltoaction.gradient {
 .calltoaction.attention.outline {
     .calltoaction-context(@attention-bg-color, transparent, @attention-bg-color);
 }
+.calltoaction.attention.outline:hover {
+    .calltoaction-context(@attention-bg-color, @attention-bg-color, @attention-hi-color);
+}
 
 .calltoaction.info {
     .calltoaction-context(@info-hi-color, @info-hi-color, @info-bg-color);
@@ -63,6 +79,9 @@ main .calltoaction.gradient {
 
 .calltoaction.info.outline {
     .calltoaction-context(@info-hi-color, transparent, @info-hi-color);
+}
+.calltoaction.info.outline:hover {
+    .calltoaction-context(@info-hi-color, @info-hi-color, @info-bg-color);
 }
 
 .calltoaction.success {
@@ -72,6 +91,9 @@ main .calltoaction.gradient {
 .calltoaction.success.outline {
     .calltoaction-context(@success-hi-color, transparent, @success-hi-color);
 }
+.calltoaction.success.outline:hover {
+    .calltoaction-context(@success-hi-color, @success-hi-color, contrast(@success-hi-color));
+}
 
 .calltoaction.warning {
     .calltoaction-context(@warning-hi-color, @warning-bg-color, contrast(@warning-bg-color));
@@ -80,6 +102,9 @@ main .calltoaction.gradient {
 .calltoaction.warning.outline {
     .calltoaction-context(@warning-hi-color, transparent, @warning-hi-color);
 }
+.calltoaction.warning.outline:hover {
+    .calltoaction-context(@warning-hi-color, @warning-bg-color, contrast(@warning-bg-color));
+}
 
 .calltoaction.danger {
     .calltoaction-context(@danger-hi-color, @danger-hi-color, contrast(@danger-hi-color));
@@ -87,4 +112,7 @@ main .calltoaction.gradient {
 
 .calltoaction.danger.outline {
     .calltoaction-context(@danger-hi-color, transparent, @danger-hi-color);
+}
+.calltoaction.danger.outline:hover {
+    .calltoaction-context(@danger-hi-color, @danger-hi-color, contrast(@danger-hi-color));
 }
