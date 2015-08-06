@@ -621,6 +621,9 @@ iframe {
     line-height: 20px;
     margin-bottom: 15px;
   }
+  p.leader {
+    font-weight: bolder;
+  }
   ol + p,
   ul + p {
     margin-top: 15px;
@@ -673,12 +676,14 @@ iframe {
     white-space: pre-wrap;
   }
   kbd {
-    font-size: 13.5px;
+    font-family: inherit;
+    font-size: 12.75px;
+    font-weight: bolder;
     padding: 1px 4px;
     border: 1px solid #9a9a9a;
     border-radius: 3px;
     background-color: transparent;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 1px 0px 1px rgba(0, 0, 0, 0.2), inset -1px 0px 1px rgba(0, 0, 0, 0.2);
   }
   samp {
     padding: 1px 2px;
@@ -1163,6 +1168,12 @@ iframe {
   }
   body {
     font-family: Helvetica, Roboto, Arial, sans-serif;
+    background-color: #dddddd;
+  }
+  main {
+    background-color: #ffffff;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -1184,6 +1195,11 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
+  }
+}
+@media (max-width: 320px) and (min-width: 1007px) {
+  main {
+    margin-left: 20px;
   }
 }
 @media (min-width: 320px) and (max-width: 600px) {
@@ -1233,6 +1249,9 @@ iframe {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 16px;
+  }
+  p.leader {
+    font-weight: bolder;
   }
   ol + p,
   ul + p {
@@ -1286,12 +1305,14 @@ iframe {
     white-space: pre-wrap;
   }
   kbd {
-    font-size: 14.4px;
+    font-family: inherit;
+    font-size: 13.6px;
+    font-weight: bolder;
     padding: 1px 4px;
     border: 1px solid #9a9a9a;
     border-radius: 3px;
     background-color: transparent;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 1px 0px 1px rgba(0, 0, 0, 0.2), inset -1px 0px 1px rgba(0, 0, 0, 0.2);
   }
   samp {
     padding: 1px 2px;
@@ -1775,6 +1796,8 @@ iframe {
   footer .content > aside {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   footer .content > * + * {
     padding-top: 16px;
@@ -1791,6 +1814,12 @@ iframe {
   }
   body {
     font-family: Helvetica, Roboto, Arial, sans-serif;
+    background-color: #dddddd;
+  }
+  main {
+    background-color: #ffffff;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -1812,6 +1841,11 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) and (min-width: 1007px) {
+  main {
+    margin-left: 20px;
   }
 }
 @media (min-width: 601px) and (max-width: 1007px) {
@@ -1861,6 +1895,9 @@ iframe {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 18px;
+  }
+  p.leader {
+    font-weight: bolder;
   }
   ol + p,
   ul + p {
@@ -1914,12 +1951,14 @@ iframe {
     white-space: pre-wrap;
   }
   kbd {
-    font-size: 16.2px;
+    font-family: inherit;
+    font-size: 15.3px;
+    font-weight: bolder;
     padding: 1px 4px;
     border: 1px solid #9a9a9a;
     border-radius: 3px;
     background-color: transparent;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 1px 0px 1px rgba(0, 0, 0, 0.2), inset -1px 0px 1px rgba(0, 0, 0, 0.2);
   }
   samp {
     padding: 1px 2px;
@@ -2378,11 +2417,11 @@ iframe {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -2403,10 +2442,11 @@ iframe {
   footer .content > aside {
     padding-left: 36px;
     padding-right: 36px;
-  }
-  footer .content > * + * {
     padding-top: 18px;
     padding-bottom: 18px;
+  }
+  footer .content > * + footer .content * {
+    padding-top: 0px;
   }
   footer .strapline {
     -webkit-flex-basis: 100%;
@@ -2419,6 +2459,12 @@ iframe {
   }
   body {
     font-family: Helvetica, Roboto, Arial, sans-serif;
+    background-color: #dddddd;
+  }
+  main {
+    background-color: #ffffff;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -2440,6 +2486,11 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
+  }
+}
+@media (min-width: 601px) and (max-width: 1007px) and (min-width: 1007px) {
+  main {
+    margin-left: 20px;
   }
 }
 @media (min-width: 1007px) {
@@ -2489,6 +2540,9 @@ iframe {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 16px;
+  }
+  p.leader {
+    font-weight: bolder;
   }
   ol + p,
   ul + p {
@@ -2542,12 +2596,14 @@ iframe {
     white-space: pre-wrap;
   }
   kbd {
-    font-size: 14.4px;
+    font-family: inherit;
+    font-size: 13.6px;
+    font-weight: bolder;
     padding: 1px 4px;
     border: 1px solid #9a9a9a;
     border-radius: 3px;
     background-color: transparent;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 1px 0px 1px rgba(0, 0, 0, 0.2), inset -1px 0px 1px rgba(0, 0, 0, 0.2);
   }
   samp {
     padding: 1px 2px;
@@ -3046,6 +3102,12 @@ iframe {
   }
   body {
     font-family: Helvetica, Roboto, Arial, sans-serif;
+    background-color: #dddddd;
+  }
+  main {
+    background-color: #ffffff;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
   }
   main p,
   main ol,
@@ -3067,6 +3129,11 @@ iframe {
   footer .strapline {
     background-color: #000000;
     color: #dddddd;
+  }
+}
+@media (min-width: 1007px) and (min-width: 1007px) {
+  main {
+    margin-left: 20px;
   }
 }
 footer .contact-address {
