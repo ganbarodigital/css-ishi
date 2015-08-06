@@ -32,3 +32,5 @@ In no particular order, they include:
 * The [Mozilla Developer Network site](https://developer.mozilla.org/en-US/). MDN is our go-to reference for all things CSS. They do a great job of making the CSS standards and features understandable.
 
 * What seems like many years ago now, Nathan Smith launched the [960 grid system](http://960.gs/), and showed everyone that we could have table-like layout tools without actually having to use tables.
+
+* We used the [Flexbox in 5 Minutes](http://flexboxin5.com) to get started with [flexbox layouts](layouts.html).
