@@ -4,7 +4,7 @@ title: Introduction
 ---
 # Welcome To Ishi
 
-Ishi is a simple responsive CSS toolkit from [Ganbaro Digital](https://ganbarodigital.com). It has [clearly defined goals](goals.html). It draws [heavy inspiration](inspiration.html) from existing toolkits and leading content websites.
+Ishi is a simple responsive CSS toolkit from [Ganbaro Digital](https://ganbarodigital.com). It has [clearly defined goals](goals.html). It draws [heavy inspiration](inspirations.html) from existing toolkits and leading content websites.
 
 It is [licensed under the MIT license](license.html). [Contributions](contributing.html) are welcome.
 
