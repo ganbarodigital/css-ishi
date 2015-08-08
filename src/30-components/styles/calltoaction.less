@@ -40,11 +40,26 @@ main .calltoaction {
     border-color: @main-p-color;
     background-color: @main-p-color;
     color: contrast(@main-p-color);
+
+}
+
+main .calltoaction:hover,
+main .calltoaction:focus,
+main .calltoaction:link,
+main .calltoactoin:visited {
+    color: contrast(@main-p-color);
 }
 
 main .calltoaction.outline {
     background-color: transparent;
     color: @main-p-color;
+
+    a:hover,
+    a:focus,
+    a:link,
+    a:visited {
+        color: @main-p-color !important;
+    }
 }
 
 main .calltoaction.outline:hover {
@@ -96,7 +111,13 @@ main .calltoaction.gradient {
 }
 
 .calltoaction.warning {
-    .calltoaction-context(@warning-hi-color, @warning-bg-color, contrast(@warning-bg-color));
+    .calltoaction-context(@warning-hi-color, @warning-bg-color, @warning-hi-color);
+}
+.calltoaction.warning:hover,
+.calltoaction.warning:focus,
+.calltoaction.warning:link,
+.calltoaction.warning:visited {
+    color: @warning-hi-color;
 }
 
 .calltoaction.warning.outline {
