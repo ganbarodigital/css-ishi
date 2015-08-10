@@ -36,6 +36,7 @@ docs: $(SRC_FILES) docs/_src/docs.less docs/_src/enquire.js docs/_src/laroux.js 
 	cp docs/_src/*.js docs/assets/
 
 tools: node_modules/enquire.js/README.md node_modules/laroux.js/README.md
+	sudo gem install sass
 	sudo npm install -g less
 	sudo npm install --global postcss-cli autoprefixer
 	npm install less-plugin-clean-css
