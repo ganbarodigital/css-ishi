@@ -32,12 +32,19 @@ var Ishi = {
             var item_rect = item.getBoundingClientRect();
             var parent_rect = parent.getBoundingClientRect();
 
+            // we have to round these numbers because Firefix returns floats
             return (
-                item_rect.top >= parent_rect.top &&
-                item_rect.left >= parent_rect.left &&
-                item_rect.bottom <= Math.min(parent_rect.bottom, document.documentElement.clientHeight) &&
-                item_rect.right <= Math.min(parent_rect.right, document.documentElement.clientWidth)
+                Math.round(item_rect.top) >= Math.round(parent_rect.top) &&
+                Math.round(item_rect.left) >= Math.round(parent_rect.left) &&
+                Math.round(item_rect.bottom) <= Math.round(Math.min(parent_rect.bottom, window.innerHeight)) &&
+                Math.round(item_rect.right) <= Math.round(Math.min(parent_rect.right, window.innerWidth))
             );
+        },
+
+        lastIsOnScreen: function (items, parent) {
+            parent = parent ? parent : window;
+
+            return Ishi.dom.isOnScreen(items[items.length - 1], parent);
         }
     },
 
@@ -56,6 +63,8 @@ var Ishi = {
             );
 
             listEl.appendChild(moreEl);
+
+            return $l(".more", listEl);
         },
 
         getMore: function(navEl) {
@@ -83,7 +92,7 @@ var Ishi = {
         addDropdown: function(navEl, dropdownId) {
             // create our (initially hidden) dropdown menu
             var dropdownEl = $l.dom.create(
-                '<div class="navbar_dropdown hidden" style="z:9999" id="' + dropdownId + '"><ul></ul></div>'
+                '<div class="navbar_dropdown hidden" id="' + dropdownId + '"><ul></ul></div>'
             );
 
             var dropdownListEl = $l("ul", dropdownEl);
@@ -115,6 +124,16 @@ var Ishi = {
             dropdownEl.remove();
         },
 
+        removeDropdowns: function() {
+            var dropdownEls = $l([".navbar_dropdown"]);
+            if (!dropdownEls) {
+                return;
+            }
+            for(var i = 0; i < dropdownEls.length; i++) {
+                dropdownEls[i].remove();
+            }
+        },
+
         showDropdown: function(dropdownId) {
             var dropdownEl = $l.id(dropdownId);
             if (!dropdownEl) {
@@ -144,6 +163,13 @@ var ishi_navbars_reflow = function() {
     // find all of our navbars
     var navbars = $l(["nav.navbar"]);
 
+    if (!navbars) {
+        return;
+    }
+
+    // remove all the dropdown boxes first
+    Ishi.navbar.removeDropdowns();
+
     // reflow each of them
     $l.each(navbars, function(i, navbar) {
         ishi_navbar_reflow(navbar);
@@ -161,38 +187,33 @@ var ishi_navbar_reflow = function(navbar) {
     });
 
     // if everything is visible, nothing to do
-    if (Ishi.dom.areOnScreen(navbar_items, navbar)) {
+    if (Ishi.dom.lastIsOnScreen(navbar_items, navbar)) {
         return;
     }
 
-    // find the last navbar item that is visible
-    var lastVisible = 0;
-    for (var i = 0; i < navbar_items.length; i++) {
-        if (Ishi.dom.isOnScreen(navbar_items[i], navbar)) {
-            lastVisible = i;
-            continue;
-        }
-
-        // if we get here, we have our first item that isn't completely
-        // visible
-        break;
-    }
-
-    // hide the invisible items
+    // add the menu item
     //
-    // we also hide the last visible item, to make room for our 'More'
-    // menu item
-    for (i = lastVisible; i < navbar_items.length; i++) {
-        Ishi.dom.hideItem(navbar_items[i]);
+    // we have to add this first to make sure it fits on the screen when
+    // we're hiding items from the menu
+    var dropdownId = Ishi.navbar.getNextDropdownId();
+    moreEl = Ishi.navbar.addMore(navbar, dropdownId);
+
+    // hide the items that are overflowing
+    //
+    // we work backwards from the end of the list to work around a problem
+    // with Firefox
+    for (var i = navbar_items.length - 1; i >= 0; i--) {
+        if (!Ishi.dom.isOnScreen(moreEl, navbar)) {
+            // hide it, so that the browser can reflow the navbar
+            Ishi.dom.hideItem(navbar_items[i]);
+        }
+        else {
+            break;
+        }
     }
 
     // add the 'hidden' links into our dropdown menu
-    var dropdownId = Ishi.navbar.getNextDropdownId();
     Ishi.navbar.addDropdown(navbar, dropdownId);
-
-    // add the menu item
-    Ishi.navbar.addMore(navbar, dropdownId);
-
 };
 
 var ishi_navbars_reflow_throttler;
