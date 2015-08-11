@@ -21,4 +21,4 @@ The benefits of using Ishi include:
 
 Ishi is written in SASS. You can import it into your own SASS ruleset, and quickly build on top of it to get the look and feel that you want for your own websites and content.
 
-[Get started today](getting-started.html) and try Ishi for yourself.
+<a class="calltoaction attention outline" href="getting-started.html">Get started with Ishi!</a>

@@ -18,7 +18,15 @@ You can use several standard HTML5 elements to tell the user what to type into t
 
 Use the HTML5 `<kbd>` element whenever you want the user to press one or more keys: <kbd>kbd</kbd> is sized to sensibly fit inside a long paragraph of text like this one, even on smaller devices with limited screen space.
 
-* <kbd>CTRL + 5</kbd>
+* `<kbd>` uses several shadows to appear more like a physical keyboard key. This is done entirely with CSS.
+* It uses the same font as the main content. This improves readability over a monospace font.
+* It uses a heavier font. This draws the reader's attention to the keyboard input.
+
+Some examples of `<kbd>` in use:
+
+* Press the <kbd>esc</kbd> key to close the menu.
+* Press <kbd>?</kbd> at any time to see the available keyboard shortcuts.
+* Press <kbd>CTRL</kbd> + <kbd>C</kbd> (or <kbd>cmd</kbd> + <kbd>C</kbd> on an Apple Mac) to copy to your clipboard.
 
 ## Inline Code
 

@@ -1,9 +1,15 @@
 ---
-layout: page
+layout: frontpage
 title: Structure
 ---
 
 # Structure
+
+## Introduction
+
+<p class="leader">"Markup with meaning" is what we strive for. Markup that describes what content is will outlive markup that describes how content will be displayed.</p>
+
+Ishi isn't grid-based.
 
 ## Overview
 

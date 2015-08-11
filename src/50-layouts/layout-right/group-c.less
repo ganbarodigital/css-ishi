@@ -14,6 +14,14 @@ body {
     align-items: flex-start;
 }
 
+body > header {
+    order: 1;
+    flex-basis: 100%;
+
+    .util-pad-column();
+    .util-pad-flexbox();
+}
+
 .sidebar {
     order: 2;
     flex-basis: 100%;
@@ -37,7 +45,7 @@ footer {
 
 footer .content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
@@ -46,10 +54,11 @@ footer .content {
 
 footer .content > div, footer .content > section, footer .content > aside {
     .util-pad-column();
+    .util-pad-flexbox();
 }
 
-footer .content > * + * {
-    .util-pad-flexbox();
+footer .content > * + footer .content * {
+    padding-top: 0px;
 }
 
 footer .strapline {

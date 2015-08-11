@@ -34,3 +34,5 @@ In no particular order, they include:
 * What seems like many years ago now, Nathan Smith launched the [960 grid system](http://960.gs/), and showed everyone that we could have table-like layout tools without actually having to use tables.
 
 * We used the [Flexbox in 5 Minutes](http://flexboxin5.com) to get started with [flexbox layouts](layouts.html).
+
+* Philip Walton's [Flexbugs](https://github.com/philipwalton/flexbugs) collection has helped us whenever we've run into cross-browser problems with CSS flexbox support.

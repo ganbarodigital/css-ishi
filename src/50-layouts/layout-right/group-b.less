@@ -9,20 +9,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start;
 }
 
-.sidebar {
-    order: 2;
-    flex-basis: 100%;
-
-    .util-pad-column();
-    .util-pad-flexbox();
-}
-
-main {
+body > header {
     order: 1;
     flex-basis: 100%;
 
@@ -30,8 +22,24 @@ main {
     .util-pad-flexbox();
 }
 
-footer {
+.sidebar {
     order: 3;
+    flex-basis: 100%;
+
+    .util-pad-column();
+    .util-pad-flexbox();
+}
+
+main {
+    order: 2;
+    flex-basis: 100%;
+
+    .util-pad-column();
+    .util-pad-flexbox();
+}
+
+footer {
+    order: 4;
     flex-basis: 100%;
 }
 
@@ -42,10 +50,12 @@ footer .content {
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+    flex-basis: 100%;
 }
 
 footer .content > div, footer .content > section, footer .content > aside {
     .util-pad-column();
+    .util-pad-flexbox();
 }
 
 footer .content > * + * {

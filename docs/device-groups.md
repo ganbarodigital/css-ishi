@@ -22,3 +22,9 @@ Each [CSS theme](themes.html) supports these device groups:
 * __Group C:__ tablets (up to 1006px wide)
 * __Group D:__ desktops and laptops (over 1006px wide)
 
+## Why It Works
+
+This approach works because the vast majority of people have their browsers full-screen.
+
+* If you're on a smart phone or a tablet, you don't have a choice.
+* If you're on a laptop,

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: frontpage
 title: A Longer Example
 ---
 
