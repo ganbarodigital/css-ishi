@@ -1,0 +1,34 @@
+/**
+ * edit:
+ *   - docs/_src/docs.scss
+ *
+ * do not edit:
+ *   - docs/assets/docs.css
+ *
+ * how to compile:
+ *   `make sass-docs`
+ */
+@import "../../src/99-themes/article-left-sidebar/_main.scss";
+
+footer .contact-address {
+    order: 99;
+    flex-basis: 100%;
+}
+
+footer .contact-regdetails {
+    order: 2;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+@media #{$media-group-d} {
+    footer .contact-address {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+
+    footer .contact-regdetails {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+}

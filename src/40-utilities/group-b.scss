@@ -1,0 +1,11 @@
+@mixin util-pad-column() {
+    padding-left: $type-p-spacing;
+    padding-right: $type-p-spacing;
+}
+
+@mixin util-pad-flexbox() {
+    padding-top: $type-p-spacing;
+    padding-bottom: $type-p-spacing;
+}
+
+@import "styles/include.scss";

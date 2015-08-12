@@ -23,23 +23,21 @@ LAROUX_SRC_FILES = $(shell find node_modules/laroux.js/src -name '*.js')
 
 all: docs
 
-src/00-base/styles/normalize.css:
+src/00-base/styles/normalize.scss:
 	npm install --save normalize.css
-	cp node_modules/normalize.css/normalize.css src/common/00-reset/normalize.css
+	cp node_modules/normalize.css/normalize.css src/common/00-reset/normalize.scss
 
 clean:
 	rm build/*
 
-docs: $(SRC_FILES) docs/_src/docs.less docs/_src/enquire.js docs/_src/laroux.js docs/_src/docs.js
-	lessc docs/_src/docs.less > docs/_src/docs.css
+docs: $(SRC_FILES) docs/_src/docs.scss docs/_src/enquire.js docs/_src/laroux.js docs/_src/docs.js
+	sass --compass docs/_src/docs.scss > docs/_src/docs.css
 	postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
 	cp docs/_src/*.js docs/assets/
 
 tools: node_modules/enquire.js/README.md node_modules/laroux.js/README.md
 	sudo gem install sass
-	sudo npm install -g less
 	sudo npm install --global postcss-cli autoprefixer
-	npm install less-plugin-clean-css
 
 docs/_src/enquire.js: node_modules/enquire.js/dist/enquire.js
 	cp node_modules/enquire.js/dist/*.js docs/_src/

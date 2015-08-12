@@ -1,0 +1,12 @@
+p {
+    @include type-pica;
+    margin-bottom: $type-p-spacing;
+}
+
+p.leader {
+    font-weight: bolder;
+}
+
+ol + p, ul + p {
+    margin-top: $type-pica-font-size;
+}

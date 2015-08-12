@@ -1,0 +1,15 @@
+footer h1 {
+    @include type-doublepica();
+}
+
+footer h2 {
+    @include type-greatprimer();
+}
+
+footer, footer p {
+    @include type-brevier();
+}
+
+footer .strapline p {
+    margin-bottom: 0px;
+}

@@ -1,0 +1,73 @@
+/**
+ * variables
+ */
+
+// this is the base size for everything we do
+$type-pica-font-size: 18px;
+$type-list-indent: $type-pica-font-size * 2;
+$type-p-spacing: $type-pica-font-size;
+
+/**
+ * styles
+ */
+@mixin type-cannon() {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+@mixin type-cannon-spacing() {
+    margin-top: 28px;
+}
+
+@mixin type-trafalgar() {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+@mixin type-trafalgar-spacing() {
+    margin-top: 36px;
+}
+
+@mixin type-doublepica() {
+    font-size: 28px;
+    line-height: 32px;
+}
+
+@mixin type-doublepica-spacing() {
+    margin-top: 28px;
+}
+
+@mixin type-greatprimer() {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+@mixin type-greatprimer-spacing() {
+    margin-top: 24px;
+}
+
+@mixin type-pica() {
+    font-size: $type-pica-font-size;
+    line-height: 24px;
+}
+
+@mixin type-pica-spacing() {
+    margin-top: $type-p-spacing;
+}
+
+@mixin type-longprimer() {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@mixin type-brevier() {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@mixin type-minion() {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@import "styles/include.scss";

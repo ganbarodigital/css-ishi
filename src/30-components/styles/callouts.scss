@@ -1,0 +1,146 @@
+/**
+ * variables
+ */
+
+/**
+ * styles
+ */
+
+.callout {
+    background-color: $panel-bg-color;
+    color: $panel-fg-color;
+    border-left: 4px solid darken($panel-bg-color, 33%);
+    border-top: 1px solid darken($panel-bg-color, 33%);
+    border-right: 1px solid darken($panel-bg-color, 33%);
+    border-bottom: 1px solid darken($panel-bg-color, 33%);
+    margin-bottom: $type-p-spacing;
+    padding: $type-p-spacing / 2;
+}
+
+.callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
+    margin-bottom: $type-p-spacing / 2;
+}
+
+.callout p:last-child {
+    margin-bottom: 0px;
+}
+
+.callout.gradient {
+    background-image: linear-gradient(to bottom, lighten($panel-bg-color, 2.5%) 0%, darken($panel-bg-color, 2.5%) 100%);
+}
+
+.callout.outline {
+    background-color: transparent;
+}
+
+.callout.standout {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+.callout.sunken {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+@mixin callout-context($border-color, $bg-color) {
+    border-left: 4px solid $border-color;
+    background-color: $bg-color;
+}
+
+.callout.attention {
+    @include callout-context($attention-bg-color, $attention-hi-color);
+}
+
+.callout.attention h1, .callout.attention h2, .callout.attention h3, .callout.attention h4, .callout.attention h5, .callout.attention h6 {
+    color: $attention-bg-color;
+}
+
+.callout.info {
+    @include callout-context($info-hi-color, $info-bg-color);
+}
+
+.callout.info h1, .callout.info h2, .callout.info h3, .callout.info h4, .callout.info h5, .callout.info h6 {
+    color: $info-hi-color;
+}
+
+.callout.success {
+    @include callout-context($success-hi-color, $success-bg-color);
+}
+
+.callout.success h1, .callout.success h2, .callout.success h3, .callout.success h4, .callout.success h5, .callout.success h6 {
+    color: $success-hi-color;
+}
+
+.callout.warning {
+    @include callout-context($warning-hi-color, $warning-bg-color);
+}
+
+.callout.warning h1, .callout.warning h2, .callout.warning h3, .callout.warning h4, .callout.warning h5, .callout.warning h6 {
+    color: $warning-hi-color;
+}
+
+.callout.danger {
+    @include callout-context($danger-hi-color, $danger-bg-color);
+}
+
+.callout.danger h1, .callout.danger h2, .callout.danger h3, .callout.danger h4, .callout.danger h5, .callout.danger h6 {
+    color: $danger-hi-color;
+}
+
+//// Panels That Alert
+
+@mixin callout-alert($border-color) {
+    border-left: 4px solid $border-color;
+    background-color: transparent;
+    padding: 0px;
+}
+
+@mixin callout-alert-header($bg-color, $fg-color) {
+    background-color: $bg-color;
+    color: $fg-color;
+    padding: $type-pica-font-size / 2;
+    margin-bottom: 0px;
+}
+
+.callout.alert, .callout.alert.attention {
+    @include callout-alert($attention-bg-color);
+}
+
+.callout.alert > h4, .callout.alert.attention > h4, .callout.alert > h5, .callout.alert.attention > h5, .callout.alert > h6, .callout.alert.attention > h6 {
+    @include callout-alert-header($attention-bg-color, $attention-hi-color);
+}
+
+.callout.alert .content {
+    padding: $type-pica-font-size / 2;
+}
+
+.callout.alert.info {
+    @include callout-alert($info-hi-color);
+}
+
+.callout.alert.info > h4, .callout.alert.info > h5, .callout.alert.info > h6 {
+    @include callout-alert-header($info-hi-color, $info-bg-color);
+}
+
+.callout.alert.success {
+    @include callout-alert($success-hi-color);
+}
+
+.callout.alert.success > h4, .callout.alert.success > h5, .callout.alert.success > h6 {
+    @include callout-alert-header($success-bg-color, $success-hi-color);
+}
+
+.callout.alert.warning {
+    @include callout-alert($warning-hi-color);
+}
+
+.callout.alert.warning > h4, .callout.alert.warning > h5, .callout.alert.warning > h6 {
+    @include callout-alert-header($warning-bg-color, $warning-hi-color);
+}
+
+.callout.alert.danger {
+    @include callout-alert($danger-hi-color);
+}
+
+.callout.alert.danger > h4, .callout.alert.danger > h5, .callout.alert.danger > h6 {
+    @include callout-alert-header($danger-bg-color, $danger-hi-color);
+}

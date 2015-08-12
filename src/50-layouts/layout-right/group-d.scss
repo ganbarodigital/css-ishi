@@ -1,0 +1,65 @@
+/**
+ * variables
+ */
+
+/**
+ * styles
+ */
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+}
+
+body > header {
+    order: 1;
+    flex-basis: 100%;
+
+    @include util-pad-column();
+    @include util-pad-flexbox();
+}
+
+.sidebar {
+    order: 3;
+    width: 250px;
+
+    @include util-pad-column();
+    @include util-pad-flexbox();
+}
+
+main {
+    order: 2;
+    flex-grow: 1;
+    flex-basis: 500px;
+
+    @include util-pad-column();
+    @include util-pad-flexbox();
+}
+
+footer {
+    order: 4;
+    flex-basis: 100%;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-basis: 100%;
+
+    @include util-pad-column();
+    @include util-pad-flexbox();
+}
+
+footer .strapline {
+    flex-basis: 100%;
+
+    @include util-pad-column();
+    @include util-pad-flexbox();
+}

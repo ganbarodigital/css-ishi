@@ -1,0 +1,18 @@
+@import "reference/_colors.scss";
+@import "../../00-base/_include.scss";
+
+@media #{$media-group-a} {
+    @import "group-a.scss";
+}
+
+@media #{$media-group-b} {
+    @import "group-b.scss";
+}
+
+@media #{$media-group-c} {
+    @import "group-c.scss";
+}
+
+@media #{$media-group-d} {
+    @import "group-d.scss";
+}
