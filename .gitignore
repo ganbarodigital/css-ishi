@@ -1,5 +1,7 @@
+.sass-cache/
 build/
 docs/_site
 docs/_src/docs.css
 node_modules
-src/00-base/styles/normalize.css
+src/00-base/styles/normalize.less
+tmp/
