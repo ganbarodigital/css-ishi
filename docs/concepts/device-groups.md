@@ -27,5 +27,75 @@ Each [Ishi theme]({% include pageurl.html name='themes' %}) supports these devic
 
 This approach works because the vast majority of people have their browsers full-screen.
 
-* If you're on a smart phone or a tablet, you don't have a choice.
-* If you're on a laptop,
+* If you're on a smart phone or a tablet, you currently don't have a choice in this.
+* Most laptop screens are small enough that people tend to run the browsers full-screen.
+* Desktops are the one device where some people do make their browser windows smaller. If this happens, they'll see everything resize and reflow to the tablet settings.
+
+You can try this for yourself by visiting [the BBC News website](http://www.bbc.co.uk/news/) from your desktop and resizing the browser.
+
+## How It Works
+
+We've defined media queries for each device group, as a Sass variable:
+
+{% highlight scss %}
+$media-group-a: "(max-width: 320px)";
+$media-group-b: "(min-width: 320px) and (max-width: 600px)";
+$media-group-c: "(min-width: 601px) and (max-width: 1007px)";
+$media-group-d: "(min-width: 1007px)";
+{% endhighlight %}
+
+In your theme file, you would do the following:
+
+{% highlight scss %}
+// step1: import Ishi's base first
+@import "ishi/00-base/_include.scss";
+
+// step 2: import any overrides to Ishi's default variables
+@import "_colors.scss";
+
+// step 3: per-device group imports and custom styling
+//
+// remember to change the layout import to the layout of your choice,
+// or with your own custom layout
+@media #{$media-group-a} {
+    @import "ishi/10-typography/_group-a.scss";
+    @import "ishi/20-components/_group-a.scss";
+    @import "ishi/30-utilities/_group-a.scss";
+    @import "ishi/40-structure/_group-a.scss";
+    @import "ishi/50-layouts/layout-right/_group-a.scss";
+
+    // add any markup that is unique to device group A
+}
+
+@media #{$media-group-b} {
+    @import "ishi/10-typography/_group-b.scss";
+    @import "ishi/20-components/_group-b.scss";
+    @import "ishi/30-utilities/_group-b.scss";
+    @import "ishi/40-structure/_group-b.scss";
+    @import "ishi/50-layouts/layout-right/_group-b.scss";
+
+    // add any markup that is unique to device group B
+}
+
+@media #{$media-group-c} {
+    @import "ishi/10-typography/_group-c.scss";
+    @import "ishi/20-components/_group-c.scss";
+    @import "ishi/30-utilities/_group-c.scss";
+    @import "ishi/40-structure/_group-c.scss";
+    @import "ishi/50-layouts/layout-right/_group-c.scss";
+
+    // add any markup that is unique to device group C
+}
+
+@media #{$media-group-d} {
+    @import "ishi/10-typography/_group-d.scss";
+    @import "ishi/20-components/_group-d.scss";
+    @import "ishi/30-utilities/_group-d.scss";
+    @import "ishi/40-structure/_group-d.scss";
+    @import "ishi/50-layouts/layout-right/_group-d.scss";
+
+    // add any markup that is unique to device group D
+}
+{% endhighlight %}
+
+Each device group gets its own CSS for typography, components, utilities, structure, and your chosen layout. Ishi doesn't have to compromise and try to find (for example) a font-size that sort-of works on each device. This approach allows Ishi to set exactly the desired font-size - or any other CSS property for that matter - that best suits each target device.
