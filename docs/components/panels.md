@@ -95,6 +95,12 @@ This is a gradient panel that also sinks in a little bit.
 
 Add any one of the [context classes]({% include pageurl.html name='context-classes' %}) to your `panel` `<aside>` to change the colour of the panel's border and default background. All heading elements (`h1` to `h6`) will change colour too.
 
+<aside class="panel attention" markdown="1">
+#### Attention!
+
+This is a panel using the `attention` class.
+</aside>
+
 <aside class="panel info" markdown="1">
 #### Information!
 
