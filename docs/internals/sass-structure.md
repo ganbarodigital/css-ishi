@@ -1,5 +1,5 @@
 ---
-layout: concepts
+layout: internals
 title: Ishi's Internal Structure
 pageflow_name: sass-structure
 ---

@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: contributing
 title: Code of Conduct
 pageflow_name: code-of-conduct
 ---

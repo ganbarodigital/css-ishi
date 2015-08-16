@@ -1,5 +1,5 @@
 ---
-layout: concepts
+layout: themes
 title: Themes
 pageflow_name: themes
 ---
