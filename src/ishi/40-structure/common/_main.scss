@@ -10,4 +10,32 @@ main {
     del {
         color: $main-type-del-fg-color;
     }
+
+    article {
+        a:link {
+            color: $main-a-link-fg-color;
+            background-color: $main-a-link-bg-color;
+            text-decoration: none;
+            border-bottom: 1px solid $main-a-link-border-color;
+        }
+
+        a:visited {
+            color: $main-a-visited-fg-color;
+            background-color: $main-a-visited-bg-color;
+            text-decoration: none;
+            border-bottom: 1px solid $main-a-link-border-color;
+        }
+
+        a:hover {
+            color: $main-a-hover-fg-color;
+            background-color: $main-a-hover-bg-color;
+            border-bottom: 1px solid $main-type-p-fg-color;
+        }
+
+        a:active, a:focus {
+            color: $main-a-active-fg-color;
+            background-color: $main-a-active-bg-color;
+            border-bottom: 1px solid $main-type-p-fg-color;
+        }
+    }
 }
