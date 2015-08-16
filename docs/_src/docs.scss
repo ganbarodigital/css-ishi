@@ -21,6 +21,19 @@ footer .contact-regdetails {
     flex-grow: 1;
 }
 
+p.leader-bolder {
+    @include component-p-bolder();
+}
+
+p.leader-caps {
+    @include component-p-caps();
+}
+
+p.leader-bolder-caps {
+    @include component-p-bolder();
+    @include component-p-caps();
+}
+
 @media #{$media-group-d} {
     footer .contact-address {
         flex-basis: 20%;

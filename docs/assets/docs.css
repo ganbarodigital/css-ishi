@@ -627,11 +627,12 @@ iframe {
   table {
     width: 100%; }
 
-  table + p, table + ol, table + ul {
+  table + p, table + ol, table + ul, table + div {
     margin-top: 20px; }
 
   th {
     text-align: left;
+    vertical-align: bottom;
     padding-bottom: 7.5px; }
 
   tr {
@@ -640,7 +641,8 @@ iframe {
   td {
     padding-top: 7.5px;
     padding-bottom: 7.5px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    vertical-align: top; }
 
   td:nth-last-child(1) {
     padding-right: 0px; }
@@ -802,11 +804,8 @@ iframe {
     background-color: #eee;
     color: #000;
     border-left: 4px solid #9a9a9a;
-    border-top: 1px solid #9a9a9a;
-    border-right: 1px solid #9a9a9a;
-    border-bottom: 1px solid #9a9a9a;
     margin-bottom: 15px;
-    padding: 7.5px; }
+    padding: 15px; }
 
   .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
     margin-bottom: 7.5px; }
@@ -1055,9 +1054,6 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
-
-  p.leader {
-    font-weight: bolder; }
 
   nav.navbar ul {
     list-style: none;
@@ -1370,6 +1366,8 @@ iframe {
         margin-top: 12px; }
     main p, main ol, main ul {
       color: #404040; }
+    main p.leader {
+      font-weight: bolder; }
 
   .sidebar {
     background-color: #ddd;
@@ -1525,11 +1523,12 @@ iframe {
   table {
     width: 100%; }
 
-  table + p, table + ol, table + ul {
+  table + p, table + ol, table + ul, table + div {
     margin-top: 20px; }
 
   th {
     text-align: left;
+    vertical-align: bottom;
     padding-bottom: 8px; }
 
   tr {
@@ -1538,7 +1537,8 @@ iframe {
   td {
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-right: 16px; }
+    padding-right: 16px;
+    vertical-align: top; }
 
   td:nth-last-child(1) {
     padding-right: 0px; }
@@ -1700,11 +1700,8 @@ iframe {
     background-color: #eee;
     color: #000;
     border-left: 4px solid #9a9a9a;
-    border-top: 1px solid #9a9a9a;
-    border-right: 1px solid #9a9a9a;
-    border-bottom: 1px solid #9a9a9a;
     margin-bottom: 16px;
-    padding: 8px; }
+    padding: 16px; }
 
   .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
     margin-bottom: 8px; }
@@ -1953,9 +1950,6 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
-
-  p.leader {
-    font-weight: bolder; }
 
   nav.navbar ul {
     list-style: none;
@@ -2299,6 +2293,8 @@ iframe {
         margin-top: 28px; }
     main p, main ol, main ul {
       color: #404040; }
+    main p.leader {
+      font-weight: bolder; }
 
   .sidebar {
     background-color: #ddd;
@@ -2454,11 +2450,12 @@ iframe {
   table {
     width: 100%; }
 
-  table + p, table + ol, table + ul {
+  table + p, table + ol, table + ul, table + div {
     margin-top: 24px; }
 
   th {
     text-align: left;
+    vertical-align: bottom;
     padding-bottom: 9px; }
 
   tr {
@@ -2467,7 +2464,8 @@ iframe {
   td {
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-right: 18px; }
+    padding-right: 18px;
+    vertical-align: top; }
 
   td:nth-last-child(1) {
     padding-right: 0px; }
@@ -2629,11 +2627,8 @@ iframe {
     background-color: #eee;
     color: #000;
     border-left: 4px solid #9a9a9a;
-    border-top: 1px solid #9a9a9a;
-    border-right: 1px solid #9a9a9a;
-    border-bottom: 1px solid #9a9a9a;
     margin-bottom: 18px;
-    padding: 9px; }
+    padding: 18px; }
 
   .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
     margin-bottom: 9px; }
@@ -2882,9 +2877,6 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
-
-  p.leader {
-    font-weight: bolder; }
 
   nav.navbar ul {
     list-style: none;
@@ -3224,6 +3216,8 @@ iframe {
         margin-top: 36px; }
     main p, main ol, main ul {
       color: #404040; }
+    main p.leader {
+      font-weight: bolder; }
 
   .sidebar {
     background-color: #ddd;
@@ -3379,11 +3373,12 @@ iframe {
   table {
     width: 100%; }
 
-  table + p, table + ol, table + ul {
+  table + p, table + ol, table + ul, table + div {
     margin-top: 24px; }
 
   th {
     text-align: left;
+    vertical-align: bottom;
     padding-bottom: 8px; }
 
   tr {
@@ -3392,7 +3387,8 @@ iframe {
   td {
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-right: 16px; }
+    padding-right: 16px;
+    vertical-align: top; }
 
   td:nth-last-child(1) {
     padding-right: 0px; }
@@ -3554,11 +3550,8 @@ iframe {
     background-color: #eee;
     color: #000;
     border-left: 4px solid #9a9a9a;
-    border-top: 1px solid #9a9a9a;
-    border-right: 1px solid #9a9a9a;
-    border-bottom: 1px solid #9a9a9a;
     margin-bottom: 16px;
-    padding: 8px; }
+    padding: 16px; }
 
   .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
     margin-bottom: 8px; }
@@ -3807,9 +3800,6 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
-
-  p.leader {
-    font-weight: bolder; }
 
   nav.navbar ul {
     list-style: none;
@@ -4149,6 +4139,8 @@ iframe {
         margin-top: 32px; }
     main p, main ol, main ul {
       color: #404040; }
+    main p.leader {
+      font-weight: bolder; }
 
   .sidebar {
     background-color: #ddd;
@@ -4186,6 +4178,16 @@ footer .contact-regdetails {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1; }
+
+p.leader-bolder {
+  font-weight: bolder; }
+
+p.leader-caps {
+  text-transform: uppercase; }
+
+p.leader-bolder-caps {
+  font-weight: bolder;
+  text-transform: uppercase; }
 
 @media (min-width: 1007px) {
   footer .contact-address {
