@@ -12,4 +12,4 @@ pageflow_name: authors
 
 ## Contributors
 
-None currently. If you want to contribute to Ishi, [you'll find help and advice here](contributing.html).
+None currently. If you want to contribute to Ishi, [you'll find help and advice here]({% include pageurl.html name='contributing' %}).

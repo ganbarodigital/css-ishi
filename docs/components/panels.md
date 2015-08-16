@@ -10,7 +10,7 @@ pageflow_name: panels
 
 ### What Are Panels For?
 
-Use [panels](panels.html) and [callouts](callouts.html) when you need to draw the reader's attention to some text or an image.
+Use [panels]({% include pageurl.html name='panels' %}) and [callouts]({% include pageurl.html name='callouts' %}) when you need to draw the reader's attention to some text or an image.
 
 * Panels are rounded boxes.
 * Callouts are square boxes.
@@ -25,7 +25,7 @@ To get a basic panel, wrap your content in a `<div>` or `<aside>` with the `pane
 This is a basic panel.
 </aside>
 
-By default, it gets the same background as the [<pre>](pre.html) element does.
+By default, it gets the same background as the [<pre>]({% include pageurl.html name='pre' %}) element does.
 
 Internally, a basic panel has padding to ensure that all the elements inside have a pleasing amount of space between themselves and the border of the panel.
 
@@ -93,7 +93,7 @@ This is a gradient panel that also sinks in a little bit.
 
 ### Adding Extra Context
 
-Add any one of the [context classes](context-classes.html) to your `panel` `<aside>` to change the colour of the panel's border and default background. All heading elements (`h1` to `h6`) will change colour too.
+Add any one of the [context classes]({% include pageurl.html name='context-classes' %}) to your `panel` `<aside>` to change the colour of the panel's border and default background. All heading elements (`h1` to `h6`) will change colour too.
 
 <aside class="panel info" markdown="1">
 #### Information!
@@ -133,7 +133,7 @@ This is a panel designed to draw your attention.
 
 ### Adding Extra Context
 
-Add any one of the [context classes](context-classes.html) to your `panel alert` `<aside>` to change the colour of the panel's border and heading.
+Add any one of the [context classes]({% include pageurl.html name='context-classes' %}) to your `panel alert` `<aside>` to change the colour of the panel's border and heading.
 
 <aside class="panel alert info" markdown="1">
 #### Information!

@@ -1,6 +1,7 @@
 ---
 layout: frontpage
 title: Code of Conduct
+pageflow_name: code-of-conduct
 ---
 
 # Code of Conduct

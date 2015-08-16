@@ -13,7 +13,7 @@ Ishi's `.scss` files are split across two groups of folders.
 * The first group of folders (in the `src/ishi/` folder) provide a Sass toolkit for defining themes, along with any supporting JavaScript code that is needed.
 * The second group of folders (in the `src/themes/` folder) provide examples of how to use Ishi to build complete themes for your website or web-based application.
 
-See [our page on themes](themes.html) for details on how to define your own theme, including how to include the files in the `src/ishi/` folder.
+See [our page on themes]({% include pageurl.html name='themes' %}) for details on how to define your own theme, including how to include the files in the `src/ishi/` folder.
 
 ## Flow
 
@@ -105,7 +105,7 @@ The idea is to provide a layered approach, with the earlier layers (`00-base` to
 
 ### Purpose
 
-`40-structure` is the home for default styles that are applied to our main [semantic structures](structure.html). The intention is to have a light touch here.
+`40-structure` is the home for default styles that are applied to our main [semantic structures]({% include pageurl.html name='structure' %}). The intention is to have a light touch here.
 
 ### Responsibilities
 

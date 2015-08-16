@@ -14,11 +14,11 @@ Like programming languages, these days it feels that CSS toolkits borrow to a le
 
 <p class="leader">Our main sources of inspiration are the acknowledged heavyweights of the Internet styling world.</p>
 
-* The [BBC Global Experience Language](http://www.bbc.co.uk/gel) gets our top shoutout. Their approach to typography was the inspiration for creating Ishi in the first place. We've also adopted their concept of [device groups](device-groups.html). We feel that it's a great way to provide great-looking content on any device.
+* The [BBC Global Experience Language](http://www.bbc.co.uk/gel) gets our top shoutout. Their approach to typography was the inspiration for creating Ishi in the first place. We've also adopted their concept of [device groups]({% include pageurl.html name='device-groups' %}). We feel that it's a great way to provide great-looking content on any device.
 
 * [Bootstrap](http://getbootstrap.com/) is the CSS framework that launched a thousand sites (to paraphrase very badly indeed). It will always be remembered for putting easy-to-use markup and styling into the hands of backend developers for the first time.
 
-   Bootstrap was also the other inspiration behind our decision to create our own CSS toolkit. Grids are an incredibly convenient way to layout a web page, but in our experience they're more of a hinderance than a help for supporting different devices. Since Bootstrap was launched, browsers have added support for [flexbox layouts](layouts.html), allowing us to get closer to the holy grail of [markup with meaning](structure.html).
+   Bootstrap was also the other inspiration behind our decision to create our own CSS toolkit. Grids are an incredibly convenient way to layout a web page, but in our experience they're more of a hinderance than a help for supporting different devices. Since Bootstrap was launched, browsers have added support for [flexbox layouts]({% include pageurl.html name='layouts' %}), allowing us to get closer to the holy grail of [markup with meaning]({% include pageurl.html name='structure' %}).
 
 * [Foundation from Zurb](http://foundation.zurb.com/) is always mentioned as the main alternative to Bootstrap. It was released shortly after Bootstrap, and has arguably gone on to be even more feature-rich than its main rival.
 
@@ -34,10 +34,10 @@ In no particular order, they include:
 
 * What seems like many years ago now, Nathan Smith launched the [960 grid system](http://960.gs/), and showed everyone that we could have table-like layout tools without actually having to use tables.
 
-* We used the [Flexbox in 5 Minutes](http://flexboxin5.com) to get started with [flexbox layouts](layouts.html).
+* We used the [Flexbox in 5 Minutes](http://flexboxin5.com) to get started with [flexbox layouts]({% include pageurl.html name='layouts' %}).
 
 * Philip Walton's [Flexbugs](https://github.com/philipwalton/flexbugs) collection has helped us whenever we've run into cross-browser problems with CSS flexbox support.
 
 * The only reason we know that Flexbox even exists is thanks to [Rachel Andrew](https://rachelandrew.co.uk/). Her stories of running your own microbusiness have also been a big encouragement behind setting up Ganbaro Digital.
 
-* Our [contributing guidelines](contributing.html) are based on [the ones used by the Angular JS project](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md).
+* Our [contributing guidelines]({% include pageurl.html name='contributing' %}) are based on [the ones used by the Angular JS project](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md).

@@ -3,7 +3,6 @@ layout: frontpage
 title: Getting Started
 pageflow_name: getting-started
 ---
-
 # Getting Started
 
 Ishi runs on any computer which is already setup for Ruby and Node.JS.
@@ -56,4 +55,4 @@ At the moment, Ishi does rely on a function or two provided by Compass. We hope 
 
 Ishi doesn't provide any CSS files that you can simply drop into your own project to use. It provides a set of `.scss` files that you can include in your own theme.
 
-Our [page on themes](themes.html) has more detail.
+Our [page on themes]({% include pageurl.html name='themes' %}) has more detail.

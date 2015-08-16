@@ -16,7 +16,7 @@ Unlike many popular CSS frameworks / toolkits, the BBC GEL Guidelines aren't org
 
 ## Supported Groups
 
-Each [CSS theme](themes.html) supports these device groups:
+Each [Ishi theme]({% include pageurl.html name='themes' %}) supports these device groups:
 
 * __Group A:__ feature phones (up to 320px wide)
 * __Group B:__ smart phones (up to 600px wide)

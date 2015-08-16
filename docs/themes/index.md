@@ -1,6 +1,7 @@
 ---
 layout: concepts
 title: Themes
+pageflow_name: themes
 ---
 
 # Themes

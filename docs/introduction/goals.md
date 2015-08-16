@@ -30,6 +30,6 @@ If you need a general-purpose CSS toolkit, [Bootstrap](http://getbootstrap.com) 
 
 1. A toolkit to build on.
 
-   Your website needs its own look - its own layout, its own theme. This is far easier to do if you import Ishi into your own collection of SASS rules. This is especially true once you're writing different rules for different target [device groups](device-groups.html).
+   Your website needs its own look - its own layout, its own theme. This is far easier to do if you import Ishi into your own collection of SASS rules. This is especially true once you're writing different rules for different target [device groups]({% include pageurl.html name='device-groups' %}).
 
    That's why we don't publish Ishi as a simple CSS file for you to include on your webpage.
