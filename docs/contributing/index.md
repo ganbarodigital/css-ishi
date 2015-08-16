@@ -3,6 +3,7 @@ layout: contributing
 title: Contributing
 pageflow_name: contributing
 ---
+
 # Contributing
 
 Ishi is open-source software from [Ganbaro Digital](https://ganbarodigital.com), released under [the MIT license]({% include pageurl.html name='license' %}). We welcome all contributions to the framework that further [the goals]({% include pageurl.html name='goals' %}) that we have for Ishi.

@@ -1,11 +1,11 @@
 <nav class="pageflow">
   <ul>
-{% if pageflow_prev_url == 'empty' %}
+{% if pageflow_prev_url == '' %}
 <li></li>
 {% else %}
 <li><a href="{{pageflow_prev_url}}">Prev: {{pageflow_prev_title}}</a></li>
 {% endif %}
-{% if pageflow_next_url == 'empty' %}
+{% if pageflow_next_url == '' %}
 <li></li>
 {% else %}
 <li><a href="{{pageflow_next_url}}">Next: {{pageflow_next_title}}</a></li>
