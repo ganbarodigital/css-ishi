@@ -2,6 +2,6 @@ table {
     width: 100%
 }
 
-table + p, table + ol, table + ul {
+table + p, table + ol, table + ul, table + div {
     margin-top: $type-non-p-spacing;
 }
