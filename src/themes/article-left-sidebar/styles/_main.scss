@@ -15,4 +15,8 @@ main {
     p, ol, ul {
         color: $main-p-color;
     }
+
+    p.leader {
+        @include component-p-bolder();
+    }
 }
