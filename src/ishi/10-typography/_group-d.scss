@@ -4,8 +4,9 @@
 
 // this is the base size for everything we do
 $type-pica-font-size: 16px;
-$type-list-indent: $type-pica-font-size * 2;
+$type-list-indent: $type-pica-font-size * 2.5;
 $type-p-spacing: $type-pica-font-size;
+$type-non-p-spacing: 24px;
 
 /**
  * styles
