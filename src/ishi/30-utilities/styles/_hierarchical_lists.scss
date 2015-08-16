@@ -1,0 +1,24 @@
+ol.hierarchical {
+    counter-reset:section;
+    list-style-type:none;
+
+    li {
+        counter-increment:section;
+
+        ol {
+            list-style-type: none;
+        }
+    }
+
+    li:before {
+        content:counters(section, '.') '. ';
+    }
+
+    li ol {
+        counter-reset: section;
+
+        li ol {
+            counter-reset: section;
+        }
+    }
+}
