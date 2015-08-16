@@ -1,0 +1,11 @@
+@mixin component-p-bolder() {
+    font-weight: bolder;
+}
+
+@mixin component-p-caps() {
+    text-transform: uppercase;
+}
+
+@mixin component-p-smallcaps() {
+    text-transform: small-caps;
+}
