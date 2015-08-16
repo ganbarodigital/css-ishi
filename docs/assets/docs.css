@@ -539,30 +539,49 @@ iframe {
   p.leader {
     font-weight: bolder; }
 
-  ol + p, ul + p {
+  ins {
+    text-decoration: underline; }
+
+  del {
+    text-decoration: line-through; }
+
+  ol + *:not(ol), ul + *:not(ul) {
     margin-top: 15px; }
+
+  blockquote {
+    display: block;
+    border-left: 1px solid #404040;
+    padding-left: 15px;
+    margin-bottom: 20px; }
+    blockquote p {
+      margin-bottom: 7.5px; }
+    blockquote p:nth-child(1) {
+      display: inline-block; }
+    blockquote cite::before {
+      content: "\2014 \0020"; }
+    blockquote cite {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #555; }
 
   ul {
     list-style-type: disc;
     padding-left: 30px; }
-
-  ul > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ul > li > ul {
-    list-style-type: circle; }
+    ul li {
+      display: list-item;
+      list-style-position: outside; }
 
   ol {
     list-style-type: decimal;
     padding-left: 30px; }
-
-  ol > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ol > li > ol {
-    list-style-type: lower-alpha; }
+    ol li {
+      display: list-item;
+      list-style-position: outside; }
+      ol li ol {
+        list-style-type: lower-alpha; }
+        ol li ol ol {
+          list-style-type: lower-roman; }
 
   pre {
     background-color: #eee;
@@ -572,7 +591,9 @@ iframe {
     margin-bottom: 15px;
     padding: 7.5px;
     word-break: break-all;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    font-size: 15px -1;
+    line-height: 19px; }
 
   code {
     padding: 1px 2px;
@@ -584,10 +605,11 @@ iframe {
 
   pre code {
     padding: 0;
-    font-size: inherit;
+    font-size: 14px;
     color: #000;
     background-color: #eee;
-    white-space: pre-wrap; }
+    white-space: pre-wrap;
+    line-height: 19px; }
 
   kbd {
     font-family: inherit;
@@ -607,6 +629,9 @@ iframe {
 
   table {
     width: 100%; }
+
+  table + p, table + ol, table + ul {
+    margin-top: 20px; }
 
   th {
     text-align: left;
@@ -1154,6 +1179,20 @@ iframe {
     display: table;
     clear: both; }
 
+  ol.hierarchical {
+    counter-reset: section;
+    list-style-type: none; }
+    ol.hierarchical li {
+      counter-increment: section; }
+      ol.hierarchical li ol {
+        list-style-type: none; }
+    ol.hierarchical li:before {
+      content: counters(section,".") ". "; }
+    ol.hierarchical li ol {
+      counter-reset: section; }
+      ol.hierarchical li ol li ol {
+        counter-reset: section; }
+
   footer h1 {
     font-size: 20px;
     line-height: 24px; }
@@ -1168,6 +1207,50 @@ iframe {
 
   footer .strapline p {
     margin-bottom: 0px; }
+
+  body > header p {
+    color: #dadada; }
+  body > header del {
+    color: #dadada; }
+
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #000; }
+  main p {
+    color: #404040; }
+  main del {
+    color: #555555; }
+  main article a:link {
+    color: #234F83;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:visited {
+    color: #692666;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:hover {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+  main article a:active, main article a:focus {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+
+  .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+    color: #222; }
+  .sidebar p {
+    color: #303030; }
+  .sidebar del {
+    color: #404040; }
+
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #dadada; }
+  footer p {
+    color: #ddd; }
+  footer del {
+    color: #ddd; }
 
   /**
    * variables
@@ -1268,9 +1351,6 @@ iframe {
     font-family: Helvetica, Roboto, Arial, sans-serif;
     background-color: #000; }
 
-  a:link {
-    color: #234F83; }
-
   header nav.topbar {
     background-color: #000;
     color: #fff; }
@@ -1283,6 +1363,11 @@ iframe {
 
   main {
     background-color: #fff; }
+    main h1:nth-child(1) {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #404040; }
+      main h1:nth-child(1) + h2 {
+        margin-top: 12px; }
     main p, main ol, main ul {
       color: #404040; }
 
@@ -1352,30 +1437,49 @@ iframe {
   p.leader {
     font-weight: bolder; }
 
-  ol + p, ul + p {
+  ins {
+    text-decoration: underline; }
+
+  del {
+    text-decoration: line-through; }
+
+  ol + *:not(ol), ul + *:not(ul) {
     margin-top: 16px; }
+
+  blockquote {
+    display: block;
+    border-left: 1px solid #404040;
+    padding-left: 16px;
+    margin-bottom: 20px; }
+    blockquote p {
+      margin-bottom: 8px; }
+    blockquote p:nth-child(1) {
+      display: inline-block; }
+    blockquote cite::before {
+      content: "\2014 \0020"; }
+    blockquote cite {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #555; }
 
   ul {
     list-style-type: disc;
     padding-left: 32px; }
-
-  ul > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ul > li > ul {
-    list-style-type: circle; }
+    ul li {
+      display: list-item;
+      list-style-position: outside; }
 
   ol {
     list-style-type: decimal;
     padding-left: 32px; }
-
-  ol > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ol > li > ol {
-    list-style-type: lower-alpha; }
+    ol li {
+      display: list-item;
+      list-style-position: outside; }
+      ol li ol {
+        list-style-type: lower-alpha; }
+        ol li ol ol {
+          list-style-type: lower-roman; }
 
   pre {
     background-color: #eee;
@@ -1385,7 +1489,9 @@ iframe {
     margin-bottom: 16px;
     padding: 8px;
     word-break: break-all;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    font-size: 16px -1;
+    line-height: 20px; }
 
   code {
     padding: 1px 2px;
@@ -1397,10 +1503,11 @@ iframe {
 
   pre code {
     padding: 0;
-    font-size: inherit;
+    font-size: 15px;
     color: #000;
     background-color: #eee;
-    white-space: pre-wrap; }
+    white-space: pre-wrap;
+    line-height: 20px; }
 
   kbd {
     font-family: inherit;
@@ -1420,6 +1527,9 @@ iframe {
 
   table {
     width: 100%; }
+
+  table + p, table + ol, table + ul {
+    margin-top: 20px; }
 
   th {
     text-align: left;
@@ -1967,6 +2077,20 @@ iframe {
     display: table;
     clear: both; }
 
+  ol.hierarchical {
+    counter-reset: section;
+    list-style-type: none; }
+    ol.hierarchical li {
+      counter-increment: section; }
+      ol.hierarchical li ol {
+        list-style-type: none; }
+    ol.hierarchical li:before {
+      content: counters(section,".") ". "; }
+    ol.hierarchical li ol {
+      counter-reset: section; }
+      ol.hierarchical li ol li ol {
+        counter-reset: section; }
+
   footer h1 {
     font-size: 20px;
     line-height: 24px; }
@@ -1981,6 +2105,50 @@ iframe {
 
   footer .strapline p {
     margin-bottom: 0px; }
+
+  body > header p {
+    color: #dadada; }
+  body > header del {
+    color: #dadada; }
+
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #000; }
+  main p {
+    color: #404040; }
+  main del {
+    color: #555555; }
+  main article a:link {
+    color: #234F83;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:visited {
+    color: #692666;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:hover {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+  main article a:active, main article a:focus {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+
+  .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+    color: #222; }
+  .sidebar p {
+    color: #303030; }
+  .sidebar del {
+    color: #404040; }
+
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #dadada; }
+  footer p {
+    color: #ddd; }
+  footer del {
+    color: #ddd; }
 
   /**
    * variables
@@ -2112,9 +2280,6 @@ iframe {
     font-family: Helvetica, Roboto, Arial, sans-serif;
     background-color: #000; }
 
-  a:link {
-    color: #234F83; }
-
   header nav.topbar {
     background-color: #000;
     color: #fff; }
@@ -2127,6 +2292,11 @@ iframe {
 
   main {
     background-color: #fff; }
+    main h1:nth-child(1) {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #404040; }
+      main h1:nth-child(1) + h2 {
+        margin-top: 28px; }
     main p, main ol, main ul {
       color: #404040; }
 
@@ -2196,30 +2366,49 @@ iframe {
   p.leader {
     font-weight: bolder; }
 
-  ol + p, ul + p {
+  ins {
+    text-decoration: underline; }
+
+  del {
+    text-decoration: line-through; }
+
+  ol + *:not(ol), ul + *:not(ul) {
     margin-top: 18px; }
+
+  blockquote {
+    display: block;
+    border-left: 1px solid #404040;
+    padding-left: 18px;
+    margin-bottom: 24px; }
+    blockquote p {
+      margin-bottom: 9px; }
+    blockquote p:nth-child(1) {
+      display: inline-block; }
+    blockquote cite::before {
+      content: "\2014 \0020"; }
+    blockquote cite {
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      color: #555; }
 
   ul {
     list-style-type: disc;
     padding-left: 36px; }
-
-  ul > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ul > li > ul {
-    list-style-type: circle; }
+    ul li {
+      display: list-item;
+      list-style-position: outside; }
 
   ol {
     list-style-type: decimal;
     padding-left: 36px; }
-
-  ol > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ol > li > ol {
-    list-style-type: lower-alpha; }
+    ol li {
+      display: list-item;
+      list-style-position: outside; }
+      ol li ol {
+        list-style-type: lower-alpha; }
+        ol li ol ol {
+          list-style-type: lower-roman; }
 
   pre {
     background-color: #eee;
@@ -2229,7 +2418,9 @@ iframe {
     margin-bottom: 18px;
     padding: 9px;
     word-break: break-all;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    font-size: 18px -1;
+    line-height: 22px; }
 
   code {
     padding: 1px 2px;
@@ -2241,10 +2432,11 @@ iframe {
 
   pre code {
     padding: 0;
-    font-size: inherit;
+    font-size: 17px;
     color: #000;
     background-color: #eee;
-    white-space: pre-wrap; }
+    white-space: pre-wrap;
+    line-height: 22px; }
 
   kbd {
     font-family: inherit;
@@ -2264,6 +2456,9 @@ iframe {
 
   table {
     width: 100%; }
+
+  table + p, table + ol, table + ul {
+    margin-top: 24px; }
 
   th {
     text-align: left;
@@ -2811,6 +3006,20 @@ iframe {
     display: table;
     clear: both; }
 
+  ol.hierarchical {
+    counter-reset: section;
+    list-style-type: none; }
+    ol.hierarchical li {
+      counter-increment: section; }
+      ol.hierarchical li ol {
+        list-style-type: none; }
+    ol.hierarchical li:before {
+      content: counters(section,".") ". "; }
+    ol.hierarchical li ol {
+      counter-reset: section; }
+      ol.hierarchical li ol li ol {
+        counter-reset: section; }
+
   footer h1 {
     font-size: 28px;
     line-height: 32px; }
@@ -2825,6 +3034,50 @@ iframe {
 
   footer .strapline p {
     margin-bottom: 0px; }
+
+  body > header p {
+    color: #dadada; }
+  body > header del {
+    color: #dadada; }
+
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #000; }
+  main p {
+    color: #404040; }
+  main del {
+    color: #555555; }
+  main article a:link {
+    color: #234F83;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:visited {
+    color: #692666;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:hover {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+  main article a:active, main article a:focus {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+
+  .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+    color: #222; }
+  .sidebar p {
+    color: #303030; }
+  .sidebar del {
+    color: #404040; }
+
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #dadada; }
+  footer p {
+    color: #ddd; }
+  footer del {
+    color: #ddd; }
 
   /**
    * variables
@@ -2952,9 +3205,6 @@ iframe {
     font-family: Helvetica, Roboto, Arial, sans-serif;
     background-color: #000; }
 
-  a:link {
-    color: #234F83; }
-
   header nav.topbar {
     background-color: #000;
     color: #fff; }
@@ -2967,6 +3217,11 @@ iframe {
 
   main {
     background-color: #fff; }
+    main h1:nth-child(1) {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #404040; }
+      main h1:nth-child(1) + h2 {
+        margin-top: 36px; }
     main p, main ol, main ul {
       color: #404040; }
 
@@ -3036,30 +3291,49 @@ iframe {
   p.leader {
     font-weight: bolder; }
 
-  ol + p, ul + p {
+  ins {
+    text-decoration: underline; }
+
+  del {
+    text-decoration: line-through; }
+
+  ol + *:not(ol), ul + *:not(ul) {
     margin-top: 16px; }
+
+  blockquote {
+    display: block;
+    border-left: 1px solid #404040;
+    padding-left: 16px;
+    margin-bottom: 24px; }
+    blockquote p {
+      margin-bottom: 8px; }
+    blockquote p:nth-child(1) {
+      display: inline-block; }
+    blockquote cite::before {
+      content: "\2014 \0020"; }
+    blockquote cite {
+      display: block;
+      font-size: 13px;
+      line-height: 16px;
+      color: #555; }
 
   ul {
     list-style-type: disc;
-    padding-left: 32px; }
-
-  ul > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ul > li > ul {
-    list-style-type: circle; }
+    padding-left: 40px; }
+    ul li {
+      display: list-item;
+      list-style-position: outside; }
 
   ol {
     list-style-type: decimal;
-    padding-left: 32px; }
-
-  ol > li {
-    display: list-item;
-    list-style-position: outside; }
-
-  ol > li > ol {
-    list-style-type: lower-alpha; }
+    padding-left: 40px; }
+    ol li {
+      display: list-item;
+      list-style-position: outside; }
+      ol li ol {
+        list-style-type: lower-alpha; }
+        ol li ol ol {
+          list-style-type: lower-roman; }
 
   pre {
     background-color: #eee;
@@ -3069,7 +3343,9 @@ iframe {
     margin-bottom: 16px;
     padding: 8px;
     word-break: break-all;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    font-size: 16px -1;
+    line-height: 20px; }
 
   code {
     padding: 1px 2px;
@@ -3081,10 +3357,11 @@ iframe {
 
   pre code {
     padding: 0;
-    font-size: inherit;
+    font-size: 15px;
     color: #000;
     background-color: #eee;
-    white-space: pre-wrap; }
+    white-space: pre-wrap;
+    line-height: 20px; }
 
   kbd {
     font-family: inherit;
@@ -3104,6 +3381,9 @@ iframe {
 
   table {
     width: 100%; }
+
+  table + p, table + ol, table + ul {
+    margin-top: 24px; }
 
   th {
     text-align: left;
@@ -3651,6 +3931,20 @@ iframe {
     display: table;
     clear: both; }
 
+  ol.hierarchical {
+    counter-reset: section;
+    list-style-type: none; }
+    ol.hierarchical li {
+      counter-increment: section; }
+      ol.hierarchical li ol {
+        list-style-type: none; }
+    ol.hierarchical li:before {
+      content: counters(section,".") ". "; }
+    ol.hierarchical li ol {
+      counter-reset: section; }
+      ol.hierarchical li ol li ol {
+        counter-reset: section; }
+
   footer h1 {
     font-size: 24px;
     line-height: 24px; }
@@ -3665,6 +3959,50 @@ iframe {
 
   footer .strapline p {
     margin-bottom: 0px; }
+
+  body > header p {
+    color: #dadada; }
+  body > header del {
+    color: #dadada; }
+
+  main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: #000; }
+  main p {
+    color: #404040; }
+  main del {
+    color: #555555; }
+  main article a:link {
+    color: #234F83;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:visited {
+    color: #692666;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  main article a:hover {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+  main article a:active, main article a:focus {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+
+  .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
+    color: #222; }
+  .sidebar p {
+    color: #303030; }
+  .sidebar del {
+    color: #404040; }
+
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #dadada; }
+  footer p {
+    color: #ddd; }
+  footer del {
+    color: #ddd; }
 
   /**
    * variables
@@ -3792,9 +4130,6 @@ iframe {
     font-family: Helvetica, Roboto, Arial, sans-serif;
     background-color: #000; }
 
-  a:link {
-    color: #234F83; }
-
   header nav.topbar {
     background-color: #000;
     color: #fff; }
@@ -3807,6 +4142,11 @@ iframe {
 
   main {
     background-color: #fff; }
+    main h1:nth-child(1) {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #404040; }
+      main h1:nth-child(1) + h2 {
+        margin-top: 32px; }
     main p, main ol, main ul {
       color: #404040; }
 
