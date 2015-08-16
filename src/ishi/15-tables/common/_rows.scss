@@ -1,0 +1,13 @@
+tr {
+    border-bottom: 1px solid darken($panel-bg-color, 15%);
+}
+
+td {
+    padding-top: $type-p-spacing / 2;
+    padding-bottom: $type-p-spacing / 2;
+    padding-right: $type-p-spacing;
+}
+
+td:nth-last-child(1) {
+    padding-right: 0px;
+}

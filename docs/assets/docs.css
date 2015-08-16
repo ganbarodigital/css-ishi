@@ -605,6 +605,24 @@ iframe {
     background-color: #eee;
     white-space: pre-wrap; }
 
+  table {
+    width: 100%; }
+
+  th {
+    text-align: left;
+    padding-bottom: 7.5px; }
+
+  tr {
+    border-bottom: 1px solid #c8c8c8; }
+
+  td {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 15px; }
+
+  td:nth-last-child(1) {
+    padding-right: 0px; }
+
   .calltoaction {
     border: 2px solid #9a9a9a;
     padding: 7.5px;
@@ -1399,6 +1417,24 @@ iframe {
     font-size: 15px;
     background-color: #eee;
     white-space: pre-wrap; }
+
+  table {
+    width: 100%; }
+
+  th {
+    text-align: left;
+    padding-bottom: 8px; }
+
+  tr {
+    border-bottom: 1px solid #c8c8c8; }
+
+  td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px; }
+
+  td:nth-last-child(1) {
+    padding-right: 0px; }
 
   .calltoaction {
     border: 2px solid #9a9a9a;
@@ -2226,6 +2262,24 @@ iframe {
     background-color: #eee;
     white-space: pre-wrap; }
 
+  table {
+    width: 100%; }
+
+  th {
+    text-align: left;
+    padding-bottom: 9px; }
+
+  tr {
+    border-bottom: 1px solid #c8c8c8; }
+
+  td {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 18px; }
+
+  td:nth-last-child(1) {
+    padding-right: 0px; }
+
   .calltoaction {
     border: 2px solid #9a9a9a;
     padding: 9px;
@@ -3047,6 +3101,24 @@ iframe {
     font-size: 15px;
     background-color: #eee;
     white-space: pre-wrap; }
+
+  table {
+    width: 100%; }
+
+  th {
+    text-align: left;
+    padding-bottom: 8px; }
+
+  tr {
+    border-bottom: 1px solid #c8c8c8; }
+
+  td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px; }
+
+  td:nth-last-child(1) {
+    padding-right: 0px; }
 
   .calltoaction {
     border: 2px solid #9a9a9a;
