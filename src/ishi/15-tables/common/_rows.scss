@@ -6,6 +6,7 @@ td {
     padding-top: $type-p-spacing / 2;
     padding-bottom: $type-p-spacing / 2;
     padding-right: $type-p-spacing;
+    vertical-align: top;
 }
 
 td:nth-last-child(1) {
