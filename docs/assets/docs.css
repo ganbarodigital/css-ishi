@@ -545,7 +545,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + *:not(ol), ul + *:not(ul) {
+  ol + p, ol + blockquote, ul + p, ul + blockquote {
     margin-top: 15px; }
 
   blockquote {
@@ -1171,7 +1171,7 @@ iframe {
         padding-right: 15px; }
 
   *:not(p) + nav.pageflow {
-    margin-top: 15px; }
+    margin-top: 20px; }
 
   /** https://css-tricks.com/snippets/css/clear-fix/ */
   .clearfix:after {
@@ -1443,7 +1443,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + *:not(ol), ul + *:not(ul) {
+  ol + p, ol + blockquote, ul + p, ul + blockquote {
     margin-top: 16px; }
 
   blockquote {
@@ -2069,7 +2069,7 @@ iframe {
         padding-right: 16px; }
 
   *:not(p) + nav.pageflow {
-    margin-top: 16px; }
+    margin-top: 20px; }
 
   /** https://css-tricks.com/snippets/css/clear-fix/ */
   .clearfix:after {
@@ -2372,7 +2372,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + *:not(ol), ul + *:not(ul) {
+  ol + p, ol + blockquote, ul + p, ul + blockquote {
     margin-top: 18px; }
 
   blockquote {
@@ -2998,7 +2998,7 @@ iframe {
         padding-right: 18px; }
 
   *:not(p) + nav.pageflow {
-    margin-top: 18px; }
+    margin-top: 24px; }
 
   /** https://css-tricks.com/snippets/css/clear-fix/ */
   .clearfix:after {
@@ -3297,7 +3297,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + *:not(ol), ul + *:not(ul) {
+  ol + p, ol + blockquote, ul + p, ul + blockquote {
     margin-top: 16px; }
 
   blockquote {
@@ -3923,7 +3923,7 @@ iframe {
         padding-right: 16px; }
 
   *:not(p) + nav.pageflow {
-    margin-top: 16px; }
+    margin-top: 24px; }
 
   /** https://css-tricks.com/snippets/css/clear-fix/ */
   .clearfix:after {

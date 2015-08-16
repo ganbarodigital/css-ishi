@@ -15,7 +15,7 @@ del {
     text-decoration: line-through;
 }
 
-ol + *:not(ol), ul + *:not(ul) {
+ol + p, ol + blockquote, ul + p, ul + blockquote {
     margin-top: $type-p-spacing;
 }
 

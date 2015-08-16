@@ -57,5 +57,5 @@ nav.pageflow {
 }
 
 *:not(p) + nav.pageflow {
-    margin-top: $type-p-spacing;
+    margin-top: $type-non-p-spacing;
 }
