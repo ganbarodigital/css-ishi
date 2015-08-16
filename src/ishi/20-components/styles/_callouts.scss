@@ -10,11 +10,8 @@
     background-color: $panel-bg-color;
     color: $panel-fg-color;
     border-left: 4px solid darken($panel-bg-color, 33%);
-    border-top: 1px solid darken($panel-bg-color, 33%);
-    border-right: 1px solid darken($panel-bg-color, 33%);
-    border-bottom: 1px solid darken($panel-bg-color, 33%);
     margin-bottom: $type-p-spacing;
-    padding: $type-p-spacing / 2;
+    padding: $type-p-spacing;
 }
 
 .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
