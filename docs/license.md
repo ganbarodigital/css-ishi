@@ -19,3 +19,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 * normalize.css v3.0.3, released under the MIT License. Master repository: [github.com/necolas/normalize.css](https://github.com/necolas/normalize.css).
 * [reset.less](https://github.com/cbracco/cardinal/blob/master/base/reset.less) from [Cardinal CSS](https://github.com/cbracco/cardinal), released under the MIT License.
+* [laroux.js](https://github.com/larukedi/laroux.js), released under the Apache license.
