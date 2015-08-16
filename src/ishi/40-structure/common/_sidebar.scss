@@ -1,0 +1,13 @@
+.sidebar {
+    h1, h2, h3, h4, h5, h6 {
+        color: $sidebar-type-h-fg-color;
+    }
+
+    p {
+        color: $sidebar-type-p-fg-color;
+    }
+
+    del {
+        color: $sidebar-type-del-fg-color;
+    }
+}

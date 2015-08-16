@@ -1,0 +1,13 @@
+footer {
+    h1, h2, h3, h4, h5, h6 {
+        color: $footer-type-h-fg-color;
+    }
+
+    p {
+        color: $footer-type-p-fg-color;
+    }
+
+    del {
+        color: $footer-type-del-fg-color;
+    }
+}

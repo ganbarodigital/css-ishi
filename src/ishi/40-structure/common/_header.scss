@@ -1,0 +1,9 @@
+body > header {
+    p {
+        color: $header-type-p-fg-color;
+    }
+
+    del {
+        color: $header-type-del-fg-color;
+    }
+}
