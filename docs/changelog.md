@@ -2,8 +2,6 @@
 layout: frontpage
 title: Changelog
 pageflow_name: changelog
-pageflow_prev: contributing
-pageflow_next: concepts
 ---
 
 # Changelog

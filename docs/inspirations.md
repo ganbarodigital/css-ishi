@@ -2,8 +2,6 @@
 layout: frontpage
 title: Inspirations
 pageflow_name: inspirations
-pageflow_prev: goals
-pageflow_next: license
 ---
 
 # Inspirations

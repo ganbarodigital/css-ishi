@@ -1,0 +1,30 @@
+{% for name in pageflow_list %}
+  {% if name == page.pageflow_name %}
+    {% assign pageflow_index = forloop.index %}
+    {% assign pageflow_prev_index = forloop.index | minus:1 %}
+    {% assign pageflow_next_index = forloop.index | plus:1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign pageflow_prev_name = 'empty' %}
+{% assign pageflow_next_name = 'empty' %}
+
+{% for name in pageflow_list %}
+  {% if forloop.index == pageflow_prev_index %}
+    {% assign pageflow_prev_name = name %}
+  {% endif %}
+  {% if forloop.index == pageflow_next_index %}
+    {% assign pageflow_next_name = name %}
+  {% endif %}
+{% endfor %}
+
+{% for node in site.pages %}
+  {% if node.pageflow_name == pageflow_prev_name %}
+    {% assign pageflow_prev_url = node.url %}
+    {% assign pageflow_prev_title = node.title %}
+  {% endif %}
+  {% if node.pageflow_name == pageflow_next_name %}
+    {% assign pageflow_next_url = node.url %}
+    {% assign pageflow_next_title = node.title %}
+  {% endif %}
+{% endfor %}

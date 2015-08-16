@@ -2,8 +2,6 @@
 layout: components
 title: Panels
 pageflow_name: panels
-pageflow_prev: callouts
-pageflow_next: utilities
 ---
 
 # Panels

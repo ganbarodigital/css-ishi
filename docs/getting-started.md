@@ -2,8 +2,6 @@
 layout: frontpage
 title: Getting Started
 pageflow_name: getting-started
-pageflow_prev: index
-pageflow_next: goals
 ---
 
 # Getting Started

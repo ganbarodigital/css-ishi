@@ -2,8 +2,6 @@
 layout: structure
 title: Structure
 pageflow_name: structure
-pageflow_prev: utilities
-pageflow_next: layouts
 ---
 
 # Structure

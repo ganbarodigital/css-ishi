@@ -2,8 +2,6 @@
 layout: typography
 title: Lists
 pageflow_name: lists
-pageflow_prev: text
-pageflow_next: pre
 ---
 
 # Lists

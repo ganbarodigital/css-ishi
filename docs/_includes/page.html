@@ -56,27 +56,66 @@
                     <li><a href="#">Submenu 10</a></li>
                 </ul>
             </nav>
-            <nav class="pageflow">
-                <ul>
-                    <li><a href="{{page.pageflow_prev}}.html">
-Prev: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_prev %}{{ node.title }}{% endif %}{% endfor %}
-                    </a></li>
-                    <li><a href="{{page.pageflow_next}}.html">
-Next: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_next %}{{ node.title }}{% endif %}{% endfor %}
-                    </a></li>
-                </ul>
-            </nav>
+{% include pageflow_vars.html %}
+{% include pageflow_navbar.html %}
             <article>
                 {{content}}
             </article>
-            <nav class="pageflow">
-                <ul>
-                    <li><a href="{{page.pageflow_prev}}.html">
-Prev: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_prev %}{{ node.title }}{% endif %}{% endfor %}
-                    </a></li>
-                    <li><a href="{{page.pageflow_next}}.html">
-Next: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_next %}{{ node.title }}{% endif %}{% endfor %}
-                    </a></li>
-                </ul>
-            </nav>
+{% include pageflow_navbar.html %}
         </main>
+
+        <aside class="sidebar">
+        <h2>The Ishi Toolkit</h2>
+
+        <a href="index.html">The Front Page</a>
+
+        <h3>This Section</h3>
+
+        <nav>
+            <ol>
+        {% for name in pageflow_list %}
+          {% for node in site.pages %}
+            {% if node.pageflow_name == name %}
+              <li><a href="{{node.url}}">{{node.title}}</a></li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+            </ol>
+        </nav>
+
+        {% include all_sections.html %}
+
+        </aside>
+        <footer>
+            <div class="content">
+                <div class="contact-address">
+                    <h1>Contact Us</h3>
+                    <address>
+                        <p>
+                        Ganbaro Digital Ltd<br/>
+                        222 Ellen Hay Way<br/>
+                        Bristol<br/>
+                        BS32 0HF<br/>
+                        United Kingdom
+                        </p>
+                    </address>
+                    <email>hello @ ganbarodigital.com</email>
+                </div>
+                <div class="contact-regdetails">
+                    <h1>Company Details</h3>
+                    <p>
+                        Ganbaro Digital Ltd.<br/>
+                        Registered in England and Wales.<br/>
+                        Company Number 9394118.<br/>
+                        VAT Number 207 1197 31.
+                    </p>
+                </div>
+            </div>
+            <div class="strapline">
+                <p>Copyright &copy; 2015 <a href="http://ganbarodigital.com">Ganbaro Digital Ltd</a>. All rights reserved.</p>
+            </div>
+        </footer>
+    <script src="assets/laroux.js"></script>
+    <script src="assets/docs.js"></script>
+    </body>
+</html>

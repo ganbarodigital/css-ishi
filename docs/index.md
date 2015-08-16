@@ -2,8 +2,6 @@
 layout: frontpage
 title: Introduction
 pageflow_name: index
-pageflow_prev:
-pageflow_next: getting-started
 ---
 # Welcome To Ishi
 
