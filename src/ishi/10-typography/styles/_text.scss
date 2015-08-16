@@ -7,6 +7,39 @@ p.leader {
     font-weight: bolder;
 }
 
-ol + p, ul + p {
-    margin-top: $type-pica-font-size;
+ins {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ol + *:not(ol), ul + *:not(ul) {
+    margin-top: $type-p-spacing;
+}
+
+blockquote {
+    display: block;
+    border-left: 1px solid $main-type-blockquote-border-color;
+    padding-left: $type-p-spacing;
+    margin-bottom: $type-p-spacing;
+
+    p {
+        margin-bottom: $type-p-spacing / 2;
+    }
+
+    p:nth-child(1) {
+        display: inline-block;
+    }
+
+    cite::before {
+        content: "\2014 \0020";
+    }
+
+    cite {
+        display: block;
+        @include type-brevier();
+        color: $main-type-blockquote-cite-color;
+    }
 }

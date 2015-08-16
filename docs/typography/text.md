@@ -5,3 +5,88 @@ pageflow_name: text
 ---
 
 # Text
+
+## Introduction
+
+Ishi provides beautiful typography for standard HTML 5 text elements. Based on the [BBC Global Experience Language guidelines](http://www.bbc.co.uk/gel/typography/), we've added our own take on styling text to make it as readable as possible.
+
+Can't find the HTML text element you want to use? You should assume that Ishi currently doesn't style it. Let us know by opening an issue on Github, and we'll put that right.
+
+Also, checkout our [components section]({% include pageurl.html name='components' %}). That's where you'll find a list of all of the microformats that Ishi currently supports.
+
+## Font Face
+
+Ishi doesn't define a default font-face in the Typography section. The choice of fonts belongs to the theme.
+
+## Headings
+
+The standard `<h1>` to `<h6>` heading elements are supported by Ishi:
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+When a heading follows something that isn't an element, Ishi adds extra whitespace (a top margin). This groups blocks of related text together even when you use `<h1>` and `<h2>` elements immediately after to each other.
+
+### Customize Colors
+
+Set any of these variables in your theme's `_colors.scss` file:
+
+Variable | Changes Colour Of ...
+---------|----------------------
+`$main-type-h-fg-color` | `<h1>` to `<h6>` default color in `<main>` section
+`$sidebar-type-h-fg-color` | `<h1>` to `<h6>` default color in the sidebar
+`$footer-type-h-fg-color` | `<h1>` to `<h6>` default color in the footer
+
+See [our semantic structure]({% include pageurl.html name='structure' %}) for details about `<main>`, the sidebar and the footer.
+
+## Paragraphs
+
+The standard `<p>` element is sized for easy reading on each [device group]({% include pageurl.html name='device-groups' %}). Each device group has its own font sizes. The line height should accomodate inline `<code>`, <kbd>keyboard</kbd> and <samp>output samples</samp> comfortably, without forcing extra spacing just for the lines containing those inline elements.
+
+### Customize Colors
+
+Set any of these variables in your theme's `_colors.scss` file:
+
+Variable | Changes Colour Of ...
+---------|----------------------
+`$header-type-p-fg-color` | default text color in the `<header>` section
+`$main-type-p-fg-color` | default text color in `<main>` section
+`$sidebar-type-p-fg-color` | default text color in the sidebar
+`$footer-type-h-fg-color` | default text color in the footer
+
+See [our semantic structure]({% include pageurl.html name='structure' %}) for details about `<main>`, the sidebar and the footer.
+
+## Inserted and Deleted Text
+
+Use the standard `<ins>` element to <ins>indicate text that has been added to the content</ins>. Inserted text appears as underlined text, with the same font weight and colour as a normal paragraph.
+
+Use the standard `<del>` element to <del>indicate text that has been removed</del>. Deleted text appears as text with a line through it, with the same font weight as a normal paragraph, and with a slightly fainter color.
+
+### Customize Colors
+
+Set any of these variables in your theme's `_colors.scss` file:
+
+Variable | Changes Colour Of ...
+---------|----------------------
+`$header-type-del-fg-color` | `<del>` text color in the `<header>` section
+`$main-type-del-fg-color` | `<del>` text color in `<main>` section
+`$sidebar-type-del-fg-color` | `<del>` text color in the sidebar
+`$footer-type-del-fg-color` | `<del>` text color in the footer
+
+## Blockquotes
+
+Use the standard `<blockquote>` element to indicate a direct quote. Add a `<cite>` element at the end of the `<blockquote>` to show who the quote is from.
+
+<blockquote>Ishi was invented for modern websites which still publish document-like content.<cite>Stuart Herbert</cite></blockquote>
+
+Longer blockquotes are supported too. Use `<p>` elements inside your `<blockquote>` to separate out longer passages of text.
+
+> You can add as many paragraphs as you want to your quotation.
+>
+> And Ishi will format it to keep everything together so that it is clear that this is all one long quotation.
+>
+> <cite>Stuart Herbert</cite>
