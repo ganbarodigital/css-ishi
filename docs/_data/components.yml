@@ -1,7 +1,9 @@
 ---
 - components
+- javascript
 - callstoaction
 - callouts
 - panels
-- navigation
+- paragraph-types
+- navbars
 - pageflow-navigation
