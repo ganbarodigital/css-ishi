@@ -31,7 +31,7 @@ clean:
 	rm build/*
 
 docs: $(SRC_FILES) docs/_src/docs.scss docs/_src/enquire.js docs/_src/laroux.js docs/_src/docs.js
-	sass --compass docs/_src/docs.scss > docs/_src/docs.css
+	sass --compass -I src docs/_src/docs.scss > docs/_src/docs.css
 	postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
 	cp docs/_src/*.js docs/assets/
 
