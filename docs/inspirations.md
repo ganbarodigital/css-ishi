@@ -38,3 +38,5 @@ In no particular order, they include:
 * Philip Walton's [Flexbugs](https://github.com/philipwalton/flexbugs) collection has helped us whenever we've run into cross-browser problems with CSS flexbox support.
 
 * The only reason we know that Flexbox even exists is thanks to [Rachel Andrew](https://rachelandrew.co.uk/). Her stories of running your own microbusiness have also been a big encouragement behind setting up Ganbaro Digital.
+
+* Our [contributing guidelines](contributing.html) are based on [the ones used by the Angular JS project](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md).
