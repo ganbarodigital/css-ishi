@@ -36,3 +36,5 @@ In no particular order, they include:
 * We used the [Flexbox in 5 Minutes](http://flexboxin5.com) to get started with [flexbox layouts](layouts.html).
 
 * Philip Walton's [Flexbugs](https://github.com/philipwalton/flexbugs) collection has helped us whenever we've run into cross-browser problems with CSS flexbox support.
+
+* The only reason we know that Flexbox even exists is thanks to [Rachel Andrew](https://rachelandrew.co.uk/). Her stories of running your own microbusiness have also been a big encouragement behind setting up Ganbaro Digital.
