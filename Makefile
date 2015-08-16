@@ -14,7 +14,7 @@ THIRD_PARTY_DEPS = \
 	src/00-base/styles/normalize.css \
 	docs/assets/laroux.js
 
-SRC_FILES = $(shell find src -name '*.less')
+SRC_FILES = $(shell find src -name '*.scss')
 
 ENQUIRE_SRC_FILES = $(shell find node_modules/enquire.js/src -name '*.js')
 LAROUX_SRC_FILES = $(shell find node_modules/laroux.js/src -name '*.js')
@@ -25,7 +25,7 @@ all: docs
 
 src/00-base/styles/normalize.scss:
 	npm install --save normalize.css
-	cp node_modules/normalize.css/normalize.css src/common/00-reset/normalize.scss
+	cp node_modules/normalize.css/normalize.css src/ishi/00-reset/normalize.scss
 
 clean:
 	rm build/*
