@@ -1,6 +1,9 @@
 ---
 layout: components
 title: Callouts
+pageflow_name: callouts
+pageflow_prev: callstoaction
+pageflow_next: panels
 ---
 
 # Callouts

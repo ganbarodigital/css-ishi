@@ -1,6 +1,9 @@
 ---
 layout: concepts
 title: Device Groups
+pageflow_name: device-groups
+pageflow_prev: concepts
+pageflow_next: sass-structure
 ---
 
 # Device Groups

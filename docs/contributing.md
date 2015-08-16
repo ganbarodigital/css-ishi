@@ -1,6 +1,9 @@
 ---
 layout: frontpage
 title: Contributing
+pageflow_name: contributing
+pageflow_prev: authors
+pageflow_next: changelog
 ---
 
 # Contributing

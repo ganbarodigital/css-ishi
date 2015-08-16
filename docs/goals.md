@@ -1,6 +1,9 @@
 ---
 layout: frontpage
 title: Goals
+pageflow_name: goals
+pageflow_prev: getting-started
+pageflow_next: inspirations
 ---
 
 # Goals

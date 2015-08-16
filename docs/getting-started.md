@@ -1,6 +1,9 @@
 ---
 layout: frontpage
 title: Getting Started
+pageflow_name: getting-started
+pageflow_prev: index
+pageflow_next: goals
 ---
 
 # Getting Started
@@ -56,4 +59,3 @@ At the moment, Ishi does rely on a function or two provided by Compass. We hope 
 Ishi doesn't provide any CSS files that you can simply drop into your own project to use. It provides a set of `.scss` files that you can include in your own theme.
 
 Our [page on themes](themes.html) has more detail.
-

@@ -1,6 +1,9 @@
 ---
 layout: components
 title: Calls To Action
+pageflow_name: callstoaction
+pageflow_prev: components
+pageflow_next: callouts
 ---
 
 # Calls To Action

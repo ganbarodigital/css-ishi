@@ -1,6 +1,9 @@
 ---
 layout: concepts
 title: Ishi's Internal Structure
+pageflow_name: sass-structure
+pageflow_prev: device-groups
+pageflow_next: typography
 ---
 
 # Ishi's Internal Structure

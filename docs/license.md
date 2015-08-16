@@ -1,6 +1,9 @@
 ---
 layout: frontpage
 title: License
+pageflow_name: license
+pageflow_prev: inspirations
+pageflow_next: authors
 ---
 
 # License

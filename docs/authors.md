@@ -1,6 +1,9 @@
 ---
 layout: frontpage
 title: Authors
+pageflow_name: authors
+pageflow_prev: license
+pageflow_next: contributing
 ---
 
 # Authors

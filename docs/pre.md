@@ -1,6 +1,9 @@
 ---
 layout: typography
 title: Preformatted &amp; Code
+pageflow_name: pre
+pageflow_prev: lists
+pageflow_next: components
 ---
 
 # Preformatted & Code

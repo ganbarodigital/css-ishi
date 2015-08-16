@@ -56,7 +56,27 @@
                     <li><a href="#">Submenu 10</a></li>
                 </ul>
             </nav>
+            <nav class="pageflow">
+                <ul>
+                    <li><a href="{{page.pageflow_prev}}.html">
+Prev: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_prev %}{{ node.title }}{% endif %}{% endfor %}
+                    </a></li>
+                    <li><a href="{{page.pageflow_next}}.html">
+Next: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_next %}{{ node.title }}{% endif %}{% endfor %}
+                    </a></li>
+                </ul>
+            </nav>
             <article>
                 {{content}}
             </article>
+            <nav class="pageflow">
+                <ul>
+                    <li><a href="{{page.pageflow_prev}}.html">
+Prev: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_prev %}{{ node.title }}{% endif %}{% endfor %}
+                    </a></li>
+                    <li><a href="{{page.pageflow_next}}.html">
+Next: {% for node in site.pages %}{% if node.pageflow_name == page.pageflow_next %}{{ node.title }}{% endif %}{% endfor %}
+                    </a></li>
+                </ul>
+            </nav>
         </main>
