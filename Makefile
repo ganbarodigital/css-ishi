@@ -19,6 +19,8 @@ SRC_FILES = $(shell find src -name '*.scss')
 ENQUIRE_SRC_FILES = $(shell find node_modules/enquire.js/src -name '*.js')
 LAROUX_SRC_FILES = $(shell find node_modules/laroux.js/src -name '*.js')
 
+NODETOOLS_BIN = node_modules/.bin
+
 .PHONY: clean
 
 all: docs
@@ -35,7 +37,7 @@ docs: $(SRC_FILES) docs/_src/docs.scss docs/_src/enquire.js docs/_src/laroux.js 
 	postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
 	cp docs/_src/*.js docs/assets/
 
-tools: node_modules/enquire.js/README.md node_modules/laroux.js/README.md
+tools: node_modules/enquire.js/README.md node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack
 	sudo gem install sass
 	sudo npm install --global postcss-cli autoprefixer
 
@@ -56,3 +58,6 @@ node_modules/laroux.js/build/dist/laroux.js: node_modules/laroux.js/README.md $(
 
 node_modules/laroux.js/README.md:
 	( cd node_modules && git clone https://github.com/larukedi/laroux.js.git laroux.js && cd laroux.js && git checkout $(LAROUX_VERSION) && npm install )
+
+$(NODETOOLS_BIN)/webpack:
+	npm install webpack
