@@ -15,45 +15,20 @@
         <header role="banner">
             <nav class="navbar topbar">
                 <ul>
-                    <li><a href="https://code.ganbarodigital.com/css-ishi/">Home</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Github</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/issues">Issues</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 1</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 2</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 3</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 4</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 5</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 6</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 7</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 8</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 9</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 10</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 11</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 12</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 13</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 14</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 15</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 16</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 17</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 18</a></li>
-                    <li><a href="https://github.com/ganbarodigital/css-ishi/">Menu Item 19</a></li>
-                    <li><a href="https://ganbarodigital.com">Ganbaro Digital</a></li>
+{% include all_sections.html %}
                 </ul>
             </nav>
         </header>
         <main role="main">
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submenu 2</a></li>
-                    <li><a href="#">Submenu 3</a></li>
-                    <li><a href="#">Submenu 4</a></li>
-                    <li><a href="#">Submenu 5</a></li>
-                    <li><a href="#">Submenu 6</a></li>
-                    <li><a href="#">Submenu 7</a></li>
-                    <li><a href="#">Submenu 8</a></li>
-                    <li><a href="#">Submenu 9</a></li>
-                    <li><a href="#">Submenu 10</a></li>
+                {% for name in pageflow_list %}
+                  {% for node in site.pages %}
+                    {% if node.pageflow_name == name %}
+                      <li><a href="{{node.url}}">{{node.title}}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
                 </ul>
             </nav>
 {% include pageflow_vars.html %}
@@ -65,26 +40,9 @@
         </main>
 
         <aside class="sidebar">
-        <h2>The Ishi Toolkit</h2>
-
-        <a href="{{site.baseurl}}/index.html">The Front Page</a>
-
-        <h3>This Section</h3>
-
-        <nav>
-            <ol>
-        {% for name in pageflow_list %}
-          {% for node in site.pages %}
-            {% if node.pageflow_name == name %}
-              <li><a href="{{node.url}}">{{node.title}}</a></li>
-            {% endif %}
-          {% endfor %}
-        {% endfor %}
-            </ol>
-        </nav>
-
-        {% include all_sections.html %}
-
+            <h2>This Page</h2>
+            <nav class="toc" data-type="ishi-toc" data-max-depth="3">
+            </nav>
         </aside>
         <footer>
             <div class="content">
@@ -116,6 +74,6 @@
             </div>
         </footer>
     <script src="{{site.baseurl}}/assets/laroux.js"></script>
-    <script src="{{site.baseurl}}/assets/docs.js"></script>
+    <script src="{{site.baseurl}}/assets/ishi.js"></script>
     </body>
 </html>
