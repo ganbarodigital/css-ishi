@@ -1,5 +1,3 @@
-<h3>All Sections</h3>
-<ol>
 {% for name in site.data.sections %}
   {% for node in site.pages %}
     {% if node.pageflow_name == name %}
@@ -7,4 +5,3 @@
     {% endif %}
   {% endfor %}
 {% endfor %}
-</ol>

@@ -22,12 +22,12 @@ Ishi doesn't define a default font-face in the Typography section. The choice of
 
 The standard `<h1>` to `<h6>` heading elements are supported by Ishi:
 
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+<h1 class="notoc">Heading 1</h1>
+<h2 class="notoc">Heading 2</h2>
+<h3 class="notoc">Heading 3</h3>
+<h4 class="notoc">Heading 4</h4>
+<h5 class="notoc">Heading 5</h5>
+<h6 class="notoc">Heading 6</h6>
 
 When a heading follows something that isn't an element, Ishi adds extra whitespace (a top margin). This groups blocks of related text together even when you use `<h1>` and `<h2>` elements immediately after to each other.
 
