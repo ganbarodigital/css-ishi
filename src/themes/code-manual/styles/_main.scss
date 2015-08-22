@@ -1,0 +1,22 @@
+main {
+    background-color: $main-bg-color;
+
+    // we want the first h1 in the article, and only the first h1, to
+    // be styled like this
+    h1:nth-child(1) {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $main-p-color;
+
+        & + h2 {
+            @include type-trafalgar-spacing();
+        }
+    }
+
+    p, ol, ul {
+        color: $main-p-color;
+    }
+
+    p.leader {
+        @include component-p-bolder();
+    }
+}
