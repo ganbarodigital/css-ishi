@@ -9,7 +9,7 @@ $base-panel-border-color: #a8a8a8;
 
 // 10-typography
 
-$main-type-h-fg-color: #000;
+$main-type-h-fg-color: #222;
 $sidebar-type-h-fg-color: #222;
 $footer-type-h-fg-color: #dadada;
 
@@ -37,6 +37,10 @@ $main-a-active-fg-color: $main-a-hover-fg-color !default;
 $main-a-active-bg-color: $main-a-hover-bg-color !default;
 
 // 20-components
+
+$panel-fg-color: $base-panel-fg-color;
+$panel-bg-color: $base-panel-bg-color;
+$panel-border-color: $base-panel-border-color;
 
 $callout-fg-color: $base-panel-fg-color;
 $callout-bg-color: $base-panel-bg-color;
