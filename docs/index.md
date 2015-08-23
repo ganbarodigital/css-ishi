@@ -7,7 +7,7 @@ pageflow_name: homepage
 
 ## Introduction
 
-Ishi is a simple responsive CSS toolkit from [Ganbaro Digital](https://ganbarodigital.com). It has [clearly defined goals]({% include pageurl.html name='goals' %}). It draws [heavy inspiration]({% include pageurl.html name='inspirations' %}) from existing toolkits and leading content websites.
+Ishi is a simple responsive CSS toolkit from [Ganbaro Digital]({% include externalurl.html name='ganbarodigital' %}). It has [clearly defined goals]({% include pageurl.html name='goals' %}). It draws [heavy inspiration]({% include pageurl.html name='inspirations' %}) from existing toolkits and leading content websites.
 
 It is [licensed under the MIT license]({% include pageurl.html name='license' %}). [Contributions]({% include pageurl.html name='contributing' %}) are welcome.
 
