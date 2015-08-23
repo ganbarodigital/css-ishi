@@ -1,0 +1,1 @@
+{% for link in site.data.externalurls %}{% if link.name == include.name %}<a href="{{ link.url }}">{{ link.text }}</a>{% endif %}{% endfor %}
