@@ -1,7 +1,7 @@
 ---
 - name: bbc-gel
   url: http://www.bbc.co.uk/gel
-  text: BBC Global Experience Language
+  text: BBC Global Experience Language Guidelines
 
 - name: bbc-news
   url: http://www.bbc.co.uk/news/
@@ -15,9 +15,17 @@
   url: https://ganbarodigital.com
   text: Ganbaro Digital Ltd
 
+- name: jekyll
+  url: http://jekyllrb.com
+  text: Jekyll
+
 - name: mozilla-devnet
   url: https://developer.mozilla.org/en-US/
   text: Mozilla Developer Network
+
+- name: sculpin
+  url: https://sculpin.io/
+  text: Sculpin
 
 - name: stuartherbert
   url: http://www.stuartherbert.com
