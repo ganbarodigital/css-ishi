@@ -12,7 +12,7 @@ Ishi is a responsive CSS toolkit for building content-oriented websites.
 
 Ishi is designed and developed by {% include externallink.html name='ganbarodigital' %}. We write technical reports, documentation, and training material for our clients. We also build landing pages and marketing sites for our products and services. The applications that we build are document-oriented.
 
-If you need a general-purpose CSS toolkit, [Bootstrap](http://getbootstrap.com) and [Foundation](http://foundation.zurb.com) are currently two very popular choices.
+If you need a general-purpose CSS toolkit, {% include externallink.html name='bootstrap' %} and {% include externallink.html name='zurb-foundation' %} are currently two very popular choices.
 
 ## Our Goals
 
