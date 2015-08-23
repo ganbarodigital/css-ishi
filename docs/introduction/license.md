@@ -8,7 +8,7 @@ pageflow_name: license
 
 ## Copyright
 
-Copyright &copy; 2015-present [Ganbaro Digital Ltd]({% include externalurl.html name='ganbarodigital' %}). All rights reserved.
+Copyright &copy; 2015-present {% include externallink.html name='ganbarodigital' %}. All rights reserved.
 
 ## License Terms
 
