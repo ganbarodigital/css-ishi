@@ -8,7 +8,7 @@ pageflow_name: authors
 
 ## Lead Maintainer
 
-* [Stuart Herbert](http://www.stuartherbert.com) is the original author, and current lead maintainer of Ishi.
+* {% include externallink.html name='stuartherbert' %} is the original author, and current lead maintainer of Ishi.
 
 ## Contributors
 

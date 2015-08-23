@@ -19,6 +19,10 @@
   url: https://developer.mozilla.org/en-US/
   text: Mozilla Developer Network
 
+- name: stuartherbert
+  url: http://www.stuartherbert.com
+  text: Stuart Herbert
+
 - name: zurb-foundation
   url: http://foundation.zurb.com
   text: Foundation from Zurb
