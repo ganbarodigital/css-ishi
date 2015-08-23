@@ -1,7 +1,7 @@
 nav.pageflow {
-    background-color: $panel-bg-color;
-    color: $panel-fg-color;
-    border: 1px solid darken($panel-bg-color, 33%);
+    background-color: $pageflow-bg-color;
+    color: $pageflow-fg-color;
+    border: 1px solid $pageflow-border-color;
     border-radius: $panel-border-radius;
     margin-bottom: $type-pica-font-size;
 
@@ -47,7 +47,7 @@ nav.pageflow {
     }
 
     li:nth-last-child(1) {
-        border-left: 1px solid darken($panel-bg-color, 33%);
+        border-left: 1px solid $pageflow-border-color;
         text-align: right;
 
         a {
