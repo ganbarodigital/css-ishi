@@ -7,9 +7,9 @@
  */
 
 .callout {
-    background-color: $panel-bg-color;
-    color: $panel-fg-color;
-    border-left: 4px solid darken($panel-bg-color, 33%);
+    background-color: $callout-bg-color;
+    color: $callout-fg-color;
+    border-left: 4px solid $callout-border-color;
     margin-bottom: $type-p-spacing;
     padding: $type-p-spacing;
 }
@@ -23,7 +23,7 @@
 }
 
 .callout.gradient {
-    background-image: linear-gradient(to bottom, lighten($panel-bg-color, 2.5%) 0%, darken($panel-bg-color, 2.5%) 100%);
+    background-image: linear-gradient(to bottom, lighten($callout-bg-color, 2.5%) 0%, darken($callout-bg-color, 2.5%) 100%);
 }
 
 .callout.outline {

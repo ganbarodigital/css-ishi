@@ -1,3 +1,12 @@
+// 00-base
+
+$base-main-fg-color: #404040;
+$base-main-bg-color: #fff;
+
+$base-panel-fg-color: #202020;
+$base-panel-bg-color: #eeeeee;
+$base-panel-border-color: #a8a8a8;
+
 // 10-typography
 
 $main-type-h-fg-color: #000;
@@ -26,3 +35,9 @@ $main-a-hover-fg-color: #D62906 !default;
 $main-a-hover-bg-color: transparent !default;
 $main-a-active-fg-color: $main-a-hover-fg-color !default;
 $main-a-active-bg-color: $main-a-hover-bg-color !default;
+
+// 20-components
+
+$callout-fg-color: $base-panel-fg-color;
+$callout-bg-color: $base-panel-bg-color;
+$callout-border-color: $base-panel-border-color;
