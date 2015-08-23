@@ -1,4 +1,24 @@
 ---
+- name: bbc-gel
+  url: http://www.bbc.co.uk/gel
+  text: BBC Global Experience Language
+
+- name: bbc-news
+  url: http://www.bbc.co.uk/news/
+  text: BBC News
+
+- name: bootstrap
+  url: http://getbootstrap.com
+  text: Bootstrap
+
 - name: ganbarodigital
   url: https://ganbarodigital.com
   text: Ganbaro Digital Ltd
+
+- name: mozilla-devnet
+  url: https://developer.mozilla.org/en-US/
+  text: Mozilla Developer Network
+
+- name: zurb-foundation
+  url: http://foundation.zurb.com
+  text: Foundation from Zurb
