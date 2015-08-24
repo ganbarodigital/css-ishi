@@ -10,7 +10,7 @@ pageflow_name: device-groups
 
 Ishi uses CSS media queries to look its very best on your favourite device, whether that's your smartphone, your tablet, or your desktop or laptop computer. These media queries target _device groups_. The inspiration for this approach came from the BBC.
 
-The BBC has rich experience in publishing written content that has to be available just about everywhere. In particular, we're big fans of how the [BBC Global Experience Language (GEL) Guidelines](http://www.bbc.co.uk/gel) are approaching the difficult topic of responsive websites.
+The BBC has rich experience in publishing written content that has to be available just about everywhere. In particular, we're big fans of how the {% include externallink.html name='bbc-gel' %} are approaching the difficult topic of responsive websites.
 
 Unlike many popular CSS frameworks / toolkits, the BBC GEL Guidelines aren't organised around groups such as 'extra-small', 'small', 'medium', or 'large'. Instead, the BBC GEL Guidelines define groups based on the type of device you're likely to be using. The idea is to style each group so that your website looks the best it can on each type of device.
 
@@ -23,6 +23,8 @@ Each [Ishi theme]({% include pageurl.html name='themes' %}) supports these devic
 * __Group C:__ tablets (up to 1006px wide)
 * __Group D:__ desktops and laptops (over 1006px wide)
 
+We may add __Group E__ in the future to support TV / so-called "big screen" UIs if there is a need for a different UI for those devices.
+
 ## Why It Works
 
 This approach works because the vast majority of people have their browsers full-screen.
@@ -31,7 +33,7 @@ This approach works because the vast majority of people have their browsers full
 * Most laptop screens are small enough that people tend to run the browsers full-screen.
 * Desktops are the one device where some people do make their browser windows smaller. If this happens, they'll see everything resize and reflow to the tablet settings.
 
-You can try this for yourself by visiting [the BBC News website](http://www.bbc.co.uk/news/) from your desktop and resizing the browser.
+You can try this for yourself by visiting the [the BBC News website]({% include externalurl.html name='bbc-news' %}) from your desktop and resizing the browser.
 
 ## How It Works
 
@@ -44,7 +46,7 @@ $media-group-c: "(min-width: 601px) and (max-width: 1007px)";
 $media-group-d: "(min-width: 1007px)";
 {% endhighlight %}
 
-In your theme file, you would do the following:
+In your theme's `_main.scss` file, you would do the following:
 
 {% highlight scss %}
 // step1: import Ishi's base first
@@ -58,43 +60,35 @@ In your theme file, you would do the following:
 // remember to change the layout import to the layout of your choice,
 // or with your own custom layout
 @media #{$media-group-a} {
-    @import "ishi/10-typography/_group-a.scss";
-    @import "ishi/20-components/_group-a.scss";
-    @import "ishi/30-utilities/_group-a.scss";
-    @import "ishi/40-structure/_group-a.scss";
-    @import "ishi/50-layouts/layout-right/_group-a.scss";
+    @import "ishi/_group-a.inc.scss";
+    @import "ishi/50-layouts/sidebar-below/_group-a.scss";
 
     // add any markup that is unique to device group A
+    // or import it from a file in your theme folder
 }
 
 @media #{$media-group-b} {
-    @import "ishi/10-typography/_group-b.scss";
-    @import "ishi/20-components/_group-b.scss";
-    @import "ishi/30-utilities/_group-b.scss";
-    @import "ishi/40-structure/_group-b.scss";
-    @import "ishi/50-layouts/layout-right/_group-b.scss";
+    @import "ishi/_group-b.inc.scss";
+    @import "ishi/50-layouts/sidebar-below/_group-b.scss";
 
     // add any markup that is unique to device group B
+    // or import it from a file in your theme folder
 }
 
 @media #{$media-group-c} {
-    @import "ishi/10-typography/_group-c.scss";
-    @import "ishi/20-components/_group-c.scss";
-    @import "ishi/30-utilities/_group-c.scss";
-    @import "ishi/40-structure/_group-c.scss";
-    @import "ishi/50-layouts/layout-right/_group-c.scss";
+    @import "ishi/_group-c.inc.scss";
+    @import "ishi/50-layouts/sidebar-below/_group-c.scss";
 
     // add any markup that is unique to device group C
+    // or import it from a file in your theme folder
 }
 
 @media #{$media-group-d} {
-    @import "ishi/10-typography/_group-d.scss";
-    @import "ishi/20-components/_group-d.scss";
-    @import "ishi/30-utilities/_group-d.scss";
-    @import "ishi/40-structure/_group-d.scss";
-    @import "ishi/50-layouts/layout-right/_group-d.scss";
+    @import "ishi/_group-d.inc.scss";
+    @import "ishi/50-layouts/sidebar-left/_group-d.scss";
 
     // add any markup that is unique to device group D
+    // or import it from a file in your theme folder
 }
 {% endhighlight %}
 
