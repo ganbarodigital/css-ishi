@@ -53,4 +53,4 @@ Is that such a bad thing? We'd argue that it is actually a good thing.
 * How often do "mobile" sites present a cut-down version of the "desktop" site, forcing you to switch to a desktop / laptop to get things done?
 * When you run into one of these kind of "mobile" sites, how likely are you to continue using it?
 
-We believe that a site can be a positive experience on all types of devices, and Ishi is built to help us - and you - achieve that.
+We believe that a single site can be a positive experience on all types of devices, and Ishi is built to help us - and you - achieve that.
