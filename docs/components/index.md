@@ -22,3 +22,5 @@ Wherever possible, the markup used is semantic. To make that possible, some of t
 
 * [Navbars]({% include pageurl.html name='navbars' %}) are horizontal menus that you can put anywhere on your page.
 * Want previous / next buttons on your page, just like there are at the top and bottom of this page? Use a [pageflow nav section]({% include pageurl.html name='pageflow-navigation' %}).
+
+{% include flow.md %}

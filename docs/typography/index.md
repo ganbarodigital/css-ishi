@@ -6,7 +6,7 @@ pageflow_name: typography
 
 # Typography
 
-## Introduction
+## In This Section
 
 Ishi delivers beautiful typography designed to make your content look good and (visually at least) a pleasure to read.
 
@@ -14,3 +14,5 @@ Ishi delivers beautiful typography designed to make your content look good and (
 * [Lists]({% include pageurl.html name='lists' %}) come in the usual bullet-point and indexed styles, and are styled for report-like content.
 * [Links]({% include pageurl.html name='links' %}) are styled to be instantly recognisable.
 * [Preformatted text, inline code, keyboard instructions]({% include pageurl.html name='pre' %}) also get the treatment.
+
+{% include flow.md %}

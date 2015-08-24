@@ -6,6 +6,10 @@ pageflow_name: themes
 
 # Themes
 
+## In This Section
+
+{% include flow.md %}
+
 ## Adding Ishi To Your Sass Library
 
 {% highlight bash %}
