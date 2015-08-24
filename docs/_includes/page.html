@@ -19,7 +19,7 @@
                 </ul>
             </nav>
         </header>
-        <main role="main">
+        <header role="subnav">
             <nav class="navbar">
                 <ul>
                 {% for name in pageflow_list %}
@@ -31,6 +31,8 @@
                 {% endfor %}
                 </ul>
             </nav>
+        </header>
+        <main role="main">
 {% include pageflow_vars.html %}
 {% include pageflow_navbar.html %}
             <article>
