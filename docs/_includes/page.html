@@ -25,7 +25,8 @@
                 {% for name in pageflow_list %}
                   {% for node in site.pages %}
                     {% if node.pageflow_name == name %}
-                      <li><a href="{{node.url}}">{{node.title}}</a></li>
+                      {% assign subnav_class = '' %}{% if page.pageflow_name == node.pageflow_name %}{% assign subnav_class = 'current' %}{% endif %}
+                      <li><a href="{{node.url}}" class='{{subnav_class}}'>{{node.title}}</a></li>
                     {% endif %}
                   {% endfor %}
                 {% endfor %}
