@@ -41,3 +41,44 @@ body header:nth-child(1) {
         }
     }
 }
+
+body header[role=subnav] {
+    background-color: $header-subnav-bg-color;
+    border-top: 2px solid $header-subnav-top-border-color;
+
+    p {
+        color: $header-subnav-fg-color;
+    }
+
+    nav.navbar {
+        a:link {
+            color: $header-subnav-a-link-fg-color;
+            background-color: $header-subnav-a-link-bg-color;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: $header-subnav-a-visited-fg-color;
+            background-color: $header-subnav-a-visited-bg-color;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $header-subnav-a-hover-fg-color;
+            background-color: $header-subnav-a-hover-bg-color;
+            border-bottom: 2px solid $header-subnav-a-hover-border-color;
+        }
+
+        a:active, a:focus {
+            color: $header-subnav-a-active-fg-color;
+            background-color: $header-subnav-a-active-bg-color;
+            border-bottom: 2px solid $header-subnav-a-active-border-color;
+        }
+
+        a.current {
+            color: $header-subnav-a-current-fg-color;
+            background-color: $header-subnav-a-current-bg-color;
+            border-bottom: 2px solid $header-subnav-a-current-border-color;
+        }
+    }
+}

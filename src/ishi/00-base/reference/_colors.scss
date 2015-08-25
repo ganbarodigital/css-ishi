@@ -51,11 +51,11 @@ $pageflow-bg-color: $panel-bg-color;
 $pageflow-border-color: $panel-border-color;
 
 $header-navbar-bg-color: #000;
-$header-navbar-fg-color: #999;
-$header-navbar-a-link-fg-color: #999;
+$header-navbar-fg-color: #ddd;
+$header-navbar-a-link-fg-color: $header-navbar-fg-color;
 $header-navbar-a-link-bg-color: $header-navbar-bg-color;
 $header-navbar-a-link-border-color: #000;
-$header-navbar-a-visited-fg-color: #999;
+$header-navbar-a-visited-fg-color: $header-navbar-a-link-fg-color;
 $header-navbar-a-visited-bg-color: $header-navbar-a-link-bg-color;
 $header-navbar-a-hover-fg-color: #fff;
 $header-navbar-a-hover-bg-color: $header-navbar-a-link-bg-color;
@@ -66,6 +66,25 @@ $header-navbar-a-active-border-color: $header-navbar-a-hover-border-color;
 $header-navbar-a-current-fg-color: $header-navbar-a-hover-fg-color;
 $header-navbar-a-current-bg-color: $header-navbar-a-hover-bg-color;
 $header-navbar-a-current-border-color: $header-navbar-a-hover-border-color;
+
+$header-subnav-top-border-color: #1F3E63;
+$header-subnav-bottom-border-color: #3D81D1;
+$header-subnav-bg-color: #234F83;
+$header-subnav-fg-color: #ddd;
+$header-subnav-a-link-fg-color: $header-subnav-fg-color;
+$header-subnav-a-link-bg-color: $header-subnav-bg-color;
+$header-subnav-a-link-border-color: #000;
+$header-subnav-a-visited-fg-color: $header-subnav-a-link-fg-color;
+$header-subnav-a-visited-bg-color: $header-subnav-a-link-bg-color;
+$header-subnav-a-hover-fg-color: #fff;
+$header-subnav-a-hover-bg-color: $header-subnav-a-link-bg-color;
+$header-subnav-a-hover-border-color: #fff;
+$header-subnav-a-active-fg-color: $header-subnav-a-hover-fg-color;
+$header-subnav-a-active-bg-color: $header-subnav-a-hover-bg-color;
+$header-subnav-a-active-border-color: $header-subnav-a-hover-border-color;
+$header-subnav-a-current-fg-color: $header-subnav-a-hover-fg-color;
+$header-subnav-a-current-bg-color: $header-subnav-a-hover-bg-color;
+$header-subnav-a-current-border-color: $header-subnav-a-hover-border-color;
 
 // 40-structure
 
