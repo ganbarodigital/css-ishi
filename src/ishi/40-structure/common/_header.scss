@@ -1,4 +1,4 @@
-body > header {
+body header:nth-child(1) {
     background-color: $header-bg-color;
 
     p {

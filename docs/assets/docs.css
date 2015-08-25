@@ -1244,29 +1244,29 @@ iframe {
   footer .strapline p {
     margin-bottom: 0px; }
 
-  body > header {
+  body header:nth-child(1) {
     background-color: #000; }
-    body > header p {
+    body header:nth-child(1) p {
       color: #dadada; }
-    body > header del {
+    body header:nth-child(1) del {
       color: #dadada; }
-    body > header nav.navbar a:link {
+    body header:nth-child(1) nav.navbar a:link {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:visited {
+    body header:nth-child(1) nav.navbar a:visited {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:hover {
+    body header:nth-child(1) nav.navbar a:hover {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a:active, body > header nav.navbar a:focus {
+    body header:nth-child(1) nav.navbar a:active, body header:nth-child(1) nav.navbar a:focus {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a.current {
+    body header:nth-child(1) nav.navbar a.current {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
@@ -2201,29 +2201,29 @@ iframe {
   footer .strapline p {
     margin-bottom: 0px; }
 
-  body > header {
+  body header:nth-child(1) {
     background-color: #000; }
-    body > header p {
+    body header:nth-child(1) p {
       color: #dadada; }
-    body > header del {
+    body header:nth-child(1) del {
       color: #dadada; }
-    body > header nav.navbar a:link {
+    body header:nth-child(1) nav.navbar a:link {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:visited {
+    body header:nth-child(1) nav.navbar a:visited {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:hover {
+    body header:nth-child(1) nav.navbar a:hover {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a:active, body > header nav.navbar a:focus {
+    body header:nth-child(1) nav.navbar a:active, body header:nth-child(1) nav.navbar a:focus {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a.current {
+    body header:nth-child(1) nav.navbar a.current {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
@@ -3189,29 +3189,29 @@ iframe {
   footer .strapline p {
     margin-bottom: 0px; }
 
-  body > header {
+  body header:nth-child(1) {
     background-color: #000; }
-    body > header p {
+    body header:nth-child(1) p {
       color: #dadada; }
-    body > header del {
+    body header:nth-child(1) del {
       color: #dadada; }
-    body > header nav.navbar a:link {
+    body header:nth-child(1) nav.navbar a:link {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:visited {
+    body header:nth-child(1) nav.navbar a:visited {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:hover {
+    body header:nth-child(1) nav.navbar a:hover {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a:active, body > header nav.navbar a:focus {
+    body header:nth-child(1) nav.navbar a:active, body header:nth-child(1) nav.navbar a:focus {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a.current {
+    body header:nth-child(1) nav.navbar a.current {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
@@ -4176,29 +4176,29 @@ iframe {
   footer .strapline p {
     margin-bottom: 0px; }
 
-  body > header {
+  body header:nth-child(1) {
     background-color: #000; }
-    body > header p {
+    body header:nth-child(1) p {
       color: #dadada; }
-    body > header del {
+    body header:nth-child(1) del {
       color: #dadada; }
-    body > header nav.navbar a:link {
+    body header:nth-child(1) nav.navbar a:link {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:visited {
+    body header:nth-child(1) nav.navbar a:visited {
       color: #999;
       background-color: #000;
       text-decoration: none; }
-    body > header nav.navbar a:hover {
+    body header:nth-child(1) nav.navbar a:hover {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a:active, body > header nav.navbar a:focus {
+    body header:nth-child(1) nav.navbar a:active, body header:nth-child(1) nav.navbar a:focus {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
-    body > header nav.navbar a.current {
+    body header:nth-child(1) nav.navbar a.current {
       color: #fff;
       background-color: #000;
       border-bottom: 2px solid #0C94F5; }
