@@ -57,12 +57,15 @@ $header-navbar-a-link-bg-color: $header-navbar-bg-color;
 $header-navbar-a-link-border-color: #000;
 $header-navbar-a-visited-fg-color: #999;
 $header-navbar-a-visited-bg-color: $header-navbar-a-link-bg-color;
-$header-navbar-a-hover-fg-color: #eee;
+$header-navbar-a-hover-fg-color: #fff;
 $header-navbar-a-hover-bg-color: $header-navbar-a-link-bg-color;
+$header-navbar-a-hover-border-color: #0C94F5;
 $header-navbar-a-active-fg-color: $header-navbar-a-hover-fg-color;
 $header-navbar-a-active-bg-color: $header-navbar-a-hover-bg-color;
-$header-navbar-a-current-fg-color: #eee;
-$header-navbar-a-current-bg-color: #234F83;
+$header-navbar-a-active-border-color: $header-navbar-a-hover-border-color;
+$header-navbar-a-current-fg-color: $header-navbar-a-hover-fg-color;
+$header-navbar-a-current-bg-color: $header-navbar-a-hover-bg-color;
+$header-navbar-a-current-border-color: $header-navbar-a-hover-border-color;
 
 // 40-structure
 

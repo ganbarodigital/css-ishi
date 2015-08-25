@@ -25,16 +25,19 @@ body > header {
         a:hover {
             color: $header-navbar-a-hover-fg-color;
             background-color: $header-navbar-a-hover-bg-color;
+            border-bottom: 2px solid $header-navbar-a-hover-border-color;
         }
 
         a:active, a:focus {
             color: $header-navbar-a-active-fg-color;
             background-color: $header-navbar-a-active-bg-color;
+            border-bottom: 2px solid $header-navbar-a-active-border-color;
         }
 
         a.current {
             color: $header-navbar-a-current-fg-color;
             background-color: $header-navbar-a-current-bg-color;
+            border-bottom: 2px solid $header-navbar-a-current-border-color;
         }
     }
 }
