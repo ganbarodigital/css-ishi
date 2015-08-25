@@ -50,6 +50,18 @@ $pageflow-fg-color: $panel-fg-color;
 $pageflow-bg-color: $panel-bg-color;
 $pageflow-border-color: $panel-border-color;
 
+$header-navbar-bg-color: #000;
+$header-navbar-fg-color: #999;
+$header-navbar-a-link-fg-color: #999;
+$header-navbar-a-link-bg-color: $header-navbar-bg-color;
+$header-navbar-a-link-border-color: #000;
+$header-navbar-a-visited-fg-color: #999;
+$header-navbar-a-visited-bg-color: $header-navbar-a-link-bg-color;
+$header-navbar-a-hover-fg-color: #eee;
+$header-navbar-a-hover-bg-color: $header-navbar-a-link-bg-color;
+$header-navbar-a-active-fg-color: $header-navbar-a-hover-fg-color;
+$header-navbar-a-active-bg-color: $header-navbar-a-hover-bg-color;
+
 // 40-structure
 
 $header-bg-color: #000;
