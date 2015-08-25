@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: introduction
 title: Inspirations
 pageflow_name: inspirations
 ---

@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: introduction
 title: Goals
 pageflow_name: goals
 ---

@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: introduction
 title: Authors
 pageflow_name: authors
 ---

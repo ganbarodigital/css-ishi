@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: introduction
 title: License
 pageflow_name: license
 ---

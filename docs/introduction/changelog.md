@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: introduction
 title: Changelog
 pageflow_name: changelog
 ---

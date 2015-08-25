@@ -1,7 +1,7 @@
 ---
-layout: frontpage
+layout: introduction
 title: Home
-pageflow_name: homepage
+pageflow_name: introduction
 ---
 # Welcome To Ishi
 

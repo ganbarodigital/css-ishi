@@ -1,5 +1,5 @@
 ---
-layout: frontpage
+layout: introduction
 title: Getting Started
 pageflow_name: getting-started
 ---
