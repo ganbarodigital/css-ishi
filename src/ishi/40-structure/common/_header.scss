@@ -51,6 +51,10 @@ body header[role=subnav] {
     }
 
     nav.navbar {
+        li {
+            flex-grow: 0;
+            padding-right: 15px;
+        }
         a:link {
             color: $header-subnav-a-link-fg-color;
             background-color: $header-subnav-a-link-bg-color;

@@ -1115,11 +1115,11 @@ iframe {
     nav.navbar ul li {
       display: inline-block;
       padding-left: 5px;
-      padding-right: 5px;
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
+      padding-right: 15px;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0;
@@ -1276,6 +1276,12 @@ iframe {
     border-top: 2px solid #1F3E63; }
     body header[role=subnav] p {
       color: #ddd; }
+    body header[role=subnav] nav.navbar li {
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      padding-right: 15px; }
     body header[role=subnav] nav.navbar a:link {
       color: #ddd;
       background-color: #234F83;
@@ -2098,11 +2104,11 @@ iframe {
     nav.navbar ul li {
       display: inline-block;
       padding-left: 5px;
-      padding-right: 5px;
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
+      padding-right: 15px;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0;
@@ -2259,6 +2265,12 @@ iframe {
     border-top: 2px solid #1F3E63; }
     body header[role=subnav] p {
       color: #ddd; }
+    body header[role=subnav] nav.navbar li {
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      padding-right: 15px; }
     body header[role=subnav] nav.navbar a:link {
       color: #ddd;
       background-color: #234F83;
@@ -3112,11 +3124,11 @@ iframe {
     nav.navbar ul li {
       display: inline-block;
       padding-left: 5px;
-      padding-right: 5px;
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
+      padding-right: 15px;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0;
@@ -3273,6 +3285,12 @@ iframe {
     border-top: 2px solid #1F3E63; }
     body header[role=subnav] p {
       color: #ddd; }
+    body header[role=subnav] nav.navbar li {
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      padding-right: 15px; }
     body header[role=subnav] nav.navbar a:link {
       color: #ddd;
       background-color: #234F83;
@@ -4122,11 +4140,11 @@ iframe {
     nav.navbar ul li {
       display: inline-block;
       padding-left: 5px;
-      padding-right: 5px;
-      -webkit-box-flex: 1;
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1;
+      padding-right: 15px;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0;
@@ -4286,6 +4304,12 @@ iframe {
     border-top: 2px solid #1F3E63; }
     body header[role=subnav] p {
       color: #ddd; }
+    body header[role=subnav] nav.navbar li {
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      padding-right: 15px; }
     body header[role=subnav] nav.navbar a:link {
       color: #ddd;
       background-color: #234F83;
