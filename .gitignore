@@ -4,4 +4,5 @@ docs/_site
 docs/_src/docs.css
 node_modules
 src/00-base/styles/normalize.less
+src/js/vendor/*.js
 tmp/
