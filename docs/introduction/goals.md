@@ -24,7 +24,7 @@ If you need a general-purpose CSS toolkit, {% include externallink.html name='bo
 
 1. Markup that's separated from layout.
 
-   Grids have rightly revolutionised how we layout websites. But all they're doing is filling the gap that has been left when we stopped using tables to do the same thing. A grid is markup that describes the layout of your content.
+   Grids have rightly revolutionised how we layout websites. But all they're doing is filling the gap that was left when we stopped using tables to do the same thing. A grid is markup that describes the layout of your content.
 
    The right layout for a desktop might be different to what suits reading on a smartphone. In particular, you might want to change the order that your content is displayed in. For example, the kind of navigation that works well in a sidebar on a desktop site often works better displayed below the main content on a mobile site. If you use a grid, there's no easy way to do this, and you often end up maintaining multiple websites.
 
