@@ -15,3 +15,13 @@ footer .strapline p {
 }
 
 @import "common/_include.scss";
+
+div.navbar_dropdown {
+    ul {
+        align-items: flex-start;
+
+        li {
+            flex-basis: 100%;
+        }
+    }
+}
