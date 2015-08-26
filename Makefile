@@ -26,7 +26,7 @@ all: js docs
 js: dist/ishi.js dist/laroux.js
 	@echo "JS rebuilt"
 
-dist/ishi.js: $(JS_SRC_FILES)
+dist/ishi.js: $(JS_SRC_FILES) node_modules/fastclick/lib/fastclick.js
 	$(NODETOOLS_BIN)/webpack
 
 dist/laroux.js: node_modules/laroux.js/build/dist/web/laroux.js
@@ -46,6 +46,10 @@ tools: node_modules/enquire.js/README.md node_modules/laroux.js/README.md $(NODE
 src/ishi/00-base/styles/normalize.scss: node_modules/normalize.css/normalize.css
 	npm install --save normalize.css
 	cp node_modules/normalize.css/normalize.css src/ishi/00-base/styles/normalize.scss
+
+node_modules/fastclick/lib/fastclick.js:
+	npm install fastclick
+	cp node_modules/fastclick/lib/fastclick.js src/js/vendor/
 
 node_modules/laroux.js/build/dist/laroux.js: node_modules/laroux.js/README.md $(LAROUX_SRC_FILES)
 	( cd node_modules/laroux.js && node_modules/.bin/gulp )

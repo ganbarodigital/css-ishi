@@ -1,6 +1,7 @@
 var Ishi = {
     css: require("./helpers/css.js"),
     dom: require("./helpers/dom.js"),
+    fastclick: require("./vendor/fastclick.js"),
     navbar: require("./components/navbar.js"),
     navbars: require("./components/navbars.js"),
     pageflow: require("./components/pageflow.js"),
@@ -15,6 +16,7 @@ $l.ready(function() {
     Ishi.navbars.reflowNow();
     Ishi.toc.onReady();
     Ishi.pageflow.adjustHeight();
+    Ishi.fastclick.attach(document.body);
 });
 
 $l.dom.setEvent(
