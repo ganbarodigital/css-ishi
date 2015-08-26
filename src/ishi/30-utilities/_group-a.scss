@@ -8,4 +8,8 @@
     padding-bottom: $type-p-spacing;
 }
 
+@mixin util-pad-flexbox-content() {
+    padding-bottom: $type-p-spacing;
+}
+
 @import "styles/_include.scss";
