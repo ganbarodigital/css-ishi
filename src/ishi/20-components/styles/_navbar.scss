@@ -1,3 +1,7 @@
-nav.navbar {
+nav.navbar, div.navbar_dropdown {
     @include nav-navbar;
+}
+
+div.navbar_dropdown ul {
+    flex-wrap: wrap;
 }
