@@ -45,6 +45,14 @@ body header:nth-child(1) {
         margin-top: 20px;
         padding-top: 20px;
         border-top: 2px groove $header-navbar-fg-color;
+
+        li {
+            @include util-pad-flexbox-content();
+        }
+
+        li:nth-last-child(1) {
+            padding-bottom: 0px;
+        }
     }
 }
 
@@ -92,9 +100,17 @@ body header[role=subnav] {
         }
     }
 
-    div.navbar_dropdown {
+    div.navbar_dropdown ul {
         margin-top: 20px;
         padding-top: 20px;
         border-top: 2px groove $header-subnav-fg-color;
+
+        li {
+            @include util-pad-flexbox-content();
+        }
+
+        li:nth-last-child(1) {
+            padding-bottom: 0px;
+        }
     }
 }
