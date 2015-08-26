@@ -13,4 +13,31 @@
     del {
         color: $sidebar-type-del-fg-color;
     }
+
+    a:link {
+        color: $sidebar-a-link-fg-color;
+        background-color: $sidebar-a-link-bg-color;
+        text-decoration: none;
+        border-bottom: 1px solid $sidebar-a-link-border-color;
+    }
+
+    a:visited {
+        color: $sidebar-a-visited-fg-color;
+        background-color: $sidebar-a-visited-bg-color;
+        text-decoration: none;
+        border-bottom: 1px solid $sidebar-a-link-border-color;
+    }
+
+    a:hover {
+        color: $sidebar-a-hover-fg-color;
+        background-color: $sidebar-a-hover-bg-color;
+        border-bottom: 1px solid $sidebar-type-p-fg-color;
+    }
+
+    a:active, a:focus {
+        color: $sidebar-a-active-fg-color;
+        background-color: $sidebar-a-active-bg-color;
+        border-bottom: 1px solid $sidebar-type-p-fg-color;
+    }
+
 }

@@ -29,10 +29,15 @@ nav.pageflow {
             padding: $type-pica-font-size / 2;
         }
 
-        a:hover,
-        a:focus,
-        a:link,
+        a:link {
+            color: $sidebar-a-link-fg-color;
+            background-color: $sidebar-a-link-bg-color;
+            text-decoration: none;
+        }
+
         a:visited {
+            color: $sidebar-a-visited-fg-color;
+            background-color: $sidebar-a-visited-bg-color;
             text-decoration: none;
         }
 
@@ -40,6 +45,12 @@ nav.pageflow {
             background-color: $attention-bg-color;
             color: $attention-hi-color;
         }
+
+        a:active, a:focus {
+            color: $attention-hi-color;
+            background-color: $attention-bg-color;
+        }
+
     }
 
     li:nth-child(1) a {
