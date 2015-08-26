@@ -8,7 +8,14 @@ pageflow_name: one-site
 
 ## Introduction
 
-When you build a site using Ishi, there isn't one site for mobile, and another site for desktop / laptop. You don't have both `http://www.example.com` and a separate `http://m.example.com`. You have one `http://www.example.com` site, and the content uses CSS and JavaScript to adapt to whatever device is being used.
+A single CSS file built from Ishi supports all the different devices where a browser can run.
+
+* When you build a site using Ishi, you don't need one site for mobile, and a separate site for desktop / laptop.
+* You don't need both `http://www.example.com` and a separate `http://m.example.com`.
+
+You can have a single `http://www.example.com` site, and Ishi's CSS and JavaScript will adapt to whatever device is being used.
+
+We call this __many devices, one site__.
 
 ## Single Content
 
@@ -22,13 +29,13 @@ This approach is very pragmatic for content-oriented websites. It's especially s
 
 ## Everything Is Responsive Via CSS
 
-Your CSS stylesheet uses media queries to style and reflow the page for the device that is being used.
+Your CSS file uses media queries to style and reflow the page for the device that is being used.
 
 <aside class="callout attention" markdown="1">
 There are no CSS classes that say "this is a 12 column grid on desktop, but only 3 columns on a smartphone". Your HTML markup is semantic, the CSS classes are semantic, and you use media queries to change the presentation.
 </aside>
 
-A theme built using Ishi contains different styling for several different [device groups]({% include pageurl.html name='device-groups' %}). Our media queries automatically adapt the presentation to the device being used.
+A CSS file built from Ishi contains different styling for several different [device groups]({% include pageurl.html name='device-groups' %}). Our media queries automatically adapt the presentation to the device being used.
 
 ## JavaScript Fills In The Gaps
 
