@@ -1173,7 +1173,8 @@ iframe {
               flex-grow: 1;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
-              flex-shrink: 0; }
+              flex-shrink: 0;
+      display: block; }
       nav.pageflow li a {
         width: auto;
         display: block;
@@ -2202,7 +2203,8 @@ iframe {
               flex-grow: 1;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
-              flex-shrink: 0; }
+              flex-shrink: 0;
+      display: block; }
       nav.pageflow li a {
         width: auto;
         display: block;
@@ -3262,7 +3264,8 @@ iframe {
               flex-grow: 1;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
-              flex-shrink: 0; }
+              flex-shrink: 0;
+      display: block; }
       nav.pageflow li a {
         width: auto;
         display: block;
@@ -4328,7 +4331,8 @@ iframe {
               flex-grow: 1;
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
-              flex-shrink: 0; }
+              flex-shrink: 0;
+      display: block; }
       nav.pageflow li a {
         width: auto;
         display: block;

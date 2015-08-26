@@ -49,7 +49,8 @@
 	    dom: __webpack_require__(2),
 	    navbar: __webpack_require__(3),
 	    navbars: __webpack_require__(4),
-	    toc: __webpack_require__(5),
+	    pageflow: __webpack_require__(5),
+	    toc: __webpack_require__(6),
 	};
 
 	if (global.Ishi === undefined) {
@@ -59,6 +60,7 @@
 	$l.ready(function() {
 	    Ishi.navbars.reflowNow();
 	    Ishi.toc.onReady();
+	    Ishi.pageflow.adjustHeight();
 	});
 
 	$l.dom.setEvent(
@@ -71,6 +73,12 @@
 	    window,
 	    'resize',
 	    Ishi.navbars.reflowSoon
+	);
+
+	$l.dom.setEvent(
+	    window,
+	    'resize',
+	    Ishi.pageflow.reflowSoon
 	);
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
@@ -358,6 +366,40 @@
 
 /***/ },
 /* 5 */
+/***/ function(module, exports) {
+
+	module.exports = {
+	    adjustHeight: function() {
+	        var pfLiEls = $l([".pageflow li"]);
+
+	        if (!pfLiEls) {
+	            return;
+	        }
+
+	        for (var i = 0; i < pfLiEls.length; i++) {
+	            var height = pfLiEls[i].clientHeight;
+
+	            var linkEls = $l(["a"], pfLiEls[i]);
+	            for (var j = 0; j < linkEls.length; j++) {
+	                $l.css.setProperty(linkEls[j], 'height', height + 'px');
+	            }
+	        }
+	    },
+
+	    reflowThrottler: null,
+
+	    reflowSoon: function() {
+	        if ( !Ishi.pageflow.reflowThrottler ) {
+	            Ishi.pageflow.reflowThrottler = setTimeout(function() {
+	                Ishi.pageflow.reflowThrottler = null;
+	                Ishi.pageflow.adjustHeight();
+	           }, 1000);
+	        }
+	    },
+	};
+
+/***/ },
+/* 6 */
 /***/ function(module, exports) {
 
 	module.exports = {

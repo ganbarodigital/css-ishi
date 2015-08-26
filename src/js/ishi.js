@@ -3,6 +3,7 @@ var Ishi = {
     dom: require("./helpers/dom.js"),
     navbar: require("./components/navbar.js"),
     navbars: require("./components/navbars.js"),
+    pageflow: require("./components/pageflow.js"),
     toc: require("./components/toc.js"),
 };
 
@@ -13,6 +14,7 @@ if (global.Ishi === undefined) {
 $l.ready(function() {
     Ishi.navbars.reflowNow();
     Ishi.toc.onReady();
+    Ishi.pageflow.adjustHeight();
 });
 
 $l.dom.setEvent(
@@ -25,4 +27,10 @@ $l.dom.setEvent(
     window,
     'resize',
     Ishi.navbars.reflowSoon
+);
+
+$l.dom.setEvent(
+    window,
+    'resize',
+    Ishi.pageflow.reflowSoon
 );
