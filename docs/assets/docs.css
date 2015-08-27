@@ -1260,7 +1260,8 @@ iframe {
     body header:nth-child(1) nav.navbar a:link, body header:nth-child(1) div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #000;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header:nth-child(1) nav.navbar a:visited, body header:nth-child(1) div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #000;
@@ -1300,7 +1301,8 @@ iframe {
     body header[role=subnav] nav.navbar a:link, body header[role=subnav] div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #234F83;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header[role=subnav] nav.navbar a:visited, body header[role=subnav] div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #234F83;
@@ -2290,7 +2292,8 @@ iframe {
     body header:nth-child(1) nav.navbar a:link, body header:nth-child(1) div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #000;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header:nth-child(1) nav.navbar a:visited, body header:nth-child(1) div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #000;
@@ -2330,7 +2333,8 @@ iframe {
     body header[role=subnav] nav.navbar a:link, body header[role=subnav] div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #234F83;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header[role=subnav] nav.navbar a:visited, body header[role=subnav] div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #234F83;
@@ -3351,7 +3355,8 @@ iframe {
     body header:nth-child(1) nav.navbar a:link, body header:nth-child(1) div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #000;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header:nth-child(1) nav.navbar a:visited, body header:nth-child(1) div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #000;
@@ -3391,7 +3396,8 @@ iframe {
     body header[role=subnav] nav.navbar a:link, body header[role=subnav] div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #234F83;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header[role=subnav] nav.navbar a:visited, body header[role=subnav] div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #234F83;
@@ -4421,7 +4427,8 @@ iframe {
     body header:nth-child(1) nav.navbar a:link, body header:nth-child(1) div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #000;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header:nth-child(1) nav.navbar a:visited, body header:nth-child(1) div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #000;
@@ -4461,7 +4468,8 @@ iframe {
     body header[role=subnav] nav.navbar a:link, body header[role=subnav] div.navbar_dropdown a:link {
       color: #ddd;
       background-color: #234F83;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block; }
     body header[role=subnav] nav.navbar a:visited, body header[role=subnav] div.navbar_dropdown a:visited {
       color: #ddd;
       background-color: #234F83;

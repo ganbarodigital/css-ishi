@@ -14,6 +14,7 @@ body header:nth-child(1) {
             color: $header-navbar-a-link-fg-color;
             background-color: $header-navbar-a-link-bg-color;
             text-decoration: none;
+            display: inline-block;
         }
 
         a:visited {
@@ -73,6 +74,7 @@ body header[role=subnav] {
             color: $header-subnav-a-link-fg-color;
             background-color: $header-subnav-a-link-bg-color;
             text-decoration: none;
+            display: inline-block;
         }
 
         a:visited {
