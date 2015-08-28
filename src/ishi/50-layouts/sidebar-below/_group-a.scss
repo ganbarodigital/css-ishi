@@ -40,7 +40,6 @@ body > footer {
 }
 
 footer .content {
-    @include util-pad-column();
     @include util-pad-flexbox();
 }
 

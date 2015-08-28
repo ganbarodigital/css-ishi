@@ -1441,8 +1441,8 @@ iframe {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px; }
 
@@ -1472,14 +1472,12 @@ iframe {
             align-items: flex-start; }
 
   footer .content {
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 15px;
     padding-bottom: 15px; }
 
   footer .strapline {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px; }
 
