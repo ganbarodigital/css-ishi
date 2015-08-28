@@ -18,12 +18,18 @@ Unlike many popular CSS frameworks / toolkits, the BBC GEL Guidelines aren't org
 
 Each [Ishi theme]({% include pageurl.html name='themes' %}) supports these device groups:
 
-* __Group A:__ smart phones in portrait (up to 320px wide)
-* __Group B:__ smart phones in landscape (up to 600px wide)
+* __Group A:__ feature phones (up to 319px wide)
+* __Group B:__ smart phones (up to 600px wide)
 * __Group C:__ tablets (up to 1006px wide)
 * __Group D:__ desktops and laptops (over 1006px wide)
 
 We may add __Group E__ in the future to support TV / so-called "big screen" UIs if there is a need for a different UI for those devices.
+
+<aside class="callout warning" markdown="1">
+#### Group A May Not Work Well
+
+We don't own any devices that use Group A. Sites that use Ishi may not work well as a result.
+</aside>
 
 ## Why It Works
 

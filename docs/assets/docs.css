@@ -491,7 +491,7 @@ iframe {
 [tabindex="-1"]:focus {
   outline: none !important; }
 
-@media (max-width: 320px) {
+@media (max-width: 319px) {
   /**
    * styles
    */
