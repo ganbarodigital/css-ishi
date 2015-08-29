@@ -7,6 +7,10 @@ footer {
         color: $footer-type-p-fg-color;
     }
 
+    * p:nth-last-child(1) {
+        margin-bottom: 0px;
+    }
+
     del {
         color: $footer-type-del-fg-color;
     }

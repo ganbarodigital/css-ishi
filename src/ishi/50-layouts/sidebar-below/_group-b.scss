@@ -58,10 +58,6 @@ footer .content > div, footer .content > section, footer .content > aside {
     @include util-pad-flexbox();
 }
 
-footer .content > * + * {
-    @include util-pad-flexbox();
-}
-
 footer .strapline {
     flex-basis: 100%;
 

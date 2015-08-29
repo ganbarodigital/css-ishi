@@ -1385,6 +1385,8 @@ iframe {
     color: #dadada; }
   footer p {
     color: #ddd; }
+  footer * p:nth-last-child(1) {
+    margin-bottom: 0px; }
   footer del {
     color: #ddd; }
 
@@ -2415,6 +2417,8 @@ iframe {
     color: #dadada; }
   footer p {
     color: #ddd; }
+  footer * p:nth-last-child(1) {
+    margin-bottom: 0px; }
   footer del {
     color: #ddd; }
 
@@ -2528,10 +2532,6 @@ iframe {
   footer .content > div, footer .content > section, footer .content > aside {
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px; }
-
-  footer .content > * + * {
     padding-top: 16px;
     padding-bottom: 16px; }
 
@@ -3478,6 +3478,8 @@ iframe {
     color: #dadada; }
   footer p {
     color: #ddd; }
+  footer * p:nth-last-child(1) {
+    margin-bottom: 0px; }
   footer del {
     color: #ddd; }
 
@@ -4550,6 +4552,8 @@ iframe {
     color: #dadada; }
   footer p {
     color: #ddd; }
+  footer * p:nth-last-child(1) {
+    margin-bottom: 0px; }
   footer del {
     color: #ddd; }
 
@@ -4730,7 +4734,8 @@ footer .contact-address {
           order: 99;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; }
+          flex-basis: 100%;
+  padding-top: 0px !important; }
 
 footer .contact-regdetails {
   -webkit-box-ordinal-group: 3;
