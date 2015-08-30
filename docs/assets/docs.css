@@ -1389,6 +1389,25 @@ iframe {
     margin-bottom: 0px; }
   footer del {
     color: #ddd; }
+  footer a:link {
+    color: #eee;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    display: inline-block; }
+  footer a:visited {
+    color: #eee;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none; }
+  footer a:hover {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
+  footer a:active, footer a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
 
   /**
    * variables
@@ -2421,6 +2440,25 @@ iframe {
     margin-bottom: 0px; }
   footer del {
     color: #ddd; }
+  footer a:link {
+    color: #eee;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    display: inline-block; }
+  footer a:visited {
+    color: #eee;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none; }
+  footer a:hover {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
+  footer a:active, footer a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
 
   /**
    * variables
@@ -3482,6 +3520,25 @@ iframe {
     margin-bottom: 0px; }
   footer del {
     color: #ddd; }
+  footer a:link {
+    color: #eee;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    display: inline-block; }
+  footer a:visited {
+    color: #eee;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none; }
+  footer a:hover {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
+  footer a:active, footer a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
 
   div.navbar_dropdown ul {
     -webkit-box-align: start;
@@ -4556,6 +4613,25 @@ iframe {
     margin-bottom: 0px; }
   footer del {
     color: #ddd; }
+  footer a:link {
+    color: #eee;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    display: inline-block; }
+  footer a:visited {
+    color: #eee;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none; }
+  footer a:hover {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
+  footer a:active, footer a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff; }
 
   /**
    * variables
@@ -4734,8 +4810,7 @@ footer .contact-address {
           order: 99;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-  padding-top: 0px !important; }
+          flex-basis: 100%; }
 
 footer .contact-regdetails {
   -webkit-box-ordinal-group: 3;

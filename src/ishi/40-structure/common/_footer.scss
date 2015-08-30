@@ -14,4 +14,31 @@ footer {
     del {
         color: $footer-type-del-fg-color;
     }
+
+    a:link {
+        color: $footer-a-link-fg-color;
+        background-color: $footer-a-link-bg-color;
+        text-decoration: none;
+        border-bottom: 1px solid $footer-a-link-border-color;
+        display: inline-block;
+    }
+
+    a:visited {
+        color: $footer-a-visited-fg-color;
+        background-color: $footer-a-visited-bg-color;
+        border-bottom: 1px solid $footer-a-visited-border-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $footer-a-hover-fg-color;
+        background-color: $footer-a-hover-bg-color;
+        border-bottom: 1px solid $footer-a-hover-border-color;
+    }
+
+    a:active, a:focus {
+        color: $footer-a-active-fg-color;
+        background-color: $footer-a-active-bg-color;
+        border-bottom: 1px solid $footer-a-active-border-color;
+    }
 }

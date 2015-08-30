@@ -56,6 +56,19 @@ $sidebar-a-hover-bg-color: $a-hover-bg-color !default;
 $sidebar-a-active-fg-color: $a-hover-fg-color !default;
 $sidebar-a-active-bg-color: $a-hover-bg-color !default;
 
+$footer-a-link-fg-color: #eee !default;
+$footer-a-link-bg-color: transparent !default;
+$footer-a-link-border-color: #ddd !default;
+$footer-a-visited-fg-color: $footer-a-link-fg-color !default;
+$footer-a-visited-bg-color: $footer-a-link-bg-color !default;
+$footer-a-visited-border-color: $footer-a-link-border-color !default;
+$footer-a-hover-fg-color: #fff !default;
+$footer-a-hover-bg-color: $footer-a-link-bg-color !default;
+$footer-a-hover-border-color: #fff !default;
+$footer-a-active-fg-color: $footer-a-hover-fg-color !default;
+$footer-a-active-bg-color: $footer-a-hover-bg-color !default;
+$footer-a-active-border-color: $footer-a-hover-border-color !default;
+
 // 20-components
 
 $panel-fg-color: $base-panel-fg-color;
