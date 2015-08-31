@@ -23,6 +23,10 @@
   url: https://developer.mozilla.org/en-US/
   text: Mozilla Developer Network
 
+- name: saganipsum
+  url: http://saganipsum.com/
+  text: Sagan Ipsum
+
 - name: sculpin
   url: https://sculpin.io/
   text: Sculpin
