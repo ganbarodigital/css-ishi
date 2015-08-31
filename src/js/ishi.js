@@ -1,4 +1,5 @@
 var Ishi = {
+    anchors: require("./components/anchor.js"),
     css: require("./helpers/css.js"),
     dom: require("./helpers/dom.js"),
     fastclick: require("./vendor/fastclick.js"),
@@ -17,6 +18,15 @@ $l.ready(function() {
     Ishi.toc.onReady();
     Ishi.pageflow.adjustHeight();
     Ishi.fastclick.attach(document.body);
+    Ishi.anchors.options = {
+        placement: 'right',
+        visible: 'always'
+    };
+
+    var bodyEl = $l("body[data-ishi-anchors]");
+    if (bodyEl && $l.dom.attr(bodyEl, 'data-ishi-anchors')) {
+        Ishi.anchors.add("main article h2[id], main article h3[id]");
+    }
 });
 
 $l.dom.setEvent(
