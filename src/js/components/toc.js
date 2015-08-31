@@ -104,13 +104,13 @@ module.exports = {
         return headings;
     },
 
-    getTocSite: function() {
-        var tocSite = $l("[data-type='ishi-toc']");
+    getTocSites: function() {
+        var tocSite = $l(["[data-type='ishi-toc']"]);
         return tocSite;
     },
 
     hasTocSite: function() {
-        var tocSite = Ishi.toc.getTocSite();
+        var tocSite = Ishi.toc.getTocSites();
         if (!tocSite) {
             return false;
         }
@@ -125,12 +125,16 @@ module.exports = {
             return;
         }
 
-        var tocSite = Ishi.toc.getTocSite();
-        var maxDepth = $l.dom.attr(tocSite, 'data-max-depth');
-        maxDepth = maxDepth ? maxDepth : 3;
-        var headings = Ishi.toc.findHeadings(maxDepth);
-        var toc = Ishi.toc.buildToc(headings);
-        tocSite.appendChild(toc);
+        var tocSites = Ishi.toc.getTocSites();
+        for (var i = 0; i < tocSites.length; i++) {
+            var maxDepth = $l.dom.attr(tocSites[i], 'data-max-depth');
+            maxDepth = maxDepth ? maxDepth : 3;
+
+            var headings = Ishi.toc.findHeadings(maxDepth);
+            var toc = Ishi.toc.buildToc(headings);
+
+            tocSites[i].appendChild(toc);
+        }
 
         return;
     },
