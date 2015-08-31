@@ -20,6 +20,7 @@ Wherever possible, the markup used is semantic. To make that possible, some of t
 
 ## Navigation Components
 
+* [Anchors for headings]({% include pageurl.html name='anchors-for-headings' %}) are icons that appear after your content's headings, so that users can link to specific sections or sub-sections of your content.
 * [Navbars]({% include pageurl.html name='navbars' %}) are horizontal menus that you can put anywhere on your page.
 * Want previous / next buttons on your page, just like there are at the top and bottom of this page? Use a [pageflow nav section]({% include pageurl.html name='pageflow-navigation' %}).
 * Need a [table of contents]({% include pageurl.html name='toc' %})? Ishi can generate one for you.

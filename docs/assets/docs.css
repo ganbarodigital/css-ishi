@@ -1397,6 +1397,10 @@ iframe {
     color: #D62906;
     background-color: transparent;
     border-bottom: 1px solid #404040; }
+  main article a.anchorjs-link {
+    color: #404040;
+    text-decoration: none;
+    border-bottom: none; }
 
   .sidebar {
     background-color: #eeeeee;
@@ -2493,6 +2497,10 @@ iframe {
     color: #D62906;
     background-color: transparent;
     border-bottom: 1px solid #404040; }
+  main article a.anchorjs-link {
+    color: #404040;
+    text-decoration: none;
+    border-bottom: none; }
 
   .sidebar {
     background-color: #eeeeee;
@@ -3618,6 +3626,10 @@ iframe {
     color: #D62906;
     background-color: transparent;
     border-bottom: 1px solid #404040; }
+  main article a.anchorjs-link {
+    color: #404040;
+    text-decoration: none;
+    border-bottom: none; }
 
   .sidebar {
     background-color: #eeeeee;
@@ -4756,6 +4768,10 @@ iframe {
     color: #D62906;
     background-color: transparent;
     border-bottom: 1px solid #404040; }
+  main article a.anchorjs-link {
+    color: #404040;
+    text-decoration: none;
+    border-bottom: none; }
 
   .sidebar {
     background-color: #eeeeee;

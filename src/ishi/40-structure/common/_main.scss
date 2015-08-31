@@ -37,5 +37,11 @@ main {
             background-color: $main-a-active-bg-color;
             border-bottom: 1px solid $main-type-p-fg-color;
         }
+
+        a.anchorjs-link {
+            color: $main-type-p-fg-color;
+            text-decoration: none;
+            border-bottom: none;
+        }
     }
 }
