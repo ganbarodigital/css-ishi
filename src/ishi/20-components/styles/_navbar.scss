@@ -1,3 +1,7 @@
+nav.navbar {
+    display: inline-block;
+}
+
 nav.navbar, div.navbar_dropdown {
     @include nav-navbar;
 }

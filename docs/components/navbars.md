@@ -10,8 +10,6 @@ pageflow_name: navbars
 
 Use a _navbar_ when you want a horizontal navigation menu on the page.
 
-You can have as many _navbars_ on the page as you need. Each one can be styled separately.
-
 ## Markup
 
 A _navbar_ is simply a list wrapped in a `<nav>` element:
@@ -27,6 +25,10 @@ A _navbar_ is simply a list wrapped in a `<nav>` element:
 </nav>
 {% endhighlight %}
 
+## Default Styling
+
+A navbar is an inline-block. The list inside it is a flexbox container.
+
 ## Default Behaviour
 
 If the whole navbar fits on the screen, then Ishi doesn't need to do anything.
@@ -40,3 +42,14 @@ Ishi recalculates the navbar whenever:
 
 1. the browser is resized, and
 1. if the screen is rotated (e.g. portrait to landscape mode)
+
+## Supported In
+
+Where can you use this component?
+
+Section | Supported? | How Many
+--------|------------| --------
+header | Yes | As many as you want
+main | Yes | As many as you want
+sidebar | No default styling |
+footer | No default styling |
