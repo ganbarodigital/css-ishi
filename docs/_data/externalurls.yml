@@ -19,6 +19,10 @@
   url: http://jekyllrb.com
   text: Jekyll
 
+- name: larouxjs
+  url: https://github.com/larukedi/laroux.js
+  text: Laroux.js
+
 - name: mozilla-devnet
   url: https://developer.mozilla.org/en-US/
   text: Mozilla Developer Network
