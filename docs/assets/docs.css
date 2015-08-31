@@ -567,7 +567,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + p, ol + blockquote, ul + p, ul + blockquote {
+  ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + div, ul + div {
     margin-top: 15px; }
 
   blockquote {
@@ -1618,7 +1618,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + p, ol + blockquote, ul + p, ul + blockquote {
+  ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + div, ul + div {
     margin-top: 16px; }
 
   blockquote {
@@ -2698,7 +2698,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + p, ol + blockquote, ul + p, ul + blockquote {
+  ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + div, ul + div {
     margin-top: 18px; }
 
   blockquote {
@@ -3788,7 +3788,7 @@ iframe {
   del {
     text-decoration: line-through; }
 
-  ol + p, ol + blockquote, ul + p, ul + blockquote {
+  ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + div, ul + div {
     margin-top: 16px; }
 
   blockquote {
