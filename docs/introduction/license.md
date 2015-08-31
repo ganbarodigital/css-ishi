@@ -28,3 +28,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 * [reset.less](https://github.com/cbracco/cardinal/blob/master/base/reset.less) from [Cardinal CSS](https://github.com/cbracco/cardinal), released under the MIT License.
 * [laroux.js](https://github.com/larukedi/laroux.js), released under the Apache license.
 * [fastclick.js](https://github.com/ftlabs/fastclick), released under the MIT license.
+
+## The Ganbaro Digital Logo
+
+The Ganbaro Digital Logo is a trademark of Ganbaro Digital Ltd. All rights reserved.
