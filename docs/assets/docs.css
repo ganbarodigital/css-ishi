@@ -1126,6 +1126,9 @@ iframe {
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
 
+  nav.navbar {
+    display: inline-block; }
+
   nav.navbar ul, div.navbar_dropdown ul {
     list-style: none;
     padding-left: 0px;
@@ -2218,6 +2221,9 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
+
+  nav.navbar {
+    display: inline-block; }
 
   nav.navbar ul, div.navbar_dropdown ul {
     list-style: none;
@@ -3340,6 +3346,9 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
+
+  nav.navbar {
+    display: inline-block; }
 
   nav.navbar ul, div.navbar_dropdown ul {
     list-style: none;
@@ -4472,6 +4481,9 @@ iframe {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
+
+  nav.navbar {
+    display: inline-block; }
 
   nav.navbar ul, div.navbar_dropdown ul {
     list-style: none;
