@@ -40,7 +40,7 @@ docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs/_src/docs.scss dist/laroux
 	$(NODETOOLS_BIN)/postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
 	cp dist/* docs/assets/
 
-tools: node_modules/enquire.js/README.md node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack $(NODETOOLS_BIN)/postcss
+tools: node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack $(NODETOOLS_BIN)/postcss
 	sudo gem install sass
 
 src/ishi/00-base/styles/normalize.scss: node_modules/normalize.css/normalize.css
