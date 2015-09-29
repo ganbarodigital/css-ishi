@@ -52,9 +52,11 @@ node_modules/fastclick/lib/fastclick.js:
 	cp node_modules/fastclick/lib/fastclick.js src/js/vendor/
 
 node_modules/laroux.js/build/dist/laroux.js: node_modules/laroux.js/README.md $(LAROUX_SRC_FILES)
+	[ -e node_modules ] || mkdir node_modules
 	( cd node_modules/laroux.js && node_modules/.bin/gulp )
 
 node_modules/laroux.js/README.md:
+	[ -e node_modules ] || mkdir node_modules
 	( cd node_modules && git clone https://github.com/larukedi/laroux.js.git laroux.js && cd laroux.js && git checkout $(LAROUX_VERSION) && npm install )
 
 $(NODETOOLS_BIN)/postcss:
