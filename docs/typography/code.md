@@ -24,7 +24,7 @@ Use Jekyll's `{% highlight <language> %}` tag to highlight a piece of code.
 
 {% highlight php startinline %}
 /**
- * This is an example piece of embedded code
+ * This is an example piece of embedded code that includes a long comment line
  */
 
 namespace GanbaroDigital\Examples;
