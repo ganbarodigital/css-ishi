@@ -42,10 +42,13 @@ docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs/_src/docs.scss dist/laroux
 
 tools: node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack $(NODETOOLS_BIN)/postcss
 	sudo gem install sass
+	sudo gem install compass
 
 src/ishi/00-base/styles/normalize.scss: node_modules/normalize.css/normalize.css
-	npm install --save normalize.css
 	cp node_modules/normalize.css/normalize.css src/ishi/00-base/styles/normalize.scss
+
+node_modules/normalize.css/normalize.css:
+	npm install --save normalize.css
 
 node_modules/fastclick/lib/fastclick.js:
 	npm install fastclick
