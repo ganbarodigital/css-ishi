@@ -14,5 +14,6 @@ Ishi delivers beautiful typography designed to make your content look good and (
 * [Lists]({% include pageurl.html name='lists' %}) come in the usual bullet-point and indexed styles, and are styled for report-like content.
 * [Links]({% include pageurl.html name='links' %}) are styled to be instantly recognisable.
 * [Preformatted text, inline code, keyboard instructions]({% include pageurl.html name='pre' %}) also get the treatment.
+* [Syntax-highlighted code]({% include pageurl.html name='code' %}) is styled to avoid disrupting the rest of your page.
 
 {% include flow.md %}
