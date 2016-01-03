@@ -1481,9 +1481,9 @@
 	            var height = pfLiEls[i].clientHeight;
 
 	            var linkEls = $l(["a"], pfLiEls[i]);
-	            // for (var j = 0; j < linkEls.length; j++) {
-	            //     $l.css.setProperty(linkEls[j], 'height', height + 'px');
-	            // }
+	            for (var j = 0; j < linkEls.length; j++) {
+	                $l.css.setProperty(linkEls[j], 'height', height + 'px');
+	            }
 	        }
 	    },
 
@@ -1498,7 +1498,6 @@
 	        }
 	    },
 	};
-
 
 /***/ },
 /* 8 */
