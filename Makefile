@@ -7,7 +7,7 @@
 
 VERSION = 0.1.0
 
-LAROUX_VERSION = v2.1.0
+LAROUX_VERSION = v2.1.1
 
 SCSS_THIRD_PARTY_DEPS = \
 	src/ishi/00-base/styles/normalize.scss
