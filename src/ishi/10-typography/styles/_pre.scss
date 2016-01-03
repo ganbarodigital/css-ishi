@@ -1,4 +1,4 @@
-pre {
+article > pre, article > pre.highlight {
     @include insert($panel-fg-color, $panel-bg-color, $panel-border-color, $panel-border-radius, $type-pica-font-size, $type-pica-font-size);
     word-break: break-all;
     word-wrap: break-word;
