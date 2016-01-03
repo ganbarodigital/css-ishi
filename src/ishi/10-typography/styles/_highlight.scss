@@ -1,6 +1,12 @@
 figure.highlight {
+    pre {
+        overflow-x: auto;
+    }
+
     code {
         background-color: inherit;
+        white-space: pre;
+        overflow-wrap: normal;
 
         span.lineno {
             border-right: 1px solid $panel-border-color;
