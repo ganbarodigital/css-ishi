@@ -68,5 +68,44 @@ module.exports = {
 
         // if we get here, we have run out of ideas
         return -1;
+    },
+
+    getWidth: function(el) {
+        var el_rect = el.getBoundingClientRect();
+
+        return Math.round(el_rect.width);
+    },
+
+    getWidthOfHidden: function(origEl) {
+        // we need to create a clone, add it to the DOM (so that it is rendered)
+        // before we can get the width
+        var el = Ishi.dom.createHiddenClone(origEl);
+
+        // our return value :)
+        var width = Ishi.dom.getWidth(el);
+
+        // tidy up
+        el.remove();
+
+        // all done
+        return width;
+    },
+
+    createHiddenClone: function(origEl) {
+        var el = $l.dom.clone(origEl);
+        $l.css.setProperty(el,  {
+            position: 'absolute',
+            visibility: 'hidden',
+            display: 'block'
+        });
+        $l.css.removeClass(el, 'hidden');
+
+        document.body.insertBefore(
+            el,
+            document.body.firstChild
+        );
+
+        // all done
+        return el;
     }
 };
