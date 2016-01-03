@@ -1,3 +1,7 @@
+body header {
+    overflow-x: hidden;
+}
+
 body header:nth-child(1) {
     background-color: $header-bg-color;
 

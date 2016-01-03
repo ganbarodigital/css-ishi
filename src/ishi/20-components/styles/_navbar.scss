@@ -1,5 +1,6 @@
 nav.navbar {
-    display: inline-block;
+    display: block;
+    overflow: hidden;
 }
 
 nav.navbar, div.navbar_dropdown {
