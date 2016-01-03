@@ -1,0 +1,44 @@
+figure.highlight {
+    code {
+        background-color: inherit;
+
+        span.lineno {
+            border-right: 1px solid $panel-border-color;
+            padding-left: 4px;
+            padding-right: $type-block-indent;
+            margin-right: $type-block-indent;
+        }
+    }
+}
+
+table.highlighttable {
+    display: table;
+
+    tr {
+        border-bottom: 0px;
+        display: table-row;
+    }
+
+    td {
+        padding-bottom: 0px;
+        display: table-cell;
+    }
+
+    td.linenos {
+        border-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        div {
+            border-right: 1px solid $panel-border-color;
+            padding-left: 4px;
+            padding-right: $type-block-indent;
+            margin-right: $type-block-indent;
+        }
+    }
+
+    td.code {
+        white-space: pre;
+        width: 100%;
+    }
+}
