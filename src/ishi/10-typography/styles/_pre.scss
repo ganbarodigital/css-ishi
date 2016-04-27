@@ -24,6 +24,13 @@ pre code {
     line-height: $type-pica-font-size + 4;
 }
 
+a code {
+    color: inherit;
+    border-bottom: inherit;
+    padding-bottom: 0px;
+    border-radius: 0;
+}
+
 kbd {
     font-family: inherit;
     font-size: $type-pica-font-size * 0.85;
