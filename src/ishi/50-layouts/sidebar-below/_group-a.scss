@@ -1,49 +1,52 @@
-/**
- * variables
- */
+@media #{$media-group-a} {
 
-/**
- * styles
- */
-main .content {
-    order: 2;
-    min-width: 100%;
+    /**
+     * variables
+     */
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: flex-start;
-}
+    /**
+     * styles
+     */
+    main .content {
+        order: 2;
+        min-width: 100%;
 
-main .content aside.sidebar {
-    order: 2;
-    flex-basis: 100%;
-}
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+    }
 
-main content main {
-    order: 1;
-    flex-basis: 100%;
+    main .content aside.sidebar {
+        order: 2;
+        flex-basis: 100%;
+    }
 
-    @include util-pad-column();
-    @include util-pad-flexbox();
-}
+    main content main {
+        order: 1;
+        flex-basis: 100%;
 
-body > footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: flex-start;
-}
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 
-footer .content {
-    @include util-pad-flexbox();
-}
+    body > footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+    }
 
-footer .strapline {
-    @include util-pad-column();
-    @include util-pad-flexbox();
+    footer .content {
+        @include util-pad-flexbox();
+    }
+
+    footer .strapline {
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 }

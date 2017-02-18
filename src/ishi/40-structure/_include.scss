@@ -1,0 +1,13 @@
+@import "common/_include.scss";
+
+@media #{$media-group-c} {
+    div.navbar_dropdown {
+        ul {
+            align-items: flex-start;
+
+            li {
+                flex-basis: 100%;
+            }
+        }
+    }
+}

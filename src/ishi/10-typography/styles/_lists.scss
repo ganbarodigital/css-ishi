@@ -5,6 +5,8 @@ ul {
     li {
         display: list-item;
         list-style-position: outside;
+
+        @include type-pica();
     }
 }
 
@@ -15,6 +17,8 @@ ol {
     li {
         display: list-item;
         list-style-position: outside;
+
+        @include type-pica();
 
         ol {
             list-style-type: lower-alpha;

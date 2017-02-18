@@ -1,65 +1,68 @@
-/**
- * variables
- */
+@media #{$media-group-d} {
 
-/**
- * styles
- */
-body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: stretch;
-}
+    /**
+     * variables
+     */
 
-body > header {
-    order: 1;
-    flex-basis: 100%;
+    /**
+     * styles
+     */
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: stretch;
+    }
 
-    @include util-pad-column();
-    @include util-pad-flexbox();
-}
+    body > header {
+        order: 1;
+        flex-basis: 100%;
 
-.sidebar {
-    order: 3;
-    width: 250px;
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 
-    @include util-pad-column();
-    @include util-pad-flexbox();
-}
+    .sidebar {
+        order: 3;
+        width: 250px;
 
-main {
-    order: 2;
-    flex-grow: 1;
-    flex-basis: 500px;
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 
-    @include util-pad-column();
-    @include util-pad-flexbox();
-}
+    main {
+        order: 2;
+        flex-grow: 1;
+        flex-basis: 500px;
 
-footer {
-    order: 4;
-    flex-basis: 100%;
-}
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 
-footer .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: flex-start;
-    align-items: stretch;
-    flex-basis: 100%;
+    footer {
+        order: 4;
+        flex-basis: 100%;
+    }
 
-    @include util-pad-column();
-    @include util-pad-flexbox();
-}
+    footer .content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-start;
+        align-items: stretch;
+        flex-basis: 100%;
 
-footer .strapline {
-    flex-basis: 100%;
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 
-    @include util-pad-column();
-    @include util-pad-flexbox();
+    footer .strapline {
+        flex-basis: 100%;
+
+        @include util-pad-column();
+        @include util-pad-flexbox();
+    }
 }

@@ -1,6 +1,18 @@
+footer, footer p {
+    @include type-brevier();
+}
+
 footer {
     h1, h2, h3, h4, h5, h6 {
         color: $footer-type-h-fg-color;
+    }
+
+    h1 {
+        @include type-doublepica();
+    }
+
+    h2 {
+        @include type-greatprimer();
     }
 
     p {
@@ -40,5 +52,9 @@ footer {
         color: $footer-a-active-fg-color;
         background-color: $footer-a-active-bg-color;
         border-bottom: 1px solid $footer-a-active-border-color;
+    }
+
+    .strapline p {
+        margin-bottom: 0px;
     }
 }

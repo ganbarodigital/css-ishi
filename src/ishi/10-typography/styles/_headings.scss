@@ -39,6 +39,26 @@ h4 {
     @include type-greatprimer-spacing;
 }
 
+h5 {
+    @include type-longprimer;
+    margin-bottom: $type-p-spacing;
+}
+
+// p + h5, ol + h5, ul + h5, pre + h5, div + h5, section + h5, aside + h5 {
+*:not(h4) + h5 {
+    @include type-longprimer-spacing;
+}
+
+h6 {
+    @include type-brevier;
+    margin-bottom: $type-p-spacing;
+}
+
+// p + h6, ol + h6, ul + h6, pre + h6, div + h6, section + h6, aside + h6 {
+*:not(h5) + h6 {
+    @include type-brevier-spacing;
+}
+
 .sidebar {
     h1 {
         @include type-trafalgar;

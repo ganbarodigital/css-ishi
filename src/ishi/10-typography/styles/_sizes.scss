@@ -1,0 +1,81 @@
+/**
+ * variables
+ */
+
+// all font sizes are relative to the body text size
+$type-pica-font-size: 1rem;
+$type-list-indent: 2.5rem;
+$type-p-spacing: $type-pica-font-size;
+$type-non-p-spacing: 1.5rem;
+$type-block-indent: $type-pica-font-size;
+
+/**
+ * styles
+ */
+@mixin type-cannon() {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+}
+
+@mixin type-cannon-spacing() {
+    margin-top: 1.5rem;
+}
+
+@mixin type-trafalgar() {
+    font-size: 1.85rem;
+    line-height: 2rem;
+}
+
+@mixin type-trafalgar-spacing() {
+    margin-top: 1.85rem;
+}
+
+@mixin type-doublepica() {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+@mixin type-doublepica-spacing() {
+    margin-top: 2rem;
+}
+
+@mixin type-greatprimer() {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@mixin type-greatprimer-spacing() {
+    margin-top: 1.25rem;
+}
+
+@mixin type-pica() {
+    font-size: $type-pica-font-size;
+    line-height: 1.5rem;
+}
+
+@mixin type-pica-spacing() {
+    margin-top: $type-p-spacing;
+}
+
+@mixin type-longprimer() {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
+
+@mixin type-longprimer-spacing() {
+    margin-top: 0.9rem;
+}
+
+@mixin type-brevier() {
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+
+@mixin type-brevier-spacing() {
+    margin-top: 0.85rem;
+}
+
+@mixin type-minion() {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}

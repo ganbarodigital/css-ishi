@@ -2,13 +2,13 @@ article > pre, article > pre.highlight {
     @include insert($panel-fg-color, $panel-bg-color, $panel-border-color, $panel-border-radius, $type-pica-font-size, $type-pica-font-size);
     word-break: break-all;
     word-wrap: break-word;
-    font-size: $type-pica-font-size -1;
-    line-height: $type-pica-font-size + 4;
+    font-size: $type-pica-font-size *0.9;
+    line-height: $type-pica-font-size * 1.1;
 }
 
 code {
     padding: 1px 2px;
-    font-size: $type-pica-font-size - 1;
+    font-size: $type-pica-font-size * 0.9;
     color: $code-fg-color;
     background-color: $code-bg-color;
     white-space: nowrap;
@@ -17,11 +17,11 @@ code {
 
 pre code {
     padding: 0;
-    font-size: $type-pica-font-size - 1;
+    font-size: $type-pica-font-size * 0.9;
     color: $panel-fg-color;
     background-color: $panel-bg-color;
     white-space: pre-wrap;
-    line-height: $type-pica-font-size + 4;
+    line-height: $type-pica-font-size * 1.1;
 }
 
 a code {
@@ -44,7 +44,7 @@ kbd {
 
 samp {
     padding: 1px 2px;
-    font-size: $type-pica-font-size - 1;
+    font-size: $type-pica-font-size * 0.9;
     background-color: $panel-bg-color;
     white-space: pre-wrap;
 }

@@ -1,0 +1,17 @@
+html {
+    @media #{$media-group-a} {
+        font-size: 16px;
+    }
+
+    @media #{$media-group-b} {
+        font-size: 17px;
+    }
+
+    @media #{$media-group-c} {
+        font-size: 18px;
+    }
+
+    @media #{$media-group-d} {
+        font-size: 15px;
+    }
+}
