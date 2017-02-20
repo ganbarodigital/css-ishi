@@ -1,8 +1,0 @@
-{% for name in site.data.sections %}
-  {% for node in site.pages %}
-    {% if node.pageflow_name == name %}
-      {% assign navbar_class = '' %}{% if page.layout == node.pageflow_name %}{% assign navbar_class = 'current' %}{% endif %}
-      <li class="{{navbar_class}}"><a href="{{node.url}}" class="{{navbar_class}}">{{node.title}}</a></li>
-    {% endif %}
-  {% endfor %}
-{% endfor %}

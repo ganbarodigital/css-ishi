@@ -1,9 +1,3 @@
----
-layout: components
-title: Table of Contents
-pageflow_name: toc
----
-
 # Table Of Contents
 
 ## Introduction
@@ -14,10 +8,10 @@ Use the _table of contents_ component to provide a table of contents anywhere on
 
 The _table of contents_ component is an empty `<nav>` element:
 
-{% highlight html %}
+```html
 <nav class="toc" data-type="ishi-toc" data-max-depth="3">
 </nav>
-{% endhighlight %}
+```
 
 where:
 

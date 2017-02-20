@@ -1,0 +1,7 @@
+{% macro content(name) %}
+    {% include ".i/content/" ~ name ~ ".twig" %}
+{% endmacro %}
+
+{% macro externallink(name, text) %}
+    {% include ".i/externalurls/" ~ name ~ ".twig" %}
+{% endmacro %}

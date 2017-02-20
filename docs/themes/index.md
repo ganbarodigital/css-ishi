@@ -1,24 +1,19 @@
----
-layout: themes
-title: Themes
-pageflow_name: themes
----
-
+{% import "ishi.twig" as ishi %}
 # Themes
 
 ## In This Section
 
-{% include flow.md %}
+{{ ishi.content('flow') }}
 
 ## Adding Ishi To Your Sass Library
 
-{% highlight bash %}
+```shell
 sass -I <where-you-put-ishi>/src ...
-{% endhighlight %}
+```
 
 ## Your Theme File
 
-{% highlight scss %}
+```scss
 // step1: import Ishi's base first
 @import "ishi/00-base/_include.scss";
 
@@ -68,4 +63,4 @@ sass -I <where-you-put-ishi>/src ...
 
     // add any markup that is unique to device group D
 }
-{% endhighlight %}
+```

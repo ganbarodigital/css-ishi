@@ -1,18 +1,13 @@
----
-layout: typography
-title: Text
-pageflow_name: text
----
-
+{% import "ishi.twig" as ishi %}
 # Text
 
 ## Introduction
 
-Ishi provides beautiful typography for standard HTML 5 text elements. Based on the [BBC Global Experience Language guidelines](http://www.bbc.co.uk/gel/typography/), we've added our own take on styling text to make it as readable as possible.
+Ishi provides beautiful typography for standard HTML 5 text elements. Based on the {{ ishi.externallink('bbc-gel') }}, we've added our own take on styling text to make it as readable as possible.
 
 Can't find the HTML text element you want to use? You should assume that Ishi currently doesn't style it. Let us know by opening an issue on Github, and we'll put that right.
 
-Also, checkout our [components section]({% include pageurl.html name='components' %}). That's where you'll find a list of all of the microformats that Ishi currently supports.
+Also, checkout our [components section](../components/index.html). That's where you'll find a list of all of the microformats that Ishi currently supports.
 
 ## Font Face
 
@@ -41,11 +36,11 @@ Variable | Changes Colour Of ...
 `$sidebar-type-h-fg-color` | `<h1>` to `<h6>` default color in the sidebar
 `$footer-type-h-fg-color` | `<h1>` to `<h6>` default color in the footer
 
-See [our semantic structure]({% include pageurl.html name='structure' %}) for details about `<main>`, the sidebar and the footer.
+See [our semantic structure](../structure/index.html) for details about `<main>`, the sidebar and the footer.
 
 ## Paragraphs
 
-The standard `<p>` element is sized for easy reading on each [device group]({% include pageurl.html name='device-groups' %}). Each device group has its own font sizes. The line height should accomodate inline `<code>`, <kbd>keyboard</kbd> and <samp>output samples</samp> comfortably, without forcing extra spacing just for the lines containing those inline elements.
+The standard `<p>` element is sized for easy reading on each [device group](../concepts/device-groups.html). Each device group has its own font sizes. The line height should accomodate inline `<code>`, <kbd>keyboard</kbd> and <samp>output samples</samp> comfortably, without forcing extra spacing just for the lines containing those inline elements.
 
 ### Customize Colors
 
@@ -58,7 +53,7 @@ Variable | Changes Colour Of ...
 `$sidebar-type-p-fg-color` | default text color in the sidebar
 `$footer-type-h-fg-color` | default text color in the footer
 
-See [our semantic structure]({% include pageurl.html name='structure' %}) for details about `<main>`, the sidebar and the footer.
+See [our semantic structure](../structure/index.html) for details about `<main>`, the sidebar and the footer.
 
 ## Inserted and Deleted Text
 

@@ -1,9 +1,4 @@
----
-layout: components
-title: JavaScript for Components
-pageflow_name: javascript
----
-
+{% import "ishi.twig" as ishi %}
 # JavaScript for Components
 
 ## Introduction
@@ -12,13 +7,13 @@ Ishi uses small amounts of JavaScript for some of its components.
 
 This JavaScript is used to do things that either we can't do in CSS alone, or that currently do not work in pure CSS across every modern browser. It is discrete, well-contained, and (to the best of our frontend ability) respects your battery life.
 
-Rather than use JQuery as a portability layer between Ishi's JavaScript and the browser, we use {% include externallink.html name='larouxjs' %} and target modern browsers exclusively.
+Rather than use JQuery as a portability layer between Ishi's JavaScript and the browser, we use {{ ishi.externallink('laroux') }} and target modern browsers exclusively.
 
 ## Installing JavaScript
 
 Add these lines to the end of your content's `<body>` section:
 
-{% highlight html %}
+```html
 <html>
     <head>...</head>
     <body>
@@ -27,11 +22,11 @@ Add these lines to the end of your content's `<body>` section:
         <script src="ishi.js"></script>
     </body>
 </html>
-{% endhighlight %}
+```
 
 ## Why Laroux.js?
 
-We chose {% include externallink.html name='larouxjs' %} because:
+We chose {{ ishi.externallink('laroux') }} because:
 
 * it's a very small download - important for people reading via mobile networks
 * it's very fast - important for battery life on smart phones, tablets and even laptops

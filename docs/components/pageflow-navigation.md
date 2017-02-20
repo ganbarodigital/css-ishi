@@ -1,9 +1,3 @@
----
-layout: components
-title: Pageflow Navigation
-pageflow_name: pageflow-navigation
----
-
 # Pageflow Navigation
 
 ## Introduction
@@ -14,14 +8,14 @@ Use the _pageflow_ component to provide _Previous_ and _Next_ links on a page.
 
 The _pageflow_ component is a short list wrapped in a `<nav>` element:
 
-{% highlight html %}
+```html
 <nav class="pageflow">
     <ul>
         <li><a href="link-to-previous-page">Item 1</a></li>
         <li><a href="link-to-next-page">Item 2</a></li>
     </ul>
 </nav>
-{% endhighlight %}
+```
 
 ## Default Behaviour
 

@@ -1,9 +1,4 @@
----
-layout: structure
-title: Structure
-pageflow_name: structure
----
-
+{% import "ishi.twig" as ishi %}
 # Structure
 
 ## Introduction
@@ -26,4 +21,4 @@ Ishi isn't grid-based.
   * `body > footer > .content` is an optional `<div>` to style your footer's content all the same
   * `body > footer > .bootstrap` is an optional `<div>` or `<section>` to put a final strapline, copyright notice and so on
 
-{% include flow.md %}
+{{ ishi.content('flow') }}

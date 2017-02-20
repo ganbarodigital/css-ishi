@@ -1,10 +1,4 @@
----
-layout: components
-title: Anchors For Headings
-pageflow_name: anchors-for-headings
----
-
-# {{ page.title }}
+# Anchors For Headings
 
 ## Introduction
 
@@ -14,11 +8,11 @@ Use the _anchors for headings_ component to add anchor icons to the end of your 
 
 This component is activated by adding the `data-ishi-anchors` attribute to your `<body>` element:
 
-{% highlight html %}
+```html
 <body data-ishi-anchors="1">
     <!-- content goes here -->
 </body>
-{% endhighlight %}
+```
 
 ## Default Behaviour
 

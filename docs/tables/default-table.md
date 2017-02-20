@@ -1,10 +1,4 @@
----
-layout: tables
-title: The Default Table
-pageflow_name: default-table
----
-
-# {{ page.title }}
+# The Default Table
 
 ## Introduction
 

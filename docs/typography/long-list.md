@@ -1,9 +1,3 @@
----
-layout: typography
-title: Lists
-pageflow_name: long-list
----
-
 # Example: Very Long Lists
 
 ## Introduction

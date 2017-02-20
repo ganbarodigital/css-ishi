@@ -1,9 +1,3 @@
----
-layout: components
-title: Paragraph Types
-pageflow_name: paragraph-types
----
-
 # Paragraph Types
 
 ## Introduction
@@ -41,11 +35,11 @@ component-p-caps() | Capitalises all the text in the paragraph
 
 For example:
 
-{% highlight scss %}
+```scss
 p.leader {
     @include component-p-bolder();
 }
-{% endhighlight %}
+```
 
 ## Examples
 

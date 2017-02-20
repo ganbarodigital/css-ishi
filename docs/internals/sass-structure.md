@@ -1,9 +1,3 @@
----
-layout: internals
-title: Ishi's Internal Structure
-pageflow_name: sass-structure
----
-
 # Ishi's Internal Structure
 
 ## Introduction
@@ -13,7 +7,7 @@ Ishi's `.scss` files are split across two groups of folders.
 * The first group of folders (in the `src/ishi/` folder) provide a Sass toolkit for defining themes, along with any supporting JavaScript code that is needed.
 * The second group of folders (in the `src/themes/` folder) provide examples of how to use Ishi to build complete themes for your website or web-based application.
 
-See [our page on themes]({% include pageurl.html name='themes' %}) for details on how to define your own theme, including how to include the files in the `src/ishi/` folder.
+See [our page on themes](../themes/index.html) for details on how to define your own theme, including how to include the files in the `src/ishi/` folder.
 
 ## Flow
 
@@ -105,7 +99,7 @@ The idea is to provide a layered approach, with the earlier layers (`00-base` to
 
 ### Purpose
 
-`40-structure` is the home for default styles that are applied to our main [semantic structures]({% include pageurl.html name='structure' %}). The intention is to have a light touch here.
+`40-structure` is the home for default styles that are applied to our main [semantic structures](../structure/index.html). The intention is to have a light touch here.
 
 ### Responsibilities
 
@@ -122,7 +116,7 @@ The idea is to provide a layered approach, with the earlier layers (`00-base` to
 <div class="callout warning" markdown="1">
 #### Multiple CSS Files May Be Needed
 
-At the moment, you can only include one layout in each compiled CSS file. Each layout is applied directly to the [semantic markup](structure.html) of your HTML. They don't provide classes for you to manually include in your HTML.
+At the moment, you can only include one layout in each compiled CSS file. Each layout is applied directly to the [semantic markup](../structure/index.html) of your HTML. They don't provide classes for you to manually include in your HTML.
 
 If your website needs different themes for the home page and for article pages, you will need to create two separate theme files, and include two different CSS files in your HTML pages.
 </div>

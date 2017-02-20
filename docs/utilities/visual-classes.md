@@ -1,9 +1,3 @@
----
-layout: utilities
-title: Visual Classes
-pageflow_name: visual-classes
----
-
 # Visual Classes
 
 ## Depth

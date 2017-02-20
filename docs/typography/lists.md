@@ -1,9 +1,3 @@
----
-layout: typography
-title: Lists
-pageflow_name: lists
----
-
 # Lists
 
 ## Introduction
@@ -58,4 +52,4 @@ Here is an example of a nested list:
 
 ### Very Long Ordered Lists
 
-Although we don't recommend it, you can have lists that contain hundreds of items if you need to. You'll find an example on [a separate page]({% include pageurl.html name="long-list" %}).
+Although we don't recommend it, you can have lists that contain hundreds of items if you need to. You'll find an example on [a separate page](long-list.html).

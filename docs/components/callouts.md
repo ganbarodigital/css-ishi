@@ -1,16 +1,10 @@
----
-layout: components
-title: Callouts
-pageflow_name: callouts
----
-
 # Callouts
 
 ## Introduction
 
 ### What Are Callouts For?
 
-Use [panels]({% include pageurl.html name='panels' %}) and [callouts]({% include pageurl.html name='callouts' %}) when you need to draw the reader's attention to some text or an image.
+Use [panels](panels.html) and [callouts](callouts.html) when you need to draw the reader's attention to some text or an image.
 
 * Panels are rounded boxes.
 * Callouts are square boxes.
@@ -25,7 +19,7 @@ To get a basic callout, wrap your content in a `<div>` or `<aside>` with the `ca
 This is a basic callout.
 </aside>
 
-By default, it gets the same background as the [<pre>]({% include pageurl.html name='pre' %}) element does.
+By default, it gets the same background as the [`<pre>`](../typography/pre.html) element does.
 
 Internally, a basic panel has padding to ensure that all the elements inside have a pleasing amount of space between themselves and the border of the callout.
 
@@ -93,7 +87,7 @@ This is a gradient callout that also sinks in a little bit.
 
 ### Adding Extra Context
 
-Add any one of the [context classes]({% include pageurl.html name='context-classes' %}) to your `callout` `<aside>` to change the colour of the callout's border and default background. All heading elements (`h1` to `h6`) will change colour too.
+Add any one of the [context classes](../utilities/context-classes.html) to your `callout` `<aside>` to change the colour of the callout's border and default background. All heading elements (`h1` to `h6`) will change colour too.
 
 <aside class="callout attention" markdown="1">
 #### Attention!
@@ -139,7 +133,7 @@ This is a callout designed to draw your attention.
 
 ### Adding Extra Context
 
-Add any one of the [context classes]({% include pageurl.html name='context-classes' %}) to your `callout alert` `<aside>` to change the colour of the callout's border and heading.
+Add any one of the [context classes](../utilities/context-classes.html) to your `callout alert` `<aside>` to change the colour of the callout's border and heading.
 
 <aside class="callout alert info" markdown="1">
 #### Information!

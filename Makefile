@@ -35,10 +35,10 @@ dist/laroux.js: node_modules/laroux.js/build/dist/web/laroux.js
 clean:
 	rm build/*
 
-docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs/_src/docs.scss dist/laroux.js dist/ishi.js
-	sass --compass -I src docs/_src/docs.scss > docs/_src/docs.css
-	$(NODETOOLS_BIN)/postcss --use autoprefixer docs/_src/*.css --dir docs/assets/
-	cp dist/* docs/assets/
+docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs-template/theme.scss dist/laroux.js dist/ishi.js
+	sass --compass -I src docs-template/theme.scss > docs-template/theme.css
+	$(NODETOOLS_BIN)/postcss --use autoprefixer docs-template/theme.css --dir docs-template/assets/
+	cp dist/* docs-template/assets/
 
 tools: node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack $(NODETOOLS_BIN)/postcss
 	sudo gem install sass

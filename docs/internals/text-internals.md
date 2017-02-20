@@ -1,14 +1,9 @@
----
-layout: internals
-title: Text Mixins and Vars
-pageflow_name: text-internals
----
-
+{% import "ishi.twig" as ishi %}
 # Text Mixins and Vars
 
 ## Font Sizes
 
-Taken from the [BBC Global Experience Language guidelines](http://www.bbc.co.uk/gel/typography/), Ishi defines a total of 8 font sizes to use in your styles:
+Taken from the {{ ishi.externallink('bbc-gell') }}, Ishi defines a total of 8 font sizes to use in your styles:
 
 * @mixin type-canon()
 * @mixin type-trafalgar()

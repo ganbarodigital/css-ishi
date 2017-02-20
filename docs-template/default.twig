@@ -1,0 +1,131 @@
+{% import "ishi.twig" as ishi %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--[if lt IE 9]>
+            <script src="assets/html5shiv.js"></script>
+            <script src="assets/html5printshiv.js"></script>
+        <![endif]-->
+        <meta charset="utf-8"/>
+        <title>{{title}} from Ganbaro Digital</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{baseUrl}}/assets/theme.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="{{baseUrl}}/assets/prism.css">
+        <script src="{{baseUrl}}/assets/prism.js"></script>
+    </head>
+    <body data-ishi-anchors="1">
+        <header role="banner">
+            <div>
+                <p style="font-size: 34px; padding-top: 10px">{{title}}</p>
+                <p style="font-size: 18px; border-bottom: 1px solid; padding-bottom: 10px">{{subTitle}}</p>
+            </div>
+            <!--<a href="{{baseUrl}}/index.html">
+                <img src="{{baseUrl}}/assets/ganbarodigital.svg" width="60" height="60" style="vertical-align: middle; float: left; margin-right: 15px">
+            </a>-->
+            <nav class="navbar topbar">
+                <ul>
+                    {% for topNavId, topNavItem in navigation %}
+                        <li class="{{topNavId == page.topNavId ? 'current'}}">
+                            <a class="{{topNavId == page.topNavId ? 'current'}}" href="{{ topNavItem.absoluteUrl|default(baseUrl ~ '/' ~ topNavItem.relativeUrl) }}">{{topNavItem.text|raw}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </header>
+        {% if subNavList is defined %}
+            <header role="subnav">
+                <nav class="navbar">
+                    <ul>
+                        {% for itemId, item in subNavList %}
+                            <li class="{{itemId == page.subNavId ? 'current'}}">
+                                <a class="{{itemId == page.subNavId ? 'current'}}" href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">{{item.text|raw}}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </header>
+        {% endif %}
+        <main role="main">
+            {% if page.pageflow_prev_relativeUrl is defined or page.pageflow_next_relativeUrl is defined %}
+            <nav class="pageflow">
+              <ul>
+                  {% if page.pageflow_prev_relativeUrl is defined %}
+                  <li><a href="{{ baseUrl ~ '/' ~ page.pageflow_prev_relativeUrl }}">Prev: {{page.pageflow_prev_text}}</a></li>
+                  {% else %}
+                  <li></li>
+                  {% endif %}
+                  {% if page.pageflow_next_relativeUrl is defined %}
+                  <li><a href="{{ baseUrl ~ '/' ~ page.pageflow_next_relativeUrl }}">Next: {{page.pageflow_next_text}}</a></li>
+                  {% else %}
+                  <li></li>
+                  {% endif %}
+              </ul>
+            </nav>
+            {% endif %}
+
+            <article>
+                {% block content %}This page has no content{% endblock %}
+            </article>
+
+            {% if page.pageflow_prev_relativeUrl is defined or page.pageflow_next_relativeUrl is defined %}
+            <nav class="pageflow">
+              <ul>
+                  {% if page.pageflow_prev_relativeUrl is defined %}
+                  <li><a href="{{ baseUrl ~ '/' ~ page.pageflow_prev_relativeUrl }}">Prev: {{page.pageflow_prev_text}}</a></li>
+                  {% else %}
+                  <li></li>
+                  {% endif %}
+                  {% if page.pageflow_next_relativeUrl is defined %}
+                  <li><a href="{{ baseUrl ~ '/' ~ page.pageflow_next_relativeUrl }}">Next: {{page.pageflow_next_text}}</a></li>
+                  {% else %}
+                  <li></li>
+                  {% endif %}
+              </ul>
+            </nav>
+            {% endif %}
+        </main>
+
+        <aside class="sidebar">
+            {% if currentSectionList is defined %}
+                <h2>This Section</h2>
+                <nav>
+                    <ul>
+                        {% for itemId, item in currentSectionList.contents %}
+                            {% if itemId == page.id %}
+                            <li>
+                                <strong>{{item.text}}</strong>
+                            </li>
+                            {% else %}
+                            <li>
+                                <a href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">{{item.text}}</a>
+                            </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+            {% endif %}
+
+            <h2>This Page</h2>
+            <nav class="toc" data-type="ishi-toc" data-max-depth="3">
+            </nav>
+        </aside>
+
+        <footer>
+            <div class="strapline">
+                {% if not straplines is empty %}
+                <p>{% for strapline in straplines %}
+                    {{strapline|raw}}
+                    &nbsp;
+                    {% endfor %}
+                </p>
+                {% endif %}
+                {% if not github is empty %}
+                    <p>Find {{ title }} on <a href="https://github.com/{{ github.user }}/{{ github.repo }}">GitHub</a>.</p>
+                {% endif %}
+                </p>
+            </div>
+        </footer>
+    <script src="{{baseUrl}}/assets/laroux.js"></script>
+    <script src="{{baseUrl}}/assets/ishi.js"></script>
+    </body>
+</html>

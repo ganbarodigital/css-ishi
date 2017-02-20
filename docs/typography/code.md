@@ -1,28 +1,29 @@
----
-layout: typography
-title: Syntax-Highlighted Code
-pageflow_name: code
----
-
-# {{page.title}}
+{% import "ishi.twig" as ishi %}
+# Syntax-Highlighted Code
 
 ## Introduction
 
-[Jekyll](http://jekyllrb.com) is a very popular tool for generating static HTML websites. It is used by GitHub Pages, making it the defacto standard static site generator for the Internet.
+GitHub-flavoured Markdown (GFM) introduced _fenced code blocks_:
 
-It can generate syntax-highlighted code using [Pygments](http://pygments.org). Ishi includes support for three different layouts that Pygments can generate:
+    ```php
+    /**
+     * This is an example piece of embedded code that includes a long comment line
+     */
 
-* syntax-highlighted code with no line numbers (Pygment's default output)
-* syntax-highlighted code with embedded line numbers
-* syntax-highlighted code with separated line numbers (for easy copy and paste)
+    namespace GanbaroDigital\Examples;
 
-## Default Highlighted Code
+    class ExampleClass
+    {
+        public function __construct($arg1)
+        {
+            $this->args = [ $arg1 ];
+        }
+    }
+    ```
 
-{% raw %}
-Use Jekyll's `{% highlight <language> %}` tag to highlight a piece of code.
-{% endraw %}
+This gets rendered into a `<pre><code class="language-php">` block:
 
-{% highlight php startinline %}
+```php
 /**
  * This is an example piece of embedded code that includes a long comment line
  */
@@ -36,48 +37,8 @@ class ExampleClass
         $this->args = [ $arg1 ];
     }
 }
-{% endhighlight %}
+```
 
-## Code With Embedded Line Numbers
+## Syntax Highlighting
 
-{% raw %}
-Use Jekyll's `{% highlight <language> linenos %}` tag to add line numbers to a highlighted piece of code. Depending on which syntax highlighter Jekyll is using, you'll either get the output immediately below, or you'll get the output in the _Code With Separated Line Numbers_ below.
-{% endraw %}
-
-{% highlight php startinline linenos %}
-/**
- * This is an example piece of embedded code
- */
-
-namespace GanbaroDigital\Examples;
-
-class ExampleClass
-{
-    public function __construct($arg1)
-    {
-        $this->args = [ $arg1 ];
-    }
-}
-{% endhighlight %}
-
-## Code With Separated Line Numbers
-
-{% raw %}
-Use Jekyll's `{% highlight <language> linenos=table %}` tag to add line numbers to a highlighted piece of code. The generated HTML makes it easy for your readers to copy and paste the code from the web page.
-{% endraw %}
-
-{% highlight php startinline linenos=table %}
-/**
- * This is an example piece of embedded code
- */
-
-namespace GanbaroDigital\Examples;
-
-class ExampleClass
-{
-    public function __construct($arg1)
-    {
-        $this->args = [ $arg1 ];
-    }
-}
-{% endhighlight %}
+Use {{ ishi.externallink('prism') }} to get your fenced code blocks syntax-highlighted.

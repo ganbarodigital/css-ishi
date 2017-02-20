@@ -1,9 +1,3 @@
----
-layout: typography
-title: Preformatted &amp; Code
-pageflow_name: pre
----
-
 # Preformatted & Code
 
 ## Introduction
@@ -43,7 +37,7 @@ Use the `<samp>` block whenever you have output to show.
 
 In practice, `<samp>` is rarely used.
 
-## A Basic <pre> Block
+## A Basic &lt;pre&gt; Block
 
 Use a basic `<pre>` block whenever you have input and/or output to show.
 

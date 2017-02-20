@@ -1,9 +1,4 @@
----
-layout: concepts
-title: Many Devices, One Site
-pageflow_name: one-site
----
-
+{% import "ishi.twig" as ishi %}
 # Many Devices, One Site
 
 ## Introduction
@@ -25,7 +20,7 @@ Your website sends the same HTML to every type of device.
 There's no server-side browser detection at all. You don't look at the `User-Agent:` header to influence the HTML you send back. You send the same content to each and every device.
 </aside>
 
-This approach is very pragmatic for content-oriented websites. It's especially suited to static sites built using tools such as {% include externallink.html name='jekyll' %} or {% include externallink.html name='sculpin' %}.
+This approach is very pragmatic for content-oriented websites. It's especially suited to static sites built using tools such as {{ ishi.externallink('jekyll') }} or {{ ishi.externallink('sculpin') }}.
 
 ## Everything Is Responsive Via CSS
 
@@ -35,7 +30,7 @@ Your CSS file uses media queries to style and reflow the page for the device tha
 There are no CSS classes that say "this is a 12 column grid on desktop, but only 3 columns on a smartphone". Your HTML markup is semantic, the CSS classes are semantic, and you use media queries to change the presentation.
 </aside>
 
-A CSS file built from Ishi contains different styling for several different [device groups]({% include pageurl.html name='device-groups' %}). Our media queries automatically adapt the presentation to the device being used.
+A CSS file built from Ishi contains different styling for several different [device groups](device-groups.html). Our media queries automatically adapt the presentation to the device being used.
 
 ## JavaScript Fills In The Gaps
 
@@ -49,7 +44,7 @@ These "active" components are small, and self-contained. They generate semantic 
 
 ## Motivation
 
-{% include externallink.html name='ganbarodigital' %} is a small company. Technically, we're currently classed as a micro-business. We don't have enough people to build different versions of a website for different devices.
+{{ ishi.externallink('ganbarodigital') }} is a small company. Technically, we're currently classed as a micro-business. We don't have enough people to build different versions of a website for different devices.
 
 You could say that we have no choice: for each website we build, we can only afford to build one version, so it _has_ to work on every device that we want to support.
 

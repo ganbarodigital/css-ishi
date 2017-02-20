@@ -1,11 +1,6 @@
----
-layout: utilities
-title: Utilities
-pageflow_name: utilities
----
-
+{% import "ishi.twig" as ishi %}
 # Utilities
 
 ## In This Section
 
-{% include flow.md %}
+{{ ishi.content('flow') }}

@@ -1,15 +1,10 @@
----
-layout: tables
-title: Tables
-pageflow_name: tables
----
-
+{% import "ishi.twig" as ishi %}
 # Tables
 
 ## In This Section
 
 We haven't done a lot (yet) with tables in Ishi.
 
-1. [Default styling for tables]({% include pageurl.html name='default-table' %})
+1. [Default styling for tables](default-table.html)
 
-{% include flow.md %}
+{{ ishi.content('flow') }}

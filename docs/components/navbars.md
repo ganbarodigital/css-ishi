@@ -1,9 +1,3 @@
----
-layout: components
-title: Navbars
-pageflow_name: navbars
----
-
 # Navbars
 
 ## Introduction
@@ -14,7 +8,7 @@ Use a _navbar_ when you want a horizontal navigation menu on the page.
 
 A _navbar_ is simply a list wrapped in a `<nav>` element:
 
-{% highlight html %}
+```html
 <nav class="navbar">
     <ul>
         <li><a href="link-to-page">Item 1</a></li>
@@ -23,7 +17,7 @@ A _navbar_ is simply a list wrapped in a `<nav>` element:
         <li><a href="link-to-page">Item 4</a></li>
     </ul>
 </nav>
-{% endhighlight %}
+```
 
 ## Default Styling
 

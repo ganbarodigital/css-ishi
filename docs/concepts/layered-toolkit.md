@@ -1,14 +1,9 @@
----
-layout: concepts
-title: A Layered Toolkit
-pageflow_name: layered-toolkit
----
-
-# {{page.title}}
+{% import "ishi.twig" as ishi %}
+# A Layered Toolkit
 
 ## Introduction
 
-Ishi isn't a CSS stylesheet like {% include externallink.html name='bootstrap' %} is. Ishi is a toolkit that you can use to generate your own CSS stylesheet. As a result, Ishi breaks down into several distinct areas:
+Ishi isn't a CSS stylesheet like {{ ishi.externallink('bootstrap') }} is. Ishi is a toolkit that you can use to generate your own CSS stylesheet. As a result, Ishi breaks down into several distinct areas:
 
 1. Device-independent bits + your overrides
 1. Device-dependent bits
@@ -18,7 +13,7 @@ Ishi isn't a CSS stylesheet like {% include externallink.html name='bootstrap' %
 What are we trying to achieve with this approach?
 
 * We want to be able to change a website's theme (colour scheme, look and feel, even layout) without editing any of the content at all. Changing content often means changing the software that generates the content. We want to avoid that where possible.
-* We also want to be able to re-use a website's theme on other websites, without having all of those websites look exactly the same. We want {% include externallink.html name='ganbarodigital' %}'s marketing pages, product / services pages, and documentation pages to all look like they belong to the same company without them all being locked into an identical look and structure.
+* We also want to be able to re-use a website's theme on other websites, without having all of those websites look exactly the same. We want {{ ishi.externallink('ganbarodigital') }}'s marketing pages, product / services pages, and documentation pages to all look like they belong to the same company without them all being locked into an identical look and structure.
 
 <aside class="callout warning" markdown="1">
 #### A Work In Progress

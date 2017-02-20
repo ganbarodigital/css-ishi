@@ -1,11 +1,6 @@
----
-layout: layouts
-title: Layouts
-pageflow_name: layouts
----
-
+{% import "ishi.twig" as ishi %}
 # Layouts
 
 ## In This Section
 
-{% include flow.md %}
+{{ ishi.content('flow') }}

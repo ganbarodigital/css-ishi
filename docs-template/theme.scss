@@ -1,0 +1,48 @@
+/**
+ * edit:
+ *   - docs-template/theme.scss
+ *
+ * do not edit:
+ *   - docs/assets/theme.css
+ *
+ * how to compile:
+ *   `make docs`
+ */
+
+@import "themes/code-manual/_main.scss";
+
+footer .contact-address {
+    order: 99;
+    flex-basis: 100%;
+}
+
+footer .contact-regdetails {
+    order: 2;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+p.leader-bolder {
+    @include component-p-bolder();
+}
+
+p.leader-caps {
+    @include component-p-caps();
+}
+
+p.leader-bolder-caps {
+    @include component-p-bolder();
+    @include component-p-caps();
+}
+
+@media #{$media-group-d} {
+    footer .contact-address {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+
+    footer .contact-regdetails {
+        flex-basis: 20%;
+        flex-grow: 1;
+    }
+}

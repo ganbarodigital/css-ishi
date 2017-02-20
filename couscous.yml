@@ -1,0 +1,200 @@
+---
+template:
+#    url: https://github.com/ganbarodigital/couscous-gd-docs
+    directory: docs-template
+
+include:
+    - docs
+
+exclude:
+    - build
+    - dist
+    - docs-template
+    - node_modules
+    - review
+    - src
+    - tmp
+    - tests
+    - vendor
+
+# baseUrl: http://ganbarodigital.github.io/css-ishi
+baseUrl: /
+
+github:
+    user: ganbarodigital
+    repo: css-ishi
+
+title: "Ishi"
+subTitle: Just One CSS Framework Amongst Many
+
+straplines:
+    - Copyright &copy; 2015-present <a href="http://ganbarodigital.com">Ganbaro Digital Ltd</a>.
+    - Released under an open-source license.
+
+navigation:
+    overview:
+        text: Home
+        relativeUrl: index.html
+
+        contents:
+            home:
+                text: Home
+                relativeUrl: index.html
+            gettingstarted:
+                text: Getting Started
+                relativeUrl: getting-started.html
+            goals:
+                text: Goals
+                relativeUrl: goals.html
+            inspirations:
+                text: Inspirations
+                relativeUrl: inspirations.html
+            changelog:
+                text: Changelog
+                relativeUrl: changelog.html
+            contributing:
+                text: Contributing
+                relativeUrl: contributing.html
+            codeofconduct:
+                text: Code Of Conduct
+                relativeUrl: code-of-conduct.html
+            authors:
+                text: Authors
+                relativeUrl: authors.html
+            license:
+                text: License
+                relativeUrl: license.html
+
+    concepts:
+        text: Concepts
+        relativeUrl: concepts/index.html
+
+        contents:
+            home:
+                text: Introduction
+                relativeUrl: concepts/index.html
+            onesite:
+                text: Many Devices, One Site
+                relativeUrl: concepts/one-site.html
+            devicegroups:
+                text: Device Groups
+                relativeUrl: concepts/device-groups.html
+            layered:
+                text: A Layered Toolkit
+                relativeUrl: concepts/layered-toolkit.html
+
+    typography:
+        text: Typography
+        relativeUrl: typography/index.html
+
+        contents:
+            home:
+                text: Introduction
+                relativeUrl: typography/index.html
+            text:
+                text: Text
+                relativeUrl: typography/text.html
+            lists:
+                text: Lists
+                relativeUrl: typography/lists.html
+            links:
+                text: Links
+                relativeUrl: typography/links.html
+            pre:
+                text: Preformatted & Code
+                relativeUrl: typography/pre.html
+            code:
+                text: Syntax Highlighting
+                relativeUrl: typography/code.html
+
+    tables:
+        text: Tables
+        relativeUrl: tables/index.html
+
+        contents:
+            home:
+                text: Introduction
+                relativeUrl: tables/index.html
+            default:
+                text: The Default Table
+                relativeUrl: tables/default-table.html
+
+    components:
+        text: Components
+        relativeUrl: components/index.html
+
+        contents:
+            home:
+                text: Introduction
+                relativeUrl: components/index.html
+            javascript:
+                text: JavaScript for Components
+                relativeUrl: components/javascript.html
+            anchors:
+                text: Anchors for Headings
+                relativeUrl: components/anchors-for-headings.html
+            callstoaction:
+                text: Calls to Action
+                relativeUrl: components/callstoaction.html
+            callouts:
+                text: Callouts
+                relativeUrl: components/callouts.html
+            panels:
+                text: Panels
+                relativeUrl: components/panels.html
+            paragraphtypes:
+                text: Paragraph Types
+                relativeUrl: components/paragraph-types.html
+            navbars:
+                text: Navbars
+                relativeUrl: components/navbars.html
+            pageflow:
+                text: Pageflow Navigation
+                relativeUrl: components/pageflow-navigation.html
+            toc:
+                text: Table of Contents
+                relativeUrl: components/toc.html
+
+    utilities:
+        text: Utilities
+        relativeUrl: utilities/index.html
+
+        contents:
+            home:
+                text: Introduction
+                relativeUrl: utilities/index.html
+            contextclasses:
+                text: Context Classes
+                relativeUrl: utilities/context-classes.html
+            visualclasses:
+                text: Visual Classes
+                relativeUrl: utilities/visual-classes.html
+            hierarchicalheadings:
+                text: Hierarchical Headings
+                relativeUrl: utilities/hierarchical-headings.html
+            hierarchicallists:
+                text: Hierarchical Lists
+                relativeUrl: utilities/hierarchical-lists.html
+
+    structure:
+        text: Structure
+        relativeUrl: structure/index.html
+        contents:
+            home:
+                text: Structure
+                relativeUrl: structure/index.html
+    layouts:
+        text: Layouts
+        relativeUrl: layouts/index.html
+        contents:
+            home:
+                text: Layouts
+                relativeUrl: layouts/index.html
+
+    themes:
+        text: Themes
+        relativeUrl: themes/index.html
+        contents:
+            home:
+                text: Themes
+                relativeUrl: themes/index.html

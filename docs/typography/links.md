@@ -1,9 +1,3 @@
----
-layout: typography
-title: Links
-pageflow_name: links
----
-
 # Links
 
 ## Introduction
