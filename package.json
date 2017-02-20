@@ -1,0 +1,45 @@
+{
+  "name": "css-ishi",
+  "version": "0.1.0",
+  "description": "Responsive CSS framework",
+  "main": "webpack.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "anchor-js": "^1.2.1",
+    "enquire.js": "^2.1.1",
+    "autoprefixer": "^5.2.0",
+    "fastclick": "^1.0.6",
+    "less-plugin-clean-css": "^1.5.1",
+    "laroux.js": "^2.1.0",
+    "less": "^2.5.1",
+    "postcss-cli": "^1.5.0",
+    "normalize.css": "^3.0.3",
+    "webpack": "^1.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ganbarodigital/css-ishi.git"
+  },
+  "keywords": [
+    "CSS",
+    "Framework",
+    "SASS",
+    "Responsive",
+    "Flexbox"
+  ],
+  "author": "Stuart Herbert <stuherbert@ganbarodigital.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/ganbarodigital/css-ishi/issues"
+  },
+  "homepage": "https://github.com/ganbarodigital/css-ishi#readme"
+}
