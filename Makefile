@@ -36,8 +36,8 @@ clean:
 	rm build/*
 
 docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs-template/theme.scss dist/laroux.js dist/ishi.js
-	sass --compass -I src docs-template/theme.scss > docs-template/theme.css
-	$(NODETOOLS_BIN)/postcss --use autoprefixer docs-template/theme.css --dir docs-template/assets/
+	sass --compass -I src docs-template/theme.scss > docs-template/assets/theme.css
+	# $(NODETOOLS_BIN)/postcss --use autoprefixer docs-template/theme.css --dir docs-template/assets/
 	cp dist/* docs-template/assets/
 
 tools: node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack $(NODETOOLS_BIN)/postcss

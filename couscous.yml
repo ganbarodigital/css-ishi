@@ -198,3 +198,6 @@ navigation:
             home:
                 text: Themes
                 relativeUrl: themes/index.html
+            colors:
+                text: Colors
+                relativeUrl: themes/colors.html

@@ -1,0 +1,148 @@
+// Based on Philip Walton's CSS Flex Grid demo
+// https://philipwalton.github.io/solved-by-flexbox/demos/grids/
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.grid > .cell {
+  flex: 1;
+  flex-basis: $util-column-width;
+}
+
+.grid > .cell[class*="1of1"] {
+    flex-basis: 100%;
+}
+
+.grid > .cell[class*="1of2"] {
+    flex: 1 0 50%;
+}
+
+.grid > .cell[class*="1of3"] {
+    flex: 0 0 33.33%;
+}
+
+.grid > .cell[class*="2of3"] {
+    flex: 0 0 66.66%;
+}
+
+.grid > .cell[class*="3of3"] {
+    flex: 0 0 100%;
+}
+
+.grid > .cell[class*="1of4"] {
+    flex: 0 0 25%;
+}
+
+.grid > .cell[class*="2of4"] {
+    flex: 1 0 50%;
+}
+
+.grid > .cell[class*="3of4"] {
+    flex: 1 0 75%;
+}
+
+.grid > .cell[class*="4of4"] {
+    flex: 0 0 100%;
+}
+
+.grid > .cell[class*="1of6"] {
+    flex: 1 1 16.67%;
+}
+
+.grid > .cell[class*="2of6"] {
+    flex: 1 1 33.33%;
+}
+
+.grid > .cell[class*="3of6"] {
+    flex: 1 1 50%;
+}
+
+.grid > .cell[class*="4of6"] {
+    flex: 1 1 66.66%;
+}
+
+.grid > .cell[class*="5of6"] {
+    flex: 1 1 80.33%;
+}
+
+.grid > .cell[class*="6of6"] {
+    flex: 0 0 100%;
+}
+
+@media #{$media-group-b} {
+    .grid > .cell[class*="1of3"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="2of3"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="1of4"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="2of4"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="3of4"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="1of6"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="2of6"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="3of6"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="4of6"] {
+        flex: 0 0 100%;
+    }
+
+    .grid > .cell[class*="5of6"] {
+        flex: 0 0 100%;
+    }
+}
+
+@media #{$media-group-c} {
+    .grid > .cell[class*="1of4"] {
+        flex: 1 0 50%;
+    }
+
+    .grid > .cell[class*="2of4"] {
+        flex: 1 0 100%;
+    }
+
+    .grid > .cell[class*="3of4"] {
+        flex: 1 0 100%;
+    }
+}
+
+@media #{$media-group-c} {
+    .grid > .cell[class*="1of6"] {
+        flex: 0 0 33.33%;
+    }
+
+    .grid > .cell[class*="2of6"] {
+        flex: 1 0 66.66%;
+    }
+
+    .grid > .cell[class*="3of6"] {
+        flex: 1 0 100%;
+    }
+}
+
+@media #{$media-group-d}, #{$media-group-e} {
+    .grid[class*="1row"] {
+        flex-wrap: nowrap;
+    }
+}

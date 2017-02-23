@@ -3,8 +3,8 @@
     padding-right: $type-p-spacing;
 
     @media #{$media-group-c} {
-        padding-left: $type-p-spacing * 2.5;
-        padding-right: $type-p-spacing * 2.5;
+        padding-left: $type-p-spacing * 2;
+        padding-right: $type-p-spacing * 2;
     }
 }
 

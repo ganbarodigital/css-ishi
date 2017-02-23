@@ -5,3 +5,20 @@
 {% macro externallink(name, text) %}
     {% include ".i/externalurls/" ~ name ~ ".twig" %}
 {% endmacro %}
+
+{% macro large_colorswatch(name, shade, hex, lightOrDarkBg) %}
+    <li class="{{lightOrDarkBg}}" style="background-color: {{hex}}">
+        <span class="name">{{name}}</span>
+        <div class="spec">
+            <span class="shade">{{shade}}</span>
+            <span class="hex">{{hex}}</span>
+        </div>
+    </li>
+{% endmacro %}
+
+{% macro small_colorswatch(shade, hex, lightOrDarkBg) %}
+    <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
+        <span class="shade">{{shade}}</span>
+        <span class="hex">{{hex}}</span>
+    </li>
+{% endmacro %}

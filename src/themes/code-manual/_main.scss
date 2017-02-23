@@ -2,12 +2,12 @@
 @import "_colors.scss";
 @import "ishi/_include_2nd.scss";
 
-@import "ishi/50-layouts/sidebar-below/_group-a.scss";
-@import "ishi/50-layouts/sidebar-below/_group-b.scss";
-@import "ishi/50-layouts/sidebar-below/_group-c.scss";
-@import "ishi/50-layouts/sidebar-left/_group-d.scss";
+@import "ishi/layouts/sidebar-below/_group-a.scss";
+@import "ishi/layouts/sidebar-below/_group-b.scss";
+@import "ishi/layouts/sidebar-below/_group-c.scss";
+@import "ishi/layouts/sidebar-left/_group-d.scss";
 
-@media #{$media-group-d} {
+@media #{$media-group-d}, #{$media-group-e} {
 
     body {
         align-items: flex-start;
@@ -21,3 +21,11 @@
 }
 
 @import "styles/_include.scss";
+
+// @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+// { @media screen {
+//         .grid-cell {
+//             flex: 1 0 auto;
+//         }
+//     }
+// }

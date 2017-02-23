@@ -43,5 +43,26 @@ main {
             text-decoration: none;
             border-bottom: none;
         }
+
+        .column {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: none;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: stretch;
+
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        @media #{$media-group-d} {
+            .column {
+                flex-basis: 50%;
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+        }
     }
 }

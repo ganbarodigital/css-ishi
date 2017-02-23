@@ -491,6 +491,38 @@ iframe {
 [tabindex="-1"]:focus {
   outline: none !important; }
 
+/** https://css-tricks.com/snippets/css/clear-fix/ */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+ol.hierarchical {
+  counter-reset: section;
+  list-style-type: none; }
+  ol.hierarchical li {
+    counter-increment: section; }
+    ol.hierarchical li ol {
+      list-style-type: none; }
+  ol.hierarchical li:before {
+    content: counters(section,".") ". "; }
+  ol.hierarchical li ol {
+    counter-reset: section; }
+    ol.hierarchical li ol li ol {
+      counter-reset: section; }
+
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-justified {
+  text-aligh: justified; }
+
 /**
  * variables
  */
@@ -745,6 +777,60 @@ td {
 
 td:nth-last-child(1) {
   padding-right: 0px; }
+
+.grid {
+  display: flex;
+  flex-flow: column wrap; }
+
+@media (min-width: 601px) and (max-width: 1007px), (min-width: 1007px) {
+  .grid {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+.grid-cell {
+  flex: 1 0 0%; }
+
+/* With gutters */
+.grid--gutters {
+  margin: -1em 0 0 -1em; }
+
+.grid--gutters > .grid-cell {
+  padding: 1em 0 0 1em; }
+
+/* Alignment per row */
+.grid--top {
+  align-items: flex-start; }
+
+.grid--bottom {
+  align-items: flex-end; }
+
+.grid--center {
+  align-items: center; }
+
+/* Alignment per cell */
+.grid-cell--top {
+  align-self: flex-start; }
+
+.grid-cell--bottom {
+  align-self: flex-end; }
+
+.grid-cell--center {
+  align-self: center; }
+
+/* Base classes for all media */
+.grid--fit > .grid-cell {
+  flex: 1; }
+
+.grid--full > .grid-cell {
+  flex: 0 0 100%; }
+
+.grid--1of2 > .grid-cell {
+  flex: 0 0 50%; }
+
+.grid--1of3 > .grid-cell {
+  flex: 0 0 33.3333%; }
+
+.grid--1of4 > .grid-cell {
+  flex: 0 0 25%; }
 
 a.calltoaction {
   border: 2px solid #9a9a9a;
@@ -1189,6 +1275,42 @@ a.calltoaction.warning.outline:hover {
   border-top-right-radius: 4px;
   margin-bottom: 0px; }
 
+/**
+ * styles
+ */
+.swatch {
+  margin-bottom: 1rem; }
+  .swatch ul {
+    list-style: none;
+    padding-left: 0px;
+    white-space: nowrap;
+    font-weight: bold; }
+  .swatch li {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1em;
+    margin-right: .25em; }
+    .swatch li span.name {
+      padding-bottom: 2em; }
+    .swatch li span.shade {
+      flex-grow: 1;
+      padding-right: 2em; }
+  .swatch li.dark-bg {
+    color: #F5F5F5; }
+  .swatch .spec {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline; }
+
 nav.navbar {
   display: block;
   overflow: hidden; }
@@ -1262,38 +1384,6 @@ nav.pageflow {
 
 *:not(p) + nav.pageflow {
   margin-top: 1.5rem; }
-
-/** https://css-tricks.com/snippets/css/clear-fix/ */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-ol.hierarchical {
-  counter-reset: section;
-  list-style-type: none; }
-  ol.hierarchical li {
-    counter-increment: section; }
-    ol.hierarchical li ol {
-      list-style-type: none; }
-  ol.hierarchical li:before {
-    content: counters(section,".") ". "; }
-  ol.hierarchical li ol {
-    counter-reset: section; }
-    ol.hierarchical li ol li ol {
-      counter-reset: section; }
-
-.align-center {
-  text-align: center; }
-
-.align-left {
-  text-align: left; }
-
-.align-right {
-  text-align: right; }
-
-.align-justified {
-  text-aligh: justified; }
 
 body header {
   overflow-x: hidden; }
@@ -1400,6 +1490,21 @@ main article a.anchorjs-link {
   color: #404040;
   text-decoration: none;
   border-bottom: none; }
+main article .column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: stretch;
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 0; }
+@media (min-width: 1007px) {
+  main article .column {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 0; } }
 
 .sidebar {
   background-color: #eeeeee;

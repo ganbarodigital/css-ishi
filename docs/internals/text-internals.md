@@ -3,7 +3,7 @@
 
 ## Font Sizes
 
-Taken from the {{ ishi.externallink('bbc-gell') }}, Ishi defines a total of 8 font sizes to use in your styles:
+Taken from the {{ ishi.externallink('bbc-gel') }}, Ishi defines a total of 8 font sizes to use in your styles:
 
 * @mixin type-canon()
 * @mixin type-trafalgar()
