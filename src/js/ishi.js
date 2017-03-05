@@ -25,7 +25,7 @@ $l.ready(function() {
     };
 
     var bodyEl = $l("body[data-ishi-anchors]");
-    if (bodyEl && $l.dom.attr(bodyEl, 'data-ishi-anchors')) {
+    if (bodyEl && $l.dom.attr(bodyEl, 'data-ishi-anchors') == 1) {
         Ishi.anchors.add("main article h2[id], main article h3[id]");
     }
 
