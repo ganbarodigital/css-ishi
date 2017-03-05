@@ -15,6 +15,20 @@ module.exports = {
         $l.css.removeClass(item, "hidden");
     },
 
+    toggleHiddenItem: function(itemId) {
+        var itemEl = $l.id(itemId);
+        if (!itemEl) {
+            return;
+        }
+
+        if (Ishi.dom.isHidden(itemEl)) {
+            Ishi.dom.showItem(itemEl);
+        }
+        else {
+            Ishi.dom.hideItem(itemEl);
+        }
+    },
+
     areOnScreen: function (items, parent) {
         parent = parent ? parent : window;
 
