@@ -139,6 +139,9 @@ navigation:
             callouts:
                 text: Callouts
                 relativeUrl: components/callouts.html
+            codeexamples:
+                text: Code Examples
+                relativeUrl: components/code-examples.html
             panels:
                 text: Panels
                 relativeUrl: components/panels.html

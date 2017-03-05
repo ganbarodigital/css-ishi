@@ -1,0 +1,74 @@
+/**
+ * styles
+ */
+
+.code-example > header > .example-show > button, .code-example > footer > .example-show > button {
+    background-color: transparent;
+    border: 1px solid $calltoaction-border-color;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: bolder;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+//    margin-top: @type-p-spacing;
+    transition-property: background-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+    border-radius: 0.25rem;
+}
+
+.code-example > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0.25rem;
+    align-items: flex-end;
+}
+
+.code-example > .example-content {
+    border-top: 1px solid #aaaaaa;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-bottom: 1px solid #aaaaaa;
+    margin-bottom: 0.75rem;
+}
+
+.code-example > footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.25rem;
+    align-items: flex-start;
+}
+
+.code-example > header > h4, .code-example > footer > h4 {
+    font-size: 0.8em;
+    margin-bottom: 0;
+    padding-right: 1em;
+    line-height: 1rem;
+}
+
+.code-example > header + .example-content {
+    margin-top: 0.25rem;
+}
+
+.code-example > .example-content + footer {
+    margin-top: -0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.code-example > .example-content > .example-source:first-child > pre[class*="language-"] {
+    margin-top: 0;
+}
+
+.code-example + div, .code-example + aside {
+    margin-top: 1.5em;
+}
+
+.code-example + p, .code-example + ul, .code-example + ol {
+    margin-top: 1em;
+}
