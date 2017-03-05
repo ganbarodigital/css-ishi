@@ -121,5 +121,11 @@ module.exports = {
 
         // all done
         return el;
+    },
+
+    insertAfter: function(newEl, origEl) {
+        var parentEl = origEl.parentNode;
+
+        parentEl.insertBefore(newEl, origEl.nextSibling);
     }
 };
