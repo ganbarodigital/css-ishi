@@ -1,15 +1,14 @@
-/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+apacheconf+bash+coffeescript+diff+docker+go+http+java+json+less+makefile+markdown+nginx+php+php-extras+python+scss+sql+twig+typescript+yaml&plugins=line-highlight+line-numbers+command-line */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+apacheconf+bash+c+cpp+coffeescript+ruby+django+diff+docker+elixir+erlang+git+go+graphql+groovy+http+ini+java+json+less+lua+makefile+markdown+nginx+php+php-extras+protobuf+sass+scss+sql+twig+typescript+yaml&plugins=line-numbers */
 /**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
+ * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
+ * @author Tim  Shedor
  */
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #f8f8f2;
-	background: #232323;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	color: #3b3c40;
+	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
@@ -30,108 +29,141 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0 1em 0;
-	overflow-x: auto;
-	border-radius: 0.3em;
+	position: relative;
+	margin: .5em 0;
+	// box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+	border-left: 5px solid #234F83;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	background-color: #fdfdfd;
+	background-image: url(/assets/blueprint-moz.png);
+	background-size: 3em 3em;
+	background-origin: content-box;
+	overflow: visible;
 }
 
+code[class*="language"] {
+	max-height: inherit;
+	height: 100%;
+	display: block;
+	overflow: auto;
+	padding: 0.5em;
+}
+
+/* Margin bottom to accomodate shadow */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #232323;
+	background-color: #fdfdfd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1em;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+	position: relative;
+	padding: .2em;
+	border-radius: 0.3em;
+	color: #c92c2c;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	display: inline;
 	white-space: normal;
 }
 
-.token.keyword,
-.token.operator,
-.token.scope .token.punctuation {
-    color: #e09146;
+pre[class*="language-"]:before,
+pre[class*="language-"]:after {
+	content: '';
+	z-index: -2;
+	display: block;
+	position: absolute;
+	bottom: 0.75em;
+	left: 0.18em;
+	width: 40%;
+	height: 20%;
+	max-height: 13em;
+	box-shadow: 0px 13px 8px #979797;
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	transform: rotate(-2deg);
 }
 
-.token.package,
-.token.package .token.punctuation,
-.token.scope,
-.token.class-name,
-.token.function {
-    color: #a7ed65;
-}
-
-.token.class-name {
-    font-style: italic;
-}
-
-.token.boolean,
-.token.number,
-.token.char,
-.token.string {
-    color: #8abeb7;
+:not(pre) > code[class*="language-"]:after,
+pre[class*="language-"]:after {
+	right: 0.75em;
+	left: auto;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	transform: rotate(2deg);
 }
 
 .token.comment,
+.token.block-comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: #969696;
-}
-
-.token.this,
-.token.property,
-.token.variable,
-.token.global {
-    color: #f8fa83;
-}
-
-.token.global {
-    font-style: italic;
+	color: #708090;
 }
 
 .token.punctuation {
-	color: #f8f8f2;
+	color: #5F6364;
 }
 
-.namespace {
-	opacity: .7;
-}
-
+.token.property,
 .token.tag,
+.token.boolean,
+.token.number,
+.token.function-name,
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #b294bb;
+	color: #905;
 }
 
 .token.selector,
 .token.attr-name,
+.token.string,
+.token.char,
+.token.function,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+	color: #690;
 }
 
+.token.operator,
 .token.entity,
 .token.url,
-.language-css .token.string,
-.style .token.string
-{
-	color: #f8f8f2;
+.token.variable {
+	color: #a67f59;
 }
 
 .token.atrule,
 .token.attr-value,
-	color: #e6db74;
+.token.keyword,
+.token.class-name {
+	color: #07a;
 }
 
 .token.regex,
 .token.important {
-	color: #fd971f;
+	color: #e90;
 }
 
-.token.important,
+.language-css .token.string,
+.style .token.string {
+	color: #690;
+}
+
+.token.important {
+	font-weight: normal;
+}
+
 .token.bold {
 	font-weight: bold;
 }
@@ -143,53 +175,52 @@ pre[class*="language-"] {
 	cursor: help;
 }
 
-pre[data-line] {
-	position: relative;
-	padding: 1em 0 1em 3em;
+.namespace {
+	opacity: .7;
 }
 
-.line-highlight {
-	position: absolute;
+@media screen and (max-width: 767px) {
+	pre[class*="language-"]:before,
+	pre[class*="language-"]:after {
+		bottom: 14px;
+		box-shadow: none;
+	}
+
+}
+
+/* Plugin styles */
+.token.tab:not(:empty):before,
+.token.cr:before,
+.token.lf:before {
+	color: #e0d7d1;
+}
+
+/* Plugin styles: Line Numbers */
+pre[class*="language-"].line-numbers {
+	padding-left: 0;
+}
+
+pre[class*="language-"].line-numbers code {
+	padding-left: 3.8em;
+}
+
+pre[class*="language-"].line-numbers .line-numbers-rows {
 	left: 0;
-	right: 0;
-	padding: inherit 0;
-	margin-top: 1em; /* Same as .prism’s padding-top */
-
-	background: hsla(24, 20%, 50%,.08);
-	background: -moz-linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	background: -webkit-linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	background: -o-linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-
-	pointer-events: none;
-
-	line-height: inherit;
-	white-space: pre;
 }
 
-	.line-highlight:before,
-	.line-highlight[data-end]:after {
-		content: attr(data-start);
-		position: absolute;
-		top: .4em;
-		left: .6em;
-		min-width: 1em;
-		padding: 0 .5em;
-		background-color: hsla(24, 20%, 50%,.4);
-		color: hsl(24, 20%, 95%);
-		font: bold 65%/1.5 sans-serif;
-		text-align: center;
-		vertical-align: .3em;
-		border-radius: 999px;
-		text-shadow: none;
-		box-shadow: 0 1px white;
-	}
-
-	.line-highlight[data-end]:after {
-		content: attr(data-end);
-		top: auto;
-		bottom: .4em;
-	}
+/* Plugin styles: Line Highlight */
+pre[class*="language-"][data-line] {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+pre[data-line] code {
+	position: relative;
+	padding-left: 4em;
+}
+pre .line-highlight {
+	margin-top: 0;
+}
 
 pre.line-numbers {
 	position: relative;
@@ -231,36 +262,3 @@ pre.line-numbers > code {
 			padding-right: 0.8em;
 			text-align: right;
 		}
-.command-line-prompt {
-	border-right: 1px solid #999;
-	display: block;
-	float: left;
-	font-size: 100%;
-	letter-spacing: -1px;
-	margin-right: 1em;
-	pointer-events: none;
-
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.command-line-prompt > span:before {
-	color: #999;
-	content: ' ';
-	display: block;
-	padding-right: 0.8em;
-}
-
-.command-line-prompt > span[data-user]:before {
-	content: "[" attr(data-user) "@" attr(data-host) "] $";
-}
-
-.command-line-prompt > span[data-user="root"]:before {
-	content: "[" attr(data-user) "@" attr(data-host) "] #";
-}
-
-.command-line-prompt > span[data-prompt]:before {
-	content: attr(data-prompt);
-}

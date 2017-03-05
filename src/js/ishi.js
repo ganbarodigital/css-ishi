@@ -19,6 +19,7 @@ $l.ready(function() {
     Ishi.toc.onReady();
     Ishi.pageflow.adjustHeight();
     Ishi.fastclick.attach(document.body);
+
     Ishi.anchors.options = {
         placement: 'right',
         visible: 'always'

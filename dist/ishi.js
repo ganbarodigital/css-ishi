@@ -65,13 +65,14 @@
 	    Ishi.toc.onReady();
 	    Ishi.pageflow.adjustHeight();
 	    Ishi.fastclick.attach(document.body);
+
 	    Ishi.anchors.options = {
 	        placement: 'right',
 	        visible: 'always'
 	    };
 
 	    var bodyEl = $l("body[data-ishi-anchors]");
-	    if (bodyEl && $l.dom.attr(bodyEl, 'data-ishi-anchors')) {
+	    if (bodyEl && $l.dom.attr(bodyEl, 'data-ishi-anchors') == 1) {
 	        Ishi.anchors.add("main article h2[id], main article h3[id]");
 	    }
 
@@ -1528,7 +1529,7 @@
 	};
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -1562,7 +1563,7 @@
 	};
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -1596,7 +1597,7 @@
 	};
 
 /***/ },
-/* 8 */
+/* 9 */
 /***/ function(module, exports) {
 
 	module.exports = {

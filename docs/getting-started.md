@@ -19,18 +19,18 @@ If you want to build this website (Ishi's docs) yourself, you'll also need to ha
 
 Download Ishi by cloning our Github repository:
 
-```bash
+<pre class="language-bash command-line" data-user="you" data-host="localhost"><code class="language-bash">
 git clone https://github.com/ganbarodigital/css-ishi.git
-```
+</code></pre>
 
 ## Installing Tools
 
 Ishi uses the Ruby-based Sass compiler, and the Node.JS-based Postcss processor. You can use our handy `Makefile` to install these for you:
 
-```bash
+<pre class="language-bash command-line" data-user="you" data-host="localhost"><code class="language-bash">
 cd css-ishi
 make tools
-```
+</code></pre>
 
 <div class="callout attention" markdown="1">
 You will be prompted for your password when you run `make tools`. This is necessary to install the tools globally on your machine.
@@ -40,9 +40,9 @@ You will be prompted for your password when you run `make tools`. This is necess
 
 To use Ishi in your own Sass projects, add the `-I` flag on the command-line:
 
-```bash
-sass --compass -I <where-you-put-ishi>/src ...
-```
+<pre class="language-bash command-line" data-user="you" data-host="localhost"><code class="language-bash">
+sass --compass -I &lt;where-you-put-ishi&gt;/src ...
+</code></pre>
 
 At the moment, Ishi does rely on a function or two provided by Compass. We hope to do something about that in the future.
 
