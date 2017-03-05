@@ -1361,6 +1361,69 @@ a.calltoaction.warning.outline:hover {
     justify-content: space-between;
     align-items: baseline; }
 
+/**
+ * styles
+ */
+.code-example > header > .example-show > button, .code-example > footer > .example-show > button {
+  background-color: transparent;
+  border: 1px solid #9a9a9a;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bolder;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  transition-property: background-color, color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  border-radius: 0.25rem; }
+
+.code-example > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.25rem;
+  align-items: flex-end; }
+
+.code-example > .example-content {
+  border-top: 1px solid #aaaaaa;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 0.75rem; }
+
+.code-example > footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0.25rem;
+  align-items: flex-start; }
+
+.code-example > header > h4, .code-example > footer > h4 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+  padding-right: 1em;
+  line-height: 1rem; }
+
+.code-example > header + .example-content {
+  margin-top: 0.25rem; }
+
+.code-example > .example-content + footer {
+  margin-top: -0.5rem;
+  margin-bottom: 0.25rem; }
+
+.code-example > .example-content > .example-source:first-child > pre[class*="language-"] {
+  margin-top: 0; }
+
+.code-example + div, .code-example + aside {
+  margin-top: 1.5em; }
+
+.code-example + p, .code-example + ul, .code-example + ol {
+  margin-top: 1em; }
+
 nav.navbar {
   display: block;
   overflow: hidden; }
@@ -1435,126 +1498,129 @@ nav.pageflow {
 *:not(p) + nav.pageflow {
   margin-top: 1.5rem; }
 
-body header {
+body > header {
   overflow-x: hidden; }
 
-body header:nth-child(1) {
+body > header[role=banner], body > div[class*="banner-container"] {
   background-color: #000; }
-  body header:nth-child(1) p {
+  body > header[role=banner] p, body > div[class*="banner-container"] p {
     color: #dadada; }
-  body header:nth-child(1) del {
+  body > header[role=banner] del, body > div[class*="banner-container"] del {
     color: #dadada; }
-  body header:nth-child(1) nav.navbar a:link, body header:nth-child(1) div.navbar_dropdown a:link {
+  body > header[role=banner] nav.navbar a:link, body > header[role=banner] div.navbar_dropdown a:link, body > div[class*="banner-container"] nav.navbar a:link, body > div[class*="banner-container"] div.navbar_dropdown a:link {
     color: #ddd;
     background-color: #000;
     text-decoration: none;
     display: inline-block; }
-  body header:nth-child(1) nav.navbar a:visited, body header:nth-child(1) div.navbar_dropdown a:visited {
+  body > header[role=banner] nav.navbar a:visited, body > header[role=banner] div.navbar_dropdown a:visited, body > div[class*="banner-container"] nav.navbar a:visited, body > div[class*="banner-container"] div.navbar_dropdown a:visited {
     color: #ddd;
     background-color: #000;
     text-decoration: none; }
-  body header:nth-child(1) nav.navbar a:hover, body header:nth-child(1) div.navbar_dropdown a:hover {
+  body > header[role=banner] nav.navbar a:hover, body > header[role=banner] div.navbar_dropdown a:hover, body > div[class*="banner-container"] nav.navbar a:hover, body > div[class*="banner-container"] div.navbar_dropdown a:hover {
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #0C94F5; }
-  body header:nth-child(1) nav.navbar a:active, body header:nth-child(1) nav.navbar a:focus, body header:nth-child(1) div.navbar_dropdown a:active, body header:nth-child(1) div.navbar_dropdown a:focus {
+  body > header[role=banner] nav.navbar a:active, body > header[role=banner] nav.navbar a:focus, body > header[role=banner] div.navbar_dropdown a:active, body > header[role=banner] div.navbar_dropdown a:focus, body > div[class*="banner-container"] nav.navbar a:active, body > div[class*="banner-container"] nav.navbar a:focus, body > div[class*="banner-container"] div.navbar_dropdown a:active, body > div[class*="banner-container"] div.navbar_dropdown a:focus {
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #0C94F5; }
-  body header:nth-child(1) nav.navbar a.current, body header:nth-child(1) div.navbar_dropdown a.current {
+  body > header[role=banner] nav.navbar a.current, body > header[role=banner] div.navbar_dropdown a.current, body > div[class*="banner-container"] nav.navbar a.current, body > div[class*="banner-container"] div.navbar_dropdown a.current {
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #0C94F5; }
-  body header:nth-child(1) div.navbar_dropdown ul {
+  body > header[role=banner] div.navbar_dropdown ul, body > div[class*="banner-container"] div.navbar_dropdown ul {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px groove #ddd; }
-    body header:nth-child(1) div.navbar_dropdown ul li {
+    body > header[role=banner] div.navbar_dropdown ul li, body > div[class*="banner-container"] div.navbar_dropdown ul li {
       padding-bottom: 1rem; }
-    body header:nth-child(1) div.navbar_dropdown ul li:nth-last-child(1) {
+    body > header[role=banner] div.navbar_dropdown ul li:nth-last-child(1), body > div[class*="banner-container"] div.navbar_dropdown ul li:nth-last-child(1) {
       padding-bottom: 0px; }
 
-body header[role=subnav] {
+body > header[role=subnav], body > div[class*="subnav-container"] {
   background-color: #234F83;
-  border-top: 2px solid #1F3E63; }
-  body header[role=subnav] p {
+  border-top: 2px solid #1F3E63;
+  width: 100%; }
+  body > header[role=subnav] p, body > div[class*="subnav-container"] p {
     color: #ddd; }
-  body header[role=subnav] nav.navbar li, body header[role=subnav] div.navbar_dropdown li {
+  body > header[role=subnav] nav.navbar li, body > header[role=subnav] div.navbar_dropdown li, body > div[class*="subnav-container"] nav.navbar li, body > div[class*="subnav-container"] div.navbar_dropdown li {
     flex-grow: 0;
     padding-right: 15px; }
-  body header[role=subnav] nav.navbar a:link, body header[role=subnav] div.navbar_dropdown a:link {
+  body > header[role=subnav] nav.navbar a:link, body > header[role=subnav] div.navbar_dropdown a:link, body > div[class*="subnav-container"] nav.navbar a:link, body > div[class*="subnav-container"] div.navbar_dropdown a:link {
     color: #ddd;
     background-color: #234F83;
     text-decoration: none;
     display: inline-block; }
-  body header[role=subnav] nav.navbar a:visited, body header[role=subnav] div.navbar_dropdown a:visited {
+  body > header[role=subnav] nav.navbar a:visited, body > header[role=subnav] div.navbar_dropdown a:visited, body > div[class*="subnav-container"] nav.navbar a:visited, body > div[class*="subnav-container"] div.navbar_dropdown a:visited {
     color: #ddd;
     background-color: #234F83;
     text-decoration: none; }
-  body header[role=subnav] nav.navbar a:hover, body header[role=subnav] div.navbar_dropdown a:hover {
+  body > header[role=subnav] nav.navbar a:hover, body > header[role=subnav] div.navbar_dropdown a:hover, body > div[class*="subnav-container"] nav.navbar a:hover, body > div[class*="subnav-container"] div.navbar_dropdown a:hover {
     color: #fff;
     background-color: #234F83;
     border-bottom: 2px solid #fff; }
-  body header[role=subnav] nav.navbar a:active, body header[role=subnav] nav.navbar a:focus, body header[role=subnav] div.navbar_dropdown a:active, body header[role=subnav] div.navbar_dropdown a:focus {
+  body > header[role=subnav] nav.navbar a:active, body > header[role=subnav] nav.navbar a:focus, body > header[role=subnav] div.navbar_dropdown a:active, body > header[role=subnav] div.navbar_dropdown a:focus, body > div[class*="subnav-container"] nav.navbar a:active, body > div[class*="subnav-container"] nav.navbar a:focus, body > div[class*="subnav-container"] div.navbar_dropdown a:active, body > div[class*="subnav-container"] div.navbar_dropdown a:focus {
     color: #fff;
     background-color: #234F83;
     border-bottom: 2px solid #fff; }
-  body header[role=subnav] nav.navbar a.current, body header[role=subnav] div.navbar_dropdown a.current {
+  body > header[role=subnav] nav.navbar a.current, body > header[role=subnav] div.navbar_dropdown a.current, body > div[class*="subnav-container"] nav.navbar a.current, body > div[class*="subnav-container"] div.navbar_dropdown a.current {
     color: #fff;
     background-color: #234F83;
     border-bottom: 2px solid #fff; }
-  body header[role=subnav] div.navbar_dropdown ul {
+  body > header[role=subnav] div.navbar_dropdown ul, body > div[class*="subnav-container"] div.navbar_dropdown ul {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px groove #ddd; }
-    body header[role=subnav] div.navbar_dropdown ul li {
+    body > header[role=subnav] div.navbar_dropdown ul li, body > div[class*="subnav-container"] div.navbar_dropdown ul li {
       padding-bottom: 1rem; }
-    body header[role=subnav] div.navbar_dropdown ul li:nth-last-child(1) {
+    body > header[role=subnav] div.navbar_dropdown ul li:nth-last-child(1), body > div[class*="subnav-container"] div.navbar_dropdown ul li:nth-last-child(1) {
       padding-bottom: 0px; }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
-  color: #222; }
-main p {
-  color: #404040; }
-main del {
-  color: #555555; }
-main article a:link {
-  color: #234F83;
-  background-color: transparent;
-  text-decoration: none;
-  border-bottom: 1px solid #a6a6a6; }
-main article a:visited {
-  color: #692666;
-  background-color: transparent;
-  text-decoration: none;
-  border-bottom: 1px solid #a6a6a6; }
-main article a:hover {
-  color: #D62906;
-  background-color: transparent;
-  border-bottom: 1px solid #404040; }
-main article a:active, main article a:focus {
-  color: #D62906;
-  background-color: transparent;
-  border-bottom: 1px solid #404040; }
-main article a.anchorjs-link {
-  color: #404040;
-  text-decoration: none;
-  border-bottom: none; }
-main article .column {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: none;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: stretch;
-  flex-basis: 100%;
-  flex-grow: 1;
-  flex-shrink: 0; }
-@media (min-width: 1007px) and (max-width: 1280px) {
-  main article .column {
-    flex-basis: 50%;
+body > main {
+  width: 100%; }
+  body > main h1, body > main h2, body > main h3, body > main h4, body > main h5, body > main h6 {
+    color: #222; }
+  body > main p {
+    color: #404040; }
+  body > main del {
+    color: #555555; }
+  body > main article a:link {
+    color: #234F83;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  body > main article a:visited {
+    color: #692666;
+    background-color: transparent;
+    text-decoration: none;
+    border-bottom: 1px solid #a6a6a6; }
+  body > main article a:hover {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+  body > main article a:active, body > main article a:focus {
+    color: #D62906;
+    background-color: transparent;
+    border-bottom: 1px solid #404040; }
+  body > main article a.anchorjs-link {
+    color: #404040;
+    text-decoration: none;
+    border-bottom: none; }
+  body > main article .column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+    flex-basis: 100%;
     flex-grow: 1;
-    flex-shrink: 0; } }
+    flex-shrink: 0; }
+  @media (min-width: 1007px) and (max-width: 1280px) {
+    body > main article .column {
+      flex-basis: 50%;
+      flex-grow: 1;
+      flex-shrink: 0; } }
 
 .sidebar {
   background-color: #eeeeee;
@@ -1583,45 +1649,48 @@ main article .column {
     color: #D62906;
     background-color: transparent;
     border-bottom: 1px solid #303030; }
+  @media (min-width: 1007px) and (max-width: 1280px) {
+    .sidebar ul, .sidebar ol {
+      padding-left: 1rem; } }
 
-footer, footer p {
+body > footer, body > footer p {
   font-size: 0.85rem;
   line-height: 1rem; }
 
-footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+body > footer h1, body > footer h2, body > footer h3, body > footer h4, body > footer h5, body > footer h6 {
   color: #dadada; }
-footer h1 {
+body > footer h1 {
   font-size: 1.5rem;
   line-height: 1.5rem; }
-footer h2 {
+body > footer h2 {
   font-size: 1.25rem;
   line-height: 1.75rem; }
-footer p {
+body > footer p {
   color: #ddd; }
-footer * p:nth-last-child(1) {
+body > footer * p:nth-last-child(1) {
   margin-bottom: 0px; }
-footer del {
+body > footer del {
   color: #ddd; }
-footer a:link {
+body > footer a:link {
   color: #eee;
   background-color: transparent;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
   display: inline-block; }
-footer a:visited {
+body > footer a:visited {
   color: #eee;
   background-color: transparent;
   border-bottom: 1px solid #ddd;
   text-decoration: none; }
-footer a:hover {
+body > footer a:hover {
   color: #fff;
   background-color: transparent;
   border-bottom: 1px solid #fff; }
-footer a:active, footer a:focus {
+body > footer a:active, body > footer a:focus {
   color: #fff;
   background-color: transparent;
   border-bottom: 1px solid #fff; }
-footer .strapline p {
+body > footer .strapline p {
   margin-bottom: 0px; }
 
 @media (min-width: 601px) and (max-width: 1007px) {
@@ -1670,20 +1739,18 @@ footer .strapline p {
     justify-content: center;
     align-content: stretch;
     align-items: flex-start; }
-
-  footer .content {
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-
-  footer .strapline {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (max-width: 319px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .strapline {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
+    body > footer .content {
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+    body > footer .strapline {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (max-width: 319px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .strapline {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 
 @media (min-width: 320px) and (max-width: 600px) {
   /**
@@ -1700,15 +1767,16 @@ footer .strapline p {
     align-content: stretch;
     align-items: flex-start; }
 
-  body > header {
+  body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
     order: 1;
     flex-basis: 100%;
+    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
   @media (min-width: 320px) and (max-width: 600px) and (min-width: 601px) and (max-width: 1007px) {
-    body > header {
+    body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
@@ -1739,40 +1807,37 @@ footer .strapline p {
       padding-right: 2rem; } }
 
 @media (min-width: 320px) and (max-width: 600px) {
-  footer {
+  body > footer {
     order: 4;
     flex-basis: 100%; }
-
-  footer .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    flex-basis: 100%; }
-
-  footer .content > div, footer .content > section, footer .content > aside {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 320px) and (max-width: 600px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .content > div, footer .content > section, footer .content > aside {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-
+    body > footer .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+      flex-basis: 100%; }
+    body > footer .content > div, body > footer .content > section, body > footer .content > aside {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (min-width: 320px) and (max-width: 600px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .content > div, body > footer .content > section, body > footer .content > aside {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 @media (min-width: 320px) and (max-width: 600px) {
-  footer .strapline {
-    flex-basis: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 320px) and (max-width: 600px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .strapline {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
+    body > footer .strapline {
+      flex-basis: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (min-width: 320px) and (max-width: 600px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .strapline {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 
 @media (min-width: 601px) and (max-width: 1007px) {
   /**
@@ -1789,15 +1854,16 @@ footer .strapline p {
     align-content: stretch;
     align-items: flex-start; }
 
-  body > header {
+  body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
     order: 1;
     flex-basis: 100%;
+    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
   @media (min-width: 601px) and (max-width: 1007px) and (min-width: 601px) and (max-width: 1007px) {
-    body > header {
+    body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
@@ -1828,44 +1894,40 @@ footer .strapline p {
       padding-right: 2rem; } }
 
 @media (min-width: 601px) and (max-width: 1007px) {
-  footer {
+  body > footer {
     order: 3;
     flex-basis: 100%; }
-
-  footer .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: stretch; }
-
-  footer .content > div, footer .content > section, footer .content > aside {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 601px) and (max-width: 1007px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .content > div, footer .content > section, footer .content > aside {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-
+    body > footer .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      align-items: stretch; }
+    body > footer .content > div, body > footer .content > section, body > footer .content > aside {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (min-width: 601px) and (max-width: 1007px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .content > div, body > footer .content > section, body > footer .content > aside {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 @media (min-width: 601px) and (max-width: 1007px) {
-  footer .content > * + footer .content * {
-    padding-top: 0px; }
+    body > footer .content > * + footer .content * {
+      padding-top: 0px; }
+    body > footer .strapline {
+      flex-basis: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (min-width: 601px) and (max-width: 1007px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .strapline {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 
-  footer .strapline {
-    flex-basis: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 601px) and (max-width: 1007px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .strapline {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-
-@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
+@media (min-width: 1007px) and (max-width: 1280px) {
   /**
    * variables
    */
@@ -1880,78 +1942,82 @@ footer .strapline p {
     align-content: flex-start;
     align-items: stretch; }
 
-  body > header {
+  body > div[class*="banner-container"], body > div[class*="subnav-container"] {
     order: 1;
     flex-basis: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
-    body > header {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+    body > div[class*="banner-container"], body > div[class*="subnav-container"] {
       padding-left: 2rem;
       padding-right: 2rem; } }
+@media (min-width: 1007px) and (max-width: 1280px) {
+    body > div[class*="banner-container"] > header, body > div[class*="subnav-container"] > header {
+      max-width: 65em;
+      flex-basis: 100%; }
 
-@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   .sidebar {
-    order: 2;
-    width: 250px;
+    order: 3;
+    width: 15em;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
     .sidebar {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
-@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
-  main {
-    order: 3;
+@media (min-width: 1007px) and (max-width: 1280px) {
+  body > main {
+    order: 2;
     flex-grow: 1;
     flex-basis: 500px;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
-    main {
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+    body > main {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
-@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
-  footer {
+@media (min-width: 1007px) and (max-width: 1280px) {
+  body > footer {
     order: 4;
     flex-basis: 100%; }
-
-  footer .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-content: flex-start;
-    align-items: stretch;
-    flex-basis: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .content {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
-
-@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
-  footer .strapline {
-    flex-basis: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
-    footer .strapline {
-      padding-left: 2rem;
-      padding-right: 2rem; } }
+    body > footer .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-content: flex-start;
+      align-items: stretch;
+      flex-basis: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .content {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
+@media (min-width: 1007px) and (max-width: 1280px) {
+    body > footer .strapline {
+      flex-basis: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
+    @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+      body > footer .strapline {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
 
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   body {
@@ -1975,27 +2041,28 @@ header nav.topbar {
     text-decoration: none;
     color: #fff; }
 
-main {
-  background-color: #fff; }
-  main h1:nth-child(1) {
+body > main {
+  background-color: #fff;
+  max-width: 50em; }
+  body > main h1:nth-of-type(1) {
     padding-bottom: 5px;
     border-bottom: 1px solid #404040; }
-    main h1:nth-child(1) + h2 {
+    body > main h1:nth-of-type(1) + h2 {
       margin-top: 1.85rem; }
-  main p, main ol, main ul {
+  body > main p, body > main ol, body > main ul {
     color: #404040; }
-  main p.leader {
+  body > main p.leader {
     font-weight: bolder; }
 
-footer {
+body > footer {
   background-color: #303030;
   color: #ddd; }
 
-footer .content {
+body > footer .content {
   background-color: #303030;
   color: #ddd; }
 
-footer .strapline {
+body > footer .strapline {
   background-color: #000;
   color: #ddd; }
 

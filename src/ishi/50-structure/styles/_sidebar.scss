@@ -40,4 +40,9 @@
         border-bottom: 1px solid $sidebar-type-p-fg-color;
     }
 
+    @media #{$media-group-d} {
+        ul, ol {
+            padding-left: $sidebar-list-indent;
+        }
+    }
 }

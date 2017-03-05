@@ -1,8 +1,8 @@
-body header {
+body > header {
     overflow-x: hidden;
 }
 
-body header:nth-child(1) {
+body > header[role=banner], body > div[class*="banner-container"] {
     background-color: $header-bg-color;
 
     p {
@@ -61,9 +61,10 @@ body header:nth-child(1) {
     }
 }
 
-body header[role=subnav] {
+body > header[role=subnav], body > div[class*="subnav-container"] {
     background-color: $header-subnav-bg-color;
     border-top: 2px solid $header-subnav-top-border-color;
+    width: 100%;
 
     p {
         color: $header-subnav-fg-color;

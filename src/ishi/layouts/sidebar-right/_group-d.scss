@@ -16,23 +16,30 @@
         align-items: stretch;
     }
 
-    body > header {
+    body > div[class*="banner-container"], body > div[class*="subnav-container"] {
         order: 1;
         flex-basis: 100%;
-
         @include util-pad-column();
         @include util-pad-flexbox();
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        > header {
+            max-width: 65em;
+            flex-basis: 100%;
+        }
     }
 
     .sidebar {
         order: 3;
-        width: 250px;
+        width: 15em;
 
         @include util-pad-column();
         @include util-pad-flexbox();
     }
 
-    main {
+    body > main {
         order: 2;
         flex-grow: 1;
         flex-basis: 500px;
@@ -41,28 +48,28 @@
         @include util-pad-flexbox();
     }
 
-    footer {
+    body > footer {
         order: 4;
         flex-basis: 100%;
-    }
 
-    footer .content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-content: flex-start;
-        align-items: stretch;
-        flex-basis: 100%;
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: flex-start;
+            align-items: stretch;
+            flex-basis: 100%;
 
-        @include util-pad-column();
-        @include util-pad-flexbox();
-    }
+            @include util-pad-column();
+            @include util-pad-flexbox();
+        }
 
-    footer .strapline {
-        flex-basis: 100%;
+        .strapline {
+            flex-basis: 100%;
 
-        @include util-pad-column();
-        @include util-pad-flexbox();
+            @include util-pad-column();
+            @include util-pad-flexbox();
+        }
     }
 }

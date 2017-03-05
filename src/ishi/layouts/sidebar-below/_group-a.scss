@@ -39,14 +39,14 @@
         justify-content: center;
         align-content: stretch;
         align-items: flex-start;
-    }
 
-    footer .content {
-        @include util-pad-flexbox();
-    }
+        .content {
+            @include util-pad-flexbox();
+        }
 
-    footer .strapline {
-        @include util-pad-column();
-        @include util-pad-flexbox();
+        .strapline {
+            @include util-pad-column();
+            @include util-pad-flexbox();
+        }
     }
 }

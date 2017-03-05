@@ -16,9 +16,27 @@
         align-items: flex-start;
     }
 
+    body > div[class*="banner-container"], body > div[class*="subnav-container"] {
+        order: 1;
+        flex-basis: 100%;
+        @include util-pad-column();
+        @include util-pad-flexbox();
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        > header {
+            max-width: 65em;
+            flex-basis: 100%;
+        }
+    }
+
     body > header {
         order: 1;
         flex-basis: 100%;
+
+        width: 100%;
 
         @include util-pad-column();
         @include util-pad-flexbox();
@@ -40,33 +58,33 @@
         @include util-pad-flexbox();
     }
 
-    footer {
+    body > footer {
         order: 3;
         flex-basis: 100%;
-    }
 
-    footer .content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-start;
-        align-items: stretch;
-    }
+        .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: stretch;
+        }
 
-    footer .content > div, footer .content > section, footer .content > aside {
-        @include util-pad-column();
-        @include util-pad-flexbox();
-    }
+        .content > div, .content > section, .content > aside {
+            @include util-pad-column();
+            @include util-pad-flexbox();
+        }
 
-    footer .content > * + footer .content * {
-        padding-top: 0px;
-    }
+        .content > * + .content * {
+            padding-top: 0px;
+        }
 
-    footer .strapline {
-        flex-basis: 100%;
+        .strapline {
+            flex-basis: 100%;
 
-        @include util-pad-column();
-        @include util-pad-flexbox();
+            @include util-pad-column();
+            @include util-pad-flexbox();
+        }
     }
 }
