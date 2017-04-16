@@ -955,6 +955,9 @@ ol {
       ol li ol ol {
         list-style-type: lower-roman; }
 
+pre, samp, code, kbd {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; }
+
 article pre, article pre.highlight {
   background-color: #EBE7E2;
   color: #202020;
@@ -964,12 +967,12 @@ article pre, article pre.highlight {
   padding: 0.5rem;
   word-break: break-all;
   word-wrap: break-word;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.1rem; }
 
 code {
   padding: 1px 2px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #c7254e;
   background-color: #f9f2f4;
   white-space: nowrap;
@@ -991,7 +994,7 @@ a code {
 
 kbd {
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: bolder;
   padding: 1px 4px;
   border: 1px solid #a6957e;
@@ -1001,7 +1004,7 @@ kbd {
 
 samp {
   padding: 1px 2px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   background-color: #EBE7E2;
   white-space: pre-wrap; }
 

@@ -1,14 +1,18 @@
+pre, samp, code, kbd {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
 article pre, article pre.highlight {
     @include insert($panel-fg-color, $panel-bg-color, $panel-border-color, $panel-border-radius, $type-pica-font-size, $type-pica-font-size);
     word-break: break-all;
     word-wrap: break-word;
-    font-size: $type-pica-font-size *0.9;
+    font-size: $type-pica-font-size *0.95;
     line-height: $type-pica-font-size * 1.1;
 }
 
 code {
     padding: 1px 2px;
-    font-size: $type-pica-font-size * 0.9;
+    font-size: $type-pica-font-size * 0.95;
     color: $code-fg-color;
     background-color: $code-bg-color;
     white-space: nowrap;
@@ -33,7 +37,7 @@ a code {
 
 kbd {
     font-family: inherit;
-    font-size: $type-pica-font-size * 0.85;
+    font-size: $type-pica-font-size * 0.9;
     font-weight: bolder;
     padding: 1px 4px;
     border: 1px solid darken($panel-bg-color, 33%);
@@ -44,7 +48,7 @@ kbd {
 
 samp {
     padding: 1px 2px;
-    font-size: $type-pica-font-size * 0.9;
+    font-size: $type-pica-font-size * 0.95;
     background-color: $panel-bg-color;
     white-space: pre-wrap;
 }
