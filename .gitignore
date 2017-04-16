@@ -3,6 +3,7 @@
 build/
 composer.lock
 node_modules
+.phpintel
 src/00-base/styles/normalize.less
 src/js/vendor/*.js
 tmp/
