@@ -1,0 +1,29 @@
+body > .centered-container {
+    width: 100%;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    @include util-pad-column();
+    @include util-pad-flexbox();
+
+    @media #{$media-group-d}, #{$media-group-e} {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        > header, > footer {
+            max-width: 65rem;
+            flex-basis: 100%;
+        }
+
+        > main {
+            max-width: 50rem;
+            flex-basis: 100%
+        }
+
+        > .sidebar {
+            max-width: 15rem;
+            flex-basis: 100%;
+        }
+    }
+}

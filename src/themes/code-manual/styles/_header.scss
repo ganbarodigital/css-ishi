@@ -12,3 +12,75 @@ header nav.topbar {
         color: $header-nav-topbar-a-visited-color;
     }
 }
+
+body > div.site {
+    background-color: #DBD7D2;
+    border-bottom: 2px solid #ABA7A2;
+    padding-bottom: 0.8rem;
+
+    header {
+        .logo {
+            width: 1.4rem;
+            height: 1.4rem;
+            vertical-align: text-bottom;
+        }
+
+        a:link {
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+            border-bottom: 2px solid #DBD7D2;
+        }
+
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 2px solid #DBD7D2;
+        }
+
+        a:hover {
+            color: inherit;
+            border-bottom: 2px solid #000;
+        }
+
+        a:active, a:focus {
+            color: inherit;
+            border-bottom: 2px solid #000;
+        }
+
+        .brand {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        font-size: 1.0rem;
+        align-items: baseline;
+        width: 100%;
+    }
+
+    nav#sitemenu ul {
+        margin-top: 1.2rem;
+        border-top: 2px groove #000;
+
+        padding-top: 0.2rem;
+
+        li {
+            padding-top: 1.0rem;
+            line-height: 1.0rem;
+        }
+    }
+
+    div.navbar_dropdown ul {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 2px groove $header-navbar-fg-color;
+
+        li {
+            @include util-pad-flexbox-content();
+        }
+
+        li:nth-last-child(1) {
+            padding-bottom: 0px;
+        }
+    }
+}

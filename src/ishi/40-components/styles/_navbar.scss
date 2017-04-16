@@ -10,3 +10,26 @@ nav.navbar, div.navbar_dropdown {
 div.navbar_dropdown ul {
     flex-wrap: wrap;
 }
+
+nav.navbar ul.right-align {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+nav.navbar[class*="justified"] {
+    justify-content: space-between;
+}
+
+nav.navbar > div {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav.burgerbar {
+    display: block;
+    @include nav-navbar;
+
+    ul {
+        flex-wrap: wrap;
+    }
+}

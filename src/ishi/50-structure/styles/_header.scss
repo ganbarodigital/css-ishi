@@ -1,8 +1,8 @@
-body > header {
+body header {
     overflow-x: hidden;
 }
 
-body > header[role=banner], body > div[class*="banner-container"] {
+body > .banner {
     background-color: $header-bg-color;
 
     p {
@@ -19,12 +19,14 @@ body > header[role=banner], body > div[class*="banner-container"] {
             background-color: $header-navbar-a-link-bg-color;
             text-decoration: none;
             display: inline-block;
+            border-bottom: 2px solid $header-navbar-a-link-bg-color;
         }
 
         a:visited {
             color: $header-navbar-a-visited-fg-color;
             background-color: $header-navbar-a-visited-bg-color;
             text-decoration: none;
+            border-bottom: 2px solid $header-navbar-a-link-bg-color;
         }
 
         a:hover {
@@ -61,7 +63,7 @@ body > header[role=banner], body > div[class*="banner-container"] {
     }
 }
 
-body > header[role=subnav], body > div[class*="subnav-container"] {
+body > .subnav {
     background-color: $header-subnav-bg-color;
     border-top: 2px solid $header-subnav-top-border-color;
     width: 100%;
@@ -80,12 +82,14 @@ body > header[role=subnav], body > div[class*="subnav-container"] {
             background-color: $header-subnav-a-link-bg-color;
             text-decoration: none;
             display: inline-block;
+            border-bottom: 2px solid $header-subnav-a-link-bg-color;
         }
 
         a:visited {
             color: $header-subnav-a-visited-fg-color;
             background-color: $header-subnav-a-visited-bg-color;
             text-decoration: none;
+            border-bottom: 2px solid $header-subnav-a-link-bg-color;
         }
 
         a:hover {

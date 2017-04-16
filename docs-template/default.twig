@@ -1,6 +1,6 @@
 {% import "ishi.twig" as ishi %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="nojs">
     <head>
         <!--[if lt IE 9]>
             <script src="assets/html5shiv.js"></script>
@@ -14,31 +14,70 @@
         <script type="text/javascript">
 Prism.plugins.autoloader.languages_path = "/assets/prism/";
         </script>
+        <script src="https://use.fontawesome.com/12a48a1e5b.js"></script>
+        <script src="{{baseUrl}}/assets/laroux.js"></script>
+        <style type="text/css">
+.nojs .enhancement {display: none;}
+.js .fallback {display: none;}
+        </style>
+        <script type="text/javascript">
+var target=$l('html');
+$l.css.removeClass(target, 'nojs');
+$l.css.addClass(target, 'js');
+        </script>
     </head>
     <body data-ishi-anchors="1" data-ishi-code-examples="1">
-        <div class="banner-container">
-            <header role="banner">
-                <div>
-                    <p style="font-size: 34px; padding-top: 10px">{{title}}</p>
-                    <p style="font-size: 18px; border-bottom: 1px solid; padding-bottom: 10px">{{subTitle}}</p>
+        <div class="centered-container site">
+            <header role="site">
+                <div class="justified grid">
+                    <div class="cell">
+                        <a href="https://ganbarodigital.com">
+                            <img class="logo" src="{{baseUrl}}/assets/ganbarodigital.svg">
+                            <span class="brand">Ganbaro Digital</span>
+                        </a>
+                    </div>
+                    <div class="shrink-wrapped cell enhancement">
+                        <a href="#" onClick="Ishi.dom.toggleHiddenItem('sitemenu')" style="padding-top: 0.20rem">Menu <i class="fa fa-bars fa-lg"></i></a>
+                    </div>
                 </div>
-                <!--<a href="{{baseUrl}}/index.html">
-                    <img src="{{baseUrl}}/assets/ganbarodigital.svg" width="60" height="60" style="vertical-align: middle; float: left; margin-right: 15px">
-                </a>-->
-                <nav class="navbar topbar">
-                    <ul>
-                        {% for topNavId, topNavItem in navigation %}
-                            <li class="{{topNavId == page.topNavId ? 'current'}}">
-                                <a class="{{topNavId == page.topNavId ? 'current'}}" href="{{ topNavItem.absoluteUrl|default(baseUrl ~ '/' ~ topNavItem.relativeUrl) }}">{{topNavItem.text|raw}}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
+                <div>
+                    <nav id="sitemenu" class="burgerbar fallback">
+                        <ul>
+                            <li><a href="https://ganbarodigital.com">Main</a></li>
+                            <li><a href="https://ganbarodigital.com/services/">Services</a></li>
+                            <li><a href="https://ganbarodigital.com/code/">Code</a></li>
+                            <li><a href="https://ganbarodigital.com/guild/">Guild</a></li>
+                            <li class="align-right"><a href="https://ganbarodigital.com/about-us/">About</a></li>
+                            <li><a href="https://ganbarodigital.com/contact/">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         </div>
+
+        <div class="centered-container banner">
+            <header class="banner">
+                <div class="banner">
+                    <div>
+                        <p style="font-size: 34px; padding-top: 10px">{{title}}</p>
+                        <p style="font-size: 18px; border-bottom: 1px solid; padding-bottom: 10px">{{subTitle}}</p>
+                    </div>
+                    <nav class="navbar topbar">
+                        <ul>
+                            {% for topNavId, topNavItem in navigation %}
+                                <li class="{{topNavId == page.topNavId ? 'current'}}">
+                                    <a class="{{topNavId == page.topNavId ? 'current'}}" href="{{ topNavItem.absoluteUrl|default(baseUrl ~ '/' ~ topNavItem.relativeUrl) }}">{{topNavItem.text|raw}}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
         {% if subNavList is defined %}
-        <div class="subnav-container">
-            <header role="subnav">
+        <div class="centered-container subnav">
+            <header class="subnav">
                 <nav class="navbar">
                     <ul>
                         {% for itemId, item in subNavList %}
@@ -51,6 +90,7 @@ Prism.plugins.autoloader.languages_path = "/assets/prism/";
             </header>
         </div>
         {% endif %}
+
         <main role="main">
             {% if page.pageflow_prev_relativeUrl is defined or page.pageflow_next_relativeUrl is defined %}
             <nav class="pageflow">
@@ -131,7 +171,6 @@ Prism.plugins.autoloader.languages_path = "/assets/prism/";
                 </p>
             </div>
         </footer>
-    <script src="{{baseUrl}}/assets/laroux.js"></script>
-    <script src="{{baseUrl}}/assets/ishi.js"></script>
+        <script src="{{baseUrl}}/assets/ishi.js"></script>
     </body>
 </html>

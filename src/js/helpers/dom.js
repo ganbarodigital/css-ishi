@@ -3,6 +3,9 @@ module.exports = {
         if ($l.css.hasClass(item, "hidden")) {
             return true;
         }
+        if ($l.css.hasClass(item, "fallback")) {
+            return true;
+        }
 
         return false;
     },
@@ -13,6 +16,16 @@ module.exports = {
 
     showItem: function(item) {
         $l.css.removeClass(item, "hidden");
+        $l.css.removeClass(item, "fallback");
+    },
+
+    toggleHiddenElement: function(itemEl) {
+        if (Ishi.dom.isHidden(itemEl)) {
+            Ishi.dom.showItem(itemEl);
+        }
+        else {
+            Ishi.dom.hideItem(itemEl);
+        }
     },
 
     toggleHiddenItem: function(itemId) {
@@ -21,12 +34,7 @@ module.exports = {
             return;
         }
 
-        if (Ishi.dom.isHidden(itemEl)) {
-            Ishi.dom.showItem(itemEl);
-        }
-        else {
-            Ishi.dom.hideItem(itemEl);
-        }
+        Ishi.dom.toggleHiddenElement(itemEl);
     },
 
     areOnScreen: function (items, parent) {

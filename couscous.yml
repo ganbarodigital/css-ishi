@@ -82,6 +82,9 @@ navigation:
             layered:
                 text: A Layered Toolkit
                 relativeUrl: concepts/layered-toolkit.html
+            progressive-enhancement:
+                text: Progressive Enhancement
+                relativeUrl: concepts/progressive-enhancement.html
 
     colors:
         text: Colors
@@ -187,6 +190,9 @@ navigation:
             pageflow:
                 text: Pageflow Navigation
                 relativeUrl: components/pageflow-navigation.html
+            sitemenu:
+                text: Site Menu
+                relativeUrl: components/sitemenu.html
             toc:
                 text: Table of Contents
                 relativeUrl: components/toc.html
@@ -234,6 +240,3 @@ navigation:
             home:
                 text: Themes
                 relativeUrl: themes/index.html
-            colors:
-                text: Colors
-                relativeUrl: themes/colors.html

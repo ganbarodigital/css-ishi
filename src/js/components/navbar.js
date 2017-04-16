@@ -6,10 +6,22 @@ module.exports = {
         return "ishi_navbar_" + Ishi.navbar.nextId;
     },
 
-    addMore: function(navEl, dropdownId) {
+    addBurger: function(navEl, dropdownId) {
         var listEl = $l("ul", navEl);
         var moreEl = $l.dom.create(
-            '<li class="more"><a href="#" onclick="Ishi.navbar.toggleDropdown(\'' + dropdownId + '\')">More...</a></li>'
+            '<li class="more"><a href="#" onclick="Ishi.navbar.toggleDropdown(\'' + dropdownId + '\')"><i class="fa fa-bars fa-lg"></i></a></li>'
+        );
+
+        listEl.appendChild(moreEl);
+
+        return $l(".more", listEl);
+    },
+
+    addMore: function(navEl, dropdownId, text) {
+        text = text || "More...";
+        var listEl = $l("ul", navEl);
+        var moreEl = $l.dom.create(
+            '<li class="more"><a href="#" onclick="Ishi.navbar.toggleDropdown(\'' + dropdownId + '\')">' + text + '</a></li>'
         );
 
         listEl.appendChild(moreEl);
@@ -100,9 +112,24 @@ module.exports = {
         }
 
         if (Ishi.dom.isHidden(dropdownEl)) {
+            // special case
+            //
+            // the parent flex container may have 'flex-wrap: nowrap'
+            // to force the menu to collapse in the first place
+            //
+            // we need to check for that, and remove it, otherwise our
+            // dropdown will look terrible
+            var parentEl = dropdownEl.parentNode;
+            if ($l.css.getProperty(parentEl, 'flex-wrap') == 'nowrap') {
+                $l.css.setProperty(parentEl, 'flex-wrap', 'wrap');
+                $l.dom.data(dropdownEl, 'ishi-stop-wrap', 1);
+            }
             Ishi.dom.showItem(dropdownEl);
         }
         else {
+            if ($l.dom.data(dropdownEl, 'ishi-stop-wrap') == 1) {
+                $l.css.setProperty(dropdownEl.parentNode, 'flex-wrap', 'nowrap');
+            }
             Ishi.dom.hideItem(dropdownEl);
         }
     },

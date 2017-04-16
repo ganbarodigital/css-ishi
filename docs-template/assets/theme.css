@@ -956,7 +956,7 @@ ol {
         list-style-type: lower-roman; }
 
 article pre, article pre.highlight {
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   color: #202020;
   border: 1px solid #a8a8a8;
   border-radius: 4px;
@@ -979,7 +979,7 @@ pre code {
   padding: 0;
   font-size: 0.95rem;
   color: #202020;
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   white-space: pre-wrap;
   line-height: 1.1rem; }
 
@@ -994,7 +994,7 @@ kbd {
   font-size: 0.85rem;
   font-weight: bolder;
   padding: 1px 4px;
-  border: 1px solid #9a9a9a;
+  border: 1px solid #a6957e;
   border-radius: 3px;
   background-color: transparent;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 1px 0px 2px rgba(0, 0, 0, 0.2), inset -1px 0px 2px rgba(0, 0, 0, 0.2); }
@@ -1002,7 +1002,7 @@ kbd {
 samp {
   padding: 1px 2px;
   font-size: 0.9rem;
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   white-space: pre-wrap; }
 
 figure.highlight pre {
@@ -1362,7 +1362,7 @@ th {
   padding-bottom: 0.5rem; }
 
 tr {
-  border-bottom: 1px solid #c8c8c8; }
+  border-bottom: 1px solid #ccc2b5; }
 
 td {
   padding-top: 0.5rem;
@@ -1377,9 +1377,20 @@ td:nth-last-child(1) {
   display: flex;
   flex-flow: row wrap; }
 
+.grid[class*="justified"] {
+  justify-content: space-between; }
+
 .grid > .cell {
-  flex: 1;
-  flex-basis: 16em; }
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 16em;
+  display: flex; }
+
+.grid > .cell[class*="shrink-wrapped"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: auto; }
 
 .grid > .cell[class*="1of1"] {
   flex-basis: 100%; }
@@ -1478,7 +1489,7 @@ td:nth-last-child(1) {
   .grid[class*="1row"] {
     flex-wrap: nowrap; } }
 a.calltoaction {
-  border: 2px solid #9a9a9a;
+  border: 2px solid #a6957e;
   padding: 0.5rem;
   font-weight: bolder;
   white-space: nowrap;
@@ -1665,7 +1676,7 @@ a.calltoaction.warning.outline:hover {
  * styles
  */
 .callout {
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   color: #202020;
   border-left: 4px solid #a8a8a8;
   margin-bottom: 1rem;
@@ -1678,7 +1689,7 @@ a.calltoaction.warning.outline:hover {
   margin-bottom: 0px; }
 
 .callout.gradient {
-  background-image: linear-gradient(to bottom, #f4f4f4 0%, #e8e8e8 100%); }
+  background-image: linear-gradient(to bottom, #f0edea 0%, #e6e1da 100%); }
 
 .callout.outline {
   background-color: transparent; }
@@ -1690,7 +1701,7 @@ a.calltoaction.warning.outline:hover {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); }
 
 .callout.sunken.gradient {
-  background-image: linear-gradient(to bottom, #e8e8e8 0%, #f4f4f4 100%); }
+  background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .callout.attention {
   border-left: 4px solid #234F83;
@@ -1792,9 +1803,9 @@ a.calltoaction.warning.outline:hover {
  * styles
  */
 .panel {
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   color: #202020;
-  border: 1px solid #9a9a9a;
+  border: 1px solid #a6957e;
   border-radius: 4px;
   margin-bottom: 1rem;
   padding: 0.5rem; }
@@ -1806,7 +1817,7 @@ a.calltoaction.warning.outline:hover {
   margin-bottom: 0px; }
 
 .panel.gradient {
-  background-image: linear-gradient(to bottom, #f4f4f4 0%, #e8e8e8 100%); }
+  background-image: linear-gradient(to bottom, #f0edea 0%, #e6e1da 100%); }
 
 .panel.outline {
   background-color: transparent; }
@@ -1924,7 +1935,8 @@ a.calltoaction.warning.outline:hover {
  * styles
  */
 .swatch {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  width: 100%; }
   .swatch ul {
     list-style: none;
     padding-left: 0px;
@@ -1942,11 +1954,26 @@ a.calltoaction.warning.outline:hover {
     margin-right: .25em; }
     .swatch li span.name {
       padding-bottom: 2em; }
+      .swatch li span.name a:link, .swatch li span.name a:visited {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid transparent; }
     .swatch li span.shade {
       flex-grow: 1;
-      padding-right: 2em; }
+      padding-right: 2em;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word; }
+      .swatch li span.shade a:link, .swatch li span.shade a:visited {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid transparent; }
+    .swatch li span.hex a:link, .swatch li span.hex a:visited {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent; }
   .swatch li.dark-bg {
-    color: #F5F5F5; }
+    color: #f5f5f5; }
   .swatch .spec {
     display: flex;
     flex-basis: 100%;
@@ -1961,7 +1988,7 @@ a.calltoaction.warning.outline:hover {
  */
 .code-example > header > .example-show > button, .code-example > footer > .example-show > button {
   background-color: transparent;
-  border: 1px solid #9a9a9a;
+  border: 1px solid #a6957e;
   padding-top: 0rem;
   padding-bottom: 0rem;
   padding-left: 0.25rem;
@@ -2029,7 +2056,7 @@ nav.navbar ul, div.navbar_dropdown ul {
   white-space: nowrap;
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: stretch;
@@ -2040,12 +2067,49 @@ nav.navbar ul, div.navbar_dropdown ul {
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto; }
+  nav.navbar ul li:last-of-type, div.navbar_dropdown ul li:last-of-type {
+    padding-right: 0px; }
 
 div.navbar_dropdown ul {
   flex-wrap: wrap; }
 
+nav.navbar ul.right-align {
+  align-self: flex-end;
+  margin-left: auto; }
+
+nav.navbar[class*="justified"] {
+  justify-content: space-between; }
+
+nav.navbar > div {
+  display: flex;
+  flex-grow: 1; }
+
+nav.burgerbar {
+  display: block; }
+  nav.burgerbar ul {
+    list-style: none;
+    padding-left: 0px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: stretch;
+    overflow: hidden; }
+    nav.burgerbar ul li {
+      display: inline-block;
+      padding-right: 20px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto; }
+    nav.burgerbar ul li:last-of-type {
+      padding-right: 0px; }
+  nav.burgerbar ul {
+    flex-wrap: wrap; }
+
 nav.pageflow {
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   color: #202020;
   border: 1px solid #a8a8a8;
   border-radius: 4px;
@@ -2054,7 +2118,7 @@ nav.pageflow {
     list-style: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: stretch;
@@ -2093,82 +2157,113 @@ nav.pageflow {
 *:not(p) + nav.pageflow {
   margin-top: 1.5rem; }
 
-body > header {
+body > .centered-container {
+  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 601px) and (max-width: 1007px) {
+    body > .centered-container {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
+    body > .centered-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      body > .centered-container > header, body > .centered-container > footer {
+        max-width: 65rem;
+        flex-basis: 100%; }
+      body > .centered-container > main {
+        max-width: 50rem;
+        flex-basis: 100%; }
+      body > .centered-container > .sidebar {
+        max-width: 15rem;
+        flex-basis: 100%; } }
+
+body header {
   overflow-x: hidden; }
 
-body > header[role=banner], body > div[class*="banner-container"] {
+body > .banner {
   background-color: #000; }
-  body > header[role=banner] p, body > div[class*="banner-container"] p {
+  body > .banner p {
     color: #dadada; }
-  body > header[role=banner] del, body > div[class*="banner-container"] del {
+  body > .banner del {
     color: #dadada; }
-  body > header[role=banner] nav.navbar a:link, body > header[role=banner] div.navbar_dropdown a:link, body > div[class*="banner-container"] nav.navbar a:link, body > div[class*="banner-container"] div.navbar_dropdown a:link {
+  body > .banner nav.navbar a:link, body > .banner div.navbar_dropdown a:link {
     color: #ddd;
     background-color: #000;
     text-decoration: none;
-    display: inline-block; }
-  body > header[role=banner] nav.navbar a:visited, body > header[role=banner] div.navbar_dropdown a:visited, body > div[class*="banner-container"] nav.navbar a:visited, body > div[class*="banner-container"] div.navbar_dropdown a:visited {
+    display: inline-block;
+    border-bottom: 2px solid #000; }
+  body > .banner nav.navbar a:visited, body > .banner div.navbar_dropdown a:visited {
     color: #ddd;
     background-color: #000;
-    text-decoration: none; }
-  body > header[role=banner] nav.navbar a:hover, body > header[role=banner] div.navbar_dropdown a:hover, body > div[class*="banner-container"] nav.navbar a:hover, body > div[class*="banner-container"] div.navbar_dropdown a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #000; }
+  body > .banner nav.navbar a:hover, body > .banner div.navbar_dropdown a:hover {
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #0C94F5; }
-  body > header[role=banner] nav.navbar a:active, body > header[role=banner] nav.navbar a:focus, body > header[role=banner] div.navbar_dropdown a:active, body > header[role=banner] div.navbar_dropdown a:focus, body > div[class*="banner-container"] nav.navbar a:active, body > div[class*="banner-container"] nav.navbar a:focus, body > div[class*="banner-container"] div.navbar_dropdown a:active, body > div[class*="banner-container"] div.navbar_dropdown a:focus {
+  body > .banner nav.navbar a:active, body > .banner nav.navbar a:focus, body > .banner div.navbar_dropdown a:active, body > .banner div.navbar_dropdown a:focus {
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #0C94F5; }
-  body > header[role=banner] nav.navbar a.current, body > header[role=banner] div.navbar_dropdown a.current, body > div[class*="banner-container"] nav.navbar a.current, body > div[class*="banner-container"] div.navbar_dropdown a.current {
+  body > .banner nav.navbar a.current, body > .banner div.navbar_dropdown a.current {
     color: #fff;
     background-color: #000;
     border-bottom: 2px solid #0C94F5; }
-  body > header[role=banner] div.navbar_dropdown ul, body > div[class*="banner-container"] div.navbar_dropdown ul {
+  body > .banner div.navbar_dropdown ul {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px groove #ddd; }
-    body > header[role=banner] div.navbar_dropdown ul li, body > div[class*="banner-container"] div.navbar_dropdown ul li {
+    body > .banner div.navbar_dropdown ul li {
       padding-bottom: 1rem; }
-    body > header[role=banner] div.navbar_dropdown ul li:nth-last-child(1), body > div[class*="banner-container"] div.navbar_dropdown ul li:nth-last-child(1) {
+    body > .banner div.navbar_dropdown ul li:nth-last-child(1) {
       padding-bottom: 0px; }
 
-body > header[role=subnav], body > div[class*="subnav-container"] {
+body > .subnav {
   background-color: #234F83;
   border-top: 2px solid #1F3E63;
   width: 100%; }
-  body > header[role=subnav] p, body > div[class*="subnav-container"] p {
+  body > .subnav p {
     color: #ddd; }
-  body > header[role=subnav] nav.navbar li, body > header[role=subnav] div.navbar_dropdown li, body > div[class*="subnav-container"] nav.navbar li, body > div[class*="subnav-container"] div.navbar_dropdown li {
+  body > .subnav nav.navbar li, body > .subnav div.navbar_dropdown li {
     flex-grow: 0;
     padding-right: 15px; }
-  body > header[role=subnav] nav.navbar a:link, body > header[role=subnav] div.navbar_dropdown a:link, body > div[class*="subnav-container"] nav.navbar a:link, body > div[class*="subnav-container"] div.navbar_dropdown a:link {
+  body > .subnav nav.navbar a:link, body > .subnav div.navbar_dropdown a:link {
     color: #ddd;
     background-color: #234F83;
     text-decoration: none;
-    display: inline-block; }
-  body > header[role=subnav] nav.navbar a:visited, body > header[role=subnav] div.navbar_dropdown a:visited, body > div[class*="subnav-container"] nav.navbar a:visited, body > div[class*="subnav-container"] div.navbar_dropdown a:visited {
+    display: inline-block;
+    border-bottom: 2px solid #234F83; }
+  body > .subnav nav.navbar a:visited, body > .subnav div.navbar_dropdown a:visited {
     color: #ddd;
     background-color: #234F83;
-    text-decoration: none; }
-  body > header[role=subnav] nav.navbar a:hover, body > header[role=subnav] div.navbar_dropdown a:hover, body > div[class*="subnav-container"] nav.navbar a:hover, body > div[class*="subnav-container"] div.navbar_dropdown a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #234F83; }
+  body > .subnav nav.navbar a:hover, body > .subnav div.navbar_dropdown a:hover {
     color: #fff;
     background-color: #234F83;
     border-bottom: 2px solid #fff; }
-  body > header[role=subnav] nav.navbar a:active, body > header[role=subnav] nav.navbar a:focus, body > header[role=subnav] div.navbar_dropdown a:active, body > header[role=subnav] div.navbar_dropdown a:focus, body > div[class*="subnav-container"] nav.navbar a:active, body > div[class*="subnav-container"] nav.navbar a:focus, body > div[class*="subnav-container"] div.navbar_dropdown a:active, body > div[class*="subnav-container"] div.navbar_dropdown a:focus {
+  body > .subnav nav.navbar a:active, body > .subnav nav.navbar a:focus, body > .subnav div.navbar_dropdown a:active, body > .subnav div.navbar_dropdown a:focus {
     color: #fff;
     background-color: #234F83;
     border-bottom: 2px solid #fff; }
-  body > header[role=subnav] nav.navbar a.current, body > header[role=subnav] div.navbar_dropdown a.current, body > div[class*="subnav-container"] nav.navbar a.current, body > div[class*="subnav-container"] div.navbar_dropdown a.current {
+  body > .subnav nav.navbar a.current, body > .subnav div.navbar_dropdown a.current {
     color: #fff;
     background-color: #234F83;
     border-bottom: 2px solid #fff; }
-  body > header[role=subnav] div.navbar_dropdown ul, body > div[class*="subnav-container"] div.navbar_dropdown ul {
+  body > .subnav div.navbar_dropdown ul {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 2px groove #ddd; }
-    body > header[role=subnav] div.navbar_dropdown ul li, body > div[class*="subnav-container"] div.navbar_dropdown ul li {
+    body > .subnav div.navbar_dropdown ul li {
       padding-bottom: 1rem; }
-    body > header[role=subnav] div.navbar_dropdown ul li:nth-last-child(1), body > div[class*="subnav-container"] div.navbar_dropdown ul li:nth-last-child(1) {
+    body > .subnav div.navbar_dropdown ul li:nth-last-child(1) {
       padding-bottom: 0px; }
 
 body > main {
@@ -2204,7 +2299,7 @@ body > main {
   body > main article .column {
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: stretch;
@@ -2218,7 +2313,7 @@ body > main {
       flex-shrink: 0; } }
 
 .sidebar {
-  background-color: #eeeeee;
+  background-color: #EBE7E2;
   color: #404040; }
   .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
     color: #222; }
@@ -2362,7 +2457,7 @@ body > footer .strapline p {
     align-content: stretch;
     align-items: flex-start; }
 
-  body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
+  body > div.header-container, body > header {
     order: 1;
     flex-basis: 100%;
     width: 100%;
@@ -2371,7 +2466,7 @@ body > footer .strapline p {
     padding-top: 1rem;
     padding-bottom: 1rem; } }
   @media (min-width: 320px) and (max-width: 600px) and (min-width: 601px) and (max-width: 1007px) {
-    body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
+    body > div.header-container, body > header {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
@@ -2449,7 +2544,7 @@ body > footer .strapline p {
     align-content: stretch;
     align-items: flex-start; }
 
-  body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
+  body > div.header-container, body > header {
     order: 1;
     flex-basis: 100%;
     width: 100%;
@@ -2458,7 +2553,7 @@ body > footer .strapline p {
     padding-top: 1rem;
     padding-bottom: 1rem; } }
   @media (min-width: 601px) and (max-width: 1007px) and (min-width: 601px) and (max-width: 1007px) {
-    body > div[class*="banner-container"], body > div[class*="subnav-container"], body > header {
+    body > div.header-container, body > header {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
@@ -2522,7 +2617,7 @@ body > footer .strapline p {
         padding-left: 2rem;
         padding-right: 2rem; } }
 
-@media (min-width: 1007px) and (max-width: 1280px) {
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   /**
    * variables
    */
@@ -2537,25 +2632,40 @@ body > footer .strapline p {
     align-content: flex-start;
     align-items: stretch; }
 
-  body > div[class*="banner-container"], body > div[class*="subnav-container"] {
-    order: 1;
-    flex-basis: 100%;
+  body > div.header-container {
+    width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: center; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
-    body > div[class*="banner-container"], body > div[class*="subnav-container"] {
+    justify-content: center;
+    flex-basis: 100%;
+    order: 1; } }
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
+    body > div.header-container {
       padding-left: 2rem;
       padding-right: 2rem; } }
-@media (min-width: 1007px) and (max-width: 1280px) {
-    body > div[class*="banner-container"] > header, body > div[class*="subnav-container"] > header {
-      max-width: 65em;
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
+    body > div.header-container > header {
+      max-width: 65rem;
       flex-basis: 100%; }
 
+  body > header {
+    order: 1;
+    flex-basis: 100%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; } }
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
+    body > header {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   .sidebar {
     order: 3;
     width: 15em;
@@ -2563,12 +2673,12 @@ body > footer .strapline p {
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
     .sidebar {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
-@media (min-width: 1007px) and (max-width: 1280px) {
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   body > main {
     order: 2;
     flex-grow: 1;
@@ -2577,12 +2687,12 @@ body > footer .strapline p {
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem; } }
-  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+  @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
     body > main {
       padding-left: 2rem;
       padding-right: 2rem; } }
 
-@media (min-width: 1007px) and (max-width: 1280px) {
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   body > footer {
     order: 4;
     flex-basis: 100%; }
@@ -2598,18 +2708,18 @@ body > footer .strapline p {
       padding-right: 1rem;
       padding-top: 1rem;
       padding-bottom: 1rem; } }
-    @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+    @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
       body > footer .content {
         padding-left: 2rem;
         padding-right: 2rem; } }
-@media (min-width: 1007px) and (max-width: 1280px) {
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
     body > footer .strapline {
       flex-basis: 100%;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-top: 1rem;
       padding-bottom: 1rem; } }
-    @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px) {
+    @media (min-width: 1007px) and (max-width: 1280px) and (min-width: 601px) and (max-width: 1007px), (min-width: 1281px) and (min-width: 601px) and (max-width: 1007px) {
       body > footer .strapline {
         padding-left: 2rem;
         padding-right: 2rem; } }
@@ -2623,7 +2733,7 @@ body > footer .strapline p {
     border-radius: 4px;
     border: 1px solid #a8a8a8; } }
 body {
-  font-family: Helvetica, Roboto, Arial, sans-serif;
+  font-family: Lato, Helvetica, Roboto, Arial, sans-serif;
   background-color: #fff; }
 
 header nav.topbar {
@@ -2635,6 +2745,52 @@ header nav.topbar {
   header nav.topbar a:visited {
     text-decoration: none;
     color: #fff; }
+
+body > div.site {
+  background-color: #DBD7D2;
+  border-bottom: 2px solid #ABA7A2;
+  padding-bottom: 0.8rem; }
+  body > div.site header {
+    font-size: 1.0rem;
+    align-items: baseline;
+    width: 100%; }
+    body > div.site header .logo {
+      width: 1.4rem;
+      height: 1.4rem;
+      vertical-align: text-bottom; }
+    body > div.site header a:link {
+      color: inherit;
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 2px solid #DBD7D2; }
+    body > div.site header a:visited {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 2px solid #DBD7D2; }
+    body > div.site header a:hover {
+      color: inherit;
+      border-bottom: 2px solid #000; }
+    body > div.site header a:active, body > div.site header a:focus {
+      color: inherit;
+      border-bottom: 2px solid #000; }
+    body > div.site header .brand {
+      font-size: 1.1rem;
+      font-weight: 700; }
+  body > div.site nav#sitemenu ul {
+    margin-top: 1.2rem;
+    border-top: 2px groove #000;
+    padding-top: 0.2rem; }
+    body > div.site nav#sitemenu ul li {
+      padding-top: 1.0rem;
+      line-height: 1.0rem; }
+  body > div.site div.navbar_dropdown ul {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px groove #ddd; }
+    body > div.site div.navbar_dropdown ul li {
+      padding-bottom: 1rem; }
+    body > div.site div.navbar_dropdown ul li:nth-last-child(1) {
+      padding-bottom: 0px; }
 
 body > main {
   background-color: #fff;

@@ -49,7 +49,7 @@ body > main {
         .column {
             display: flex;
             flex-direction: row;
-            flex-wrap: none;
+            flex-wrap: nowrap;
             justify-content: flex-start;
             align-content: flex-start;
             align-items: stretch;

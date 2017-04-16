@@ -16,14 +16,16 @@
         align-items: stretch;
     }
 
-    body > div[class*="banner-container"], body > div[class*="subnav-container"] {
-        order: 1;
-        flex-basis: 100%;
+    body > div.header-container {
+        width: 100%;
         @include util-pad-column();
         @include util-pad-flexbox();
+
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-basis: 100%;
+        order: 1;
 
         > header {
             max-width: 65em;
@@ -34,6 +36,8 @@
     body > header {
         order: 1;
         flex-basis: 100%;
+
+        width: 100%;
 
         @include util-pad-column();
         @include util-pad-flexbox();
