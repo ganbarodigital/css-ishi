@@ -9,12 +9,24 @@
         {
             "type": "vcs",
             "url": "https://github.com/stuartherbert/Couscous"
-        }
+        },
+		{
+			"type": "vcs",
+			"url": "https://github.com/ganbarodigital/php-mv-color-calc"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/ganbarodigital/php-mv-css-parser"
+		}
     ],
     "require": {
         "php": ">= 5.5"
     },
     "require-dev": {
-        "couscous/couscous": "dev-develop"
+        "couscous/couscous": "dev-develop",
+        "ganbarodigital/php-the-missing-bits": "dev-develop as 1.10.0",
+        "ganbarodigital/php-mv-color-calc": "dev-develop as 1.0.0",
+        "ganbarodigital/php-mv-css-parser": "dev-develop as 1.0.0",
+        "ganbarodigital/php-mv-text-parser": "dev-develop as 1.0.0"
     }
 }

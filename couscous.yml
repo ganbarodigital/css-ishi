@@ -83,6 +83,39 @@ navigation:
                 text: A Layered Toolkit
                 relativeUrl: concepts/layered-toolkit.html
 
+    colors:
+        text: Colors
+        relativeUrl: colors/index.html
+
+        contents:
+            home:
+                text: Introduction
+                relativeUrl: colors/index.html
+            ishi:
+                text: Ishi Palette
+                relativeUrl: colors/ishi-palette.html
+            apple:
+                text: Apple Palette
+                relativeUrl: colors/apple-palette.html
+            ganbaro-digital:
+                text: Ganbaro Palette
+                relativeUrl: colors/ganbaro-palette.html
+            flat-ui:
+                text: Flat UI Palette
+                relativeUrl: colors/flat-ui-palette.html
+            material-design:
+                text: Material Design Palette
+                relativeUrl: colors/material-design-palette.html
+            microsoft-palette:
+                text: Microsoft Palette
+                relativeUrl: colors/microsoft-palette.html
+            social:
+                text: Social Colors
+                relativeUrl: colors/social-colors.html
+            misc-palette:
+                text: Miscellaneous Palette
+                relativeUrl: colors/misc-palette.html
+
     typography:
         text: Typography
         relativeUrl: typography/index.html

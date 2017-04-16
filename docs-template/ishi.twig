@@ -6,19 +6,33 @@
     {% include ".i/externalurls/" ~ name ~ ".twig" %}
 {% endmacro %}
 
-{% macro large_colorswatch(name, shade, hex, lightOrDarkBg) %}
+{% macro large_colorswatch(prefix, shade, hex, lightOrDarkBg) %}
     <li class="{{lightOrDarkBg}}" style="background-color: {{hex}}">
-        <span class="name">{{name}}</span>
+        <span class="name"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{prefix}}</a></span>
         <div class="spec">
-            <span class="shade">{{shade}}</span>
-            <span class="hex">{{hex}}</span>
+        <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
+        <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
         </div>
     </li>
 {% endmacro %}
 
-{% macro small_colorswatch(shade, hex, lightOrDarkBg) %}
+{% macro small_colorswatch(name, hex, lightOrDarkBg) %}
     <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
-        <span class="shade">{{shade}}</span>
-        <span class="hex">{{hex}}</span>
+        <span class="shade"><a href="../color-details/{{name|lower}}.html">{{name}}</a></span>
+        <span class="hex"><a href="../color-details/{{name|lower}}.html">{{hex|upper}}</a></span>
+    </li>
+{% endmacro %}
+
+{% macro sub_colorswatch(prefix, shade, hex, lightOrDarkBg) %}
+    <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
+        <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
+        <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
+    </li>
+{% endmacro %}
+
+{% macro prefix_colorswatch(shade, prefix, hex, lightOrDarkBg) %}
+    <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
+        <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
+        <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
     </li>
 {% endmacro %}
