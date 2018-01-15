@@ -1,15 +1,13 @@
 # Getting Started
 
-Ishi runs on any computer which is already setup for Ruby and Node.JS.
+Ishi runs on any computer which is already setup for Node.JS.
 
 ## Installing Dependencies
 
 Before you download a copy of Ishi, you need to have the following installed:
 
-* Ruby 2.x (used by Sass)
-* Node.JS 0.12 or later and npm (used by Postcss)
+* Node.JS and `npm` (used for building Ishi)
 * git (used for downloading Ishi)
-* make (used for installing tools)
 
 Your operating system might already come with some of these.
 
@@ -25,26 +23,20 @@ git clone https://github.com/ganbarodigital/css-ishi.git
 
 ## Installing Tools
 
-Ishi uses the Ruby-based Sass compiler, and the Node.JS-based Postcss processor. You can use our handy `Makefile` to install these for you:
+Ishi uses [`node-sass`](https://github.com/sass/node-sass). You can install all required tools via `npm`:
 
 <pre class="language-bash command-line" data-user="you" data-host="localhost"><code class="language-bash">
 cd css-ishi
-make tools
+npm install
 </code></pre>
-
-<div class="callout attention" markdown="1">
-You will be prompted for your password when you run `make tools`. This is necessary to install the tools globally on your machine.
-</div>
 
 ## Making Ishi Available
 
-To use Ishi in your own Sass projects, add the `-I` flag on the command-line:
+To use Ishi in your own Sass projects, add the `--include-path` flag on the command-line:
 
 <pre class="language-bash command-line" data-user="you" data-host="localhost"><code class="language-bash">
-sass --compass -I &lt;where-you-put-ishi&gt;/src ...
+node_modules/.bin/node-sass --include-path src docs-template/theme.scss > docs-template/assets/theme.css
 </code></pre>
-
-At the moment, Ishi does rely on a function or two provided by Compass. We hope to do something about that in the future.
 
 ## Where To Use Ishi
 
