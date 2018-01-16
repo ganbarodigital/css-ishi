@@ -61,11 +61,7 @@
 }
 
 .panel.info {
-    @include context-panel($info-hi-color, $info-bg-color);
-}
-
-.panel.info h1, .panel.info h2, .panel.info h3, .panel.info h4, .panel.info h5, .panel.info h6 {
-    color: $info-hi-color;
+    @include util-panel($color-info-fg, $color-info-bg, $color-info-border);
 }
 
 .panel.success {
