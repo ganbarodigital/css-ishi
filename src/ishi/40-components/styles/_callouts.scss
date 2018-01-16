@@ -62,11 +62,7 @@
 }
 
 .callout.success {
-    @include context-panel($success-hi-color, $success-bg-color);
-}
-
-.callout.success h1, .callout.success h2, .callout.success h3, .callout.success h4, .callout.success h5, .callout.success h6 {
-    color: $success-hi-color;
+    @include util-callout($color-success-fg, $color-success-bg, $color-success-border);
 }
 
 .callout.warning {

@@ -65,11 +65,7 @@
 }
 
 .panel.success {
-    @include context-panel($success-hi-color, $success-bg-color);
-}
-
-.panel.success h1, .panel.success h2, .panel.success h3, .panel.success h4, .panel.success h5, .panel.success h6 {
-    color: $success-hi-color;
+    @include util-panel($color-success-fg, $color-success-bg, $color-success-border);
 }
 
 .panel.warning {

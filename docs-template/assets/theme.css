@@ -1735,10 +1735,11 @@ a.calltoaction.warning.outline:hover {
 
 .callout.success {
   background-color: #dff0d8;
-  color: #3c763d; }
-
-.callout.success h1, .callout.success h2, .callout.success h3, .callout.success h4, .callout.success h5, .callout.success h6 {
-  color: #3c763d; }
+  color: #3c763d;
+  border-left: 4px solid #3c763d; }
+  .callout.success h1, .callout.success h2, .callout.success h3, .callout.success h4, .callout.success h5, .callout.success h5 {
+    color: #3c763d;
+    background-color: #dff0d8; }
 
 .callout.warning {
   background-color: #fcf8e3;
@@ -1873,10 +1874,11 @@ a.calltoaction.warning.outline:hover {
 
 .panel.success {
   background-color: #dff0d8;
-  color: #3c763d; }
-
-.panel.success h1, .panel.success h2, .panel.success h3, .panel.success h4, .panel.success h5, .panel.success h6 {
-  color: #3c763d; }
+  color: #3c763d;
+  border: 1px solid #3c763d; }
+  .panel.success h1, .panel.success h2, .panel.success h3, .panel.success h4, .panel.success h5, .panel.success h5 {
+    color: #3c763d;
+    background-color: #dff0d8; }
 
 .panel.warning {
   background-color: #fcf8e3;
