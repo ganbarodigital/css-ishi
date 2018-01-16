@@ -1682,9 +1682,9 @@ a.calltoaction.warning.outline:hover {
  * styles
  */
 .callout {
-  background-color: #EBE7E2;
-  color: #202020;
-  border-left: 4px solid #a8a8a8;
+  background-color: #ebe7e2;
+  color: #2b2722;
+  border-left: 4px solid #a6957e;
   margin-bottom: 1rem;
   padding: 1rem; }
 
@@ -1706,7 +1706,12 @@ a.calltoaction.warning.outline:hover {
 .callout.sunken {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); }
 
+.callout.gradient.sunken {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
+
 .callout.sunken.gradient {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .callout.attention {
@@ -1833,6 +1838,14 @@ a.calltoaction.warning.outline:hover {
 
 .panel.sunken {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+.panel.gradient.sunken {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
+
+.panel.sunken.gradient {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .panel.attention {
   border: 1px solid #234F83;

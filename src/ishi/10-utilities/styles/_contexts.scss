@@ -1,0 +1,24 @@
+@mixin context-panel($color-fg, $color-bg) {
+    background-color: $color-panel-bg;
+    color: $color-panel-fg;
+}
+
+@mixin context-gradient($color-bg) {
+    background-image: linear-gradient(to bottom, lighten($color-bg, $gradient-range) 0%, darken($color-bg, $gradient-range) 100%);
+}
+
+@mixin context-gradient-reverse($color-bg) {
+    background-image: linear-gradient(to bottom, darken($color-bg, $gradient-range) 0%, lighten($color-bg, $gradient-range) 100%);
+}
+
+@mixin context-outline() {
+    background-color: transparent;
+}
+
+@mixin context-standout() {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.20);
+}
+
+@mixin context-sunken() {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.20);
+}
