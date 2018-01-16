@@ -369,8 +369,7 @@ td,
 th {
   padding: 0; }
 
-/* ========================================================================== *\
-   Base -> Reset ($base-reset)
+/* ========================================================================== *   Base -> Reset ($base-reset)
 \* ========================================================================== */
 /**
  * `border-box`... ALL THE THINGS!
@@ -505,7 +504,7 @@ ol.hierarchical {
     ol.hierarchical li ol {
       list-style-type: none; }
   ol.hierarchical li:before {
-    content: counters(section,".") ". "; }
+    content: counters(section, ".") ". "; }
   ol.hierarchical li ol {
     counter-reset: section; }
     ol.hierarchical li ol li ol {
@@ -815,12 +814,15 @@ li.align-right {
 @media (max-width: 319px) {
   html {
     font-size: 16px; } }
+
 @media (min-width: 320px) and (max-width: 600px) {
   html {
     font-size: 17px; } }
+
 @media (min-width: 601px) and (max-width: 1007px) {
   html {
     font-size: 18px; } }
+
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   html {
     font-size: 15px; } }
@@ -881,24 +883,31 @@ h6 {
   font-size: 1.85rem;
   line-height: 2rem;
   margin-bottom: 1rem; }
+
 .sidebar *:not(h1) + h1 {
   margin-top: 1.85rem; }
+
 .sidebar h2 {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 1rem; }
+
 .sidebar *:not(h1) + h2 {
   margin-top: 2rem; }
+
 .sidebar h3 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 1rem; }
+
 .sidebar *:not(h2) + h3 {
   margin-top: 1.25rem; }
+
 .sidebar h4 {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1rem; }
+
 .sidebar *:not(h3) + h4 {
   margin-top: 1rem; }
 
@@ -1007,6 +1016,7 @@ samp {
 
 figure.highlight pre {
   overflow-x: auto; }
+
 figure.highlight code {
   background-color: inherit;
   white-space: pre;
@@ -1203,6 +1213,7 @@ pre[class*="language-"]:after {
   pre[class*="language-"]:after {
     bottom: 14px;
     box-shadow: none; } }
+
 /* Plugin styles */
 .token.tab:not(:empty):before,
 .token.cr:before,
@@ -1334,6 +1345,7 @@ pre.code-toolbar > .toolbar span:focus {
 @media (min-width: 320px) and (max-width: 600px), (min-width: 601px) and (max-width: 1007px) {
   .command-line-prompt {
     display: none; } }
+
 .command-line-prompt > span:before {
   color: #999;
   content: ' ';
@@ -1442,54 +1454,45 @@ td:nth-last-child(1) {
 @media (min-width: 320px) and (max-width: 600px) {
   .grid > .cell[class*="1of3"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="2of3"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="1of4"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="2of4"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="3of4"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="1of6"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="2of6"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="3of6"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="4of6"] {
     flex: 0 0 100%; }
-
   .grid > .cell[class*="5of6"] {
     flex: 0 0 100%; } }
+
 @media (min-width: 601px) and (max-width: 1007px) {
   .grid > .cell[class*="1of4"] {
     flex: 1 0 50%; }
-
   .grid > .cell[class*="2of4"] {
     flex: 1 0 100%; }
-
   .grid > .cell[class*="3of4"] {
     flex: 1 0 100%; } }
+
 @media (min-width: 601px) and (max-width: 1007px) {
   .grid > .cell[class*="1of6"] {
     flex: 0 0 33.33%; }
-
   .grid > .cell[class*="2of6"] {
     flex: 1 0 66.66%; }
-
   .grid > .cell[class*="3of6"] {
     flex: 1 0 100%; } }
+
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   .grid[class*="1row"] {
     flex-wrap: nowrap; } }
+
 a.calltoaction {
   border: 2px solid #a6957e;
   padding: 0.5rem;
@@ -1524,6 +1527,7 @@ a.calltoaction:visited {
 
 main .calltoaction.gradient {
   background-image: linear-gradient(to bottom, #5a5a5a 0%, #272727 100%); }
+
 main .calltoaction.sunken.gradient {
   background-image: linear-gradient(to bottom, #272727 0%, #5a5a5a 100%); }
 
@@ -2351,37 +2355,47 @@ body > footer, body > footer p {
 
 body > footer h1, body > footer h2, body > footer h3, body > footer h4, body > footer h5, body > footer h6 {
   color: #dadada; }
+
 body > footer h1 {
   font-size: 1.5rem;
   line-height: 1.5rem; }
+
 body > footer h2 {
   font-size: 1.25rem;
   line-height: 1.75rem; }
+
 body > footer p {
   color: #ddd; }
+
 body > footer * p:nth-last-child(1) {
   margin-bottom: 0px; }
+
 body > footer del {
   color: #ddd; }
+
 body > footer a:link {
   color: #eee;
   background-color: transparent;
   text-decoration: none;
   border-bottom: 1px solid #ddd;
   display: inline-block; }
+
 body > footer a:visited {
   color: #eee;
   background-color: transparent;
   border-bottom: 1px solid #ddd;
   text-decoration: none; }
+
 body > footer a:hover {
   color: #fff;
   background-color: transparent;
   border-bottom: 1px solid #fff; }
+
 body > footer a:active, body > footer a:focus {
   color: #fff;
   background-color: transparent;
   border-bottom: 1px solid #fff; }
+
 body > footer .strapline p {
   margin-bottom: 0px; }
 
@@ -2390,13 +2404,14 @@ body > footer .strapline p {
     align-items: flex-start; }
     div.navbar_dropdown ul li {
       flex-basis: 100%; } }
+
 @media (max-width: 319px) {
   /**
-   * variables
-   */
+     * variables
+     */
   /**
-   * styles
-   */
+     * styles
+     */
   main .content {
     order: 2;
     min-width: 100%;
@@ -2406,11 +2421,9 @@ body > footer .strapline p {
     justify-content: center;
     align-content: stretch;
     align-items: flex-start; }
-
   main .content aside.sidebar {
     order: 2;
     flex-basis: 100%; }
-
   main content main {
     order: 1;
     flex-basis: 100%;
@@ -2446,11 +2459,11 @@ body > footer .strapline p {
 
 @media (min-width: 320px) and (max-width: 600px) {
   /**
-   * variables
-   */
+     * variables
+     */
   /**
-   * styles
-   */
+     * styles
+     */
   body {
     display: flex;
     flex-direction: row;
@@ -2458,7 +2471,6 @@ body > footer .strapline p {
     justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start; }
-
   body > div.header-container, body > header {
     order: 1;
     flex-basis: 100%;
@@ -2519,6 +2531,7 @@ body > footer .strapline p {
       body > footer .content > div, body > footer .content > section, body > footer .content > aside {
         padding-left: 2rem;
         padding-right: 2rem; } }
+
 @media (min-width: 320px) and (max-width: 600px) {
     body > footer .strapline {
       flex-basis: 100%;
@@ -2533,11 +2546,11 @@ body > footer .strapline p {
 
 @media (min-width: 601px) and (max-width: 1007px) {
   /**
-   * variables
-   */
+     * variables
+     */
   /**
-   * styles
-   */
+     * styles
+     */
   body {
     display: flex;
     flex-direction: row;
@@ -2545,7 +2558,6 @@ body > footer .strapline p {
     justify-content: flex-start;
     align-content: stretch;
     align-items: flex-start; }
-
   body > div.header-container, body > header {
     order: 1;
     flex-basis: 100%;
@@ -2605,6 +2617,7 @@ body > footer .strapline p {
       body > footer .content > div, body > footer .content > section, body > footer .content > aside {
         padding-left: 2rem;
         padding-right: 2rem; } }
+
 @media (min-width: 601px) and (max-width: 1007px) {
     body > footer .content > * + footer .content * {
       padding-top: 0px; }
@@ -2621,11 +2634,11 @@ body > footer .strapline p {
 
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   /**
-   * variables
-   */
+     * variables
+     */
   /**
-   * styles
-   */
+     * styles
+     */
   body {
     display: flex;
     flex-direction: row;
@@ -2633,7 +2646,6 @@ body > footer .strapline p {
     justify-content: center;
     align-content: flex-start;
     align-items: stretch; }
-
   body > div.header-container {
     width: 100%;
     padding-left: 1rem;
@@ -2649,11 +2661,11 @@ body > footer .strapline p {
     body > div.header-container {
       padding-left: 2rem;
       padding-right: 2rem; } }
+
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
     body > div.header-container > header {
       max-width: 65rem;
       flex-basis: 100%; }
-
   body > header {
     order: 1;
     flex-basis: 100%;
@@ -2714,6 +2726,7 @@ body > footer .strapline p {
       body > footer .content {
         padding-left: 2rem;
         padding-right: 2rem; } }
+
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
     body > footer .strapline {
       flex-basis: 100%;
@@ -2729,11 +2742,11 @@ body > footer .strapline p {
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   body {
     align-items: flex-start; }
-
   .sidebar {
     margin: 1rem;
     border-radius: 4px;
     border: 1px solid #a8a8a8; } }
+
 body {
   font-family: Lato, Helvetica, Roboto, Arial, sans-serif;
   background-color: #fff; }
@@ -2842,7 +2855,6 @@ p.leader-bolder-caps {
   footer .contact-address {
     flex-basis: 20%;
     flex-grow: 1; }
-
   footer .contact-regdetails {
     flex-basis: 20%;
     flex-grow: 1; } }

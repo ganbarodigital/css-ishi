@@ -1,0 +1,58 @@
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//
+// src/scss/variables.scss
+//
+// All the things that you can customise, all in one place. Override these
+// in your own theme to suit.
+//
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+// ===========================================================================
+//
+// Basics
+//
+// ---------------------------------------------------------------------------
+
+// fonts
+$font-sans-serif: sans-serif !default;
+$font-serif: serif !default;
+$font-system: system-ui !default;
+$font-monospace: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !default;
+
+// states
+//$color-primary:
+//$color-secondary:
+//$color-attention:
+//$color-info:
+//$color-success:
+//$color-warning:
+//$color-danger:
+//$color-light:
+//$color-dark:
+
+// utilities
+
+// ===========================================================================
+//
+// Typography
+//
+// ---------------------------------------------------------------------------
+
+// body text
+$color-main-p-fg: $ganbaro-mono-600 !default;
+$color-main-p-bg: $web-white !default;
+
+// headings
+$color-main-h-fg: $ganbaro-mono-800 !default;
+$color-main-h-bg: $color-main-p-bg !default;
+
+// ===========================================================================
+//
+// Tables
+//
+// ---------------------------------------------------------------------------
+
+// tables
+// all components
+// specific components
+// media groups
