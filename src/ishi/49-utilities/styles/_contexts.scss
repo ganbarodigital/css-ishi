@@ -1,0 +1,57 @@
+@mixin context-colors($color-fg, $color-bg, $color-border) {
+    color: $color-fg;
+    background-color: $color-bg;
+    border-color: $color-border;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-fg;
+        background-color: $color-bg;
+    }
+}
+
+@mixin context-alert-colors($color-fg, $color-bg, $color-border) {
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-bg;
+        background-color: $color-fg;
+    }
+}
+
+.attention {
+    @include context-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
+}
+
+.attention.alert, .alert.attention {
+    @include context-alert-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
+}
+
+.info {
+    @include context-colors($color-info-fg, $color-info-bg, $color-info-border);
+}
+
+.info.alert, .alert.info {
+    @include context-alert-colors($color-info-fg, $color-info-bg, $color-info-border);
+}
+
+.success {
+    @include context-colors($color-success-fg, $color-success-bg, $color-success-border);
+}
+
+.success.alert, .alert.success {
+    @include context-alert-colors($color-success-fg, $color-success-bg, $color-success-border);
+}
+
+.warning {
+    @include context-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
+}
+
+.warning.alert, .alert.warning {
+    @include context-alert-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
+}
+
+.danger {
+    @include context-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+}
+
+.danger.alert, .alert.danger {
+    @include context-alert-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+}

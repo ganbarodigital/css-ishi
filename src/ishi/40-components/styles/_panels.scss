@@ -73,52 +73,8 @@
     @include context-gradient-reverse($color-panel-bg);
 }
 
-.panel.attention {
-    @include util-panel($color-attention-fg, $color-attention-bg, $color-attention-border);
-}
-
-.panel.info {
-    @include util-panel($color-info-fg, $color-info-bg, $color-info-border);
-}
-
-.panel.success {
-    @include util-panel($color-success-fg, $color-success-bg, $color-success-border);
-}
-
-.panel.warning {
-    @include util-panel($color-warning-fg, $color-warning-bg, $color-warning-border);
-}
-
-.panel.danger {
-    @include util-panel($color-danger-fg, $color-danger-bg, $color-danger-border);
-}
-
-.panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h6 {
-    color: $danger-hi-color;
-}
-
 //// Panels That Alert
 
 .panel.alert {
     @include util-panel-alert($color-panel-fg, $color-panel-bg, $color-panel-border);
-}
-
-.panel.alert.attention {
-    @include util-panel-alert($color-attention-fg, $color-attention-bg, $color-attention-border);
-}
-
-.panel.alert.info {
-    @include util-panel-alert($color-info-fg, $color-info-bg, $color-info-border);
-}
-
-.panel.alert.success {
-    @include util-panel-alert($color-success-fg, $color-success-bg, $color-success-border);
-}
-
-.panel.alert.warning {
-    @include util-panel-alert($color-warning-fg, $color-warning-bg, $color-warning-border);
-}
-
-.panel.alert.danger {
-    @include util-panel-alert($color-danger-fg, $color-danger-bg, $color-danger-border);
 }

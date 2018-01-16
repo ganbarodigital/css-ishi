@@ -53,81 +53,19 @@
     @include context-gradient-reverse($color-panel-bg);
 }
 
-.callout.attention {
-    @include util-callout($color-attention-fg, $color-attention-bg, $color-attention-border);
-}
+//// Callouts That Alert
 
-.callout.info {
-    @include util-callout($color-info-fg, $color-info-bg, $color-info-border);
-}
-
-.callout.success {
-    @include util-callout($color-success-fg, $color-success-bg, $color-success-border);
-}
-
-.callout.warning {
-    @include util-callout($color-warning-fg, $color-warning-bg, $color-warning-border);
-}
-
-.callout.danger {
-    @include util-callout($color-danger-fg, $color-danger-bg, $color-danger-border);
-}
-
-//// Panels That Alert
-
-@mixin callout-alert($border-color) {
-    border-left: 4px solid $border-color;
-    background-color: transparent;
+.callout.alert {
     padding: 0px;
-}
 
-@mixin callout-alert-header($bg-color, $fg-color) {
-    background-color: $bg-color;
-    color: $fg-color;
-    padding: $type-pica-font-size / 2;
-    margin-bottom: 0px;
-}
+    h1, h2, h3, h4, h5, h6 {
+        background-color: $color-panel-fg;
+        color: $color-panel-bg;
+        padding: $type-pica-font-size / 2;
+        margin-bottom: 0px;
+    }
 
-.callout.alert, .callout.alert.attention {
-    @include callout-alert($attention-bg-color);
-}
-
-.callout.alert > h4, .callout.alert.attention > h4, .callout.alert > h5, .callout.alert.attention > h5, .callout.alert > h6, .callout.alert.attention > h6 {
-    @include callout-alert-header($attention-bg-color, $attention-hi-color);
-}
-
-.callout.alert .content {
-    padding: $type-pica-font-size / 2;
-}
-
-.callout.alert.info {
-    @include callout-alert($info-hi-color);
-}
-
-.callout.alert.info > h4, .callout.alert.info > h5, .callout.alert.info > h6 {
-    @include callout-alert-header($info-hi-color, $info-bg-color);
-}
-
-.callout.alert.success {
-    @include callout-alert($success-hi-color);
-}
-
-.callout.alert.success > h4, .callout.alert.success > h5, .callout.alert.success > h6 {
-    @include callout-alert-header($success-bg-color, $success-hi-color);
-}
-
-.callout.alert.warning {
-    @include callout-alert($warning-hi-color);
-}
-
-.callout.alert.warning > h4, .callout.alert.warning > h5, .callout.alert.warning > h6 {
-    @include callout-alert-header($warning-bg-color, $warning-hi-color);
-}
-
-.callout.alert.danger {
-    @include callout-alert($danger-hi-color);
-}
-
-.callout.alert.danger > h4, .callout.alert.danger > h5, .callout.alert.danger > h6 {
-    @include callout-alert-header($danger-bg-color, $danger-hi-color);
+    .content {
+        padding: $type-pica-font-size / 2;
+    }
 }

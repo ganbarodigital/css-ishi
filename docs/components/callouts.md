@@ -386,6 +386,32 @@ Add any one of the [context classes](../utilities/context-classes.html) to your 
 
 <div class="code-example">
     <header>
+        <h4>Example: An 'attention' Alert Callout</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+<div class="callout alert attention">
+    <h4>Attention!</h4>
+    <div class="content">
+        <p>This is a callout designed to draw your attention.</p>
+    </div>
+</div>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<div class="callout alert attention">
+    <h4>Attention!</h4>
+    <div class="content">
+        <p>This is a callout designed to draw your attention.</p>
+    </div>
+</div>
+```
+        </div>
+    </div>
+</div>
+
+<div class="code-example">
+    <header>
         <h4>Example: An 'info' Alert Callout</h4>
     </header>
     <div class="example-content">

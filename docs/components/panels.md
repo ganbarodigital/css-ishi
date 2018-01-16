@@ -124,16 +124,24 @@ This is a panel using the `danger` class.
 To create a panel with distinctive header box, use an `<aside>` with the `panel alert` classes. Inside, use a `<h4>`, `<h5>` or `<h6>` to create the header. Wrap your panel's content in a `<div>` with the `content` class.
 
 <aside class="panel alert" markdown="1">
-#### Attention!
+#### Alert!
 
 <div class="content" markdown="1">
-This is a panel designed to draw your attention.
+This is a panel that alerts!.
 </div>
 </aside>
 
 ### Adding Extra Context
 
 Add any one of the [context classes](../utilities/context-classes.html) to your `panel alert` `<aside>` to change the colour of the panel's border and heading.
+
+<aside class="panel alert attention" markdown="1">
+#### Attention!
+
+<div class="content" markdown="1">
+This is a panel designed to draw your attention.
+</div>
+</aside>
 
 <aside class="panel alert info" markdown="1">
 #### Information!
