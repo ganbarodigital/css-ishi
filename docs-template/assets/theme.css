@@ -1684,7 +1684,7 @@ a.calltoaction.warning.outline:hover {
 .callout {
   background-color: #ebe7e2;
   color: #2b2722;
-  border-left: 4px solid #a6957e;
+  border-left: 4px solid #2b2722;
   margin-bottom: 1rem;
   padding: 1rem; }
   .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h5 {
@@ -1736,7 +1736,7 @@ a.calltoaction.warning.outline:hover {
 .panel {
   background-color: #ebe7e2;
   color: #2b2722;
-  border: 1px solid #a6957e;
+  border: 1px solid #2b2722;
   border-radius: 4px;
   margin-bottom: 1rem;
   padding: 0.5rem; }

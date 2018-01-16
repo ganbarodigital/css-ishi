@@ -78,7 +78,7 @@ $color-main-h-bg: $color-main-p-bg !default;
 // alerts, callouts, panels
 $color-panel-bg: $ganbaro-tan-50 !default;
 $color-panel-fg: $ganbaro-tan-800 !default;
-$color-panel-border: darken($color-panel-bg, 33%);
+$color-panel-border: $color-panel-fg !default;
 $panel-border-radius: 4px !default;
 
 // ===========================================================================
