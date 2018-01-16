@@ -70,11 +70,7 @@
 }
 
 .callout.danger {
-    @include context-panel($danger-hi-color, $danger-bg-color);
-}
-
-.callout.danger h1, .callout.danger h2, .callout.danger h3, .callout.danger h4, .callout.danger h5, .callout.danger h6 {
-    color: $danger-hi-color;
+    @include util-callout($color-danger-fg, $color-danger-bg, $color-danger-border);
 }
 
 //// Panels That Alert

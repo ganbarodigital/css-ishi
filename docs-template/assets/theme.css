@@ -1751,10 +1751,11 @@ a.calltoaction.warning.outline:hover {
 
 .callout.danger {
   background-color: #f2dede;
-  color: #a94442; }
-
-.callout.danger h1, .callout.danger h2, .callout.danger h3, .callout.danger h4, .callout.danger h5, .callout.danger h6 {
-  color: #a94442; }
+  color: #c7254e;
+  border-left: 4px solid #c7254e; }
+  .callout.danger h1, .callout.danger h2, .callout.danger h3, .callout.danger h4, .callout.danger h5, .callout.danger h5 {
+    color: #c7254e;
+    background-color: #f2dede; }
 
 .callout.alert, .callout.alert.attention {
   border-left: 4px solid #234F83;
@@ -1891,7 +1892,11 @@ a.calltoaction.warning.outline:hover {
 
 .panel.danger {
   background-color: #f2dede;
-  color: #a94442; }
+  color: #c7254e;
+  border: 1px solid #c7254e; }
+  .panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h5 {
+    color: #c7254e;
+    background-color: #f2dede; }
 
 .panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h6 {
   color: #a94442; }

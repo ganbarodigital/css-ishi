@@ -73,7 +73,7 @@
 }
 
 .panel.danger {
-    @include context-panel($danger-hi-color, $danger-bg-color);
+    @include util-panel($color-danger-fg, $color-danger-bg, $color-danger-border);
 }
 
 .panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h6 {
