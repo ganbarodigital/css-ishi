@@ -54,7 +54,7 @@
 }
 
 .callout.attention {
-    @include util-callout($color-attention-fg, $color-attention-bg, $color-attention-fg);
+    @include util-callout($color-attention-fg, $color-attention-bg, $color-attention-border);
 }
 
 .callout.info {
