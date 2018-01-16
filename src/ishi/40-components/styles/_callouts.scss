@@ -1,14 +1,20 @@
 /**
- * variables
+ * mixins
  */
+@mixin util-callout($color-fg, $color-bg, $color-border) {
+    @include context-panel($color-fg, $color-bg);
+    border-left: 4px solid $color-border;
 
+    h1, h2, h3, h4, h5, h5 {
+        color: $color-fg;
+        background-color: $color-bg;
+    }
+}
 /**
  * styles
  */
-
 .callout {
-    @include context-panel($color-panel-fg, $color-panel-bg);
-    border-left: 4px solid $color-panel-border;
+    @include util-callout($color-panel-fg, $color-panel-bg, $color-panel-border);
     margin-bottom: $type-p-spacing;
     padding: $type-p-spacing;
 }
@@ -47,21 +53,12 @@
     @include context-gradient-reverse($color-panel-bg);
 }
 
-@mixin callout-context($border-color, $bg-color) {
-    border-left: 4px solid $border-color;
-    background-color: $bg-color;
-}
-
 .callout.attention {
-    @include callout-context($attention-bg-color, $attention-hi-color);
-}
-
-.callout.attention h1, .callout.attention h2, .callout.attention h3, .callout.attention h4, .callout.attention h5, .callout.attention h6 {
-    color: $attention-bg-color;
+    @include util-callout($color-attention-fg, $color-attention-bg, $color-attention-fg);
 }
 
 .callout.info {
-    @include callout-context($info-hi-color, $info-bg-color);
+    @include context-panel($info-hi-color, $info-bg-color);
 }
 
 .callout.info h1, .callout.info h2, .callout.info h3, .callout.info h4, .callout.info h5, .callout.info h6 {
@@ -69,7 +66,7 @@
 }
 
 .callout.success {
-    @include callout-context($success-hi-color, $success-bg-color);
+    @include context-panel($success-hi-color, $success-bg-color);
 }
 
 .callout.success h1, .callout.success h2, .callout.success h3, .callout.success h4, .callout.success h5, .callout.success h6 {
@@ -77,7 +74,7 @@
 }
 
 .callout.warning {
-    @include callout-context($warning-hi-color, $warning-bg-color);
+    @include context-panel($warning-hi-color, $warning-bg-color);
 }
 
 .callout.warning h1, .callout.warning h2, .callout.warning h3, .callout.warning h4, .callout.warning h5, .callout.warning h6 {
@@ -85,7 +82,7 @@
 }
 
 .callout.danger {
-    @include callout-context($danger-hi-color, $danger-bg-color);
+    @include context-panel($danger-hi-color, $danger-bg-color);
 }
 
 .callout.danger h1, .callout.danger h2, .callout.danger h3, .callout.danger h4, .callout.danger h5, .callout.danger h6 {

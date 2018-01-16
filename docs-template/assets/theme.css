@@ -1672,11 +1672,11 @@ a.calltoaction.warning.outline:hover {
   .calltoaction.danger.outline:hover:link {
     background-color: #a94442; }
   .calltoaction.danger.outline:hover:visited {
-    color: #fff;
+    color: contrast-color(#a94442);
     background-color: #a94442; }
 
 /**
- * variables
+ * mixins
  */
 /**
  * styles
@@ -1687,6 +1687,9 @@ a.calltoaction.warning.outline:hover {
   border-left: 4px solid #a6957e;
   margin-bottom: 1rem;
   padding: 1rem; }
+  .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h5 {
+    color: #2b2722;
+    background-color: #ebe7e2; }
 
 .callout h1, .callout h2, .callout h3, .callout h4, .callout h5, .callout h6, .callout p, .callout ol, .callout ul {
   margin-bottom: 0.5rem; }
@@ -1715,36 +1718,37 @@ a.calltoaction.warning.outline:hover {
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .callout.attention {
-  border-left: 4px solid #234F83;
-  background-color: #fff; }
-
-.callout.attention h1, .callout.attention h2, .callout.attention h3, .callout.attention h4, .callout.attention h5, .callout.attention h6 {
-  color: #234F83; }
+  background-color: #fff;
+  color: #234f83;
+  border-left: 4px solid #234f83; }
+  .callout.attention h1, .callout.attention h2, .callout.attention h3, .callout.attention h4, .callout.attention h5, .callout.attention h5 {
+    color: #234f83;
+    background-color: #fff; }
 
 .callout.info {
-  border-left: 4px solid #34789a;
-  background-color: #f4f8fa; }
+  background-color: #f4f8fa;
+  color: #34789a; }
 
 .callout.info h1, .callout.info h2, .callout.info h3, .callout.info h4, .callout.info h5, .callout.info h6 {
   color: #34789a; }
 
 .callout.success {
-  border-left: 4px solid #3c763d;
-  background-color: #dff0d8; }
+  background-color: #dff0d8;
+  color: #3c763d; }
 
 .callout.success h1, .callout.success h2, .callout.success h3, .callout.success h4, .callout.success h5, .callout.success h6 {
   color: #3c763d; }
 
 .callout.warning {
-  border-left: 4px solid #8a6d3b;
-  background-color: #fcf8e3; }
+  background-color: #fcf8e3;
+  color: #8a6d3b; }
 
 .callout.warning h1, .callout.warning h2, .callout.warning h3, .callout.warning h4, .callout.warning h5, .callout.warning h6 {
   color: #8a6d3b; }
 
 .callout.danger {
-  border-left: 4px solid #a94442;
-  background-color: #f2dede; }
+  background-color: #f2dede;
+  color: #a94442; }
 
 .callout.danger h1, .callout.danger h2, .callout.danger h3, .callout.danger h4, .callout.danger h5, .callout.danger h6 {
   color: #a94442; }
@@ -1808,7 +1812,7 @@ a.calltoaction.warning.outline:hover {
   margin-bottom: 0px; }
 
 /**
- * variables
+ * mixins
  */
 /**
  * styles
@@ -1848,36 +1852,34 @@ a.calltoaction.warning.outline:hover {
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .panel.attention {
-  border: 1px solid #234F83;
-  background-color: #fff; }
-
-.panel.attention h1, .panel.attention h2, .panel.attention h3, .panel.attention h4, .panel.attention h5, .panel.attention h6 {
-  color: #234F83; }
+  background-color: #fff;
+  color: #234f83;
+  border: 1px solid #234f83; }
 
 .panel.info {
-  border: 1px solid #34789a;
-  background-color: #f4f8fa; }
+  background-color: #f4f8fa;
+  color: #34789a; }
 
 .panel.info h1, .panel.info h2, .panel.info h3, .panel.info h4, .panel.info h5, .panel.info h6 {
   color: #34789a; }
 
 .panel.success {
-  border: 1px solid #3c763d;
-  background-color: #dff0d8; }
+  background-color: #dff0d8;
+  color: #3c763d; }
 
 .panel.success h1, .panel.success h2, .panel.success h3, .panel.success h4, .panel.success h5, .panel.success h6 {
   color: #3c763d; }
 
 .panel.warning {
-  border: 1px solid #8a6d3b;
-  background-color: #fcf8e3; }
+  background-color: #fcf8e3;
+  color: #8a6d3b; }
 
 .panel.warning h1, .panel.warning h2, .panel.warning h3, .panel.warning h4, .panel.warning h5, .panel.warning h6 {
   color: #8a6d3b; }
 
 .panel.danger {
-  border: 1px solid #a94442;
-  background-color: #f2dede; }
+  background-color: #f2dede;
+  color: #a94442; }
 
 .panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h6 {
   color: #a94442; }

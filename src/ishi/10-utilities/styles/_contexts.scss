@@ -1,6 +1,6 @@
 @mixin context-panel($color-fg, $color-bg) {
-    background-color: $color-panel-bg;
-    color: $color-panel-fg;
+    background-color: $color-bg;
+    color: $color-fg;
 }
 
 @mixin context-gradient($color-bg) {

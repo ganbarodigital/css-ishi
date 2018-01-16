@@ -1,15 +1,17 @@
 /**
- * variables
+ * mixins
  */
-$panel-border-radius: 4px;
+@mixin util-panel($color-fg, $color-bg, $color-border) {
+    @include context-panel($color-fg, $color-bg);
+    border: 1px solid $color-border;
+}
 
 /**
  * styles
  */
 
 .panel {
-    @include context-panel($color-panel-fg, $color-panel-bg);
-    border: 1px solid $color-panel-border;
+    @include util-panel($color-panel-fg, $color-panel-bg, $color-panel-border);
     border-radius: $panel-border-radius;
     margin-bottom: $type-pica-font-size;
     padding: $type-pica-font-size / 2;
@@ -49,21 +51,12 @@ $panel-border-radius: 4px;
     @include context-gradient-reverse($color-panel-bg);
 }
 
-@mixin panel-context($border-color, $bg-color) {
-    border: 1px solid $border-color;
-    background-color: $bg-color;
-}
-
 .panel.attention {
-    @include panel-context($attention-bg-color, $attention-hi-color);
-}
-
-.panel.attention h1, .panel.attention h2, .panel.attention h3, .panel.attention h4, .panel.attention h5, .panel.attention h6 {
-    color: $attention-bg-color;
+    @include util-panel($color-attention-fg, $color-attention-bg, $color-attention-border);
 }
 
 .panel.info {
-    @include panel-context($info-hi-color, $info-bg-color);
+    @include context-panel($info-hi-color, $info-bg-color);
 }
 
 .panel.info h1, .panel.info h2, .panel.info h3, .panel.info h4, .panel.info h5, .panel.info h6 {
@@ -71,7 +64,7 @@ $panel-border-radius: 4px;
 }
 
 .panel.success {
-    @include panel-context($success-hi-color, $success-bg-color);
+    @include context-panel($success-hi-color, $success-bg-color);
 }
 
 .panel.success h1, .panel.success h2, .panel.success h3, .panel.success h4, .panel.success h5, .panel.success h6 {
@@ -79,7 +72,7 @@ $panel-border-radius: 4px;
 }
 
 .panel.warning {
-    @include panel-context($warning-hi-color, $warning-bg-color);
+    @include context-panel($warning-hi-color, $warning-bg-color);
 }
 
 .panel.warning h1, .panel.warning h2, .panel.warning h3, .panel.warning h4, .panel.warning h5, .panel.warning h6 {
@@ -87,7 +80,7 @@ $panel-border-radius: 4px;
 }
 
 .panel.danger {
-    @include panel-context($danger-hi-color, $danger-bg-color);
+    @include context-panel($danger-hi-color, $danger-bg-color);
 }
 
 .panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h6 {

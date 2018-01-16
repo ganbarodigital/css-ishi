@@ -20,9 +20,14 @@ $font-system: system-ui !default;
 $font-monospace: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !default;
 
 // states
-//$color-primary:
+$color-primary-fg: $ganbaro-blue-500 !default;
+$color-primary-bg: $web-white !default;
+
 //$color-secondary:
-//$color-attention:
+
+$color-attention-fg: $color-primary-fg !default;
+$color-attention-bg: $color-primary-bg !default;
+$color-attention-border: $color-attention-fg !default;
 //$color-info:
 //$color-success:
 //$color-warning:
@@ -62,6 +67,7 @@ $color-main-h-bg: $color-main-p-bg !default;
 $color-panel-bg: $ganbaro-tan-50 !default;
 $color-panel-fg: $ganbaro-tan-800 !default;
 $color-panel-border: darken($color-panel-bg, 33%);
+$panel-border-radius: 4px !default;
 
 // ===========================================================================
 //
