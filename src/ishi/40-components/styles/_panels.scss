@@ -69,11 +69,7 @@
 }
 
 .panel.warning {
-    @include context-panel($warning-hi-color, $warning-bg-color);
-}
-
-.panel.warning h1, .panel.warning h2, .panel.warning h3, .panel.warning h4, .panel.warning h5, .panel.warning h6 {
-    color: $warning-hi-color;
+    @include util-panel($color-warning-fg, $color-warning-bg, $color-warning-border);
 }
 
 .panel.danger {

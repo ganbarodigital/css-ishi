@@ -66,11 +66,7 @@
 }
 
 .callout.warning {
-    @include context-panel($warning-hi-color, $warning-bg-color);
-}
-
-.callout.warning h1, .callout.warning h2, .callout.warning h3, .callout.warning h4, .callout.warning h5, .callout.warning h6 {
-    color: $warning-hi-color;
+    @include util-callout($color-warning-fg, $color-warning-bg, $color-warning-border);
 }
 
 .callout.danger {
