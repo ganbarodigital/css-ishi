@@ -53,6 +53,20 @@ $color-main-h-bg: $color-main-p-bg !default;
 // ---------------------------------------------------------------------------
 
 // tables
-// all components
-// specific components
-// media groups
+
+// ===========================================================================
+//
+// Components
+//
+// ---------------------------------------------------------------------------
+
+// alerts, callouts, panels
+$color-panel-bg: $ganbaro-tan-50 !default;
+$color-panel-fg: $ganbaro-tan-800 !default;
+$color-panel-border: darken($color-panel-bg, 33%);
+
+// ===========================================================================
+//
+// Media Groups
+//
+// ---------------------------------------------------------------------------

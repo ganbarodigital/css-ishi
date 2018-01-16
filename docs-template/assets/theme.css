@@ -1809,8 +1809,8 @@ a.calltoaction.warning.outline:hover {
  * styles
  */
 .panel {
-  background-color: #EBE7E2;
-  color: #202020;
+  background-color: #ebe7e2;
+  color: #2b2722;
   border: 1px solid #a6957e;
   border-radius: 4px;
   margin-bottom: 1rem;
@@ -2275,7 +2275,8 @@ body > .subnav {
 body > main {
   width: 100%; }
   body > main h1, body > main h2, body > main h3, body > main h4, body > main h5, body > main h6 {
-    color: #222; }
+    color: #410093;
+    background-color: #fff; }
   body > main p {
     color: #404040; }
   body > main del {

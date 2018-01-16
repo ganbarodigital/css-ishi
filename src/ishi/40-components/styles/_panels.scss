@@ -8,9 +8,9 @@ $panel-border-radius: 4px;
  */
 
 .panel {
-    background-color: $panel-bg-color;
-    color: $panel-fg-color;
-    border: 1px solid darken($panel-bg-color, 33%);
+    background-color: $color-panel-bg;
+    color: $color-panel-fg;
+    border: 1px solid $color-panel-border;
     border-radius: $panel-border-radius;
     margin-bottom: $type-pica-font-size;
     padding: $type-pica-font-size / 2;
@@ -25,7 +25,7 @@ $panel-border-radius: 4px;
 }
 
 .panel.gradient {
-    background-image: linear-gradient(to bottom, lighten($panel-bg-color, 2.5%) 0%, darken($panel-bg-color, 2.5%) 100%);
+    background-image: linear-gradient(to bottom, lighten($color-panel-bg, 2.5%) 0%, darken($color-panel-bg, 2.5%) 100%);
 }
 
 .panel.outline {
