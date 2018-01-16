@@ -1901,73 +1901,77 @@ a.calltoaction.warning.outline:hover {
 .panel.danger h1, .panel.danger h2, .panel.danger h3, .panel.danger h4, .panel.danger h5, .panel.danger h6 {
   color: #a94442; }
 
-.panel.alert, .panel.alert.attention {
-  border: 1px solid #234F83;
-  background-color: transparent;
+.panel.alert {
   padding: 0px; }
+  .panel.alert h1, .panel.alert h2, .panel.alert h3, .panel.alert h4, .panel.alert h5, .panel.alert h6 {
+    background-color: #2b2722;
+    color: #ebe7e2;
+    padding: 0.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0px; }
+  .panel.alert .content {
+    padding: 0.5rem; }
 
-.panel.alert > h4, .panel.alert.attention > h4, .panel.alert > h5, .panel.alert.attention > h5, .panel.alert > h6, .panel.alert.attention > h6 {
-  background-color: #234F83;
-  color: #fff;
-  padding: 0.5rem;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  margin-bottom: 0px; }
-
-.panel.alert .content {
-  padding: 0.5rem; }
+.panel.alert.attention {
+  padding: 0px; }
+  .panel.alert.attention h1, .panel.alert.attention h2, .panel.alert.attention h3, .panel.alert.attention h4, .panel.alert.attention h5, .panel.alert.attention h6 {
+    background-color: #234f83;
+    color: #fff;
+    padding: 0.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0px; }
+  .panel.alert.attention .content {
+    padding: 0.5rem; }
 
 .panel.alert.info {
-  border: 1px solid #34789a;
-  background-color: transparent;
   padding: 0px; }
-
-.panel.alert.info > h4, .panel.alert.info > h5, .panel.alert.info > h6 {
-  background-color: #34789a;
-  color: #f4f8fa;
-  padding: 0.5rem;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  margin-bottom: 0px; }
+  .panel.alert.info h1, .panel.alert.info h2, .panel.alert.info h3, .panel.alert.info h4, .panel.alert.info h5, .panel.alert.info h6 {
+    background-color: #34789a;
+    color: #f4f8fa;
+    padding: 0.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0px; }
+  .panel.alert.info .content {
+    padding: 0.5rem; }
 
 .panel.alert.success {
-  border: 1px solid #3c763d;
-  background-color: transparent;
   padding: 0px; }
-
-.panel.alert.success > h4, .panel.alert.success > h5, .panel.alert.success > h6 {
-  background-color: #dff0d8;
-  color: #3c763d;
-  padding: 0.5rem;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  margin-bottom: 0px; }
+  .panel.alert.success h1, .panel.alert.success h2, .panel.alert.success h3, .panel.alert.success h4, .panel.alert.success h5, .panel.alert.success h6 {
+    background-color: #3c763d;
+    color: #dff0d8;
+    padding: 0.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0px; }
+  .panel.alert.success .content {
+    padding: 0.5rem; }
 
 .panel.alert.warning {
-  border: 1px solid #8a6d3b;
-  background-color: transparent;
   padding: 0px; }
-
-.panel.alert.warning > h4, .panel.alert.warning > h5, .panel.alert.warning > h6 {
-  background-color: #fcf8e3;
-  color: #8a6d3b;
-  padding: 0.5rem;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  margin-bottom: 0px; }
+  .panel.alert.warning h1, .panel.alert.warning h2, .panel.alert.warning h3, .panel.alert.warning h4, .panel.alert.warning h5, .panel.alert.warning h6 {
+    background-color: #8a6d3b;
+    color: #fcf8e3;
+    padding: 0.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0px; }
+  .panel.alert.warning .content {
+    padding: 0.5rem; }
 
 .panel.alert.danger {
-  border: 1px solid #a94442;
-  background-color: transparent;
   padding: 0px; }
-
-.panel.alert.danger > h4, .panel.alert.danger > h5, .panel.alert.danger > h6 {
-  background-color: #f2dede;
-  color: #a94442;
-  padding: 0.5rem;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  margin-bottom: 0px; }
+  .panel.alert.danger h1, .panel.alert.danger h2, .panel.alert.danger h3, .panel.alert.danger h4, .panel.alert.danger h5, .panel.alert.danger h6 {
+    background-color: #c7254e;
+    color: #f2dede;
+    padding: 0.5rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0px; }
+  .panel.alert.danger .content {
+    padding: 0.5rem; }
 
 /**
  * styles

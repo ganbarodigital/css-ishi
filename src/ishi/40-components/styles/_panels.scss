@@ -11,6 +11,23 @@
     }
 }
 
+@mixin util-panel-alert($color-fg, $color-bg, $color-border) {
+    padding: 0px;
+
+    h1, h2, h3, h4, h5, h6 {
+        background-color: $color-fg;
+        color: $color-bg;
+        padding: $type-pica-font-size / 2;
+        border-top-left-radius: $panel-border-radius;
+        border-top-right-radius: $panel-border-radius;
+        margin-bottom: 0px;
+    }
+
+    .content {
+        padding: $type-pica-font-size / 2;
+    }
+}
+
 /**
  * styles
  */
@@ -82,61 +99,26 @@
 
 //// Panels That Alert
 
-@mixin panel-alert($border-color) {
-    border: 1px solid $border-color;
-    background-color: transparent;
-    padding: 0px;
+.panel.alert {
+    @include util-panel-alert($color-panel-fg, $color-panel-bg, $color-panel-border);
 }
 
-@mixin panel-alert-header($bg-color, $fg-color) {
-    background-color: $bg-color;
-    color: $fg-color;
-    padding: $type-pica-font-size / 2;
-    border-top-left-radius: $panel-border-radius;
-    border-top-right-radius: $panel-border-radius;
-    margin-bottom: 0px;
-}
-
-.panel.alert, .panel.alert.attention {
-    @include panel-alert($attention-bg-color);
-}
-
-.panel.alert > h4, .panel.alert.attention > h4, .panel.alert > h5, .panel.alert.attention > h5, .panel.alert > h6, .panel.alert.attention > h6 {
-    @include panel-alert-header($attention-bg-color, $attention-hi-color);
-}
-
-.panel.alert .content {
-    padding: $type-pica-font-size / 2;
+.panel.alert.attention {
+    @include util-panel-alert($color-attention-fg, $color-attention-bg, $color-attention-border);
 }
 
 .panel.alert.info {
-    @include panel-alert($info-hi-color);
-}
-
-.panel.alert.info > h4, .panel.alert.info > h5, .panel.alert.info > h6 {
-    @include panel-alert-header($info-hi-color, $info-bg-color);
+    @include util-panel-alert($color-info-fg, $color-info-bg, $color-info-border);
 }
 
 .panel.alert.success {
-    @include panel-alert($success-hi-color);
-}
-
-.panel.alert.success > h4, .panel.alert.success > h5, .panel.alert.success > h6 {
-    @include panel-alert-header($success-bg-color, $success-hi-color);
+    @include util-panel-alert($color-success-fg, $color-success-bg, $color-success-border);
 }
 
 .panel.alert.warning {
-    @include panel-alert($warning-hi-color);
-}
-
-.panel.alert.warning > h4, .panel.alert.warning > h5, .panel.alert.warning > h6 {
-    @include panel-alert-header($warning-bg-color, $warning-hi-color);
+    @include util-panel-alert($color-warning-fg, $color-warning-bg, $color-warning-border);
 }
 
 .panel.alert.danger {
-    @include panel-alert($danger-hi-color);
-}
-
-.panel.alert.danger > h4, .panel.alert.danger > h5, .panel.alert.danger > h6 {
-    @include panel-alert-header($danger-bg-color, $danger-hi-color);
+    @include util-panel-alert($color-danger-fg, $color-danger-bg, $color-danger-border);
 }
