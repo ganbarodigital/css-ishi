@@ -1727,10 +1727,11 @@ a.calltoaction.warning.outline:hover {
 
 .callout.info {
   background-color: #f4f8fa;
-  color: #34789a; }
-
-.callout.info h1, .callout.info h2, .callout.info h3, .callout.info h4, .callout.info h5, .callout.info h6 {
-  color: #34789a; }
+  color: #34789a;
+  border-left: 4px solid #34789a; }
+  .callout.info h1, .callout.info h2, .callout.info h3, .callout.info h4, .callout.info h5, .callout.info h5 {
+    color: #34789a;
+    background-color: #f4f8fa; }
 
 .callout.success {
   background-color: #dff0d8;
@@ -1824,6 +1825,9 @@ a.calltoaction.warning.outline:hover {
   border-radius: 4px;
   margin-bottom: 1rem;
   padding: 0.5rem; }
+  .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h5 {
+    color: #2b2722;
+    background-color: #ebe7e2; }
 
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel ol, .panel ul {
   margin-bottom: 0.5rem; }
@@ -1855,13 +1859,17 @@ a.calltoaction.warning.outline:hover {
   background-color: #fff;
   color: #234f83;
   border: 1px solid #234f83; }
+  .panel.attention h1, .panel.attention h2, .panel.attention h3, .panel.attention h4, .panel.attention h5, .panel.attention h5 {
+    color: #234f83;
+    background-color: #fff; }
 
 .panel.info {
   background-color: #f4f8fa;
-  color: #34789a; }
-
-.panel.info h1, .panel.info h2, .panel.info h3, .panel.info h4, .panel.info h5, .panel.info h6 {
-  color: #34789a; }
+  color: #34789a;
+  border: 1px solid #34789a; }
+  .panel.info h1, .panel.info h2, .panel.info h3, .panel.info h4, .panel.info h5, .panel.info h5 {
+    color: #34789a;
+    background-color: #f4f8fa; }
 
 .panel.success {
   background-color: #dff0d8;
