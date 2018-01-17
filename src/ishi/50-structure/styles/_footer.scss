@@ -4,7 +4,8 @@ body > footer, body > footer p {
 
 body > footer {
     h1, h2, h3, h4, h5, h6 {
-        color: $footer-type-h-fg-color;
+        color: $footer-h-fg-color;
+        background-color: $footer-h-bg-color;
     }
 
     h1 {

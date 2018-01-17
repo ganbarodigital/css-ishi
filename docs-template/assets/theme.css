@@ -965,6 +965,9 @@ ol {
       ol li ol ol {
         list-style-type: lower-roman; }
 
+pre, samp, code, kbd {
+  font-family: Menlo, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
+
 article pre, article pre.highlight {
   background-color: #EBE7E2;
   color: #202020;
@@ -2181,8 +2184,8 @@ body > .subnav {
 body > main {
   width: 100%; }
   body > main h1, body > main h2, body > main h3, body > main h4, body > main h5, body > main h6 {
-    color: #410093;
-    background-color: #fff; }
+    color: #222;
+    background-color: transparent; }
   body > main p {
     color: #404040; }
   body > main del {
@@ -2229,7 +2232,8 @@ body > main {
   background-color: #EBE7E2;
   color: #404040; }
   .sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6 {
-    color: #222; }
+    color: #222;
+    background-color: transparent; }
   .sidebar p {
     color: #303030; }
   .sidebar del {
@@ -2261,7 +2265,8 @@ body > footer, body > footer p {
   line-height: 1rem; }
 
 body > footer h1, body > footer h2, body > footer h3, body > footer h4, body > footer h5, body > footer h6 {
-  color: #dadada; }
+  color: #ddd;
+  background-color: transparent; }
 
 body > footer h1 {
   font-size: 1.5rem;

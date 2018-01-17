@@ -15,7 +15,7 @@ Ishi's default font styling is chosen for great readability of long content on d
 
 ### Customise Fonts
 
-Override any of these variables to suit:
+Font faces are controlled by these variables:
 
 Variable     | Used For
 -------------|----------
@@ -34,17 +34,20 @@ The standard `<h1>` to `<h6>` heading elements are supported by Ishi:
 <h5 class="notoc">Heading 5</h5>
 <h6 class="notoc">Heading 6</h6>
 
-When a heading follows something that isn't an element, Ishi adds extra whitespace (a top margin). This groups blocks of related text together even when you use `<h1>` and `<h2>` elements immediately after to each other.
+When a heading follows something that isn't another header, Ishi adds extra whitespace (a top margin). This groups blocks of related text together even when you use `<h1>` and `<h2>` elements immediately after to each other.
 
 ### Customize Colors
 
-Set any of these variables in your theme's `_colors.scss` file:
+Heading colors are controlled by these variables:
 
 Variable | Changes Colour Of ...
 ---------|----------------------
-`$main-type-h-fg-color` | `<h1>` to `<h6>` default color in `<main>` section
-`$sidebar-type-h-fg-color` | `<h1>` to `<h6>` default color in the sidebar
-`$footer-type-h-fg-color` | `<h1>` to `<h6>` default color in the footer
+`$main-h-fg-color` | `<h1>` to `<h6>` text color in `<main>` section
+`$main-h-bg-color` | `<h1>` to `<h6>` background color in `<main>` section
+`$sidebar-h-fg-color` | `<h1>` to `<h6>` text color in the sidebar
+`$sidebar-h-bg-color` | `<h1>` to `<h6>` background color in the sidebar
+`$footer-h-fg-color` | `<h1>` to `<h6>` text color in the footer
+`$footer-h-bg-color` | `<h1>` to `<h6>` background color in the footer
 
 See [our semantic structure](../structure/index.html) for details about `<main>`, the sidebar and the footer.
 

@@ -3,7 +3,8 @@
     color: $sidebar-fg-color;
 
     h1, h2, h3, h4, h5, h6 {
-        color: $sidebar-type-h-fg-color;
+        color: $sidebar-h-fg-color;
+        background-color: $sidebar-h-bg-color;
     }
 
     p {

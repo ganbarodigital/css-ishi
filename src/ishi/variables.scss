@@ -54,13 +54,18 @@ $color-danger-border: $color-danger-fg !default;
 // ---------------------------------------------------------------------------
 
 // body text
-$color-main-p-fg: $ganbaro-mono-600 !default;
-$color-main-p-bg: $web-white !default;
+$main-p-fg-color: $ganbaro-mono-600 !default;
+$main-p-bg-color: $web-white !default;
 $font-body: $font-sans-serif !default;
 
 // headings
-$color-main-h-fg: $ganbaro-mono-800 !default;
-$color-main-h-bg: $color-main-p-bg !default;
+$main-h-fg-color: $ganbaro-mono-800 !default;
+$main-h-bg-color: transparent !default;
+$sidebar-h-fg-color: $ganbaro-mono-800 !default;
+$sidebar-h-bg-color: transparent !default;
+$footer-h-fg-color: $ganbaro-mono-100 !default;
+$footer-h-bg-color: transparent !default;
+
 $font-h: $font-body;
 
 // pre and code
