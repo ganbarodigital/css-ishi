@@ -14,7 +14,7 @@
 // ---------------------------------------------------------------------------
 
 // fonts
-$font-sans-serif: sans-serif !default;
+$font-sans-serif: Lato, Helvetica, Roboto, Arial, sans-serif !default;
 $font-serif: serif !default;
 $font-system: system-ui !default;
 $font-monospace: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !default;
@@ -56,10 +56,16 @@ $color-danger-border: $color-danger-fg !default;
 // body text
 $color-main-p-fg: $ganbaro-mono-600 !default;
 $color-main-p-bg: $web-white !default;
+$font-body: $font-sans-serif !default;
 
 // headings
 $color-main-h-fg: $ganbaro-mono-800 !default;
 $color-main-h-bg: $color-main-p-bg !default;
+$font-h: $font-body;
+
+// pre and code
+$font-pre: $font-monospace;
+
 
 // ===========================================================================
 //

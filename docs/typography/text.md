@@ -11,7 +11,17 @@ Also, checkout our [components section](../components/index.html). That's where 
 
 ## Font Face
 
-Ishi doesn't define a default font-face in the Typography section. The choice of fonts belongs to the theme.
+Ishi's default font styling is chosen for great readability of long content on desktop, tablet and mobile phone screens.
+
+### Customise Fonts
+
+Override any of these variables to suit:
+
+Variable     | Used For
+-------------|----------
+`$font-body` | Applied to `body`
+`$font-h`    | Applied to `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
+`$font-pre`  | Applied to `pre`, `code`, `samp` and `kbd`
 
 ## Headings
 
