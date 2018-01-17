@@ -13,7 +13,7 @@ Also, checkout our [components section](../components/index.html). That's where 
 
 Ishi's default font styling is chosen for great readability of long content on desktop, tablet and mobile phone screens.
 
-### Customise Fonts
+### Customize Fonts
 
 Font faces are controlled by these variables:
 
@@ -57,14 +57,14 @@ The standard `<p>` element is sized for easy reading on each [device group](../c
 
 ### Customize Colors
 
-Set any of these variables in your theme's `_colors.scss` file:
+Content colors are controlled by these variables:
 
-Variable | Changes Colour Of ...
+Variable | Applied To
 ---------|----------------------
-`$header-type-p-fg-color` | default text color in the `<header>` section
-`$main-type-p-fg-color` | default text color in `<main>` section
-`$sidebar-type-p-fg-color` | default text color in the sidebar
-`$footer-type-h-fg-color` | default text color in the footer
+`$header-fg-color` | default text color in the `<header>` section
+`$main-fg-color` | default text color in `<main>` section
+`$sidebar-fg-color` | default text color in the sidebar
+`$footer-fg-color` | default text color in the footer
 
 See [our semantic structure](../structure/index.html) for details about `<main>`, the sidebar and the footer.
 

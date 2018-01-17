@@ -54,8 +54,15 @@ $color-danger-border: $color-danger-fg !default;
 // ---------------------------------------------------------------------------
 
 // body text
-$main-p-fg-color: $ganbaro-mono-600 !default;
-$main-p-bg-color: $web-white !default;
+$main-fg-color: $ganbaro-mono-600 !default;
+$main-bg-color: $ganbaro-mono-0 !default;
+$sidebar-fg-color: $ganbaro-mono-600 !default;
+$sidebar-bg-color: transparent !default;
+$header-fg-color: $ganbaro-mono-0 !default;
+$header-bg-color: transparent !default;
+$footer-fg-color: $ganbaro-mono-0 !default;
+$footer-bg-color: transparent !default;
+
 $font-body: $font-sans-serif !default;
 
 // headings

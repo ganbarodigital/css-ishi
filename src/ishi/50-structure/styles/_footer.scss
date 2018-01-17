@@ -3,6 +3,9 @@ body > footer, body > footer p {
 }
 
 body > footer {
+    color: $footer-fg-color;
+    background-color: $footer-bg-color;
+
     h1, h2, h3, h4, h5, h6 {
         color: $footer-h-fg-color;
         background-color: $footer-h-bg-color;
@@ -17,7 +20,6 @@ body > footer {
     }
 
     p {
-        color: $footer-type-p-fg-color;
     }
 
     * p:nth-last-child(1) {
