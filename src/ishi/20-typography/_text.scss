@@ -15,6 +15,15 @@ ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + d
     margin-top: $type-p-spacing;
 }
 
+abbr, abbr[title] {
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+}
+
+mark {
+    @include util-pad-inline-text();
+}
+
 blockquote {
     display: block;
     border-left: 1px solid $main-type-blockquote-border-color;

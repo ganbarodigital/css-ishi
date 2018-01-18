@@ -926,6 +926,13 @@ del {
 ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + div, ul + div {
   margin-top: 1rem; }
 
+abbr, abbr[title] {
+  text-decoration: none;
+  border-bottom: 1px dashed currentColor; }
+
+mark {
+  padding: 0.1rem 0.2rem; }
+
 blockquote {
   display: block;
   border-left: 1px solid #404040;
@@ -981,7 +988,7 @@ article pre, article pre.highlight {
   line-height: 1.1rem; }
 
 code {
-  padding: 1px 2px;
+  padding: 0.1rem 0.2rem;
   font-size: 0.85rem;
   color: #c7254e;
   background-color: #f9f2f4;
@@ -2723,8 +2730,6 @@ body > div.site {
       padding-bottom: 0px; }
 
 body > main {
-  color: #404040;
-  background-color: #fff;
   max-width: 50em; }
   body > main h1:nth-of-type(1) {
     padding-bottom: 5px;

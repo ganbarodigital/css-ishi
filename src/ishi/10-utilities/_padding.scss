@@ -16,3 +16,7 @@
 @mixin util-pad-flexbox-content() {
     padding-bottom: $type-p-spacing;
 }
+
+@mixin util-pad-inline-text() {
+    padding: 0.1rem 0.2rem;
+}

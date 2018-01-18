@@ -110,3 +110,17 @@ Longer blockquotes are supported too. Use `<p>` elements inside your `<blockquot
 > And Ishi will format it to keep everything together so that it is clear that this is all one long quotation.
 >
 > <cite>Stuart Herbert</cite>
+
+## Text Styles
+
+Markup | Looks Like
+-------|-----------
+`<abbr>`   | <abbr title="abbreviation">This is abbreviated text</abbr>
+`<em>`     | <em>This is emphasised text</em>
+`<mark>`   | <mark>This is highlighed text</mark>
+`<s>`      | <s>This is strikethrough text</s>
+`<small>`  | <small>This is small text</small>
+`<strong>` | <strong>This is strong text.</strong>
+`<sub>`    | <sub>This is subscript text</sub>
+`<sup>`    | <sup>This is superscript text</sup>
+`<u>`      | <u>This is underlined text</u>
