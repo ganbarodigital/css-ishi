@@ -68,6 +68,54 @@ Variable | Applied To
 
 See [our semantic structure](../structure/index.html) for details about `<main>`, the sidebar and the footer.
 
+## Paragraph Styles
+
+Ishi provides several semantic classes for the `<p>` element. Use them to make them standout from the bulk of your content on the page.
+
+### Abstract Paragraph
+
+Use `<p class="abstract">` to bring an academic look to a summary paragraph. Summary paragraphs are normally found at the top of academically-focused content.
+
+Follow it up with a `<p class="keywords">` to draw attention to the key topics covered in our content.
+
+<div class="code-example">
+    <header>
+        <h4>Example: Abstract Paragraph</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+            <p class="abstract">This white paper looks at the mechanisms available to safeguard sensitive or legally-protected data entrusted to eDaaS. We introduce the Safeguarding architecture, and the related Access Audit architecture, and show how that enables businesses and organisations to meet the European General Data Protection Regulation (GDPR).</p>
+            <p class="keywords"><strong>Keywords:</strong> GDPR, data protection, security, access auditing.</p>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<p class="abstract">This white paper looks at the mechanisms available to safeguard sensitive or legally-protected data entrusted to eDaaS. We introduce the Safeguarding architecture, and the related Access Audit architecture, and show how that enables businesses and organisations to meet the European General Data Protection Regulation (GDPR).</p>
+<p class="keywords"><strong>Keywords:</strong> GDPR, data protection, security, access auditing.</p>
+```
+        </div>
+    </div>
+</div>
+
+### Leading Paragraph
+
+Use `<p class="leader">` to bring added emphasis to the opening paragraph of your content.
+
+<div class="code-example">
+    <header>
+        <h4>Example: Leading Paragraph</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+            <p class="leader">This is a leading paragraph.</p>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<p class="leader">This is a leading paragraph.</p>
+```
+        </div>
+    </div>
+</div>
+
 ## Inserted and Deleted Text
 
 Use the standard `<ins>` element to <ins>indicate text that has been added to the content</ins>. Inserted text appears as underlined text, with the same font weight and colour as a normal paragraph.

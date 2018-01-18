@@ -184,9 +184,6 @@ navigation:
             panels:
                 text: Panels
                 relativeUrl: components/panels.html
-            paragraphtypes:
-                text: Paragraph Types
-                relativeUrl: components/paragraph-types.html
             navbars:
                 text: Navbars
                 relativeUrl: components/navbars.html

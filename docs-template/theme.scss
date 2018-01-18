@@ -23,16 +23,16 @@ footer .contact-regdetails {
 }
 
 p.leader-bolder {
-    @include component-p-bolder();
+    @include util-text-bolder();
 }
 
 p.leader-caps {
-    @include component-p-caps();
+    @include util-text-caps();
 }
 
 p.leader-bolder-caps {
-    @include component-p-bolder();
-    @include component-p-caps();
+    @include util-text-bolder();
+    @include util-text-caps();
 }
 
 @media #{$media-group-d} {

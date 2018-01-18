@@ -2,6 +2,17 @@ p {
     @include type-pica;
     margin-bottom: $type-p-spacing;
 }
+p.leader {
+    @include util-text-bolder;
+}
+p.abstract {
+    text-indent: 2em;
+    font-style: italic;
+    text-align: justify;
+}
+p.keywords {
+    font-style: italic;
+}
 
 ins {
     text-decoration: underline;

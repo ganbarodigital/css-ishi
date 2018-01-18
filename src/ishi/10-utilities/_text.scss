@@ -11,3 +11,15 @@
 @mixin util-inline-text-radius() {
     border-radius: 0.2rem;
 }
+
+@mixin util-text-bolder() {
+    font-weight: bolder;
+}
+
+@mixin util-text-caps() {
+    text-transform: uppercase;
+}
+
+@mixin util-text-smallcaps() {
+    text-transform: small-caps;
+}

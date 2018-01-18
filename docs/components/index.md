@@ -11,7 +11,6 @@ Wherever possible, the markup used is semantic. To make that possible, some of t
 
 * There are [callouts](callouts.html) and [panels](panels.html) to draw attention to a point that you want to get across.
 * Want to entice the reader to click a link to get started? Use a [call to action](callstoaction.html).
-* Need to draw attention to a paragraph? There are a few [types](paragraph-types.html) to choose from.
 
 ## Navigation Components
 

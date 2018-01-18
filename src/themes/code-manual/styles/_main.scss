@@ -11,11 +11,4 @@ body > main {
             @include type-trafalgar-spacing();
         }
     }
-
-    p, ol, ul {
-    }
-
-    p.leader {
-        @include component-p-bolder();
-    }
 }
