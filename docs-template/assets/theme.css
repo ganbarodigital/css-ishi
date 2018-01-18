@@ -972,6 +972,15 @@ ol {
       ol li ol ol {
         list-style-type: lower-roman; }
 
+dl dt {
+  font-weight: 700;
+  font-style: italic; }
+
+dl dd {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 2.5rem; }
+
 pre, samp, code, kbd {
   font-family: Menlo, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
 
@@ -1021,7 +1030,6 @@ kbd {
 
 samp {
   padding: 0.1rem 0.2rem;
-  border-radius: 0.2rem;
   font-size: 0.95rem;
   background-color: #EBE7E2;
   white-space: pre-wrap; }

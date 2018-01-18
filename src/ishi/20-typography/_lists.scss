@@ -29,3 +29,15 @@ ol {
         }
     }
 }
+
+dl {
+    dt {
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    dd {
+        @include type-pica();
+        padding-left: $type-list-indent;
+    }
+}

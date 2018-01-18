@@ -20,12 +20,18 @@ Here is an example of an unordered list:
 
 Here is an example of a nested list:
 
-* first list item
-  * first nested item
-  * second nested item
-    * first really nested item
-    * second really nested item
-* second list item
+<ul>
+    <li>first list item</li>
+    <ul>
+        <li>first nested item</li>
+        <li>second nested item</li>
+        <ul>
+            <li>first really nested item</li>
+            <li>second really nested item</li>
+        </ul>
+    </ul>
+    <li>second list item</li>
+</ul>
 
 ## Ordered Lists
 
@@ -53,3 +59,14 @@ Here is an example of a nested list:
 ### Very Long Ordered Lists
 
 Although we don't recommend it, you can have lists that contain hundreds of items if you need to. You'll find an example on [a separate page](long-list.html).
+
+## Definition Lists
+
+Use the `<dl>` element to create a definition list (sometimes called a description list).
+
+Ishi styles the list to look like classic dictionaries from the printed age.
+
+<dl>
+    <dt>Term 1</dt>
+    <dd markdown="1">How often do you use `<dl>` elements in your content? They're handy to include in technical #longform content.</dd>
+</dl>
