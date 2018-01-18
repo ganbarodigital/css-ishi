@@ -53,7 +53,7 @@ See [our semantic structure](../structure/index.html) for details about `<main>`
 
 ## Paragraphs
 
-The standard `<p>` element is sized for easy reading on each [device group](../concepts/device-groups.html). Each device group has its own font sizes. The line height should accomodate inline `<code>`, <kbd>keyboard</kbd> and <samp>output samples</samp> comfortably, without forcing extra spacing just for the lines containing those inline elements.
+The standard `<p>` element is sized for easy reading on each [device group](../concepts/device-groups.html). Each device group has its own font sizes. The line height should accomodate inline `<code>`, <kbd>keyboard</kbd>, <mark>highlighted text</mark> and <samp>output samples</samp> comfortably, without forcing extra spacing just for the lines containing those inline elements.
 
 ### Customize Colors
 
@@ -111,7 +111,7 @@ Longer blockquotes are supported too. Use `<p>` elements inside your `<blockquot
 >
 > <cite>Stuart Herbert</cite>
 
-## Text Styles
+## Inline Text Styles
 
 Markup | Looks Like
 -------|-----------

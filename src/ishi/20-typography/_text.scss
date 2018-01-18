@@ -21,7 +21,7 @@ abbr, abbr[title] {
 }
 
 mark {
-    @include util-pad-inline-text();
+    @include util-inline-text-pad();
 }
 
 blockquote {

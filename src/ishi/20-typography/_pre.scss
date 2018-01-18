@@ -11,12 +11,12 @@ article pre, article pre.highlight {
 }
 
 code {
-    @include util-pad-inline-text();
+    @include util-inline-text-pad();
     font-size: $type-pica-font-size * 0.85;
     color: $code-fg-color;
     background-color: $code-bg-color;
     white-space: nowrap;
-    border-radius: 4px;
+    @include util-inline-text-radius();
 }
 
 pre code {
@@ -47,7 +47,7 @@ kbd {
 }
 
 samp {
-    padding: 1px 2px;
+    @include util-inline-text-pad();
     font-size: $type-pica-font-size * 0.95;
     background-color: $panel-bg-color;
     white-space: pre-wrap;
