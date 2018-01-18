@@ -27,49 +27,6 @@ $footer-type-del-fg-color: #ddd;
 $main-type-blockquote-border-color: $main-type-p-fg-color;
 $main-type-blockquote-cite-color: #555;
 
-$a-link-fg-color: #234F83 !default;
-$a-link-bg-color: transparent !default;
-$a-link-border-color: lighten($main-type-p-fg-color, 40%) !default;
-$a-visited-fg-color: #692666 !default;
-$a-visited-bg-color: $a-link-bg-color !default;
-$a-hover-fg-color: #D62906 !default;
-$a-hover-bg-color: transparent !default;
-$a-active-fg-color: $a-hover-fg-color !default;
-$a-active-bg-color: $a-hover-bg-color !default;
-
-$main-a-link-fg-color: $a-link-fg-color !default;
-$main-a-link-bg-color: $a-link-bg-color !default;
-$main-a-link-border-color: $a-link-border-color !default;
-$main-a-visited-fg-color: $a-visited-fg-color !default;
-$main-a-visited-bg-color: $a-visited-bg-color !default;
-$main-a-hover-fg-color: $a-hover-fg-color !default;
-$main-a-hover-bg-color: $a-hover-bg-color !default;
-$main-a-active-fg-color: $a-hover-fg-color !default;
-$main-a-active-bg-color: $a-hover-bg-color !default;
-
-$sidebar-a-link-fg-color: $a-link-fg-color !default;
-$sidebar-a-link-bg-color: $a-link-bg-color !default;
-$sidebar-a-link-border-color: $a-link-border-color !default;
-$sidebar-a-visited-fg-color: $a-visited-fg-color !default;
-$sidebar-a-visited-bg-color: $a-visited-bg-color !default;
-$sidebar-a-hover-fg-color: $a-hover-fg-color !default;
-$sidebar-a-hover-bg-color: $a-hover-bg-color !default;
-$sidebar-a-active-fg-color: $a-hover-fg-color !default;
-$sidebar-a-active-bg-color: $a-hover-bg-color !default;
-
-$footer-a-link-fg-color: #eee !default;
-$footer-a-link-bg-color: transparent !default;
-$footer-a-link-border-color: #ddd !default;
-$footer-a-visited-fg-color: $footer-a-link-fg-color !default;
-$footer-a-visited-bg-color: $footer-a-link-bg-color !default;
-$footer-a-visited-border-color: $footer-a-link-border-color !default;
-$footer-a-hover-fg-color: #fff !default;
-$footer-a-hover-bg-color: $footer-a-link-bg-color !default;
-$footer-a-hover-border-color: #fff !default;
-$footer-a-active-fg-color: $footer-a-hover-fg-color !default;
-$footer-a-active-bg-color: $footer-a-hover-bg-color !default;
-$footer-a-active-border-color: $footer-a-hover-border-color !default;
-
 // 20-components
 
 $panel-fg-color: $base-panel-fg-color;
