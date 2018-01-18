@@ -12,8 +12,14 @@ body > main {
     p {
     }
 
+    ins {
+        color: $main-ins-fg-color;
+        background-color: $main-ins-bg-color;
+    }
+
     del {
-        color: $main-type-del-fg-color;
+        color: $main-del-fg-color;
+        background-color: $main-del-bg-color;
     }
 
     article {

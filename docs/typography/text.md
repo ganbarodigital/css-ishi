@@ -76,14 +76,26 @@ Use the standard `<del>` element to <del>indicate text that has been removed</de
 
 ### Customize Colors
 
-Set any of these variables in your theme's `_colors.scss` file:
+`<ins>` and `<del>` colors are controlled by these variables:
 
 Variable | Changes Colour Of ...
 ---------|----------------------
-`$header-type-del-fg-color` | `<del>` text color in the `<header>` section
-`$main-type-del-fg-color` | `<del>` text color in `<main>` section
-`$sidebar-type-del-fg-color` | `<del>` text color in the sidebar
-`$footer-type-del-fg-color` | `<del>` text color in the footer
+`$header-ins-fg-color` | `<ins>` text color in the `<header>` section
+`$header-ins-bg-color` | `<ins>` background color in the `<header>` section
+`$header-del-fg-color` | `<del>` text color in the `<header>` section
+`$header-del-bg-color` | `<del>` background color in the `<header>` section
+`$main-ins-fg-color` | `<ins>` text color in `<main>` section
+`$main-ins-bg-color` | `<ins>` background color in `<main>` section
+`$main-del-fg-color` | `<del>` text color in `<main>` section
+`$main-del-bg-color` | `<del>` background color in `<main>` section
+`$sidebar-ins-fg-color` | `<ins>` text color in the sidebar
+`$sidebar-ins-bg-color` | `<ins>` background color in the sidebar
+`$sidebar-del-fg-color` | `<del>` text color in the sidebar
+`$sidebar-del-bg-color` | `<del>` background color in the sidebar
+`$footer-ins-fg-color` | `<ins>` text color in the footer
+`$footer-ins-bg-color` | `<ins>` background color in the footer
+`$footer-del-fg-color` | `<del>` text color in the footer
+`$footer-del-bg-color` | `<del>` background color in the footer
 
 ## Blockquotes
 

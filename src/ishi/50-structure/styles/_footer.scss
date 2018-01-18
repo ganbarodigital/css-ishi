@@ -26,8 +26,14 @@ body > footer {
         margin-bottom: 0px;
     }
 
+    ins {
+        color: $footer-ins-fg-color;
+        background-color: $footer-ins-bg-color;
+    }
+
     del {
-        color: $footer-type-del-fg-color;
+        color: $footer-del-fg-color;
+        background-color: $footer-del-bg-color;
     }
 
     a:link {

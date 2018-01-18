@@ -10,8 +10,14 @@
     p {
     }
 
+    ins {
+        color: $sidebar-ins-fg-color;
+        background-color: $sidebar-ins-bg-color;
+    }
+
     del {
-        color: $sidebar-type-del-fg-color;
+        color: $sidebar-del-fg-color;
+        background-color: $sidebar-del-bg-color;
     }
 
     a:link {

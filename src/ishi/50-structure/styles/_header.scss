@@ -9,8 +9,14 @@ body > .banner {
     p {
     }
 
+    ins {
+        color: $header-ins-fg-color;
+        background-color: $header-ins-bg-color;
+    }
+
     del {
-        color: $header-type-del-fg-color;
+        color: $header-del-fg-color;
+        background-color: $header-del-bg-color;
     }
 
     nav.navbar, div.navbar_dropdown {

@@ -56,12 +56,31 @@ $color-danger-border: $color-danger-fg !default;
 // body text
 $main-fg-color: $ganbaro-mono-600 !default;
 $main-bg-color: $ganbaro-mono-0 !default;
+$main-ins-fg-color: $main-fg-color !default;
+$main-ins-bg-color: transparent !default;
+$main-del-fg-color: lighten($main-fg-color, 10%) !default;
+$main-del-bg-color: transparent !default;
+
 $sidebar-fg-color: $ganbaro-mono-600 !default;
 $sidebar-bg-color: transparent !default;
+$sidebar-ins-fg-color: $sidebar-fg-color !default;
+$sidebar-ins-bg-color: transparent !default;
+$sidebar-del-fg-color: lighten($sidebar-fg-color, 10%) !default;
+$sidebar-del-bg-color: transparent !default;
+
 $header-fg-color: $ganbaro-mono-0 !default;
 $header-bg-color: transparent !default;
+$header-ins-fg-color: $header-fg-color !default;
+$header-ins-bg-color: transparent !default;
+$header-del-fg-color: lighten($header-fg-color, 10%) !default;
+$header-del-bg-color: transparent !default;
+
 $footer-fg-color: $ganbaro-mono-0 !default;
 $footer-bg-color: transparent !default;
+$footer-ins-fg-color: $footer-fg-color !default;
+$footer-ins-bg-color: transparent !default;
+$footer-del-fg-color: lighten($footer-fg-color, 10%) !default;
+$footer-del-bg-color: transparent !default;
 
 $font-body: $font-sans-serif !default;
 
