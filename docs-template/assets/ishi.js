@@ -220,6 +220,7 @@
 	        anchor.style.fontStyle = 'normal';
 	        anchor.style.fontVariant = 'normal';
 	        anchor.style.fontWeight = 'normal';
+	        anchor.style.fontSize = '0.9em';
 	        anchor.style.lineHeight = 1;
 	      }
 
