@@ -43,4 +43,4 @@ Use a basic `<pre>` block whenever you have input and/or output to show.
 
     This is a basic <pre> block.
 
-`<pre>` blocks get the same background as the basic panel does.
+`<pre>` blocks get the same background as [the basic panel](../components/panels.html#a-basic-panel) does.

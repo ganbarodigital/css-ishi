@@ -47,6 +47,18 @@ $color-danger-border: $color-danger-fg !default;
 //$color-light:
 //$color-dark:
 
+// these are used to style elements and components that need an accented
+// background
+//
+// - pre
+// - code
+// - samp
+// - panel component
+// - pageflow component
+// - sidebar region
+$color-accent-bg: $ganbaro-tan-50 !default;
+$color-accent-border: $ganbaro-mono-200 !default;
+
 // ===========================================================================
 //
 // Typography
@@ -95,7 +107,15 @@ $footer-h-bg-color: transparent !default;
 $font-h: $font-body;
 
 // pre and code
-$font-pre: $font-monospace;
+$pre-fg-color: $main-fg-color !default;
+$pre-bg-color: $color-accent-bg !default;
+$pre-border-color: $color-accent-border !default;
+$font-pre: $font-monospace !default;
+
+// kbd
+$kbd-fg-color: $main-fg-color !default;
+$kbd-bg-color: transparent !default;
+$kbd-border-color: darken($color-accent-bg, 33%) !default;
 
 // links
 $a-link-fg-color: $ganbaro-blue-500 !default;
@@ -140,6 +160,7 @@ $footer-a-hover-border-color: #fff !default;
 $footer-a-active-fg-color: $footer-a-hover-fg-color !default;
 $footer-a-active-bg-color: $footer-a-hover-bg-color !default;
 $footer-a-active-border-color: $footer-a-hover-border-color !default;
+
 // ===========================================================================
 //
 // Tables
@@ -155,10 +176,23 @@ $footer-a-active-border-color: $footer-a-hover-border-color !default;
 // ---------------------------------------------------------------------------
 
 // alerts, callouts, panels
-$color-panel-bg: $ganbaro-tan-50 !default;
-$color-panel-fg: $ganbaro-tan-800 !default;
-$color-panel-border: $color-panel-fg !default;
+//
+// by default, many other components reuse these settings
+$panel-bg-color: $color-accent-bg !default;
+$panel-fg-color: $ganbaro-tan-800 !default;
+$panel-border-color: $color-accent-border !default;
 $panel-border-radius: 4px !default;
+
+// call to action
+$calltoaction-fg-color: #000 !default;
+$calltoaction-bg-color: #fff !default;
+$calltoaction-border-color: $calltoaction-fg-color !default;
+
+// pageflow
+$pageflow-fg-color: $panel-fg-color !default;
+$pageflow-bg-color: $panel-bg-color !default;
+$pageflow-border-color: $panel-border-color !default;
+
 
 // ===========================================================================
 //
@@ -173,3 +207,13 @@ $panel-border-radius: 4px !default;
 // ---------------------------------------------------------------------------
 
 $gradient-range: 2.5%;
+
+// ===========================================================================
+//
+// Regions
+//
+// ---------------------------------------------------------------------------
+
+$sidebar-fg-color: $main-fg-color;
+$sidebar-bg-color: $color-accent-bg;
+$sidebar-border-color: $color-accent-border;

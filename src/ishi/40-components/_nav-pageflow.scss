@@ -35,22 +35,26 @@ nav.pageflow {
             color: $sidebar-a-link-fg-color;
             background-color: $sidebar-a-link-bg-color;
             text-decoration: none;
+            border-bottom: 0px;
         }
 
         a:visited {
             color: $sidebar-a-visited-fg-color;
             background-color: $sidebar-a-visited-bg-color;
             text-decoration: none;
+            border-bottom: 0px;
         }
 
         a:hover {
             background-color: $attention-bg-color;
             color: $attention-hi-color;
+            border-bottom: 0px;
         }
 
         a:active, a:focus {
             color: $attention-hi-color;
             background-color: $attention-bg-color;
+            border-bottom: 0px;
         }
 
     }

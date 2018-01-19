@@ -3,7 +3,11 @@ pre, samp, code, kbd {
 }
 
 article pre, article pre.highlight {
-    @include insert($panel-fg-color, $panel-bg-color, $panel-border-color, $panel-border-radius, $type-pica-font-size, $type-pica-font-size);
+    @extend .panel;
+    color: $pre-fg-color;
+    background-color: $pre-bg-color;
+    border-color: $pre-border-color;
+
     word-break: break-all;
     word-wrap: break-word;
     font-size: $type-pica-font-size * 0.85;
@@ -36,11 +40,13 @@ a code {
 }
 
 kbd {
+    color: $kbd-fg-color;
+    background-color: $kbd-bg-color;
     font-family: inherit;
     font-size: $type-pica-font-size * 0.85;
     font-weight: bolder;
     padding: 1px 4px;
-    border: 1px solid darken($panel-bg-color, 33%);
+    border: 1px solid $kbd-border-color;
     border-radius: 3px;
     background-color: transparent;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.20), inset 1px 0px 2px rgba(0, 0, 0, 0.20), inset -1px 0px 2px rgba(0, 0, 0, 0.20);

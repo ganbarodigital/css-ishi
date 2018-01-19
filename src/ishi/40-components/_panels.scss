@@ -33,7 +33,7 @@
  */
 
 .panel {
-    @include util-panel($color-panel-fg, $color-panel-bg, $color-panel-border);
+    @include util-panel($panel-fg-color, $panel-bg-color, $panel-border-color);
     border-radius: $panel-border-radius;
     margin-bottom: $type-pica-font-size;
     padding: $type-pica-font-size / 2;
@@ -48,7 +48,7 @@
 }
 
 .panel.gradient {
-    @include context-gradient($color-panel-bg);
+    @include context-gradient($panel-bg-color);
 }
 
 .panel.outline {
@@ -65,16 +65,16 @@
 
 .panel.gradient.sunken {
     @include context-sunken();
-    @include context-gradient-reverse($color-panel-bg);
+    @include context-gradient-reverse($panel-bg-color);
 }
 
 .panel.sunken.gradient {
     @include context-sunken();
-    @include context-gradient-reverse($color-panel-bg);
+    @include context-gradient-reverse($panel-bg-color);
 }
 
 //// Panels That Alert
 
 .panel.alert {
-    @include util-panel-alert($color-panel-fg, $color-panel-bg, $color-panel-border);
+    @include util-panel-alert($panel-fg-color, $panel-bg-color, $panel-border-color);
 }

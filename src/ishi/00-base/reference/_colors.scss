@@ -3,11 +3,6 @@
 $base-main-fg-color: #404040;
 $base-main-bg-color: #fff;
 
-$base-panel-fg-color: #202020;
-// $base-panel-bg-color: #eeeeee;
-$base-panel-bg-color: #EBE7E2;
-$base-panel-border-color: #a8a8a8;
-
 // 10-typography
 
 $main-type-h-fg-color: #222;
@@ -28,18 +23,6 @@ $main-type-blockquote-border-color: $main-type-p-fg-color;
 $main-type-blockquote-cite-color: #555;
 
 // 20-components
-
-$panel-fg-color: $base-panel-fg-color;
-$panel-bg-color: $base-panel-bg-color;
-$panel-border-color: $base-panel-border-color;
-
-$callout-fg-color: $base-panel-fg-color;
-$callout-bg-color: $base-panel-bg-color;
-$callout-border-color: $base-panel-border-color;
-
-$pageflow-fg-color: $panel-fg-color;
-$pageflow-bg-color: $panel-bg-color;
-$pageflow-border-color: $panel-border-color;
 
 $header-navbar-bg-color: #000;
 $header-navbar-fg-color: #ddd;
@@ -83,6 +66,3 @@ $header-bg-color: #000;
 
 $main-fg-color: #404040;
 
-$sidebar-fg-color: $main-fg-color;
-$sidebar-bg-color: $base-panel-bg-color;
-$sidebar-border-color: $base-panel-border-color;
