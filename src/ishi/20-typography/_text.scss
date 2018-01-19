@@ -1,6 +1,6 @@
 p {
-    @include type-pica;
-    margin-bottom: $type-p-spacing;
+    @include type-pica-block;
+    @include type-pica-spacing-bottom;
 }
 p.leader {
     @include util-text-bolder;
@@ -23,7 +23,7 @@ del {
 }
 
 ol + p, ol + blockquote, ul + p, ul + blockquote, ol + aside, ul + aside, ol + div, ul + div {
-    margin-top: $type-p-spacing;
+    @include type-pica-spacing;
 }
 
 abbr, abbr[title] {
@@ -53,7 +53,7 @@ blockquote {
 
     cite {
         display: block;
-        @include type-brevier();
+        @include type-brevier-block();
         color: $main-type-blockquote-cite-color;
     }
 }

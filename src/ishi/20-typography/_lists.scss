@@ -6,7 +6,7 @@ ul {
         display: list-item;
         list-style-position: outside;
 
-        @include type-pica();
+        @include type-pica-block();
     }
 }
 
@@ -18,7 +18,7 @@ ol {
         display: list-item;
         list-style-position: outside;
 
-        @include type-pica();
+        @include type-pica-block();
 
         ol {
             list-style-type: lower-alpha;
@@ -37,7 +37,7 @@ dl {
     }
 
     dd {
-        @include type-pica();
+        @include type-pica-block();
         padding-left: $type-list-indent;
     }
 }

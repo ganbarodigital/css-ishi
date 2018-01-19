@@ -11,6 +11,9 @@
 /**
  * variables
  */
+/**
+ * variables
+ */
 .hidden {
   display: none !important; }
 
@@ -496,6 +499,9 @@ iframe {
   display: table;
   clear: both; }
 
+/**
+ * styles
+ */
 ol.hierarchical {
   counter-reset: section;
   list-style-type: none; }
@@ -805,12 +811,6 @@ li.align-right {
   background-color: #b51110;
   color: #fff; }
 
-/**
- * variables
- */
-/**
- * styles
- */
 @media (max-width: 319px) {
   html {
     font-size: 16px; } }
@@ -832,82 +832,75 @@ body {
   font-size: 1rem;
   line-height: 1.5rem; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; }
+
 h1 {
   font-size: 2.5rem;
-  line-height: 2.75rem;
-  margin-bottom: 1rem; }
+  line-height: 2.75rem; }
 
 *:not(h1) + h1 {
   margin-top: 1.5rem; }
 
 h2 {
   font-size: 1.85rem;
-  line-height: 2rem;
-  margin-bottom: 1rem; }
+  line-height: 2rem; }
 
 *:not(h1) + h2 {
   margin-top: 1.85rem; }
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem; }
+  line-height: 1.5rem; }
 
 *:not(h2) + h3 {
   margin-top: 2rem; }
 
 h4 {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-  margin-bottom: 1rem; }
+  line-height: 1.75rem; }
 
 *:not(h3) + h4 {
   margin-top: 1.25rem; }
 
 h5 {
   font-size: 0.9rem;
-  line-height: 1.25rem;
-  margin-bottom: 1rem; }
+  line-height: 1.25rem; }
 
 *:not(h4) + h5 {
   margin-top: 0.9rem; }
 
 h6 {
   font-size: 0.85rem;
-  line-height: 1rem;
-  margin-bottom: 1rem; }
+  line-height: 1rem; }
 
 *:not(h5) + h6 {
   margin-top: 0.85rem; }
 
 .sidebar h1 {
   font-size: 1.85rem;
-  line-height: 2rem;
-  margin-bottom: 1rem; }
+  line-height: 2rem; }
 
 .sidebar *:not(h1) + h1 {
   margin-top: 1.85rem; }
 
 .sidebar h2 {
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem; }
+  line-height: 1.5rem; }
 
 .sidebar *:not(h1) + h2 {
   margin-top: 2rem; }
 
 .sidebar h3 {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-  margin-bottom: 1rem; }
+  line-height: 1.75rem; }
 
 .sidebar *:not(h2) + h3 {
   margin-top: 1.25rem; }
 
 .sidebar h4 {
   font-size: 1rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem; }
+  line-height: 1.5rem; }
 
 .sidebar *:not(h3) + h4 {
   margin-top: 1rem; }
@@ -996,12 +989,9 @@ pre, samp, code, kbd {
   font-family: Menlo, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; }
 
 article pre, article pre.highlight {
+  color: #404040;
   background-color: #ebe7e2;
-  color: #2b2722;
-  border: 1px solid #a8a8a8;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  border-color: #a8a8a8;
   word-break: break-all;
   word-wrap: break-word;
   font-size: 0.85rem;
@@ -1016,12 +1006,12 @@ code {
   border-radius: 0.2rem; }
 
 pre code {
-  padding: 0;
   font-size: 0.85rem;
+  line-height: 1.1rem;
+  padding: 0;
   color: #2b2722;
   background-color: #ebe7e2;
-  white-space: pre-wrap;
-  line-height: 1.1rem; }
+  white-space: pre-wrap; }
 
 a code {
   color: inherit;
@@ -1030,6 +1020,8 @@ a code {
   border-radius: 0; }
 
 kbd {
+  color: #404040;
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.85rem;
   font-weight: bolder;
@@ -1041,7 +1033,7 @@ kbd {
 
 samp {
   padding: 0.1rem 0.2rem;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   background-color: #ebe7e2;
   white-space: pre-wrap; }
 
@@ -1106,7 +1098,7 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
   position: relative;
-  margin: .5em 0;
+  margin: 0;
   border-left: 4px solid #234F83;
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
@@ -1764,53 +1756,53 @@ a.calltoaction.warning.outline:hover {
 /**
  * styles
  */
-.panel {
+.panel, article pre, article pre.highlight {
   background-color: #ebe7e2;
   color: #2b2722;
   border: 1px solid #a8a8a8;
   border-radius: 4px;
   margin-bottom: 1rem;
   padding: 0.5rem; }
-  .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h5 {
+  .panel h1, article pre h1, article pre.highlight h1, .panel h2, article pre h2, article pre.highlight h2, .panel h3, article pre h3, article pre.highlight h3, .panel h4, article pre h4, article pre.highlight h4, .panel h5, article pre h5, article pre.highlight h5, .panel h5, article pre h5, article pre.highlight h5 {
     color: #2b2722;
     background-color: #ebe7e2; }
 
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p, .panel ol, .panel ul {
+.panel h1, article pre h1, article pre.highlight h1, .panel h2, article pre h2, article pre.highlight h2, .panel h3, article pre h3, article pre.highlight h3, .panel h4, article pre h4, article pre.highlight h4, .panel h5, article pre h5, article pre.highlight h5, .panel h6, article pre h6, article pre.highlight h6, .panel p, article pre p, article pre.highlight p, .panel ol, article pre ol, article pre.highlight ol, .panel ul, article pre ul, article pre.highlight ul {
   margin-bottom: 0.5rem; }
 
-.panel p:last-child {
+.panel p:last-child, article pre p:last-child, article pre.highlight p:last-child {
   margin-bottom: 0px; }
 
-.panel.gradient {
+.panel.gradient, article pre.gradient {
   background-image: linear-gradient(to bottom, #f0edea 0%, #e6e1da 100%); }
 
-.panel.outline {
+.panel.outline, article pre.outline {
   background-color: transparent; }
 
-.panel.standout {
+.panel.standout, article pre.standout {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-.panel.sunken {
+.panel.sunken, article pre.sunken {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); }
 
-.panel.gradient.sunken {
+.panel.gradient.sunken, article pre.gradient.sunken {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
-.panel.sunken.gradient {
+.panel.sunken.gradient, article pre.sunken.gradient {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
-.panel.alert {
+.panel.alert, article pre.alert {
   padding: 0px; }
-  .panel.alert h1, .panel.alert h2, .panel.alert h3, .panel.alert h4, .panel.alert h5, .panel.alert h6 {
+  .panel.alert h1, article pre.alert h1, article pre.alert.highlight h1, .panel.alert h2, article pre.alert h2, article pre.alert.highlight h2, .panel.alert h3, article pre.alert h3, article pre.alert.highlight h3, .panel.alert h4, article pre.alert h4, article pre.alert.highlight h4, .panel.alert h5, article pre.alert h5, article pre.alert.highlight h5, .panel.alert h6, article pre.alert h6, article pre.alert.highlight h6 {
     background-color: #2b2722;
     color: #ebe7e2;
     padding: 0.5rem;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 0px; }
-  .panel.alert .content {
+  .panel.alert .content, article pre.alert .content, article pre.alert.highlight .content {
     padding: 0.5rem; }
 
 /**

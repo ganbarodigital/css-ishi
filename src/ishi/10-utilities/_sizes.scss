@@ -1,0 +1,98 @@
+/**
+ * styles
+ */
+@mixin type-cannon-inline() {
+    font-size: 2.5rem;
+}
+@mixin type-cannon-block() {
+    @include type-cannon-inline()
+    line-height: 2.75rem;
+}
+@mixin type-cannon-spacing() {
+    margin-top: 1.5rem;
+}
+
+@mixin type-trafalgar-inline() {
+    font-size: 1.85rem;
+}
+@mixin type-trafalgar-block() {
+    @include type-trafalgar-inline();
+    line-height: 2rem;
+}
+@mixin type-trafalgar-spacing() {
+    margin-top: 1.85rem;
+}
+
+@mixin type-doublepica-inline() {
+    font-size: 1.5rem;
+}
+@mixin type-doublepica-block() {
+    @include type-doublepica-inline();
+    line-height: 1.5rem;
+}
+@mixin type-doublepica-spacing() {
+    margin-top: 2rem;
+}
+
+@mixin type-greatprimer-inline() {
+    font-size: 1.25rem;
+}
+@mixin type-greatprimer-block() {
+    @include type-greatprimer-inline();
+    line-height: 1.75rem;
+}
+@mixin type-greatprimer-spacing() {
+    margin-top: 1.25rem;
+}
+
+@mixin type-pica-inline() {
+    font-size: $type-pica-font-size;
+}
+@mixin type-pica-block() {
+    @include type-pica-inline();
+    line-height: 1.5rem;
+}
+@mixin type-pica-spacing() {
+    margin-top: $type-p-spacing;
+}
+@mixin type-pica-spacing-bottom() {
+    margin-bottom: $type-p-spacing;
+}
+
+@mixin type-pica-mono-inline() {
+    font-size: $type-pica-font-size * 0.85;
+}
+@mixin type-pica-mono-block() {
+    @include type-pica-mono-inline();
+    line-height: $type-pica-font-size * 1.1;
+}
+
+@mixin type-longprimer-inline() {
+    font-size: 0.9rem;
+}
+@mixin type-longprimer-block() {
+    @include type-longprimer-inline();
+    line-height: 1.25rem;
+}
+@mixin type-longprimer-spacing() {
+    margin-top: 0.9rem;
+}
+
+@mixin type-brevier-inline() {
+    font-size: 0.85rem;
+}
+@mixin type-brevier-block() {
+    @include type-brevier-inline();
+    line-height: 1rem;
+}
+@mixin type-brevier-spacing() {
+    margin-top: 0.85rem;
+}
+
+@mixin type-minion-inline() {
+    font-size: 0.8rem;
+}
+@mixin type-minion-block() {
+    @include type-minion-inline();
+    line-height: 1rem;
+}

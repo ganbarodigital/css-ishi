@@ -1,4 +1,4 @@
 body {
     font-family: $font-body;
-    @include type-pica();
+    @include type-pica-block();
 }
