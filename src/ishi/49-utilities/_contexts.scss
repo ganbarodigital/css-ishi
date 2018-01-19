@@ -10,6 +10,8 @@
 }
 
 @mixin context-alert-colors($color-fg, $color-bg, $color-border) {
+    border-color: $color-border;
+
     h1, h2, h3, h4, h5, h6 {
         color: $color-bg;
         background-color: $color-fg;

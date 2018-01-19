@@ -1741,7 +1741,8 @@ a.calltoaction.warning.outline:hover {
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .callout.alert {
-  padding: 0px; }
+  padding: 0px;
+  border-color: #2b2722; }
   .callout.alert h1, .callout.alert h2, .callout.alert h3, .callout.alert h4, .callout.alert h5, .callout.alert h6 {
     background-color: #2b2722;
     color: #ebe7e2;
@@ -2043,9 +2044,11 @@ nav.pageflow {
     color: #234f83;
     background-color: #fff; }
 
-.attention.alert h1, .attention.alert h2, .attention.alert h3, .attention.alert h4, .attention.alert h5, .attention.alert h6, .alert.attention h1, .alert.attention h2, .alert.attention h3, .alert.attention h4, .alert.attention h5, .alert.attention h6 {
-  color: #fff;
-  background-color: #234f83; }
+.attention.alert, .alert.attention {
+  border-color: #234f83; }
+  .attention.alert h1, .attention.alert h2, .attention.alert h3, .attention.alert h4, .attention.alert h5, .attention.alert h6, .alert.attention h1, .alert.attention h2, .alert.attention h3, .alert.attention h4, .alert.attention h5, .alert.attention h6 {
+    color: #fff;
+    background-color: #234f83; }
 
 .info {
   color: #34789a;
@@ -2055,9 +2058,11 @@ nav.pageflow {
     color: #34789a;
     background-color: #f4f8fa; }
 
-.info.alert h1, .info.alert h2, .info.alert h3, .info.alert h4, .info.alert h5, .info.alert h6, .alert.info h1, .alert.info h2, .alert.info h3, .alert.info h4, .alert.info h5, .alert.info h6 {
-  color: #f4f8fa;
-  background-color: #34789a; }
+.info.alert, .alert.info {
+  border-color: #34789a; }
+  .info.alert h1, .info.alert h2, .info.alert h3, .info.alert h4, .info.alert h5, .info.alert h6, .alert.info h1, .alert.info h2, .alert.info h3, .alert.info h4, .alert.info h5, .alert.info h6 {
+    color: #f4f8fa;
+    background-color: #34789a; }
 
 .success {
   color: #3c763d;
@@ -2067,9 +2072,11 @@ nav.pageflow {
     color: #3c763d;
     background-color: #dff0d8; }
 
-.success.alert h1, .success.alert h2, .success.alert h3, .success.alert h4, .success.alert h5, .success.alert h6, .alert.success h1, .alert.success h2, .alert.success h3, .alert.success h4, .alert.success h5, .alert.success h6 {
-  color: #dff0d8;
-  background-color: #3c763d; }
+.success.alert, .alert.success {
+  border-color: #3c763d; }
+  .success.alert h1, .success.alert h2, .success.alert h3, .success.alert h4, .success.alert h5, .success.alert h6, .alert.success h1, .alert.success h2, .alert.success h3, .alert.success h4, .alert.success h5, .alert.success h6 {
+    color: #dff0d8;
+    background-color: #3c763d; }
 
 .warning {
   color: #8a6d3b;
@@ -2079,9 +2086,11 @@ nav.pageflow {
     color: #8a6d3b;
     background-color: #fcf8e3; }
 
-.warning.alert h1, .warning.alert h2, .warning.alert h3, .warning.alert h4, .warning.alert h5, .warning.alert h6, .alert.warning h1, .alert.warning h2, .alert.warning h3, .alert.warning h4, .alert.warning h5, .alert.warning h6 {
-  color: #fcf8e3;
-  background-color: #8a6d3b; }
+.warning.alert, .alert.warning {
+  border-color: #8a6d3b; }
+  .warning.alert h1, .warning.alert h2, .warning.alert h3, .warning.alert h4, .warning.alert h5, .warning.alert h6, .alert.warning h1, .alert.warning h2, .alert.warning h3, .alert.warning h4, .alert.warning h5, .alert.warning h6 {
+    color: #fcf8e3;
+    background-color: #8a6d3b; }
 
 .danger {
   color: #c7254e;
@@ -2091,9 +2100,11 @@ nav.pageflow {
     color: #c7254e;
     background-color: #f2dede; }
 
-.danger.alert h1, .danger.alert h2, .danger.alert h3, .danger.alert h4, .danger.alert h5, .danger.alert h6, .alert.danger h1, .alert.danger h2, .alert.danger h3, .alert.danger h4, .alert.danger h5, .alert.danger h6 {
-  color: #f2dede;
-  background-color: #c7254e; }
+.danger.alert, .alert.danger {
+  border-color: #c7254e; }
+  .danger.alert h1, .danger.alert h2, .danger.alert h3, .danger.alert h4, .danger.alert h5, .danger.alert h6, .alert.danger h1, .alert.danger h2, .alert.danger h3, .alert.danger h4, .alert.danger h5, .alert.danger h6 {
+    color: #f2dede;
+    background-color: #c7254e; }
 
 body > .centered-container {
   width: 100%;
