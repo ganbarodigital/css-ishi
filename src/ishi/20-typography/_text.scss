@@ -38,6 +38,11 @@ mark {
 blockquote {
     display: block;
     @include util-block-text-standout();
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-left-width: 2px;
+    color: $main-blockquote-fg-color;
+    background-color: $main-blockquote-bg-color;
 
     p {
         margin-bottom: $type-p-spacing / 2;
@@ -54,6 +59,6 @@ blockquote {
     cite {
         display: block;
         @include type-brevier-block();
-        color: $main-type-blockquote-cite-color;
+        color: $main-blockquote-cite-fg-color;
     }
 }

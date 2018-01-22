@@ -161,6 +161,12 @@ $footer-a-active-fg-color: $footer-a-hover-fg-color !default;
 $footer-a-active-bg-color: $footer-a-hover-bg-color !default;
 $footer-a-active-border-color: $footer-a-hover-border-color !default;
 
+// blockquote
+$main-blockquote-fg-color: $main-fg-color !default;
+$main-blockquote-bg-color: $color-accent-bg !default;
+$main-blockquote-border-color: $color-accent-border !default;
+$main-blockquote-cite-fg-color: $ganbaro-mono-600 !default;
+
 // ===========================================================================
 //
 // Tables
