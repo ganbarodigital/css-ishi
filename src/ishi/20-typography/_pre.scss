@@ -42,7 +42,7 @@ kbd {
     color: $kbd-fg-color;
     background-color: $kbd-bg-color;
     font-family: inherit;
-    font-size: $type-pica-font-size * 0.85;
+    @include type-pica-mono-inline();
     font-weight: bolder;
     padding: 1px 4px;
     border: 1px solid $kbd-border-color;
@@ -54,6 +54,6 @@ kbd {
 samp {
     @include util-inline-text-pad();
     @include type-pica-mono-inline();
-    background-color: $panel-bg-color;
+    background-color: $color-accent-bg;
     white-space: pre-wrap;
 }
