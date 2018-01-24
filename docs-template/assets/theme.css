@@ -1395,25 +1395,28 @@ pre.code-toolbar > .toolbar span:focus {
 table {
   width: 100%; }
 
-table + p, table + ol, table + ul, table + div {
-  margin-top: 1.5rem; }
+thead, tbody {
+  border-bottom: 2px solid #a8a8a8; }
 
 th {
   text-align: left;
   vertical-align: bottom;
   padding-bottom: 0.5rem; }
 
-tr {
-  border-bottom: 1px solid #ccc2b5; }
+tbody tr {
+  border-bottom: 1px solid #a8a8a8; }
 
-td {
+th, td {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+td {
   vertical-align: top; }
 
-td:nth-last-child(1) {
-  padding-right: 0px; }
+table + p, table + ol, table + ul, table + div {
+  margin-top: 1.5rem; }
 
 .grid {
   display: flex;

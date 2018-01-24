@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Ishi provides very basic styling for HTML tables. You don't need to add any CSS classes at all to apply this styling.
+Ishi provides default styling for HTML tables. You don't need to add any classes.
 
 ## Example Tables
 
@@ -13,16 +13,29 @@ This is a basic table with minimal content.
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
+            <th>Column 3</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Row 1, column 1</td>
             <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
         </tr>
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
         </tr>
     </tbody>
 </table>
