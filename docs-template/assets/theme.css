@@ -1421,6 +1421,34 @@ table + p, table + ol, table + ul, table + div {
 table.striped tr:nth-child(odd) td {
   background-color: #ebe7e2; }
 
+thead.attention.alert, thead.alert.attention {
+  color: #fff;
+  background-color: #234f83; }
+
+thead.info.alert, thead.alert.info {
+  color: #f4f8fa;
+  background-color: #34789a; }
+
+thead.success.alert, thead.alert.success {
+  color: #dff0d8;
+  background-color: #3c763d; }
+
+thead.warning.alert, thead.alert.warning {
+  color: #fcf8e3;
+  background-color: #8a6d3b; }
+
+thead.danger.alert, thead.alert.danger {
+  color: #f2dede;
+  background-color: #c7254e; }
+
+thead.light.alert, thead.alert.light {
+  color: #ebe7e2;
+  background-color: #404040; }
+
+thead.dark.alert, thead.alert.dark {
+  color: #242628;
+  background-color: #fff; }
+
 .grid {
   display: flex;
   flex-flow: row wrap; }
@@ -2054,6 +2082,10 @@ nav.pageflow {
   .attention h1, .attention h2, .attention h3, .attention h4, .attention h5, .attention h6 {
     color: #234f83;
     background-color: #fff; }
+  .attention table.striped tr:nth-child(odd) td {
+    background-color: #234f83; }
+  .attention tbody tr {
+    border-color: #234f83; }
 
 .attention.alert, .alert.attention {
   border-color: #234f83; }
@@ -2068,6 +2100,10 @@ nav.pageflow {
   .info h1, .info h2, .info h3, .info h4, .info h5, .info h6 {
     color: #34789a;
     background-color: #f4f8fa; }
+  .info table.striped tr:nth-child(odd) td {
+    background-color: #34789a; }
+  .info tbody tr {
+    border-color: #34789a; }
 
 .info.alert, .alert.info {
   border-color: #34789a; }
@@ -2082,6 +2118,10 @@ nav.pageflow {
   .success h1, .success h2, .success h3, .success h4, .success h5, .success h6 {
     color: #3c763d;
     background-color: #dff0d8; }
+  .success table.striped tr:nth-child(odd) td {
+    background-color: #3c763d; }
+  .success tbody tr {
+    border-color: #3c763d; }
 
 .success.alert, .alert.success {
   border-color: #3c763d; }
@@ -2096,6 +2136,10 @@ nav.pageflow {
   .warning h1, .warning h2, .warning h3, .warning h4, .warning h5, .warning h6 {
     color: #8a6d3b;
     background-color: #fcf8e3; }
+  .warning table.striped tr:nth-child(odd) td {
+    background-color: #8a6d3b; }
+  .warning tbody tr {
+    border-color: #8a6d3b; }
 
 .warning.alert, .alert.warning {
   border-color: #8a6d3b; }
@@ -2110,12 +2154,52 @@ nav.pageflow {
   .danger h1, .danger h2, .danger h3, .danger h4, .danger h5, .danger h6 {
     color: #c7254e;
     background-color: #f2dede; }
+  .danger table.striped tr:nth-child(odd) td {
+    background-color: #c7254e; }
+  .danger tbody tr {
+    border-color: #c7254e; }
 
 .danger.alert, .alert.danger {
   border-color: #c7254e; }
   .danger.alert h1, .danger.alert h2, .danger.alert h3, .danger.alert h4, .danger.alert h5, .danger.alert h6, .alert.danger h1, .alert.danger h2, .alert.danger h3, .alert.danger h4, .alert.danger h5, .alert.danger h6 {
     color: #f2dede;
     background-color: #c7254e; }
+
+.light {
+  color: #404040;
+  background-color: #ebe7e2;
+  border-color: #a8a8a8; }
+  .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+    color: #404040;
+    background-color: #ebe7e2; }
+  .light table.striped tr:nth-child(odd) td {
+    background-color: #a8a8a8; }
+  .light tbody tr {
+    border-color: #a8a8a8; }
+
+.light.alert, .light.danger {
+  border-color: #a8a8a8; }
+  .light.alert h1, .light.alert h2, .light.alert h3, .light.alert h4, .light.alert h5, .light.alert h6, .light.danger h1, .light.danger h2, .light.danger h3, .light.danger h4, .light.danger h5, .light.danger h6 {
+    color: #ebe7e2;
+    background-color: #404040; }
+
+.dark {
+  color: #fff;
+  background-color: #242628;
+  border-color: #242628; }
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #fff;
+    background-color: #242628; }
+  .dark table.striped tr:nth-child(odd) td {
+    background-color: #242628; }
+  .dark tbody tr {
+    border-color: #242628; }
+
+.dark.alert, .alert.dark {
+  border-color: #242628; }
+  .dark.alert h1, .dark.alert h2, .dark.alert h3, .dark.alert h4, .dark.alert h5, .dark.alert h6, .alert.dark h1, .alert.dark h2, .alert.dark h3, .alert.dark h4, .alert.dark h5, .alert.dark h6 {
+    color: #242628;
+    background-color: #fff; }
 
 body > .centered-container {
   width: 100%;

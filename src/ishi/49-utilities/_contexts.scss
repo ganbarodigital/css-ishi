@@ -7,6 +7,14 @@
         color: $color-fg;
         background-color: $color-bg;
     }
+
+    table.striped tr:nth-child(odd) td {
+        background-color: $color-border;
+    }
+
+    tbody tr {
+        border-color: $color-border;
+    }
 }
 
 @mixin context-alert-colors($color-fg, $color-bg, $color-border) {
@@ -56,4 +64,20 @@
 
 .danger.alert, .alert.danger {
     @include context-alert-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+}
+
+.light {
+    @include context-colors($color-light-fg, $color-light-bg, $color-light-border);
+}
+
+.light.alert, .light.danger {
+    @include context-alert-colors($color-light-fg, $color-light-bg, $color-light-border);
+}
+
+.dark {
+    @include context-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
+}
+
+.dark.alert, .alert.dark {
+    @include context-alert-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
 }

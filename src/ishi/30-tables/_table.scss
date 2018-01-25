@@ -38,3 +38,39 @@ table + p, table + ol, table + ul, table + div {
 table.striped tr:nth-child(odd) td {
     background-color: $color-accent-bg;
 }
+
+// alerts
+thead.attention.alert, thead.alert.attention {
+    color: $color-attention-bg;
+    background-color: $color-attention-fg;
+}
+
+thead.info.alert, thead.alert.info {
+    color: $color-info-bg;
+    background-color: $color-info-fg;
+}
+
+thead.success.alert, thead.alert.success {
+    color: $color-success-bg;
+    background-color: $color-success-fg;
+}
+
+thead.warning.alert, thead.alert.warning {
+    color: $color-warning-bg;
+    background-color: $color-warning-fg;
+}
+
+thead.danger.alert, thead.alert.danger {
+    color: $color-danger-bg;
+    background-color: $color-danger-fg;
+}
+
+thead.light.alert, thead.alert.light {
+    color: $color-light-bg;
+    background-color: $color-light-fg;
+}
+
+thead.dark.alert, thead.alert.dark {
+    color: $color-dark-bg;
+    background-color: $color-dark-fg;
+}

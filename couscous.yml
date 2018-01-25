@@ -160,6 +160,9 @@ navigation:
             striped:
                 text: The Striped Table
                 relativeUrl: tables/striped-table.html
+            contexts:
+                text: Tables and Contexts
+                relativeUrl: tables/contexts.html
 
     components:
         text: Components
