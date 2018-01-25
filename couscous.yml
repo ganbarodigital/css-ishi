@@ -157,6 +157,9 @@ navigation:
             default:
                 text: The Default Table
                 relativeUrl: tables/default-table.html
+            striped:
+                text: The Striped Table
+                relativeUrl: tables/striped-table.html
 
     components:
         text: Components

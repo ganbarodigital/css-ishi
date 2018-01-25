@@ -34,3 +34,7 @@ td {
 table + p, table + ol, table + ul, table + div {
     margin-top: $type-non-p-spacing;
 }
+
+table.striped tr:nth-child(odd) td {
+    background-color: $color-accent-bg;
+}
