@@ -35,16 +35,12 @@ tfoot td {
     font-weight: bold;
 }
 
-// td:nth-last-child(1) {
-//     padding-right: 0px;
-// }
-
 table + p, table + ol, table + ul, table + div {
     margin-top: $type-non-p-spacing;
 }
 
-table.striped tr:nth-child(odd) td {
-    background-color: $color-accent-bg;
+table.striped tbody tr:nth-child(odd) td {
+    background-color: $color-accent-bg-light;
 }
 
 // context classes

@@ -1424,8 +1424,8 @@ tfoot td {
 table + p, table + ol, table + ul, table + div {
   margin-top: 1.5rem; }
 
-table.striped tr:nth-child(odd) td {
-  background-color: #ebe7e2; }
+table.striped tbody tr:nth-child(odd) td {
+  background-color: #eee; }
 
 table.attention {
   border-color: #234f83; }

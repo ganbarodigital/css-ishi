@@ -52,6 +52,40 @@ This table uses `<table class="attention">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
+
+<table class="attention">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
     <tfoot>
         <tr>
             <td>Total 1</td>
@@ -62,6 +96,40 @@ This table uses `<table class="attention">`.
 </table>
 
 This table uses `<table class="info">`.
+
+<table class="info">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
 
 <table class="info">
     <thead>
@@ -134,6 +202,40 @@ This table uses `<table class="success">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
+
+<table class="success">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
     <tfoot>
         <tr>
             <td>Total 1</td>
@@ -144,6 +246,40 @@ This table uses `<table class="success">`.
 </table>
 
 This table uses `<table class="warning">`.
+
+<table class="warning">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
 
 <table class="warning">
     <thead>
@@ -216,6 +352,40 @@ This table uses `<table class="danger">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
+
+<table class="danger">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
     <tfoot>
         <tr>
             <td>Total 1</td>
@@ -225,7 +395,42 @@ This table uses `<table class="danger">`.
     </tfoot>
 </table>
 
+
 This table uses `<table class="light">`.
+
+<table class="light">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
 
 <table class="light">
     <thead>
@@ -298,6 +503,40 @@ This table uses `<table class="dark">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+</table>
+
+This is the same table, with an added `<tfoot>`.
+
+<table class="dark">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, column 1</td>
+            <td>Row 1, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, column 1</td>
+            <td>Row 2, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, column 1</td>
+            <td>Row 3, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, column 1</td>
+            <td>Row 4, column 2</td>
+            <td>Row 1, column 3</td>
+        </tr>
+    </tbody>
     <tfoot>
         <tr>
             <td>Total 1</td>
@@ -306,6 +545,7 @@ This table uses `<table class="dark">`.
         </tr>
     </tfoot>
 </table>
+
 
 ### With Alert
 
