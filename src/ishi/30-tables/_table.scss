@@ -2,11 +2,11 @@ table {
     width: 100%;
 }
 
-thead {
+thead, tbody + tfoot {
     border-top: 2px solid $color-accent-border;
 }
 
-thead, tbody, tfoot {
+thead, tbody:last-child, tfoot {
     border-bottom: 2px solid $color-accent-border;
 }
 

@@ -1395,10 +1395,10 @@ pre.code-toolbar > .toolbar span:focus {
 table {
   width: 100%; }
 
-thead {
+thead, tbody + tfoot {
   border-top: 2px solid #a8a8a8; }
 
-thead, tbody, tfoot {
+thead, tbody:last-child, tfoot {
   border-bottom: 2px solid #a8a8a8; }
 
 th {
