@@ -39,17 +39,17 @@ This table uses `<table class="attention">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -73,17 +73,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -114,17 +114,17 @@ This table uses `<table class="info">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -148,17 +148,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -189,17 +189,17 @@ This table uses `<table class="success">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -223,17 +223,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -264,17 +264,17 @@ This table uses `<table class="warning">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -298,17 +298,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -339,17 +339,17 @@ This table uses `<table class="danger">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -373,17 +373,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -415,17 +415,17 @@ This table uses `<table class="light">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -449,17 +449,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -490,17 +490,17 @@ This table uses `<table class="dark">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
 </table>
@@ -524,17 +524,17 @@ This is the same table, with an added `<tfoot>`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -570,17 +570,17 @@ This table uses `<table class="attention alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -611,17 +611,17 @@ This table uses `<table class="info alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -652,17 +652,17 @@ This table uses `<table class="success alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -693,17 +693,17 @@ This table uses `<table class="warning alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -734,17 +734,17 @@ This table uses `<table class="danger alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -775,17 +775,17 @@ This table uses `<table class="light alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
@@ -816,17 +816,17 @@ This table uses `<table class="dark alert">`.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>

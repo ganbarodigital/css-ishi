@@ -25,17 +25,17 @@ This is a basic table with minimal content.
         <tr>
             <td>Row 2, column 1</td>
             <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 2, column 3</td>
         </tr>
         <tr>
             <td>Row 3, column 1</td>
             <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 3, column 3</td>
         </tr>
         <tr>
             <td>Row 4, column 1</td>
             <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
+            <td>Row 4, column 3</td>
         </tr>
     </tbody>
     <tfoot>
