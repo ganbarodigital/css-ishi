@@ -38,6 +38,13 @@ This is a basic table with minimal content.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table contains longer sections of content.

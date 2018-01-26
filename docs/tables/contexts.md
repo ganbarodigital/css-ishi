@@ -2,14 +2,28 @@
 
 ## Introduction
 
-You can apply any of our context classes to the table's `<thead>`.
+Ishi supports several CSS context classes:
 
-## With Context Classes
+* `attention`
+* `info`
+* `success`
+* `warning`
+* `danger`
+* `light`
+* `dark`
 
-This table uses `<thead class="attention">`.
+You can add an `alert` class too for added emphasis.
 
-<table>
-    <thead class="attention">
+You can apply these context classes to `<table>`.
+
+## Styling The Whole Table
+
+### Applying Context Classes
+
+This table uses `<table class="attention">`.
+
+<table class="attention">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -38,12 +52,19 @@ This table uses `<thead class="attention">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-This table uses `<thead class="info">`.
+This table uses `<table class="info">`.
 
-<table>
-    <thead class="info">
+<table class="info">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -72,12 +93,19 @@ This table uses `<thead class="info">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-This table uses `<thead class="success">`.
+This table uses `<table class="success">`.
 
-<table>
-    <thead class="success">
+<table class="success">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -106,12 +134,19 @@ This table uses `<thead class="success">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-This table uses `<thead class="warning">`.
+This table uses `<table class="warning">`.
 
-<table>
-    <thead class="warning">
+<table class="warning">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -140,12 +175,19 @@ This table uses `<thead class="warning">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-This table uses `<thead class="danger">`.
+This table uses `<table class="danger">`.
 
-<table>
-    <thead class="danger">
+<table class="danger">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -174,12 +216,19 @@ This table uses `<thead class="danger">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-This table uses `<thead class="light">`.
+This table uses `<table class="light">`.
 
-<table>
-    <thead class="light">
+<table class="light">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -208,12 +257,19 @@ This table uses `<thead class="light">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-This table uses `<thead class="dark">`.
+This table uses `<table class="dark">`.
 
-<table>
-    <thead class="dark">
+<table class="dark">
+    <thead>
         <tr>
             <th>Column 1</th>
             <th>Column 2</th>
@@ -242,251 +298,16 @@ This table uses `<thead class="dark">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
-## With Alert
-
-You can also use the `alert` class on `<thead>`.
-
-This table uses `<thead class="attention alert">`.
-
-<table>
-    <thead class="attention alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-This table uses `<thead class="info alert">`.
-
-<table>
-    <thead class="info alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-This table uses `<thead class="success alert">`.
-
-<table>
-    <thead class="success alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-This table uses `<thead class="warning alert">`.
-
-<table>
-    <thead class="warning alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-This table uses `<thead class="danger alert">`.
-
-<table>
-    <thead class="danger alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-This table uses `<thead class="light alert">`.
-
-<table>
-    <thead class="light alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-This table uses `<thead class="dark alert">`.
-
-<table>
-    <thead class="dark alert">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1, column 1</td>
-            <td>Row 1, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 2, column 1</td>
-            <td>Row 2, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 3, column 1</td>
-            <td>Row 3, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-        <tr>
-            <td>Row 4, column 1</td>
-            <td>Row 4, column 2</td>
-            <td>Row 1, column 3</td>
-        </tr>
-    </tbody>
-</table>
-
-## With Alert
+### With Alert
 
 You can also use the `alert` class on `<table>`.
 
@@ -522,6 +343,13 @@ This table uses `<table class="attention alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table uses `<table class="info alert">`.
@@ -556,6 +384,13 @@ This table uses `<table class="info alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table uses `<table class="success alert">`.
@@ -590,6 +425,13 @@ This table uses `<table class="success alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table uses `<table class="warning alert">`.
@@ -624,6 +466,13 @@ This table uses `<table class="warning alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table uses `<table class="danger alert">`.
@@ -658,6 +507,13 @@ This table uses `<table class="danger alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table uses `<table class="light alert">`.
@@ -692,6 +548,13 @@ This table uses `<table class="light alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 
 This table uses `<table class="dark alert">`.
@@ -726,5 +589,12 @@ This table uses `<table class="dark alert">`.
             <td>Row 1, column 3</td>
         </tr>
     </tbody>
+    <tfoot>
+        <tr>
+            <td>Total 1</td>
+            <td>Total 2</td>
+            <td>Total 3</td>
+        </tr>
+    </tfoot>
 </table>
 

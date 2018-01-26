@@ -1395,7 +1395,10 @@ pre.code-toolbar > .toolbar span:focus {
 table {
   width: 100%; }
 
-thead, tbody {
+thead {
+  border-top: 2px solid #a8a8a8; }
+
+thead, tbody, tfoot {
   border-bottom: 2px solid #a8a8a8; }
 
 th {
@@ -1415,38 +1418,84 @@ th, td {
 td {
   vertical-align: top; }
 
+tfoot td {
+  font-weight: bold; }
+
 table + p, table + ol, table + ul, table + div {
   margin-top: 1.5rem; }
 
 table.striped tr:nth-child(odd) td {
   background-color: #ebe7e2; }
 
-thead.attention.alert, thead.alert.attention {
+table.attention {
+  border-color: #234f83; }
+  table.attention thead, table.attention thead tr, table.attention tbody, table.attention tbody tr, table.attention tfoot {
+    border-color: #234f83; }
+
+thead.attention.alert, tfoot.attention.alert {
   color: #fff;
   background-color: #234f83; }
 
-thead.info.alert, thead.alert.info {
+table.attention.alert thead, table.attention.alert tfoot {
+  color: #fff;
+  background-color: #234f83; }
+
+table.info {
+  border-color: #34789a; }
+  table.info thead, table.info thead tr, table.info tbody, table.info tbody tr, table.info tfoot {
+    border-color: #34789a; }
+
+table.info.alert thead, table.info.alert tfoot {
   color: #f4f8fa;
   background-color: #34789a; }
 
-thead.success.alert, thead.alert.success {
+table.success {
+  border-color: #3c763d; }
+  table.success thead, table.success thead tr, table.success tbody, table.success tbody tr, table.success tfoot {
+    border-color: #3c763d; }
+
+table.success.alert thead, table.success.alert tfoot {
   color: #dff0d8;
   background-color: #3c763d; }
 
-thead.warning.alert, thead.alert.warning {
+table.warning {
+  border-color: #8a6d3b; }
+  table.warning thead, table.warning thead tr, table.warning tbody, table.warning tbody tr, table.warning tfoot {
+    border-color: #8a6d3b; }
+
+table.warning.alert thead, table.warning.alert tfoot {
   color: #fcf8e3;
   background-color: #8a6d3b; }
 
-thead.danger.alert, thead.alert.danger {
+table.danger {
+  border-color: #c7254e; }
+  table.danger thead, table.danger thead tr, table.danger tbody, table.danger tbody tr, table.danger tfoot {
+    border-color: #c7254e; }
+
+table.danger.alert thead, table.danger.alert tfoot {
   color: #f2dede;
   background-color: #c7254e; }
 
-thead.light.alert, thead.alert.light {
+table.light {
+  border-color: #a8a8a8; }
+  table.light thead, table.light thead tr, table.light tbody, table.light tbody tr, table.light tfoot {
+    border-color: #a8a8a8; }
+
+table.light.alert thead, table.light.alert tfoot {
   color: #ebe7e2;
   background-color: #404040; }
 
-thead.dark.alert, thead.alert.dark {
+table.dark {
+  border-color: #242628; }
+  table.dark thead, table.dark thead tr, table.dark tbody, table.dark tbody tr, table.dark tfoot {
+    border-color: #242628; }
+
+table.dark.alert thead, table.dark.alert tfoot {
   color: #242628;
+  background-color: #fff; }
+
+table.attention tbody tr, table.info tbody tr, table.success tbody tr, table.warning tbody tr, table.danger tbody tr, table.light tbody tr, table.dark tbody tr {
+  color: #404040;
   background-color: #fff; }
 
 .grid {
