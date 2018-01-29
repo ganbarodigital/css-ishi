@@ -10,7 +10,7 @@ VERSION = 0.1.0
 LAROUX_VERSION = v2.1.1
 
 SCSS_THIRD_PARTY_DEPS = \
-	src/ishi/00-base/styles/normalize.scss
+	src/ishi/00-setup/styles/normalize.scss
 
 SCSS_SRC_FILES = $(shell find src -name '*.scss')
 JS_SRC_FILES = $(shell find src/js )
@@ -43,8 +43,8 @@ docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs-template/theme.scss dist/l
 tools: node_modules/laroux.js/README.md $(NODETOOLS_BIN)/webpack $(NODETOOLS_BIN)/postcss
 	npm install node-sass
 
-src/ishi/00-base/styles/normalize.scss: node_modules/normalize.css/normalize.css
-	cp node_modules/normalize.css/normalize.css src/ishi/00-base/styles/normalize.scss
+src/ishi/00-setup/styles/normalize.scss: node_modules/normalize.css/normalize.css
+	cp node_modules/normalize.css/normalize.css src/ishi/00-setup/styles/normalize.scss
 
 node_modules/normalize.css/normalize.css:
 	npm install --save normalize.css
