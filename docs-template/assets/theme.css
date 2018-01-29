@@ -2250,6 +2250,11 @@ nav.pageflow {
     color: #242628;
     background-color: #fff; }
 
+.block {
+  padding: 0.5rem; }
+  .block p:last-child {
+    margin-bottom: 0px; }
+
 body > .centered-container {
   width: 100%;
   flex-basis: 100%;

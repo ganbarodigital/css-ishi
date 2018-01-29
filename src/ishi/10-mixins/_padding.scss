@@ -17,3 +17,6 @@
     padding-bottom: $type-p-spacing;
 }
 
+@mixin util-pad-block {
+    padding: $type-pica-font-size / 2;
+}

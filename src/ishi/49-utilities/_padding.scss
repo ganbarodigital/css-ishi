@@ -1,0 +1,7 @@
+.block {
+    @include util-pad-block;
+
+    p:last-child {
+        margin-bottom: 0px;
+    }
+}
