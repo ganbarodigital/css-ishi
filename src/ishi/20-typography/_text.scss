@@ -40,7 +40,7 @@ blockquote {
     @include util-block-text-standout();
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border-left-width: 2px;
+    border-left-width: $main-blockquote-border-width;
     color: $main-blockquote-fg-color;
     background-color: $main-blockquote-bg-color;
 
