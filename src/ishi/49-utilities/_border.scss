@@ -1,0 +1,26 @@
+.border-block {
+    border-width: $panel-border-width;
+    border-style: solid;
+    border-color: $main-fg-color;
+    @include type-pica-spacing-bottom;
+}
+
+.border-panel {
+    @extend .border-block;
+    border-radius: $panel-border-radius;
+    border-color: $panel-border-color;
+}
+
+.border-blockquote {
+    border-left-width: $main-blockquote-border-width;
+    border-left-style: solid;
+    border-color: $main-blockquote-border-color;
+    @include type-pica-spacing-bottom;
+}
+
+.border-callout {
+    border-left-width: $callout-border-width;
+    border-left-style: solid;
+    border-color: $callout-border-color;
+    @include type-pica-spacing-bottom;
+}
