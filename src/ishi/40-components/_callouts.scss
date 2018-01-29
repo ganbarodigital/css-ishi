@@ -14,7 +14,7 @@
  * styles
  */
 .callout {
-    @include util-callout($panel-fg-color, $panel-bg-color, $panel-border-color);
+    @include util-callout($callout-fg-color, $callout-bg-color, $callout-border-color);
     margin-bottom: $type-p-spacing;
     padding: $type-p-spacing;
 }
@@ -28,7 +28,7 @@
 }
 
 .callout.gradient {
-    @include context-gradient($panel-bg-color);
+    @include context-gradient($callout-bg-color);
 }
 
 .callout.outline {
@@ -45,23 +45,23 @@
 
 .callout.gradient.sunken {
     @include context-sunken();
-    @include context-gradient-reverse($panel-bg-color);
+    @include context-gradient-reverse($callout-bg-color);
 }
 
 .callout.sunken.gradient {
     @include context-sunken();
-    @include context-gradient-reverse($panel-bg-color);
+    @include context-gradient-reverse($callout-bg-color);
 }
 
 //// Callouts That Alert
 
 .callout.alert {
     padding: 0px;
-    border-color: $panel-fg-color;
+    border-color: $callout-fg-color;
 
     h1, h2, h3, h4, h5, h6 {
-        background-color: $panel-fg-color;
-        color: $panel-bg-color;
+        background-color: $callout-fg-color;
+        color: $callout-bg-color;
         padding: $type-pica-font-size / 2;
         margin-bottom: 0px;
     }

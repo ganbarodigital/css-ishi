@@ -194,7 +194,15 @@ $main-blockquote-cite-fg-color: $ganbaro-mono-600 !default;
 $panel-bg-color: $color-accent-bg !default;
 $panel-fg-color: $ganbaro-tan-800 !default;
 $panel-border-color: $color-accent-border !default;
+$panel-border-width: 1px !default;
 $panel-border-radius: 4px !default;
+
+// callouts mostly inherit from panels, but have their own individual
+// character in places
+$callout-bg-color: $panel-bg-color !default;
+$callout-fg-color: $panel-fg-color !default;
+$callout-border-color: $panel-border-color !default;
+$callout-border-width: 4px !default;
 
 // call to action
 $calltoaction-fg-color: #000 !default;

@@ -3,7 +3,7 @@
  */
 @mixin util-panel($color-fg, $color-bg, $color-border) {
     @include context-panel($color-fg, $color-bg);
-    border: 1px solid $color-border;
+    border: $panel-border-width solid $color-border;
 
     h1, h2, h3, h4, h5, h5 {
         color: $color-fg;
