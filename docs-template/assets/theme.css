@@ -2124,6 +2124,46 @@ nav.pageflow {
 *:not(p) + nav.pageflow {
   margin-top: 1.5rem; }
 
+.border-block, .border-panel {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #404040;
+  margin-bottom: 1rem; }
+
+.border-panel {
+  border-radius: 4px;
+  border-color: #a8a8a8; }
+
+.border-blockquote {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-color: #a8a8a8;
+  margin-bottom: 1rem; }
+
+.border-callout {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-color: #a8a8a8;
+  margin-bottom: 1rem; }
+
+.attention-bg {
+  background-color: #fff; }
+
+.attention-bg.alert {
+  background-color: #234f83; }
+
+.attention-fg {
+  color: #234f83; }
+
+.attention-fg.alert {
+  color: #fff; }
+
+.attention-border {
+  border-color: #234f83; }
+
+.attention-border.alert {
+  border-color: #fff; }
+
 .attention {
   color: #234f83;
   background-color: #fff;
@@ -2141,6 +2181,24 @@ nav.pageflow {
   .attention.alert h1, .attention.alert h2, .attention.alert h3, .attention.alert h4, .attention.alert h5, .attention.alert h6, .alert.attention h1, .alert.attention h2, .alert.attention h3, .alert.attention h4, .alert.attention h5, .alert.attention h6 {
     color: #fff;
     background-color: #234f83; }
+
+.info-bg {
+  background-color: #f4f8fa; }
+
+.info-bg.alert {
+  background-color: #34789a; }
+
+.info-fg {
+  color: #34789a; }
+
+.info-fg.alert {
+  color: #f4f8fa; }
+
+.info-border {
+  border-color: #34789a; }
+
+.info-border.alert {
+  border-color: #f4f8fa; }
 
 .info {
   color: #34789a;
@@ -2160,6 +2218,24 @@ nav.pageflow {
     color: #f4f8fa;
     background-color: #34789a; }
 
+.success-bg {
+  background-color: #dff0d8; }
+
+.success-bg.alert {
+  background-color: #3c763d; }
+
+.success-fg {
+  color: #3c763d; }
+
+.success-fg.alert {
+  color: #dff0d8; }
+
+.success-border {
+  border-color: #3c763d; }
+
+.success-border.alert {
+  border-color: #dff0d8; }
+
 .success {
   color: #3c763d;
   background-color: #dff0d8;
@@ -2177,6 +2253,24 @@ nav.pageflow {
   .success.alert h1, .success.alert h2, .success.alert h3, .success.alert h4, .success.alert h5, .success.alert h6, .alert.success h1, .alert.success h2, .alert.success h3, .alert.success h4, .alert.success h5, .alert.success h6 {
     color: #dff0d8;
     background-color: #3c763d; }
+
+.warning-bg {
+  background-color: #fcf8e3; }
+
+.warning-bg.alert {
+  background-color: #8a6d3b; }
+
+.warning-fg {
+  color: #8a6d3b; }
+
+.warning-fg.alert {
+  color: #fcf8e3; }
+
+.warning-border {
+  border-color: #8a6d3b; }
+
+.warning-border.alert {
+  border-color: #fcf8e3; }
 
 .warning {
   color: #8a6d3b;
@@ -2196,6 +2290,24 @@ nav.pageflow {
     color: #fcf8e3;
     background-color: #8a6d3b; }
 
+.danger-bg {
+  background-color: #f2dede; }
+
+.danger-bg.alert {
+  background-color: #c7254e; }
+
+.danger-fg {
+  color: #c7254e; }
+
+.danger-fg.alert {
+  color: #f2dede; }
+
+.danger-border {
+  border-color: #c7254e; }
+
+.danger-border.alert {
+  border-color: #f2dede; }
+
 .danger {
   color: #c7254e;
   background-color: #f2dede;
@@ -2214,6 +2326,24 @@ nav.pageflow {
     color: #f2dede;
     background-color: #c7254e; }
 
+.light-bg {
+  background-color: #ebe7e2; }
+
+.light-bg.alert {
+  background-color: #404040; }
+
+.light-fg {
+  color: #404040; }
+
+.light-fg.alert {
+  color: #ebe7e2; }
+
+.light-border {
+  border-color: #a8a8a8; }
+
+.light-border.alert {
+  border-color: #ebe7e2; }
+
 .light {
   color: #404040;
   background-color: #ebe7e2;
@@ -2231,6 +2361,24 @@ nav.pageflow {
   .light.alert h1, .light.alert h2, .light.alert h3, .light.alert h4, .light.alert h5, .light.alert h6, .light.danger h1, .light.danger h2, .light.danger h3, .light.danger h4, .light.danger h5, .light.danger h6 {
     color: #ebe7e2;
     background-color: #404040; }
+
+.dark-bg {
+  background-color: #242628; }
+
+.dark-bg.alert {
+  background-color: #fff; }
+
+.dark-fg {
+  color: #fff; }
+
+.dark-fg.alert {
+  color: #242628; }
+
+.dark-border {
+  border-color: #242628; }
+
+.dark-border.alert {
+  border-color: #242628; }
 
 .dark {
   color: #fff;

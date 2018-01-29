@@ -22,3 +22,179 @@
 @mixin context-sunken() {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.20);
 }
+
+// colors
+
+@mixin context-attention-bg-color {
+    background-color: $color-attention-bg;
+}
+
+@mixin context-attention-alert-bg-color {
+    background-color: $color-attention-fg;
+}
+
+@mixin context-attention-fg-color {
+    color: $color-attention-fg;
+}
+
+@mixin context-attention-alert-fg-color {
+    color: $color-attention-bg;
+}
+
+@mixin context-attention-border-color {
+    border-color: $color-attention-border;
+}
+
+@mixin context-attention-alert-border-color {
+    border-color: $color-attention-bg;
+}
+
+
+@mixin context-info-bg-color {
+    background-color: $color-info-bg;
+}
+
+@mixin context-info-alert-bg-color {
+    background-color: $color-info-fg;
+}
+
+@mixin context-info-fg-color {
+    color: $color-info-fg;
+}
+
+@mixin context-info-alert-fg-color {
+    color: $color-info-bg;
+}
+
+@mixin context-info-border-color {
+    border-color: $color-info-border;
+}
+
+@mixin context-info-alert-border-color {
+    border-color: $color-info-bg;
+}
+
+
+@mixin context-success-bg-color {
+    background-color: $color-success-bg;
+}
+
+@mixin context-success-alert-bg-color {
+    background-color: $color-success-fg;
+}
+
+@mixin context-success-fg-color {
+    color: $color-success-fg;
+}
+
+@mixin context-success-alert-fg-color {
+    color: $color-success-bg;
+}
+
+@mixin context-success-border-color {
+    border-color: $color-success-border;
+}
+
+@mixin context-success-alert-border-color {
+    border-color: $color-success-bg;
+}
+
+
+@mixin context-warning-bg-color {
+    background-color: $color-warning-bg;
+}
+
+@mixin context-warning-alert-bg-color {
+    background-color: $color-warning-fg;
+}
+
+@mixin context-warning-fg-color {
+    color: $color-warning-fg;
+}
+
+@mixin context-warning-alert-fg-color {
+    color: $color-warning-bg;
+}
+
+@mixin context-warning-border-color {
+    border-color: $color-warning-border;
+}
+
+@mixin context-warning-alert-border-color {
+    border-color: $color-warning-bg;
+}
+
+
+@mixin context-danger-bg-color {
+    background-color: $color-danger-bg;
+}
+
+@mixin context-danger-alert-bg-color {
+    background-color: $color-danger-fg;
+}
+
+@mixin context-danger-fg-color {
+    color: $color-danger-fg;
+}
+
+@mixin context-danger-alert-fg-color {
+    color: $color-danger-bg;
+}
+
+@mixin context-danger-border-color {
+    border-color: $color-danger-border;
+}
+
+@mixin context-danger-alert-border-color {
+    border-color: $color-danger-bg;
+}
+
+
+@mixin context-light-bg-color {
+    background-color: $color-light-bg;
+}
+
+@mixin context-light-alert-bg-color {
+    background-color: $color-light-fg;
+}
+
+@mixin context-light-fg-color {
+    color: $color-light-fg;
+}
+
+@mixin context-light-alert-fg-color {
+    color: $color-light-bg;
+}
+
+@mixin context-light-border-color {
+    border-color: $color-light-border;
+}
+
+@mixin context-light-alert-border-color {
+    border-color: $color-light-bg;
+}
+
+
+@mixin context-dark-bg-color {
+    background-color: $color-dark-bg;
+}
+
+@mixin context-dark-alert-bg-color {
+    background-color: $color-dark-fg;
+}
+
+@mixin context-dark-fg-color {
+    color: $color-dark-fg;
+}
+
+@mixin context-dark-alert-fg-color {
+    color: $color-dark-bg;
+}
+
+@mixin context-dark-border-color {
+    border-color: $color-dark-border;
+}
+
+@mixin context-dark-alert-border-color {
+    border-color: $color-dark-bg;
+}
