@@ -181,7 +181,9 @@ $main-blockquote-cite-fg-color: $ganbaro-mono-600 !default;
 //
 // ---------------------------------------------------------------------------
 
-// tables
+$table-border-width: 2px !default;
+$table-border-style: solid !default;
+$table-border-color: $color-accent-border !default;
 
 // ===========================================================================
 //

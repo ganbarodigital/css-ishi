@@ -1393,7 +1393,8 @@ pre.code-toolbar > .toolbar span:focus {
   color: inherit; }
 
 table {
-  width: 100%; }
+  width: 100%;
+  border-color: #a8a8a8; }
 
 thead, tbody + tfoot {
   border-top: 2px solid #a8a8a8; }
@@ -1497,6 +1498,12 @@ table.dark.alert thead, table.dark.alert tfoot {
 table.attention tbody tr, table.info tbody tr, table.success tbody tr, table.warning tbody tr, table.danger tbody tr, table.light tbody tr, table.dark tbody tr {
   color: #404040;
   background-color: #fff; }
+
+.table-border-block {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #a8a8a8;
+  margin-bottom: 1rem; }
 
 .grid {
   display: flex;

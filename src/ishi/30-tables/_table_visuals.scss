@@ -1,0 +1,7 @@
+.table-border-block {
+    border-width: $table-border-width;
+    border-style: solid;
+    border-color: $color-accent-border;
+    @include type-pica-spacing-bottom;
+}
+

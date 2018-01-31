@@ -163,6 +163,9 @@ navigation:
             contexts:
                 text: Tables and Contexts
                 relativeUrl: tables/contexts.html
+            visuals:
+                text: Tables and Visual Styles
+                relativeUrl: tables/visuals.html
 
     components:
         text: Components

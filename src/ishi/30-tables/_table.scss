@@ -1,13 +1,14 @@
 table {
     width: 100%;
+    border-color: $table-border-color;
 }
 
 thead, tbody + tfoot {
-    border-top: 2px solid $color-accent-border;
+    border-top: $table-border-width $table-border-style $table-border-color;
 }
 
 thead, tbody:last-child, tfoot {
-    border-bottom: 2px solid $color-accent-border;
+    border-bottom: $table-border-width $table-border-style $table-border-color;
 }
 
 th {
@@ -17,7 +18,7 @@ th {
 }
 
 tbody tr {
-    border-bottom: 1px solid $color-accent-border;
+    border-bottom: 1px solid $table-border-color;
 }
 
 th, td {
