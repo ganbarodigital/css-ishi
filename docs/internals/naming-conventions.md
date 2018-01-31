@@ -4,17 +4,17 @@
 
 ## CSS Classes
 
-CSS class names are built from:
+CSS class names follow the BEM convention:
 
-* what component | element it applies to
-* its purpose | context
-* detail | scope
+```
+<block|component>__<element>--<modifier>
+```
 
 Here are some examples:
 
-CSS class | applies | context | detail
+CSS class | block | element | modifier
 ----------|---------|---------|-------
-`.table-border-block` | table | border | block
+`.table--border-block` | table | | border-block
 
 ### Background
 

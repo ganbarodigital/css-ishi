@@ -1,5 +1,5 @@
 // context classes
-table.table-attention {
+table.table--attention {
     border-color: $color-attention-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -7,19 +7,19 @@ table.table-attention {
     }
 }
 
-thead.table-attention.table-alert, tfoot.table-attention.table-alert {
+thead.table--attention.table--alert, tfoot.table--attention.table--alert {
     color: $color-attention-bg;
     background-color: $color-attention-fg;
 }
 
-table.table-attention.table-alert {
+table.table--attention.table--alert {
     thead, tfoot {
         color: $color-attention-bg;
         background-color: $color-attention-fg;
     }
 }
 
-table.table-info {
+table.table--info {
     border-color: $color-info-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -27,14 +27,14 @@ table.table-info {
     }
 }
 
-table.table-info.table-alert {
+table.table--info.table--alert {
     thead, tfoot {
         color: $color-info-bg;
         background-color: $color-info-fg;
     }
 }
 
-table.table-success {
+table.table--success {
     border-color: $color-success-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -42,14 +42,14 @@ table.table-success {
     }
 }
 
-table.table-success.table-alert {
+table.table--success.table--alert {
     thead, tfoot {
         color: $color-success-bg;
         background-color: $color-success-fg;
     }
 }
 
-table.table-warning {
+table.table--warning {
     border-color: $color-warning-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -57,14 +57,14 @@ table.table-warning {
     }
 }
 
-table.table-warning.table-alert {
+table.table--warning.table--alert {
     thead, tfoot {
         color: $color-warning-bg;
         background-color: $color-warning-fg;
     }
 }
 
-table.table-danger {
+table.table--danger {
     border-color: $color-danger-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -72,14 +72,14 @@ table.table-danger {
     }
 }
 
-table.table-danger.table-alert {
+table.table--danger.table--alert {
     thead, tfoot {
         color: $color-danger-bg;
         background-color: $color-danger-fg;
     }
 }
 
-table.table-light {
+table.table--light {
     border-color: $color-light-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -87,14 +87,14 @@ table.table-light {
     }
 }
 
-table.table-light.table-alert {
+table.table--light.table--alert {
     thead, tfoot {
         color: $color-light-bg;
         background-color: $color-light-fg;
     }
 }
 
-table.table-dark {
+table.table--dark {
     border-color: $color-dark-border;
 
     thead, thead tr, tbody, tbody tr, tfoot {
@@ -102,14 +102,14 @@ table.table-dark {
     }
 }
 
-table.table-dark.table-alert {
+table.table--dark.table--alert {
     thead, tfoot {
         color: $color-dark-bg;
         background-color: $color-dark-fg;
     }
 }
 
-table.table-attention, table.table-info, table.table-success, table.table-warning, table.table-danger, table.table-light, table.table-dark {
+table.table--attention, table.table--info, table.table--success, table.table--warning, table.table--danger, table.table--light, table.table--dark {
     tbody tr {
         color: $main-fg-color;
         background-color: $main-bg-color;
