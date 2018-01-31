@@ -910,15 +910,15 @@ p {
   line-height: 1.5rem;
   margin-bottom: 1rem; }
 
-p.leader {
+p.p--leader {
   font-weight: bolder; }
 
-p.abstract {
+p.p--abstract {
   text-indent: 2em;
   font-style: italic;
   text-align: justify; }
 
-p.keywords {
+p.p--keywords {
   font-style: italic; }
 
 ins {

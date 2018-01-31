@@ -2,15 +2,15 @@ p {
     @include type-pica-block;
     @include type-pica-spacing-bottom;
 }
-p.leader {
+p.p--leader {
     @include util-text-bolder;
 }
-p.abstract {
+p.p--abstract {
     text-indent: 2em;
     font-style: italic;
     text-align: justify;
 }
-p.keywords {
+p.p--keywords {
     font-style: italic;
 }
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-<p class="leader">Components (or microformats - take your pick) are non-standard HTML markup that can really make your content standout. They're reusable structures that you can quickly use in your content or site templates.</p>
+<p class="p--leader">Components (or microformats - take your pick) are non-standard HTML markup that can really make your content standout. They're reusable structures that you can quickly use in your content or site templates.</p>
 
 Wherever possible, the markup used is semantic. To make that possible, some of these components are powered behind the scenes by JavaScript. [Follow these instructions if you use any of these components](javascript.html).
 

@@ -74,9 +74,9 @@ Ishi provides several semantic classes for the `<p>` element. Use them to make t
 
 ### Abstract Paragraph
 
-Use `<p class="abstract">` to bring an academic look to a summary paragraph. Summary paragraphs are normally found at the top of academically-focused content.
+Use `<p class="p--abstract">` to bring an academic look to a summary paragraph. Summary paragraphs are normally found at the top of academically-focused content.
 
-Follow it up with a `<p class="keywords">` to draw attention to the key topics covered in our content.
+Follow it up with a `<p class="p--keywords">` to draw attention to the key topics covered in our content.
 
 <div class="code-example">
     <header>
@@ -84,13 +84,13 @@ Follow it up with a `<p class="keywords">` to draw attention to the key topics c
     </header>
     <div class="example-content">
         <div class="example-output">
-            <p class="abstract">This white paper looks at the mechanisms available to safeguard sensitive or legally-protected data entrusted to eDaaS. We introduce the Safeguarding architecture, and the related Access Audit architecture, and show how that enables businesses and organisations to meet the European General Data Protection Regulation (GDPR).</p>
-            <p class="keywords"><strong>Keywords:</strong> GDPR, data protection, security, access auditing.</p>
+            <p class="p--abstract">This white paper looks at the mechanisms available to safeguard sensitive or legally-protected data entrusted to eDaaS. We introduce the Safeguarding architecture, and the related Access Audit architecture, and show how that enables businesses and organisations to meet the European General Data Protection Regulation (GDPR).</p>
+            <p class="p--keywords"><strong>Keywords:</strong> GDPR, data protection, security, access auditing.</p>
         </div>
         <div class="example-source hidden" data-type="HTML" markdown="1">
 ```html
-<p class="abstract">This white paper looks at the mechanisms available to safeguard sensitive or legally-protected data entrusted to eDaaS. We introduce the Safeguarding architecture, and the related Access Audit architecture, and show how that enables businesses and organisations to meet the European General Data Protection Regulation (GDPR).</p>
-<p class="keywords"><strong>Keywords:</strong> GDPR, data protection, security, access auditing.</p>
+<p class="p--abstract">This white paper looks at the mechanisms available to safeguard sensitive or legally-protected data entrusted to eDaaS. We introduce the Safeguarding architecture, and the related Access Audit architecture, and show how that enables businesses and organisations to meet the European General Data Protection Regulation (GDPR).</p>
+<p class="p--keywords"><strong>Keywords:</strong> GDPR, data protection, security, access auditing.</p>
 ```
         </div>
     </div>
@@ -98,7 +98,7 @@ Follow it up with a `<p class="keywords">` to draw attention to the key topics c
 
 ### Leading Paragraph
 
-Use `<p class="leader">` to bring added emphasis to the opening paragraph of your content.
+Use `<p class="p--leader">` to bring added emphasis to the opening paragraph of your content.
 
 <div class="code-example">
     <header>
@@ -106,11 +106,11 @@ Use `<p class="leader">` to bring added emphasis to the opening paragraph of you
     </header>
     <div class="example-content">
         <div class="example-output">
-            <p class="leader">This is a leading paragraph.</p>
+            <p class="p--leader">This is a leading paragraph.</p>
         </div>
         <div class="example-source hidden" data-type="HTML" markdown="1">
 ```html
-<p class="leader">This is a leading paragraph.</p>
+<p class="p--leader">This is a leading paragraph.</p>
 ```
         </div>
     </div>

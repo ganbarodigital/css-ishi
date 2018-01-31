@@ -7,7 +7,7 @@ Like programming languages, these days it feels that CSS toolkits borrow to a le
 
 ## The Heavyweights
 
-<p class="leader">Our main sources of inspiration are the acknowledged heavyweights of the Internet styling world.</p>
+<p class="p--leader">Our main sources of inspiration are the acknowledged heavyweights of the Internet styling world.</p>
 
 * The {{ ishi.externallink('bbc-gel') }} gets our top shoutout. Their approach to typography was the inspiration for creating Ishi in the first place. We've also adopted their concept of [device groups](concepts/device-groups.html). We feel that it's a great way to provide great-looking content on any device.
 
@@ -23,7 +23,7 @@ When we're wondering what to call a new feature for Ishi, we always take a look 
 
 ## Other Shouts
 
-<p class="leader">As well as the usual suspects, there other places from the 'net that have played an important role in guiding what we wanted for Ishi.</p>
+<p class="p--leader">As well as the usual suspects, there other places from the 'net that have played an important role in guiding what we wanted for Ishi.</p>
 
 In no particular order, they include:
 
