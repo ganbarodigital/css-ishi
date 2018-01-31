@@ -2,6 +2,18 @@
 
 ## Variables
 
+We have two kinds of variables in Ishi:
+
+* global variables, and
+* targetted variables
+
+What's the difference?
+
+* __Global variables__ affect multiple CSS classes, whilst
+* __Targetted variables__ affect a single Ishi component or CSS element
+
+Each kind of variable follows a different naming convention.
+
 ## CSS Classes
 
 CSS class names follow the BEM convention:
