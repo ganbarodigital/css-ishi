@@ -27,35 +27,87 @@
     margin-bottom: 0px;
 }
 
-.callout.gradient {
+.callout--gradient {
     @include context-gradient($callout-bg-color);
 }
 
-.callout.outline {
+.callout--outline {
     @include context-outline();
 }
 
-.callout.standout {
+.callout--standout {
     @include context-standout();
 }
 
-.callout.sunken {
+.callout--sunken {
     @include context-sunken();
 }
 
-.callout.gradient.sunken {
+.callout--gradient.callout--sunken {
     @include context-sunken();
     @include context-gradient-reverse($callout-bg-color);
 }
 
-.callout.sunken.gradient {
-    @include context-sunken();
-    @include context-gradient-reverse($callout-bg-color);
+//// Contexts
+.callout--attention {
+    @include context-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
+}
+
+.callout--attention.callout--alert {
+    @include context-alert-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
+}
+
+.callout--info {
+    @include context-colors($color-info-fg, $color-info-bg, $color-info-border);
+}
+
+.callout--info.callout--alert {
+    @include context-alert-colors($color-info-fg, $color-info-bg, $color-info-border);
+}
+
+.callout--success {
+    @include context-colors($color-success-fg, $color-success-bg, $color-success-border);
+}
+
+.callout--success.callout--alert {
+    @include context-alert-colors($color-success-fg, $color-success-bg, $color-success-border);
+}
+
+.callout--warning {
+    @include context-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
+}
+
+.callout--warning.callout--alert {
+    @include context-alert-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
+}
+
+.callout--danger {
+    @include context-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+}
+
+.callout--danger.callout--alert {
+    @include context-alert-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+}
+
+.callout--light {
+    @include context-colors($color-light-fg, $color-light-bg, $color-light-border);
+}
+
+.callout--light.callout--alert {
+    @include context-alert-colors($color-light-fg, $color-light-bg, $color-light-border);
+}
+
+.callout--dark {
+    @include context-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
+}
+
+.callout--dark.callout--alert {
+    @include context-alert-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
 }
 
 //// Callouts That Alert
 
-.callout.alert {
+.callout--alert {
     padding: 0px;
     border-color: $callout-fg-color;
 

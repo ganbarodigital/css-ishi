@@ -1,31 +1,3 @@
-@mixin context-colors($color-fg, $color-bg, $color-border) {
-    color: $color-fg;
-    background-color: $color-bg;
-    border-color: $color-border;
-
-    h1, h2, h3, h4, h5, h6 {
-        color: $color-fg;
-        background-color: $color-bg;
-    }
-
-    table.striped tr:nth-child(odd) td {
-        background-color: $color-border;
-    }
-
-    tbody tr {
-        border-color: $color-border;
-    }
-}
-
-@mixin context-alert-colors($color-fg, $color-bg, $color-border) {
-    border-color: $color-border;
-
-    h1, h2, h3, h4, h5, h6 {
-        color: $color-bg;
-        background-color: $color-fg;
-    }
-}
-
 .attention-bg {
     @include context-attention-bg-color;
 }
