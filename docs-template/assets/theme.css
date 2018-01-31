@@ -1425,7 +1425,7 @@ tfoot td {
 table + p, table + ol, table + ul, table + div {
   margin-top: 1.5rem; }
 
-table.striped tbody tr:nth-child(odd) td {
+table.table--striped tbody tr:nth-child(odd) td {
   background-color: #eee; }
 
 table.table--attention {

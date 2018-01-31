@@ -40,7 +40,7 @@ table + p, table + ol, table + ul, table + div {
     margin-top: $type-non-p-spacing;
 }
 
-table.striped tbody tr:nth-child(odd) td {
+table.table--striped tbody tr:nth-child(odd) td {
     background-color: $color-accent-bg-light;
 }
 

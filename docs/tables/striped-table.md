@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Add `class="striped"` to a `<table>` if you want odd and even rows to be styled differently.
+Add `class="table--striped"` to a `<table>` if you want odd and even rows to be styled differently.
 
 ## Example Tables
 
 This is a basic table with minimal content.
 
-<table class="striped">
+<table class="table--striped">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -49,7 +49,7 @@ This is a basic table with minimal content.
 
 This table contains longer sections of content.
 
-<table class="striped">
+<table class="table--striped">
     <thead>
         <tr>
             <th>Column 1</th>
