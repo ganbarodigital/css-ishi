@@ -249,3 +249,14 @@ navigation:
             home:
                 text: Themes
                 relativeUrl: themes/index.html
+
+    internals:
+        text: Internals
+        relativeUrl: internals/index.html
+        contents:
+            home:
+                text: Internals
+                relativeUrl: internals/index.html
+            naming:
+                text: Naming Conventions
+                relativeUrl: internals/naming-conventions.html
