@@ -1428,74 +1428,74 @@ table + p, table + ol, table + ul, table + div {
 table.striped tbody tr:nth-child(odd) td {
   background-color: #eee; }
 
-table.attention {
+table.table-attention {
   border-color: #234f83; }
-  table.attention thead, table.attention thead tr, table.attention tbody, table.attention tbody tr, table.attention tfoot {
+  table.table-attention thead, table.table-attention thead tr, table.table-attention tbody, table.table-attention tbody tr, table.table-attention tfoot {
     border-color: #234f83; }
 
-thead.attention.alert, tfoot.attention.alert {
+thead.table-attention.table-alert, tfoot.table-attention.table-alert {
   color: #fff;
   background-color: #234f83; }
 
-table.attention.alert thead, table.attention.alert tfoot {
+table.table-attention.table-alert thead, table.table-attention.table-alert tfoot {
   color: #fff;
   background-color: #234f83; }
 
-table.info {
+table.table-info {
   border-color: #34789a; }
-  table.info thead, table.info thead tr, table.info tbody, table.info tbody tr, table.info tfoot {
+  table.table-info thead, table.table-info thead tr, table.table-info tbody, table.table-info tbody tr, table.table-info tfoot {
     border-color: #34789a; }
 
-table.info.alert thead, table.info.alert tfoot {
+table.table-info.table-alert thead, table.table-info.table-alert tfoot {
   color: #f4f8fa;
   background-color: #34789a; }
 
-table.success {
+table.table-success {
   border-color: #3c763d; }
-  table.success thead, table.success thead tr, table.success tbody, table.success tbody tr, table.success tfoot {
+  table.table-success thead, table.table-success thead tr, table.table-success tbody, table.table-success tbody tr, table.table-success tfoot {
     border-color: #3c763d; }
 
-table.success.alert thead, table.success.alert tfoot {
+table.table-success.table-alert thead, table.table-success.table-alert tfoot {
   color: #dff0d8;
   background-color: #3c763d; }
 
-table.warning {
+table.table-warning {
   border-color: #8a6d3b; }
-  table.warning thead, table.warning thead tr, table.warning tbody, table.warning tbody tr, table.warning tfoot {
+  table.table-warning thead, table.table-warning thead tr, table.table-warning tbody, table.table-warning tbody tr, table.table-warning tfoot {
     border-color: #8a6d3b; }
 
-table.warning.alert thead, table.warning.alert tfoot {
+table.table-warning.table-alert thead, table.table-warning.table-alert tfoot {
   color: #fcf8e3;
   background-color: #8a6d3b; }
 
-table.danger {
+table.table-danger {
   border-color: #c7254e; }
-  table.danger thead, table.danger thead tr, table.danger tbody, table.danger tbody tr, table.danger tfoot {
+  table.table-danger thead, table.table-danger thead tr, table.table-danger tbody, table.table-danger tbody tr, table.table-danger tfoot {
     border-color: #c7254e; }
 
-table.danger.alert thead, table.danger.alert tfoot {
+table.table-danger.table-alert thead, table.table-danger.table-alert tfoot {
   color: #f2dede;
   background-color: #c7254e; }
 
-table.light {
+table.table-light {
   border-color: #a8a8a8; }
-  table.light thead, table.light thead tr, table.light tbody, table.light tbody tr, table.light tfoot {
+  table.table-light thead, table.table-light thead tr, table.table-light tbody, table.table-light tbody tr, table.table-light tfoot {
     border-color: #a8a8a8; }
 
-table.light.alert thead, table.light.alert tfoot {
+table.table-light.table-alert thead, table.table-light.table-alert tfoot {
   color: #ebe7e2;
   background-color: #404040; }
 
-table.dark {
+table.table-dark {
   border-color: #242628; }
-  table.dark thead, table.dark thead tr, table.dark tbody, table.dark tbody tr, table.dark tfoot {
+  table.table-dark thead, table.table-dark thead tr, table.table-dark tbody, table.table-dark tbody tr, table.table-dark tfoot {
     border-color: #242628; }
 
-table.dark.alert thead, table.dark.alert tfoot {
+table.table-dark.table-alert thead, table.table-dark.table-alert tfoot {
   color: #242628;
   background-color: #fff; }
 
-table.attention tbody tr, table.info tbody tr, table.success tbody tr, table.warning tbody tr, table.danger tbody tr, table.light tbody tr, table.dark tbody tr {
+table.table-attention tbody tr, table.table-info tbody tr, table.table-success tbody tr, table.table-warning tbody tr, table.table-danger tbody tr, table.table-light tbody tr, table.table-dark tbody tr {
   color: #404040;
   background-color: #fff; }
 

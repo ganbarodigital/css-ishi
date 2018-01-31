@@ -20,9 +20,9 @@ You can apply these context classes to `<table>`.
 
 ### Applying Context Classes
 
-This table uses `<table class="attention">`.
+This table uses `<table class="table-attention">`.
 
-<table class="attention">
+<table class="table-attention">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -56,7 +56,7 @@ This table uses `<table class="attention">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="attention">
+<table class="table-attention">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -95,9 +95,9 @@ This is the same table, with an added `<tfoot>`.
     </tfoot>
 </table>
 
-This table uses `<table class="info">`.
+This table uses `<table class="table-info">`.
 
-<table class="info">
+<table class="table-info">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -131,7 +131,7 @@ This table uses `<table class="info">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="info">
+<table class="table-info">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -170,9 +170,9 @@ This is the same table, with an added `<tfoot>`.
     </tfoot>
 </table>
 
-This table uses `<table class="success">`.
+This table uses `<table class="table-success">`.
 
-<table class="success">
+<table class="table-success">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -206,7 +206,7 @@ This table uses `<table class="success">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="success">
+<table class="table-success">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -245,9 +245,9 @@ This is the same table, with an added `<tfoot>`.
     </tfoot>
 </table>
 
-This table uses `<table class="warning">`.
+This table uses `<table class="table-warning">`.
 
-<table class="warning">
+<table class="table-warning">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -281,7 +281,7 @@ This table uses `<table class="warning">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="warning">
+<table class="table-warning">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -320,9 +320,9 @@ This is the same table, with an added `<tfoot>`.
     </tfoot>
 </table>
 
-This table uses `<table class="danger">`.
+This table uses `<table class="table-danger">`.
 
-<table class="danger">
+<table class="table-danger">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -356,7 +356,7 @@ This table uses `<table class="danger">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="danger">
+<table class="table-danger">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -396,9 +396,9 @@ This is the same table, with an added `<tfoot>`.
 </table>
 
 
-This table uses `<table class="light">`.
+This table uses `<table class="table-light">`.
 
-<table class="light">
+<table class="table-light">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -432,7 +432,7 @@ This table uses `<table class="light">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="light">
+<table class="table-light">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -471,9 +471,9 @@ This is the same table, with an added `<tfoot>`.
     </tfoot>
 </table>
 
-This table uses `<table class="dark">`.
+This table uses `<table class="table-dark">`.
 
-<table class="dark">
+<table class="table-dark">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -507,7 +507,7 @@ This table uses `<table class="dark">`.
 
 This is the same table, with an added `<tfoot>`.
 
-<table class="dark">
+<table class="table-dark">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -551,9 +551,9 @@ This is the same table, with an added `<tfoot>`.
 
 You can also use the `alert` class on `<table>`.
 
-This table uses `<table class="attention alert">`.
+This table uses `<table class="table-attention table-alert">`.
 
-<table class="attention alert">
+<table class="table-attention table-alert">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -592,9 +592,9 @@ This table uses `<table class="attention alert">`.
     </tfoot>
 </table>
 
-This table uses `<table class="info alert">`.
+This table uses `<table class="table-info table-alert">`.
 
-<table class="info alert">
+<table class="table-info table-alert">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -633,9 +633,9 @@ This table uses `<table class="info alert">`.
     </tfoot>
 </table>
 
-This table uses `<table class="success alert">`.
+This table uses `<table class="table-success table-alert">`.
 
-<table class="success alert">
+<table class="table-success table-alert">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -674,9 +674,9 @@ This table uses `<table class="success alert">`.
     </tfoot>
 </table>
 
-This table uses `<table class="warning alert">`.
+This table uses `<table class="table-warning table-alert">`.
 
-<table class="warning alert">
+<table class="table-warning table-alert">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -715,9 +715,9 @@ This table uses `<table class="warning alert">`.
     </tfoot>
 </table>
 
-This table uses `<table class="danger alert">`.
+This table uses `<table class="table-danger table-alert">`.
 
-<table class="danger alert">
+<table class="table-danger table-alert">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -756,9 +756,9 @@ This table uses `<table class="danger alert">`.
     </tfoot>
 </table>
 
-This table uses `<table class="light alert">`.
+This table uses `<table class="table-light table-alert">`.
 
-<table class="light alert">
+<table class="table-light table-alert">
     <thead>
         <tr>
             <th>Column 1</th>
@@ -797,9 +797,9 @@ This table uses `<table class="light alert">`.
     </tfoot>
 </table>
 
-This table uses `<table class="dark alert">`.
+This table uses `<table class="table-dark table-alert">`.
 
-<table class="dark alert">
+<table class="table-dark table-alert">
     <thead>
         <tr>
             <th>Column 1</th>

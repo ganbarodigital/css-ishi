@@ -92,7 +92,7 @@ This is the same table, with an added `<tfoot>`.
 
 You can combine `.table-border-block` with any of Ishi's [table context classes](contexts.html). For example, this table uses `<table class="table-border-block attention">`.
 
-<table class="table-border-block attention">
+<table class="table-border-block table-attention">
     <thead>
         <tr>
             <th>Column 1</th>
