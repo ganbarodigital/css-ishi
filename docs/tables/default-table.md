@@ -100,21 +100,3 @@ This table contains longer sections of content.
         </tr>
     </tbody>
 </table>
-
-## Table Style
-
-Tables have:
-
-* a default width of 100%
-
-## Table Heading Style
-
-Table headings:
-
-* are left-aligned
-* are vertically-aligned to the bottom
-* are shown in __bold__
-
-## Table Content Style
-
-* are vertically-aligned to the top
