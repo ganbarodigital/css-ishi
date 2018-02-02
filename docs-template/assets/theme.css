@@ -959,6 +959,33 @@ blockquote {
     line-height: 1rem;
     color: #404040; }
 
+a:link {
+  color: #234f83;
+  background-color: transparent;
+  text-decoration: none;
+  border-bottom: 1px solid #a6a6a6; }
+
+a:visited {
+  color: #66023c;
+  background-color: transparent;
+  text-decoration: none;
+  border-bottom: 1px solid #a6a6a6; }
+
+a:hover {
+  color: #d82726;
+  background-color: transparent;
+  border-bottom: 1px solid #404040; }
+
+a:active, a:focus {
+  color: #d82726;
+  background-color: transparent;
+  border-bottom: 1px solid #404040; }
+
+a.anchorjs-link {
+  color: #404040;
+  text-decoration: none;
+  border-bottom: none; }
+
 ul {
   list-style-type: disc;
   padding-left: 2.5rem; }
@@ -2793,28 +2820,6 @@ body > main {
   body > main del {
     color: #5a5a5a;
     background-color: transparent; }
-  body > main a:link {
-    color: #234f83;
-    background-color: transparent;
-    text-decoration: none;
-    border-bottom: 1px solid #a6a6a6; }
-  body > main a:visited {
-    color: #66023c;
-    background-color: transparent;
-    text-decoration: none;
-    border-bottom: 1px solid #a6a6a6; }
-  body > main a:hover {
-    color: #d82726;
-    background-color: transparent;
-    border-bottom: 1px solid #404040; }
-  body > main a:active, body > main a:focus {
-    color: #d82726;
-    background-color: transparent;
-    border-bottom: 1px solid #404040; }
-  body > main a.anchorjs-link {
-    color: #404040;
-    text-decoration: none;
-    border-bottom: none; }
   body > main article .column {
     display: flex;
     flex-direction: row;
