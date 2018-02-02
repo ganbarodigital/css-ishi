@@ -208,8 +208,8 @@ $callout-border-color: $panel-border-color !default;
 $callout-border-width: 4px !default;
 
 // call to action
-$calltoaction-fg-color: #000 !default;
-$calltoaction-bg-color: #fff !default;
+$calltoaction-fg-color: $main-fg-color !default;
+$calltoaction-bg-color: $main-bg-color !default;
 $calltoaction-border-color: $calltoaction-fg-color !default;
 
 // pageflow
