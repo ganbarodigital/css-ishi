@@ -3,23 +3,33 @@
         background-color: mapped_color($map, 'content-bg');
     }
 
-    .#{$name}-bg--alert {
-        background-color: mapped_color($map, 'headline-bg');
-    }
-
     .#{$name}-fg {
         color: mapped_color($map, 'content-fg');
+    }
+
+    .#{$name} {
+        @extend .#{$name}-bg;
+        @extend .#{$name}-fg;
+    }
+
+    .#{$name}-bg--alert {
+        background-color: mapped_color($map, 'headline-bg');
     }
 
     .#{$name}-fg--alert {
         color: mapped_color($map, 'headline-fg');
     }
 
-    .#{$name}-border {
+    .#{$name}--alert {
+        @extend .#{$name}-bg--alert;
+        @extend .#{$name}-fg--alert;
+    }
+
+    .#{$name} .border {
         border-color: mapped_color($map, 'border');
     }
 
-    .#{$name}-border--alert {
+    .#{$name}--alert .border {
         border-color: mapped_color($map, 'headline-bg');
     }
 }
