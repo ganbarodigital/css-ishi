@@ -12,33 +12,41 @@
     vertical-align: top;
     display: inline-block;
 
-    @include badge-context($color-primary-fg, $color-primary-bg);
+    @include badge-context($color-primary-headline-fg, $color-primary-headline-bg);
+}
+
+.badge.badge--primary {
+    @include badge-context($color-primary-headline-fg, $color-primary-headline-bg);
+}
+
+.badge.badge--secondary {
+    @include badge-context($color-secondary-headline-fg, $color-secondary-headline-bg);
 }
 
 .badge.badge--attention {
-    @include badge-context($color-attention-fg, $color-attention-bg);
+    @include badge-context($color-attention-headline-fg, $color-attention-headline-bg);
 }
 
 .badge.badge--info {
-    @include badge-context($color-info-fg, $color-info-bg);
+    @include badge-context($color-info-headline-fg, $color-info-headline-bg);
 }
 
 .badge.badge--success {
-    @include badge-context($color-success-fg, $color-success-bg);
+    @include badge-context($color-success-headline-fg, $color-success-headline-bg);
 }
 
 .badge.badge--warning {
-    @include badge-context($color-warning-fg, $color-warning-bg);
+    @include badge-context($color-warning-headline-fg, $color-warning-headline-bg);
 }
 
 .badge.badge--danger {
-    @include badge-context($color-danger-fg, $color-danger-bg);
+    @include badge-context($color-danger-headline-fg, $color-danger-headline-bg);
 }
 
 .badge.badge--light {
-    @include badge-context($color-light-fg, $color-light-bg);
+    @include badge-context($color-light-headline-fg, $color-light-headline-bg);
 }
 
 .badge.badge--dark {
-    @include badge-context($color-dark-fg, $color-dark-bg);
+    @include badge-context($color-dark-headline-fg, $color-dark-headline-bg);
 }

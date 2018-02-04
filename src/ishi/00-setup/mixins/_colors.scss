@@ -1,0 +1,90 @@
+// see https://github.com/ganbarodigital/php-mv-color-calc
+// for full details on these formulas
+@function yiq($color) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  @return (($red*299)+($green*587)+($blue*114))/1000;
+}
+@function yiq-lightest($color1, $color2) {
+    $yiq1: yiq($color1);
+    $yiq2: yiq($color2);
+
+    @return if($yiq1 > $yiq2, $color1, $color2);
+}
+@function yiq-darkest($color1, $color2) {
+    $yiq1: yiq($color1);
+    $yiq2: yiq($color2);
+
+    @return if($yiq1 > $yiq2, $color1, $color2);
+}
+
+@function MapComponentToGammaCurve($color) {
+    $color-float: $color / 255;
+
+    $dark-curve: $color-float / 12.92;
+    $light-curve1: $color-float + 0.055;
+    $light-curve2: $light-curve1 / 1.055;
+    $light-curve3: poly-pow($light-curve2, 2.4);
+    $light-curve: $light-curve3;
+
+    // @debug $color, $color-float, $dark-curve, $light-curve;
+
+    @return if($color-float <= 0.03928, $dark-curve, $light-curve);
+}
+
+@function luminosity($color) {
+    $red: red($color);
+    $green: green($color);
+    $blue: blue($color);
+
+    $rG: MapComponentToGammaCurve($red) * 0.2126;
+    $gG: MapComponentToGammaCurve($green) * 0.7152;
+    $bG: MapComponentToGammaCurve($blue) * 0.0722;
+
+    @return $rG + $gG + $bG;
+}
+
+@function contrast-ratio($lighter, $darker) {
+    $light1: $lighter + 0.05;
+    $dark1: $darker + 0.05;
+
+    // @debug $light1, $dark1;
+
+    @return $light1 / $dark1;
+}
+
+@function relative-contrast($color1, $color2) {
+    $lumin1: luminosity($color1);
+    // @debug $color1, $lumin1;
+    $lumin2: luminosity($color2);
+    // @debug $color2, $lumin2;
+
+    @return if($lumin1 > $lumin2, contrast-ratio($lumin1, $lumin2), contrast-ratio($lumin2, $lumin1));
+}
+
+@function contrast-color($color) {
+    $option1: $color-darkest;
+    $option2: $color-lightest;
+
+    $rel-option1: relative-contrast($option1, $color);
+    $rel-option2: relative-contrast($option2, $color);
+
+    // @debug $color, $rel-option1, $rel-option2;
+
+    @return if($rel-option1 > $rel-option2, $option1, $option2);
+}
+
+@function color-fg-auto($color) {
+    @return contrast-color($color);
+}
+
+@function color-border-auto($color) {
+    @return if(yiq($color) > 127, darken($color, 40%), lighten($color, 40%));
+}
+
+@function color-headline-auto($color) {
+    @return contrast-color($color);
+}
+

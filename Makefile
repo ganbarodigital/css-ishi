@@ -36,7 +36,7 @@ clean:
 	rm build/*
 
 docs: $(SCSS_SRC_FILES) $(SCSS_THIRD_PARTY_DEPS) docs-template/theme.scss dist/laroux.js dist/ishi.js
-	node_modules/.bin/node-sass --include-path src docs-template/theme.scss > docs-template/assets/theme.css
+	node_modules/.bin/node-sass --include-path src --include-path node_modules docs-template/theme.scss > docs-template/assets/theme.css
 	# $(NODETOOLS_BIN)/postcss --use autoprefixer docs-template/theme.css --dir docs-template/assets/
 	cp -r dist/* docs-template/assets/
 

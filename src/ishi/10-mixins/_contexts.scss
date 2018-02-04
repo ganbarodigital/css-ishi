@@ -45,12 +45,14 @@
     }
 }
 
-@mixin context-alert-colors($color-fg, $color-bg, $color-border) {
-    border-color: $color-border;
+@mixin context-alert-colors($color-fg, $color-bg, $color-headline-fg, $color-headline-bg) {
+    color: $color-fg;
+    background-color: $color-bg;
+    border-color: $color-headline-bg;
 
     h1, h2, h3, h4, h5, h6 {
-        color: $color-bg;
-        background-color: $color-fg;
+        color: $color-headline-fg;
+        background-color: $color-headline-bg;
     }
 }
 

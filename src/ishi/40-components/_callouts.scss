@@ -51,59 +51,59 @@
 
 //// Contexts
 .callout--attention {
-    @include context-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
+    @include context-colors($color-attention-content-fg, $color-attention-content-bg, $color-attention-border);
 }
 
 .callout--attention.callout--alert {
-    @include context-alert-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
+    @include context-alert-colors($color-attention-content-fg, $color-attention-content-bg, $color-attention-headline-fg, $color-attention-headline-bg);
 }
 
 .callout--info {
-    @include context-colors($color-info-fg, $color-info-bg, $color-info-border);
+    @include context-colors($color-info-content-fg, $color-info-content-bg, $color-info-border);
 }
 
 .callout--info.callout--alert {
-    @include context-alert-colors($color-info-fg, $color-info-bg, $color-info-border);
+    @include context-alert-colors($color-info-content-fg, $color-info-content-bg, $color-info-headline-fg, $color-info-headline-bg);
 }
 
 .callout--success {
-    @include context-colors($color-success-fg, $color-success-bg, $color-success-border);
+    @include context-colors($color-success-content-fg, $color-success-content-bg, $color-success-border);
 }
 
 .callout--success.callout--alert {
-    @include context-alert-colors($color-success-fg, $color-success-bg, $color-success-border);
+    @include context-alert-colors($color-success-content-fg, $color-success-content-bg, $color-success-headline-fg, $color-success-headline-bg);
 }
 
 .callout--warning {
-    @include context-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
+    @include context-colors($color-warning-content-fg, $color-warning-content-bg, $color-warning-border);
 }
 
 .callout--warning.callout--alert {
-    @include context-alert-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
+    @include context-alert-colors($color-warning-content-fg, $color-warning-content-bg, $color-warning-headline-fg, $color-warning-headline-bg);
 }
 
 .callout--danger {
-    @include context-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+    @include context-colors($color-danger-content-fg, $color-danger-content-bg, $color-danger-border);
 }
 
 .callout--danger.callout--alert {
-    @include context-alert-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
+    @include context-alert-colors($color-danger-content-fg, $color-danger-content-bg, $color-danger-headline-fg, $color-danger-headline-bg);
 }
 
 .callout--light {
-    @include context-colors($color-light-fg, $color-light-bg, $color-light-border);
+    @include context-colors($color-light-content-fg, $color-light-content-bg, $color-light-border);
 }
 
 .callout--light.callout--alert {
-    @include context-alert-colors($color-light-fg, $color-light-bg, $color-light-border);
+    @include context-alert-colors($color-light-content-fg, $color-light-content-bg, $color-light-headline-fg, $color-light-headline-bg);
 }
 
 .callout--dark {
-    @include context-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
+    @include context-colors($color-dark-content-fg, $color-dark-content-bg, $color-dark-border);
 }
 
 .callout--dark.callout--alert {
-    @include context-alert-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
+    @include context-alert-colors($color-dark-content-fg, $color-dark-content-bg, $color-dark-headline-fg, $color-dark-headline-bg);
 }
 
 //// Callouts That Alert

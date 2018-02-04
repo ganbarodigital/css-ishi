@@ -46,21 +46,13 @@ a.calltoaction {
 }
 
 a.calltoaction.calltoaction--attention {
-    @include calltoaction-context($color-attention-fg, $color-attention-bg, $color-attention-border);
+    @include calltoaction-context($color-attention-headline-bg, $color-attention-headline-fg, $color-attention-border);
 }
 
-a.calltoaction.calltoaction--info {
-    @include calltoaction-context($color-info-fg, $color-info-bg, $color-info-border);
+a.calltoaction.calltoaction--primary {
+    @include calltoaction-context($color-primary-headline-bg, $color-primary-headline-fg, $color-primary-border);
 }
 
-a.calltoaction.calltoaction--success {
-    @include calltoaction-context($color-success-fg, $color-success-bg, $color-success-border);
-}
-
-a.calltoaction.calltoaction--warning {
-    @include calltoaction-context($color-warning-fg, $color-warning-bg, $color-warning-border);
-}
-
-a.calltoaction.calltoaction--danger {
-    @include calltoaction-context($color-danger-fg, $color-danger-bg, $color-danger-border);
+a.calltoaction.calltoaction--secondary {
+    @include calltoaction-context($color-secondary-headline-bg, $color-secondary-headline-fg, $color-secondary-border);
 }

@@ -8,14 +8,14 @@ table.table--attention {
 }
 
 thead.table--attention.table--alert, tfoot.table--attention.table--alert {
-    color: $color-attention-bg;
-    background-color: $color-attention-fg;
+    color: $color-attention-headline-fg;
+    background-color: $color-attention-headline-bg;
 }
 
 table.table--attention.table--alert {
     thead, tfoot {
-        color: $color-attention-bg;
-        background-color: $color-attention-fg;
+        color: $color-attention-headline-fg;
+        background-color: $color-attention-headline-bg;
     }
 }
 
@@ -29,8 +29,8 @@ table.table--info {
 
 table.table--info.table--alert {
     thead, tfoot {
-        color: $color-info-bg;
-        background-color: $color-info-fg;
+        color: $color-info-headline-fg;
+        background-color: $color-info-headline-bg;
     }
 }
 
@@ -44,8 +44,8 @@ table.table--success {
 
 table.table--success.table--alert {
     thead, tfoot {
-        color: $color-success-bg;
-        background-color: $color-success-fg;
+        color: $color-success-headline-fg;
+        background-color: $color-success-headline-bg;
     }
 }
 
@@ -59,8 +59,8 @@ table.table--warning {
 
 table.table--warning.table--alert {
     thead, tfoot {
-        color: $color-warning-bg;
-        background-color: $color-warning-fg;
+        color: $color-warning-headline-fg;
+        background-color: $color-warning-headline-bg;
     }
 }
 
@@ -74,8 +74,8 @@ table.table--danger {
 
 table.table--danger.table--alert {
     thead, tfoot {
-        color: $color-danger-bg;
-        background-color: $color-danger-fg;
+        color: $color-danger-headline-fg;
+        background-color: $color-danger-headline-bg;
     }
 }
 
@@ -89,8 +89,8 @@ table.table--light {
 
 table.table--light.table--alert {
     thead, tfoot {
-        color: $color-light-bg;
-        background-color: $color-light-fg;
+        color: $color-light-headline-fg;
+        background-color: $color-light-headline-bg;
     }
 }
 
@@ -104,8 +104,8 @@ table.table--dark {
 
 table.table--dark.table--alert {
     thead, tfoot {
-        color: $color-dark-bg;
-        background-color: $color-dark-fg;
+        color: $color-dark-headline-fg;
+        background-color: $color-dark-headline-bg;
     }
 }
 

@@ -54,6 +54,6 @@ kbd {
 samp {
     @include util-inline-text-pad();
     @include type-pica-mono-inline();
-    background-color: $color-accent-bg;
+    background-color: $pre-bg-color;
     white-space: pre-wrap;
 }

@@ -15,8 +15,8 @@
     padding: 0px;
 
     h1, h2, h3, h4, h5, h6 {
-        background-color: $color-fg;
-        color: $color-bg;
+        background-color: $color-bg;
+        color: $color-fg;
         padding: $type-pica-font-size / 2;
         border-top-left-radius: $panel-border-radius;
         border-top-right-radius: $panel-border-radius;
@@ -70,62 +70,62 @@
 
 //// Panels That Alert
 .panel.panel--alert {
-    @include util-panel-alert($panel-fg-color, $panel-bg-color, $panel-border-color);
+    @include util-panel-alert($panel-bg-color, $panel-fg-color, $panel-border-color);
 }
 
 //// Contexts
 .panel--attention {
-    @include util-panel($color-attention-fg, $color-attention-bg, $color-attention-border);
+    @include util-panel($color-attention-headline-fg, $color-attention-headline-bg, $color-attention-border);
 }
 
 .panel--attention.panel--alert {
-    @include util-panel-alert($color-attention-fg, $color-attention-bg, $color-attention-border);
+    @include util-panel-alert($color-attention-headline-fg, $color-attention-headline-bg, $color-attention-border);
 }
 
 .panel--info {
-    @include util-panel($color-info-fg, $color-info-bg, $color-info-border);
+    @include util-panel($color-info-content-fg, $color-info-content-bg, $color-info-border);
 }
 
 .panel--info.panel--alert {
-    @include util-panel-alert($color-info-fg, $color-info-bg, $color-info-border);
+    @include util-panel-alert($color-info-headline-fg, $color-info-headline-bg, $color-info-border);
 }
 
 .panel--success {
-    @include util-panel($color-success-fg, $color-success-bg, $color-success-border);
+    @include util-panel($color-success-content-fg, $color-success-content-bg, $color-success-border);
 }
 
 .panel--success.panel--alert {
-    @include util-panel-alert($color-success-fg, $color-success-bg, $color-success-border);
+    @include util-panel-alert($color-success-headline-fg, $color-success-headline-bg, $color-success-border);
 }
 
 .panel--warning {
-    @include util-panel($color-warning-fg, $color-warning-bg, $color-warning-border);
+    @include util-panel($color-warning-content-fg, $color-warning-content-bg, $color-warning-border);
 }
 
 .panel--warning.panel--alert {
-    @include util-panel-alert($color-warning-fg, $color-warning-bg, $color-warning-border);
+    @include util-panel-alert($color-warning-headline-fg, $color-warning-headline-bg, $color-warning-border);
 }
 
 .panel--danger {
-    @include util-panel($color-danger-fg, $color-danger-bg, $color-danger-border);
+    @include util-panel($color-danger-content-fg, $color-danger-content-bg, $color-danger-border);
 }
 
 .panel--danger.panel--alert {
-    @include util-panel-alert($color-danger-fg, $color-danger-bg, $color-danger-border);
+    @include util-panel-alert($color-danger-headline-fg, $color-danger-headline-bg, $color-danger-border);
 }
 
 .panel--light {
-    @include util-panel($color-light-fg, $color-light-bg, $color-light-border);
+    @include util-panel($color-light-content-fg, $color-light-content-bg, $color-light-border);
 }
 
 .panel--light.panel--alert {
-    @include util-panel-alert($color-light-fg, $color-light-bg, $color-light-border);
+    @include util-panel-alert($color-light-headline-fg, $color-light-headline-bg, $color-light-border);
 }
 
 .panel--dark {
-    @include util-panel($color-dark-fg, $color-dark-bg, $color-dark-border);
+    @include util-panel($color-dark-content-fg, $color-dark-content-bg, $color-dark-border);
 }
 
 .panel--dark.panel--alert {
-    @include util-panel-alert($color-dark-fg, $color-dark-bg, $color-dark-border);
+    @include util-panel-alert($color-dark-headline-fg, $color-dark-headline-bg, $color-dark-border);
 }

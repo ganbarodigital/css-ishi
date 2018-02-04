@@ -18,11 +18,6 @@ Add any one of the [context classes](../utilities/context-classes.html) to your 
 
 <a class="calltoaction calltoaction--attention" href="../getting-started.html">Get Started With Ishi Today!</a>
 
-<a class="calltoaction calltoaction--info" href="../getting-started.html">Get Started With Ishi Today!</a>
+<a class="calltoaction calltoaction--primary" href="../getting-started.html">Get Started With Ishi Today!</a>
 
-<a class="calltoaction calltoaction--success" href="../getting-started.html">Get Started With Ishi Today!</a>
-
-<a class="calltoaction calltoaction--warning" href="../getting-started.html">Get Started With Ishi Today!</a>
-
-<a class="calltoaction calltoaction--danger" href="../getting-started.html">Get Started With Ishi Today!</a>
-
+<a class="calltoaction calltoaction--secondary" href="../getting-started.html">Get Started With Ishi Today!</a>

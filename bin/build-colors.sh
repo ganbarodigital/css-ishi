@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEST="src/ishi/00-base/reference/_documented_colors.scss"
+DEST="src/ishi/00-setup/reference/_documented_colors.scss"
 
 # this stops Bash from stripping out the newlines from our find/grep
 # combination

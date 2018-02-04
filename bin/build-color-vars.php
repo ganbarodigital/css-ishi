@@ -43,7 +43,7 @@ foreach($lines as $line) {
         exit(1);
     }
     if (($contrastRatio >= 4.5 && $contrastRatio < 7.0) && ($contrastRatioAlt < 7.0 && $contrastRatioAlt >= 4.5)) {
-        fwrite(STDERR, "*** notice: $varName has bad color contrast; you flip the foreground color if you prefer without affecting accessibility" . PHP_EOL);
+        fwrite(STDERR, "*** notice: $varName has bad color contrast; you can flip the foreground color if you prefer without affecting accessibility" . PHP_EOL);
         // fwrite(STDERR, "contrast ratio for {$fgColor} / {$bgColor}: {$contrastRatio}" . PHP_EOL);
         // fwrite(STDERR, "contrast ratio for {$fgAltColor} / {$bgColor}: {$contrastRatioAlt}" . PHP_EOL);
     }

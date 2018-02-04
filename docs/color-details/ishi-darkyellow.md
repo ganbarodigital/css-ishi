@@ -9,7 +9,7 @@ This page contains everything we know about the color `ishi-darkyellow`:
     <div class="cell">
         <div class="swatch">
             <ul>
-                {{ ishi.small_colorswatch('ishi-darkyellow', '#8a6d3b', 'dark-bg') }}
+                {{ ishi.small_colorswatch('ishi-darkyellow', '#e8ca2b', '') }}
             </ul>
         </div>
     </div>
@@ -69,16 +69,16 @@ Here's our automated analysis of `ishi-darkyellow`, when used as a background co
 
 Property | Value
 ---------|------
-Foreground Color | `#fff`
-- Luminosity | 255 (bright)
-- sRGB Relative Luminosity | 1
-Background Color | `#8a6d3b`
-- Luminosity | 111.971 (dull)
-- sRGB Relative Luminosity | 0.167
-Contrast Ratio `#fff` / `#8a6d3b` | 4.848
-- If We Used `#000` / `#8a6d3b` | 4.331
+Foreground Color | `#000`
+- Luminosity | 0 (dark)
+- sRGB Relative Luminosity | 0
+Background Color | `#e8ca2b`
+- Luminosity | 192.844 (bright)
+- sRGB Relative Luminosity | 0.596
+Contrast Ratio `#000` / `#e8ca2b` | 12.914
+- If We Used `#fff` / `#e8ca2b` | 1.626
 Good Background Choice For Headings? | yes
-Good Background Choice For Long Content? | no
+Good Background Choice For Long Content? | yes
 
 #### Notes
 
@@ -86,17 +86,17 @@ Good Background Choice For Long Content? | no
 1. The sRGB relative luminosity is calculated using the [WCAG 2.0 formula](https://www.w3.org/TR/WCAG20/#relativeluminancedef). It maps each RGB component onto a non-linear gamma 2.2 curve.
 1. The contrast ratio is calculated using the [WCAG 2.0 definition](https://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef). We share [the concerns that WebAIM has](http://webaim.org/blog/wcag-2-1-feedback/) about the WCAG 2.0 formula. There are some circumstances where it favours a foreground color that looks very low-contrast on modern screens.
 1. We think a color is a good background choice if:
-  - it is WCAG 2.0 AAA Compliant with our chosen foreground color `#fff` (no), and
-  - both `#fff` and `#8a6d3b` have different luminosity (darker or brighter) (yes), and
-  - `#8a6d3b` isn't a mid-range color when converted to grayscale (no)
+  - it is WCAG 2.0 AAA Compliant with our chosen foreground color `#000` (yes), and
+  - both `#000` and `#e8ca2b` have different luminosity (darker or brighter) (yes), and
+  - `#e8ca2b` isn't a mid-range color when converted to grayscale (yes)
 
 ### WCAG 2.0
 
-How does `ishi-darkyellow` (with `#fff` as our chosen foreground color) do against the [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)?
+How does `ishi-darkyellow` (with `#000` as our chosen foreground color) do against the [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)?
 
 Compliance Level | When | Value
 -----------------|------|------
 AA Compliant | normal text | yes
 AA Compliant | 18pt+ text | yes
-AAA Compliant | normal text | no
+AAA Compliant | normal text | yes
 AAA Compliant | 18pt+ text | yes

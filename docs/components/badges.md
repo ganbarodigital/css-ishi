@@ -14,8 +14,10 @@ Inbox <span class="badge">23</span>
 
 Use [context modifiers](../utilities/context-classes.html) to change the appearance of a badge.
 
-Inbox <span class="badge badge--attention">23</span>
-Inbox <span class="badge badge--info">23</span>
-Inbox <span class="badge badge--success">23</span>
-Inbox <span class="badge badge--warning">23</span>
-Inbox <span class="badge badge--danger">23</span>
+* Inbox <span class="badge badge--primary">23</span>
+* Inbox <span class="badge badge--secondary">23</span>
+* Inbox <span class="badge badge--attention">23</span>
+* Inbox <span class="badge badge--info">23</span>
+* Inbox <span class="badge badge--success">23</span>
+* Inbox <span class="badge badge--warning">23</span>
+* Inbox <span class="badge badge--danger">23</span>

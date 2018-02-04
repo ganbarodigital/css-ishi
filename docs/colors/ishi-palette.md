@@ -41,7 +41,7 @@ Ishi uses color as part of presenting different typography and components. These
     <div class="cell">
         <div class="swatch">
             <ul>
-                {{ ishi.small_colorswatch('ishi-darkyellow', '#8a6d3b', 'dark-bg') }}
+                {{ ishi.small_colorswatch('ishi-darkyellow', '#e8ca2b') }}
                 {{ ishi.small_colorswatch('ishi-paleyellow', '#fcf8e3') }}
             </ul>
         </div>

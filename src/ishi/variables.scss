@@ -19,42 +19,35 @@ $font-serif: serif !default;
 $font-system: system-ui !default;
 $font-monospace: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !default;
 
-// brand
-$color-primary-fg: $ganbaro-mono-0 !default;
-$color-primary-bg: $ganbaro-blue-500 !default;
+// main content colors
+$color-fg: $ganbaro-mono-600 !default;
+$color-bg: $ganbaro-mono-0 !default;
 
-$color-secondary-fg: $ganbaro-green-500 !default;
-$color-secondary-bg: $ganbaro-mono-0 !default;
+// we use these as our auto-calculated contrast colors
+$color-darkest: $color-fg !default;
+$color-lightest: $color-bg !default;
+
+// brand
+$color-primary-headline-bg: $ganbaro-blue-500 !default;
+$color-primary-content-bg: $ganbaro-blue-50 !default;
+$color-secondary-headline-bg: $ganbaro-green-500 !default;
+$color-secondary-content-bg: $ganbaro-green-50 !default;
 
 // context colors
-$color-attention-fg: $color-primary-fg !default;
-$color-attention-bg: $color-primary-bg !default;
-$color-attention-border: $color-attention-fg !default;
-
-$color-info-fg: $ishi-lightblue !default;
-$color-info-bg: $ishi-paleblue !default;
-$color-info-border: $color-info-fg !default;
-
-$color-success-fg: $ishi-darkgreen !default;
-$color-success-bg: $ishi-palegreen !default;
-$color-success-border: $color-success-fg !default;
-
-$color-warning-fg: $ishi-darkyellow !default;
-$color-warning-bg: $ishi-paleyellow !default;
-$color-warning-border: $ishi-darkyellow !default;
-
-$color-danger-fg: $ishi-red !default;
-$color-danger-bg: $ishi-lightred !default;
-$color-danger-border: $color-danger-fg !default;
+$color-info-content-bg: $ishi-paleblue !default;
+$color-info-headline-bg: $ishi-darkblue !default;
+$color-success-content-bg: $ishi-palegreen !default;
+$color-success-headline-bg: $ishi-darkgreen !default;
+$color-warning-content-bg: $ishi-paleyellow !default;
+$color-warning-headline-bg: $ishi-darkyellow !default;
+$color-danger-content-bg: $ishi-lightred !default;
+$color-danger-headline-bg: $ishi-darkred !default;
 
 // visual colors
-$color-light-fg: $ganbaro-mono-600 !default;
-$color-light-bg: $ganbaro-tan-50 !default;
-$color-light-border: $ganbaro-mono-200 !default;
-
-$color-dark-fg: $ganbaro-mono-0 !default;
-$color-dark-bg: $ganbaro-slate-900 !default;
-$color-dark-border: $color-dark-bg !default;
+$color-light-content-bg: $ganbaro-tan-50 !default;
+$color-light-headline-bg: $ganbaro-slate-800 !default;
+$color-dark-content-bg: $ganbaro-slate-900 !default;
+$color-dark-headline-bg: $black !default;
 
 // these are used to style elements and components that need an accented
 // background
@@ -65,9 +58,140 @@ $color-dark-border: $color-dark-bg !default;
 // - panel component
 // - pageflow component
 // - sidebar region
-$color-accent-bg: $color-light-bg !default;
-$color-accent-bg-light: $ganbaro-mono-50 !default;
-$color-accent-border: $color-light-border !default;
+$color-component-content-bg: $ganbaro-mono-50 !default;
+$color-component-content-bg--light: $ganbaro-mono-50 !default;
+$color-component-headline-bg: $ganbaro-mono-800 !default;
+
+// these are used to style elements and components that need to catch
+// the readers' attention
+$color-attention-headline-bg: $ganbaro-red-500 !default;
+$color-attention-content-bg: $color-bg !default;
+
+// ===========================================================================
+//
+// Auto-calculated colors
+//
+// ---------------------------------------------------------------------------
+
+$color-primary-content-fg: color-fg-auto($color-primary-content-bg) !default;
+$color-primary-headline-fg: color-fg-auto($color-primary-headline-bg) !default;
+$color-primary-border: $color-primary-headline-bg !default;
+// our styles will use this map
+$color-primary: (
+    content-fg: $color-primary-content-fg,
+    content-bg: $color-primary-content-bg,
+    headline-fg: $color-primary-content-fg,
+    headline-bg: $color-primary-content-bg,
+    border: $color-primary-border
+);
+
+$color-secondary-content-fg: color-fg-auto($color-secondary-content-bg) !default;
+$color-secondary-headline-fg: color-fg-auto($color-secondary-headline-bg) !default;
+$color-secondary-border: $color-secondary-headline-bg !default;
+// our styles will use this map
+$color-secondary: (
+    content-fg: $color-secondary-content-fg,
+    content-bg: $color-secondary-content-bg,
+    headline-fg: $color-secondary-content-fg,
+    headline-bg: $color-secondary-content-bg,
+    border: $color-secondary-border
+);
+
+$color-info-content-fg: color-fg-auto($color-info-content-bg) !default;
+$color-info-headline-fg: color-fg-auto($color-info-headline-bg) !default;
+$color-info-border: $color-info-headline-bg !default;
+// our styles will use this map
+$color-info: (
+    content-fg: $color-info-content-fg,
+    content-bg: $color-info-content-bg,
+    headline-fg: $color-info-content-fg,
+    headline-bg: $color-info-content-bg,
+    border: $color-info-border
+);
+
+$color-success-content-fg: color-fg-auto($color-success-content-bg) !default;
+$color-success-headline-fg: color-fg-auto($color-success-headline-bg) !default;
+$color-success-border: $color-success-headline-bg !default;
+// our styles will use this map
+$color-success: (
+    content-fg: $color-success-content-fg,
+    content-bg: $color-success-content-bg,
+    headline-fg: $color-success-content-fg,
+    headline-bg: $color-success-content-bg,
+    border: $color-success-border
+);
+
+$color-warning-content-fg: color-fg-auto($color-warning-content-bg) !default;
+$color-warning-headline-fg: color-fg-auto($color-warning-headline-bg);
+$color-warning-border: $color-warning-headline-bg !default;
+// our styles will use this map
+$color-warning: (
+    content-fg: $color-warning-content-fg,
+    content-bg: $color-warning-content-bg,
+    headline-fg: $color-warning-content-fg,
+    headline-bg: $color-warning-content-bg,
+    border: $color-warning-border
+);
+
+$color-danger-content-fg: color-fg-auto($color-danger-content-bg) !default;
+$color-danger-headline-fg: color-fg-auto($color-danger-headline-bg);
+$color-danger-border: $color-danger-headline-bg !default;
+// our styles will use this map
+$color-danger: (
+    content-fg: $color-danger-content-fg,
+    content-bg: $color-danger-content-bg,
+    headline-fg: $color-danger-content-fg,
+    headline-bg: $color-danger-content-bg,
+    border: $color-danger-border
+);
+
+$color-light-content-fg: color-fg-auto($color-light-content-bg) !default;
+$color-light-headline-fg: color-fg-auto($color-light-headline-bg) !default;
+$color-light-border: $color-light-headline-bg !default;
+// our styles will use this map
+$color-light: (
+    content-fg: $color-light-content-fg,
+    content-bg: $color-light-content-bg,
+    headline-fg: $color-light-content-fg,
+    headline-bg: $color-light-content-bg,
+    border: $color-light-border
+);
+
+$color-dark-content-fg: color-fg-auto($color-dark-content-bg) !default;
+$color-dark-headline-fg: color-fg-auto($color-dark-headline-bg) !default;
+$color-dark-border: $color-dark-headline-bg !default;
+// our styles will use this map
+$color-dark: (
+    content-fg: $color-dark-content-fg,
+    content-bg: $color-dark-content-bg,
+    headline-fg: $color-dark-content-fg,
+    headline-bg: $color-dark-content-bg,
+    border: $color-dark-border
+);
+
+$color-component-content-fg: color-fg-auto($color-component-content-bg) !default;
+$color-component-border: color-border-auto($color-component-headline-bg) !default;
+$color-component-headline-fg: color-fg-auto($color-component-headline-bg) !default;
+// our styles will use this map
+$color-component: (
+    content-fg: $color-component-content-fg,
+    content-bg: $color-component-content-bg,
+    headline-fg: $color-component-content-fg,
+    headline-bg: $color-component-content-bg,
+    border: $color-component-border
+);
+
+$color-attention-content-fg: color-fg-auto($color-attention-content-bg) !default;
+$color-attention-border: $color-attention-headline-bg !default;
+$color-attention-headline-fg: color-fg-auto($color-attention-headline-bg) !default;
+// our styles will use this map
+$color-attention: (
+    content-fg: $color-attention-content-fg,
+    content-bg: $color-attention-content-bg,
+    headline-fg: $color-attention-content-fg,
+    headline-bg: $color-attention-content-bg,
+    border: $color-attention-border
+);
 
 // ===========================================================================
 //
@@ -76,8 +200,8 @@ $color-accent-border: $color-light-border !default;
 // ---------------------------------------------------------------------------
 
 // body text
-$main-fg-color: $color-light-fg !default;
-$main-bg-color: $ganbaro-mono-0 !default;
+$main-fg-color: $color-fg !default;
+$main-bg-color: $color-bg !default;
 $main-ins-fg-color: $main-fg-color !default;
 $main-ins-bg-color: transparent !default;
 $main-del-fg-color: lighten($main-fg-color, 10%) !default;
@@ -118,14 +242,14 @@ $font-h: $font-body;
 
 // pre and code
 $pre-fg-color: $main-fg-color !default;
-$pre-bg-color: $color-accent-bg !default;
-$pre-border-color: $color-accent-border !default;
+$pre-bg-color: $color-component-content-bg !default;
+$pre-border-color: $color-component-border !default;
 $font-pre: $font-monospace !default;
 
 // kbd
 $kbd-fg-color: $main-fg-color !default;
 $kbd-bg-color: transparent !default;
-$kbd-border-color: darken($color-accent-bg, 33%) !default;
+$kbd-border-color: $color-component-border;
 
 // links
 $a-link-fg-color: $ganbaro-blue-500 !default;
@@ -173,8 +297,8 @@ $footer-a-active-border-color: $footer-a-hover-border-color !default;
 
 // blockquote
 $main-blockquote-fg-color: $main-fg-color !default;
-$main-blockquote-bg-color: $color-accent-bg !default;
-$main-blockquote-border-color: $color-accent-border !default;
+$main-blockquote-bg-color: $color-component-content-bg !default;
+$main-blockquote-border-color: $color-component-border !default;
 $main-blockquote-border-width: 2px !default;
 $main-blockquote-cite-fg-color: $ganbaro-mono-600 !default;
 
@@ -186,7 +310,7 @@ $main-blockquote-cite-fg-color: $ganbaro-mono-600 !default;
 
 $table-border-width: 2px !default;
 $table-border-style: solid !default;
-$table-border-color: $color-accent-border !default;
+$table-border-color: $color-component-border !default;
 
 // ===========================================================================
 //
@@ -197,17 +321,17 @@ $table-border-color: $color-accent-border !default;
 // alerts, callouts, panels
 //
 // by default, many other components reuse these settings
-$panel-bg-color: $color-accent-bg !default;
-$panel-fg-color: $ganbaro-tan-800 !default;
-$panel-border-color: $color-accent-border !default;
+$panel-bg-color: $color-component-content-bg !default;
+$panel-fg-color: $color-component-content-fg !default;
+$panel-border-color: $color-component-border !default;
 $panel-border-width: 1px !default;
 $panel-border-radius: 4px !default;
 
 // callouts mostly inherit from panels, but have their own individual
 // character in places
-$callout-bg-color: $panel-bg-color !default;
-$callout-fg-color: $panel-fg-color !default;
-$callout-border-color: $panel-border-color !default;
+$callout-bg-color: $color-component-content-bg !default;
+$callout-fg-color: $color-component-content-fg !default;
+$callout-border-color: $color-component-border !default;
 $callout-border-width: 4px !default;
 
 // call to action
@@ -216,10 +340,9 @@ $calltoaction-bg-color: $main-bg-color !default;
 $calltoaction-border-color: $calltoaction-fg-color !default;
 
 // pageflow
-$pageflow-fg-color: $panel-fg-color !default;
-$pageflow-bg-color: $panel-bg-color !default;
-$pageflow-border-color: $panel-border-color !default;
-
+$pageflow-fg-color: $color-component-content-fg !default;
+$pageflow-bg-color: $color-component-content-bg !default;
+$pageflow-border-color: $color-component-border !default;
 
 // ===========================================================================
 //
@@ -242,5 +365,5 @@ $gradient-range: 2.5%;
 // ---------------------------------------------------------------------------
 
 $sidebar-fg-color: $main-fg-color;
-$sidebar-bg-color: $color-accent-bg;
-$sidebar-border-color: $color-accent-border;
+$sidebar-bg-color: $color-component-content-bg;
+$sidebar-border-color: $color-component-border;
