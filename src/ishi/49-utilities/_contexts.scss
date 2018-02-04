@@ -1,232 +1,25 @@
-// .attention-bg {
-//     @include context-attention-bg-color;
-// }
-
-// .attention-bg.alert {
-//     @include context-attention-alert-bg-color;
-// }
-
-// .attention-fg {
-//     @include context-attention-fg-color;
-// }
-
-// .attention-fg.alert {
-//     @include context-attention-alert-fg-color;
-// }
-
-// .attention-border {
-//     @include context-attention-border-color;
-// }
-
-// .attention-border.alert {
-//     @include context-attention-alert-border-color;
-// }
-
-// .attention {
-//     @include context-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
-// }
-
-// .attention.alert, .alert.attention {
-//     @include context-alert-colors($color-attention-fg, $color-attention-bg, $color-attention-border);
-// }
-
-// .info-bg {
-//     @include context-info-bg-color;
-// }
-
-// .info-bg.alert {
-//     @include context-info-alert-bg-color;
-// }
-
-// .info-fg {
-//     @include context-info-fg-color;
-// }
-
-// .info-fg.alert {
-//     @include context-info-alert-fg-color;
-// }
-
-// .info-border {
-//     @include context-info-border-color;
-// }
-
-// .info-border.alert {
-//     @include context-info-alert-border-color;
-// }
-
-// .info {
-//     @include context-colors($color-info-fg, $color-info-bg, $color-info-border);
-// }
-
-// .info.alert, .alert.info {
-//     @include context-alert-colors($color-info-fg, $color-info-bg, $color-info-border);
-// }
-
-
-
-// .success-bg {
-//     @include context-success-bg-color;
-// }
-
-// .success-bg.alert {
-//     @include context-success-alert-bg-color;
-// }
-
-// .success-fg {
-//     @include context-success-fg-color;
-// }
-
-// .success-fg.alert {
-//     @include context-success-alert-fg-color;
-// }
-
-// .success-border {
-//     @include context-success-border-color;
-// }
-
-// .success-border.alert {
-//     @include context-success-alert-border-color;
-// }
-
-
-// .success {
-//     @include context-colors($color-success-fg, $color-success-bg, $color-success-border);
-// }
-
-// .success.alert, .alert.success {
-//     @include context-alert-colors($color-success-fg, $color-success-bg, $color-success-border);
-// }
-
-
-
-// .warning-bg {
-//     @include context-warning-bg-color;
-// }
-
-// .warning-bg.alert {
-//     @include context-warning-alert-bg-color;
-// }
-
-// .warning-fg {
-//     @include context-warning-fg-color;
-// }
-
-// .warning-fg.alert {
-//     @include context-warning-alert-fg-color;
-// }
-
-// .warning-border {
-//     @include context-warning-border-color;
-// }
-
-// .warning-border.alert {
-//     @include context-warning-alert-border-color;
-// }
-
-
-// .warning {
-//     @include context-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
-// }
-
-// .warning.alert, .alert.warning {
-//     @include context-alert-colors($color-warning-fg, $color-warning-bg, $color-warning-border);
-// }
-
-
-// .danger-bg {
-//     @include context-danger-bg-color;
-// }
-
-// .danger-bg.alert {
-//     @include context-danger-alert-bg-color;
-// }
-
-// .danger-fg {
-//     @include context-danger-fg-color;
-// }
-
-// .danger-fg.alert {
-//     @include context-danger-alert-fg-color;
-// }
-
-// .danger-border {
-//     @include context-danger-border-color;
-// }
-
-// .danger-border.alert {
-//     @include context-danger-alert-border-color;
-// }
-
-// .danger {
-//     @include context-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
-// }
-
-// .danger.alert, .alert.danger {
-//     @include context-alert-colors($color-danger-fg, $color-danger-bg, $color-danger-border);
-// }
-
-
-// .light-bg {
-//     @include context-light-bg-color;
-// }
-
-// .light-bg.alert {
-//     @include context-light-alert-bg-color;
-// }
-
-// .light-fg {
-//     @include context-light-fg-color;
-// }
-
-// .light-fg.alert {
-//     @include context-light-alert-fg-color;
-// }
-
-// .light-border {
-//     @include context-light-border-color;
-// }
-
-// .light-border.alert {
-//     @include context-light-alert-border-color;
-// }
-
-// .light {
-//     @include context-colors($color-light-fg, $color-light-bg, $color-light-border);
-// }
-
-// .light.alert, .light.danger {
-//     @include context-alert-colors($color-light-fg, $color-light-bg, $color-light-border);
-// }
-
-
-// .dark-bg {
-//     @include context-dark-bg-color;
-// }
-
-// .dark-bg.alert {
-//     @include context-dark-alert-bg-color;
-// }
-
-// .dark-fg {
-//     @include context-dark-fg-color;
-// }
-
-// .dark-fg.alert {
-//     @include context-dark-alert-fg-color;
-// }
-
-// .dark-border {
-//     @include context-dark-border-color;
-// }
-
-// .dark-border.alert {
-//     @include context-dark-alert-border-color;
-// }
-
-// .dark {
-//     @include context-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
-// }
-
-// .dark.alert, .alert.dark {
-//     @include context-alert-colors($color-dark-fg, $color-dark-bg, $color-dark-border);
-// }
+@each $name, $map in $colors {
+    .#{$name}-bg {
+        background-color: mapped_color($map, 'content-bg');
+    }
+
+    .#{$name}-bg--alert {
+        background-color: mapped_color($map, 'headline-bg');
+    }
+
+    .#{$name}-fg {
+        color: mapped_color($map, 'content-fg');
+    }
+
+    .#{$name}-fg--alert {
+        color: mapped_color($map, 'headline-fg');
+    }
+
+    .#{$name}-border {
+        border-color: mapped_color($map, 'border');
+    }
+
+    .#{$name}-border--alert {
+        border-color: mapped_color($map, 'headline-bg');
+    }
+}

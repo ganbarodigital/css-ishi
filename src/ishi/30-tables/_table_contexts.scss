@@ -1,117 +1,27 @@
 // context classes
-table.table--attention {
-    border-color: $color-attention-border;
+@each $name, $map in $colors {
+    table.table--#{$name} {
+        border-color: mapped_color($map, 'border');
 
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-attention-border;
+        thead, thead tr, tbody, tbody tr, tfoot {
+            border-color: mapped_color($map, 'border');
+        }
+
+        tbody tr {
+            color: $main-fg-color;
+            background-color: $main-bg-color;
+        }
     }
-}
 
-thead.table--attention.table--alert, tfoot.table--attention.table--alert {
-    color: $color-attention-headline-fg;
-    background-color: $color-attention-headline-bg;
-}
-
-table.table--attention.table--alert {
-    thead, tfoot {
-        color: $color-attention-headline-fg;
-        background-color: $color-attention-headline-bg;
+    thead.table--#{$name}.table--alert, tfoot.table--#{$name}.table--alert {
+        color: mapped_color($map, 'headline-fg');
+        background-color: mapped_color($map, 'headline-bg');
     }
-}
 
-table.table--info {
-    border-color: $color-info-border;
-
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-info-border;
-    }
-}
-
-table.table--info.table--alert {
-    thead, tfoot {
-        color: $color-info-headline-fg;
-        background-color: $color-info-headline-bg;
-    }
-}
-
-table.table--success {
-    border-color: $color-success-border;
-
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-success-border;
-    }
-}
-
-table.table--success.table--alert {
-    thead, tfoot {
-        color: $color-success-headline-fg;
-        background-color: $color-success-headline-bg;
-    }
-}
-
-table.table--warning {
-    border-color: $color-warning-border;
-
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-warning-border;
-    }
-}
-
-table.table--warning.table--alert {
-    thead, tfoot {
-        color: $color-warning-headline-fg;
-        background-color: $color-warning-headline-bg;
-    }
-}
-
-table.table--danger {
-    border-color: $color-danger-border;
-
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-danger-border;
-    }
-}
-
-table.table--danger.table--alert {
-    thead, tfoot {
-        color: $color-danger-headline-fg;
-        background-color: $color-danger-headline-bg;
-    }
-}
-
-table.table--light {
-    border-color: $color-light-border;
-
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-light-border;
-    }
-}
-
-table.table--light.table--alert {
-    thead, tfoot {
-        color: $color-light-headline-fg;
-        background-color: $color-light-headline-bg;
-    }
-}
-
-table.table--dark {
-    border-color: $color-dark-border;
-
-    thead, thead tr, tbody, tbody tr, tfoot {
-        border-color: $color-dark-border;
-    }
-}
-
-table.table--dark.table--alert {
-    thead, tfoot {
-        color: $color-dark-headline-fg;
-        background-color: $color-dark-headline-bg;
-    }
-}
-
-table.table--attention, table.table--info, table.table--success, table.table--warning, table.table--danger, table.table--light, table.table--dark {
-    tbody tr {
-        color: $main-fg-color;
-        background-color: $main-bg-color;
+    table.table--#{$name}.table--alert {
+        thead, tfoot {
+            color: mapped_color($map, 'headline-fg');
+            background-color: mapped_color($map, 'headline-bg');
+        }
     }
 }

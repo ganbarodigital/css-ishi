@@ -1,5 +1,5 @@
 @mixin util-block-text-standout() {
-    border-left: 1px solid $color-component-border;
+    border-left: 1px solid get_color('component', 'border');
     padding-left: $type-p-spacing;
     margin-bottom: $type-non-p-spacing;
 }

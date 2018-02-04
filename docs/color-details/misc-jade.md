@@ -15,7 +15,7 @@ This page contains everything we know about the color `misc-jade`:
     </div>
 </div>
 
-<div class="callout attention" markdown="1">
+<div class="callout callout--info" markdown="1">
 This page is auto-generated from the definition of `misc-jade`. The code that built this page is largely contained in `build-color-detail-page.php`.
 
 To rebuild this page, run the `bin/build-colors.sh` script.
@@ -58,7 +58,7 @@ Need to learn how color can affect whether people can use your web app or not?
 * [Everything About Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/), by [Cathy O'Connor](http://www.twitter.com/cagocon)
 
 Let us know of any other articles that we should recommend, please!
-<div class="callout danger" markdown="1">
+<div class="callout callout--danger" markdown="1">
 #### This Color Has Accessibility Problems
 
 Some of your readers will find it hard to read any text you put on top of this color. Don't use `misc-jade` as a background color behind normal paragraphs or behind large headings.

@@ -89,6 +89,18 @@ This is a gradient panel that also sinks in a little bit.
 
 Add any one of the [context classes](../utilities/context-classes.html) to your `panel` `<aside>` to change the colour of the panel's border and default background. All heading elements (`h1` to `h6`) will change colour too.
 
+<aside class="panel panel--primary" markdown="1">
+#### Primary Colors!
+
+This is a panel using the `panel--primary` class.
+</aside>
+
+<aside class="panel panel--secondary" markdown="1">
+#### Secondary Colors!
+
+This is a panel using the `panel--secondary` class.
+</aside>
+
 <aside class="panel panel--attention" markdown="1">
 #### Attention!
 
@@ -119,6 +131,18 @@ This is a panel using the `panel--warning` class.
 This is a panel using the `panel--danger` class.
 </aside>
 
+<aside class="panel panel--light" markdown="1">
+#### Light Colors!
+
+This is a panel using the `panel--light` class.
+</aside>
+
+<aside class="panel panel--dark" markdown="1">
+#### Dark Colors!
+
+This is a panel using the `panel--dark` class.
+</aside>
+
 ## Panels That Alert
 
 To create a panel with distinctive header box, use an `<aside>` with the `panel panel--alert` classes. Inside, use a `<h4>`, `<h5>` or `<h6>` to create the header. Wrap your panel's content in a `<div>` with the `content` class.
@@ -134,6 +158,22 @@ This is a panel designed to emphasise the heading.
 ### Adding Extra Context
 
 Add any one of the [context classes](../utilities/context-classes.html) to your `panel panel--alert` `<aside>` to change the colour of the panel's border and heading.
+
+<aside class="panel panel--alert panel--primary" markdown="1">
+#### Primary Colors!
+
+<div class="content" markdown="1">
+This is a panel designed to emphasise the heading.
+</div>
+</aside>
+
+<aside class="panel panel--alert panel--secondary" markdown="1">
+#### Secondary Colors!
+
+<div class="content" markdown="1">
+This is a panel designed to emphasise the heading.
+</div>
+</aside>
 
 <aside class="panel panel--alert panel--attention" markdown="1">
 #### Attention!
@@ -169,6 +209,22 @@ This is a panel designed to emphasise the heading.
 
 <aside class="panel panel--alert panel--danger" markdown="1">
 #### Danger!
+
+<div class="content" markdown="1">
+This is a panel designed to emphasise the heading.
+</div>
+</aside>
+
+<aside class="panel panel--alert panel--light" markdown="1">
+#### Light Colors!
+
+<div class="content" markdown="1">
+This is a panel designed to emphasise the heading.
+</div>
+</aside>
+
+<aside class="panel panel--alert panel--dark" markdown="1">
+#### Dark Colors!
 
 <div class="content" markdown="1">
 This is a panel designed to emphasise the heading.

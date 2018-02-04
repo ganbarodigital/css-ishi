@@ -88,3 +88,55 @@
     @return contrast-color($color);
 }
 
+@function color_map($type) {
+    @if map-has-key($colors, $type) {
+        @return map-get($colors, $type);
+    }
+
+    @warn "Unknown color set `#{$type}` in global $colors.";
+    @return null;
+}
+
+@function mapped_color($map, $name, $default: null) {
+    @if map-has-key($map, $name) {
+        @return map-get($map, $name);
+    }
+
+    @if ($default) {
+        @return $default;
+    }
+
+    @warn "Unknown color set `#{$name}` in $map.";
+    @return null;
+}
+
+@function get_color($type, $name) {
+    $map: color_map($type);
+    @return mapped_color($map, $name);
+}
+// add a context color map
+@function define_colors($colors, $name, $map) {
+    $content-bg: mapped_color($map, 'content-bg');
+    $content-fg: color-fg-auto($content-bg);
+    $headline-bg: mapped_color($map, 'headline-bg');
+    $headline-fg: color-fg-auto($headline-bg);
+
+    // optional
+    $border: mapped_color($map, 'border', $headline-bg);
+    $content-bg--light: mapped_color($map, 'content-bg--light', color-border-auto($border));
+
+    $map: (
+        content-fg: $content-fg,
+        content-bg: $content-bg,
+        content-bg--light: $content-bg--light,
+        headline-fg: $headline-fg,
+        headline-bg: $headline-bg,
+        border: $border
+    );
+
+    // update our central map!
+    $return: map-set($colors, $name, $map);
+
+    @return $return;
+}
+

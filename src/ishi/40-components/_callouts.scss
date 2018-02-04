@@ -2,20 +2,21 @@
  * mixins
  */
 @mixin util-callout($color-fg, $color-bg, $color-border) {
-    @include context-panel($color-fg, $color-bg);
-    border-left: 4px solid $color-border;
-
-    h1, h2, h3, h4, h5, h5 {
-        color: $color-fg;
-        background-color: $color-bg;
-    }
 }
 
 /**
  * styles
  */
 .callout {
-    @include util-callout($callout-fg-color, $callout-bg-color, $callout-border-color);
+    color: $callout-fg-color;
+    background-color: $callout-bg-color;
+    border-left: 4px solid $callout-border-color;
+
+    h1, h2, h3, h4, h5, h5 {
+        color: $callout-fg-color;
+        background-color: $callout-bg-color;
+    }
+
     margin-bottom: $type-p-spacing;
     padding: $type-p-spacing;
 }
@@ -49,77 +50,106 @@
     @include context-gradient-reverse($callout-bg-color);
 }
 
-//// Contexts
-.callout--attention {
-    @include context-colors($color-attention-content-fg, $color-attention-content-bg, $color-attention-border);
-}
-
-.callout--attention.callout--alert {
-    @include context-alert-colors($color-attention-content-fg, $color-attention-content-bg, $color-attention-headline-fg, $color-attention-headline-bg);
-}
-
-.callout--info {
-    @include context-colors($color-info-content-fg, $color-info-content-bg, $color-info-border);
-}
-
-.callout--info.callout--alert {
-    @include context-alert-colors($color-info-content-fg, $color-info-content-bg, $color-info-headline-fg, $color-info-headline-bg);
-}
-
-.callout--success {
-    @include context-colors($color-success-content-fg, $color-success-content-bg, $color-success-border);
-}
-
-.callout--success.callout--alert {
-    @include context-alert-colors($color-success-content-fg, $color-success-content-bg, $color-success-headline-fg, $color-success-headline-bg);
-}
-
-.callout--warning {
-    @include context-colors($color-warning-content-fg, $color-warning-content-bg, $color-warning-border);
-}
-
-.callout--warning.callout--alert {
-    @include context-alert-colors($color-warning-content-fg, $color-warning-content-bg, $color-warning-headline-fg, $color-warning-headline-bg);
-}
-
-.callout--danger {
-    @include context-colors($color-danger-content-fg, $color-danger-content-bg, $color-danger-border);
-}
-
-.callout--danger.callout--alert {
-    @include context-alert-colors($color-danger-content-fg, $color-danger-content-bg, $color-danger-headline-fg, $color-danger-headline-bg);
-}
-
-.callout--light {
-    @include context-colors($color-light-content-fg, $color-light-content-bg, $color-light-border);
-}
-
-.callout--light.callout--alert {
-    @include context-alert-colors($color-light-content-fg, $color-light-content-bg, $color-light-headline-fg, $color-light-headline-bg);
-}
-
-.callout--dark {
-    @include context-colors($color-dark-content-fg, $color-dark-content-bg, $color-dark-border);
-}
-
-.callout--dark.callout--alert {
-    @include context-alert-colors($color-dark-content-fg, $color-dark-content-bg, $color-dark-headline-fg, $color-dark-headline-bg);
-}
-
 //// Callouts That Alert
 
 .callout--alert {
     padding: 0px;
-    border-color: $callout-fg-color;
 
     h1, h2, h3, h4, h5, h6 {
-        background-color: $callout-fg-color;
-        color: $callout-bg-color;
         padding: $type-pica-font-size / 2;
         margin-bottom: 0px;
     }
 
     .content {
         padding: $type-pica-font-size / 2;
+    }
+
+    @include context-alert-colors(color_map('component'));
+}
+
+//// Contexts
+// .callout.callout--alert {
+//     @include context-alert-colors($color-component-map);
+// }
+
+// .callout--primary {
+//     @include context-content-colors($color-primary-map);
+// }
+
+// .callout--primary.callout--alert {
+//     @include context-alert-colors($color-primary-map);
+// }
+
+// .callout--secondary {
+//     @include context-content-colors($color-secondary-map);
+// }
+
+// .callout--secondary.callout--alert {
+//     @include context-alert-colors($color-secondary-map);
+// }
+
+// .callout--attention {
+//     @include context-content-colors($color-attention-map);
+// }
+
+// .callout--attention.callout--alert {
+//     @include context-alert-colors($color-attention-map);
+// }
+
+// .callout--info {
+//     @include context-content-colors($color-info-map);
+// }
+
+// .callout--info.callout--alert {
+//     @include context-alert-colors($color-info-map);
+// }
+
+// .callout--success {
+//     @include context-content-colors($color-success-map);
+// }
+
+// .callout--success.callout--alert {
+//     @include context-alert-colors($color-success-map);
+// }
+
+// .callout--warning {
+//     @include context-content-colors($color-warning-map);
+// }
+
+// .callout--warning.callout--alert {
+//     @include context-alert-colors($color-warning-map);
+// }
+
+// .callout--danger {
+//     @include context-content-colors($color-danger-map);
+// }
+
+// .callout--danger.callout--alert {
+//     @include context-alert-colors($color-danger-map);
+// }
+
+// .callout--light {
+//     @include context-content-colors($color-light-map);
+// }
+
+// .callout--light.callout--alert {
+//     @include context-alert-colors($color-light-map);
+// }
+
+// .callout--dark {
+//     @include context-content-colors($color-dark-map);
+// }
+
+// .callout--dark.callout--alert {
+//     @include context-alert-colors($color-dark-map);
+// }
+
+@each $name, $map in $colors {
+    .callout--#{$name} {
+        @include context-content-colors($map);
+    }
+
+    .callout--alert.callout--#{$name} {
+        @include context-alert-colors($map);
     }
 }

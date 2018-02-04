@@ -74,58 +74,89 @@
 }
 
 //// Contexts
-.panel--attention {
-    @include util-panel($color-attention-headline-fg, $color-attention-headline-bg, $color-attention-border);
-}
+// //// Contexts
+// .panel.panel--alert {
+//     @include context-alert-colors($color-component-map);
+// }
 
-.panel--attention.panel--alert {
-    @include util-panel-alert($color-attention-headline-fg, $color-attention-headline-bg, $color-attention-border);
-}
+// .panel--primary {
+//     @include context-content-colors($color-primary-map);
+// }
 
-.panel--info {
-    @include util-panel($color-info-content-fg, $color-info-content-bg, $color-info-border);
-}
+// .panel--primary.panel--alert {
+//     @include context-alert-colors($color-primary-map);
+// }
 
-.panel--info.panel--alert {
-    @include util-panel-alert($color-info-headline-fg, $color-info-headline-bg, $color-info-border);
-}
+// .panel--secondary {
+//     @include context-content-colors($color-secondary-map);
+// }
 
-.panel--success {
-    @include util-panel($color-success-content-fg, $color-success-content-bg, $color-success-border);
-}
+// .panel--secondary.panel--alert {
+//     @include context-alert-colors($color-secondary-map);
+// }
 
-.panel--success.panel--alert {
-    @include util-panel-alert($color-success-headline-fg, $color-success-headline-bg, $color-success-border);
-}
+// .panel--attention {
+//     @include context-content-colors($color-attention-map);
+// }
 
-.panel--warning {
-    @include util-panel($color-warning-content-fg, $color-warning-content-bg, $color-warning-border);
-}
+// .panel--attention.panel--alert {
+//     @include context-alert-colors($color-attention-map);
+// }
 
-.panel--warning.panel--alert {
-    @include util-panel-alert($color-warning-headline-fg, $color-warning-headline-bg, $color-warning-border);
-}
+// .panel--info {
+//     @include context-content-colors($color-info-map);
+// }
 
-.panel--danger {
-    @include util-panel($color-danger-content-fg, $color-danger-content-bg, $color-danger-border);
-}
+// .panel--info.panel--alert {
+//     @include context-alert-colors($color-info-map);
+// }
 
-.panel--danger.panel--alert {
-    @include util-panel-alert($color-danger-headline-fg, $color-danger-headline-bg, $color-danger-border);
-}
+// .panel--success {
+//     @include context-content-colors($color-success-map);
+// }
 
-.panel--light {
-    @include util-panel($color-light-content-fg, $color-light-content-bg, $color-light-border);
-}
+// .panel--success.panel--alert {
+//     @include context-alert-colors($color-success-map);
+// }
 
-.panel--light.panel--alert {
-    @include util-panel-alert($color-light-headline-fg, $color-light-headline-bg, $color-light-border);
-}
+// .panel--warning {
+//     @include context-content-colors($color-warning-map);
+// }
 
-.panel--dark {
-    @include util-panel($color-dark-content-fg, $color-dark-content-bg, $color-dark-border);
-}
+// .panel--warning.panel--alert {
+//     @include context-alert-colors($color-warning-map);
+// }
 
-.panel--dark.panel--alert {
-    @include util-panel-alert($color-dark-headline-fg, $color-dark-headline-bg, $color-dark-border);
+// .panel--danger {
+//     @include context-content-colors($color-danger-map);
+// }
+
+// .panel--danger.panel--alert {
+//     @include context-alert-colors($color-danger-map);
+// }
+
+// .panel--light {
+//     @include context-content-colors($color-light-map);
+// }
+
+// .panel--light.panel--alert {
+//     @include context-alert-colors($color-light-map);
+// }
+
+// .panel--dark {
+//     @include context-content-colors($color-dark-map);
+// }
+
+// .panel--dark.panel--alert {
+//     @include context-alert-colors($color-dark-map);
+// }
+
+@each $name, $map in $colors {
+    .panel--#{$name} {
+        @include context-content-colors($map);
+    }
+
+    .panel--alert.panel--#{$name} {
+        @include context-alert-colors($map);
+    }
 }

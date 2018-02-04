@@ -23,36 +23,34 @@ a.calltoaction:visited {
     text-decoration: none;
 }
 
-@mixin calltoaction-context($fg-color, $bg-color, $border-color) {
-    border: 2px solid $border-color;
+@mixin calltoaction-context($map) {
+    // shorthand
+    $headline-bg: mapped_color($map, 'headline-bg');
+    $headline-fg: mapped_color($map, 'headline-fg');
+
+    border: 2px solid $headline-bg;
 
     &:link, &:focus, &:visited {
-        color: $fg-color;
-        background-color: $bg-color;
+        color: $headline-bg;
+        background-color: transparent;
     }
 
     &:visited {
-        border: 2px solid $border-color;
+        border: 2px solid $headline-bg;
     }
 
     &:hover {
-        color: $bg-color;
-        background-color: $fg-color;
+        color: $headline-fg;
+        background-color: $headline-bg;
     }
 }
 
 a.calltoaction {
-    @include calltoaction-context($calltoaction-fg-color, $calltoaction-bg-color, $calltoaction-border-color);
+    @include calltoaction-context(color_map('primary'));
 }
 
-a.calltoaction.calltoaction--attention {
-    @include calltoaction-context($color-attention-headline-bg, $color-attention-headline-fg, $color-attention-border);
-}
-
-a.calltoaction.calltoaction--primary {
-    @include calltoaction-context($color-primary-headline-bg, $color-primary-headline-fg, $color-primary-border);
-}
-
-a.calltoaction.calltoaction--secondary {
-    @include calltoaction-context($color-secondary-headline-bg, $color-secondary-headline-fg, $color-secondary-border);
+@each $name, $map in $colors {
+    a.calltoaction.calltoaction--#{$name} {
+        @include calltoaction-context($map);
+    }
 }

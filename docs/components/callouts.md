@@ -242,6 +242,50 @@ Add any one of the [context classes](../utilities/context-classes.html) to your 
 
 <div class="code-example">
     <header>
+        <h4>Example: A Primary Callout</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+<div class="callout callout--primary">
+    <h4>Primary Colors!</h4>
+    <p>This is a callout using the <code>callout--primary</code> class. You might find this more pleasing than the gray of the default <code>callout</code>.</p>
+</div>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<div class="callout callout--primary">
+    <h4>Primary Colors!</h4>
+    <p>This is a callout using the <code>callout--primary</code> class. You might find this more pleasing than the gray of the default <code>callout</code>.</p>
+</div>
+```
+        </div>
+    </div>
+</div>
+
+<div class="code-example">
+    <header>
+        <h4>Example: A Secondary Callout</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+<div class="callout callout--secondary">
+    <h4>Secondary Colors!</h4>
+    <p>This is a callout using the <code>callout--secondary</code> class. You might find this more pleasing than the gray of the default <code>callout</code>.</p>
+</div>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<div class="callout callout--secondary">
+    <h4>Secondary Colors!</h4>
+    <p>This is a callout using the <code>callout-secondary</code> class. You might find this more pleasing than the gray of the default <code>callout</code>.</p>
+</div>
+```
+        </div>
+    </div>
+</div>
+
+<div class="code-example">
+    <header>
         <h4>Example: An Attention Callout</h4>
     </header>
     <div class="example-content">
@@ -427,6 +471,58 @@ To create a callout with distinctive header box, use an `<div>` with the `callou
 ### Adding Extra Context
 
 Add any one of the [context classes](../utilities/context-classes.html) to your `callout callout--alert` `<div>` to change the colour of the callout's border and heading.
+
+<div class="code-example">
+    <header>
+        <h4>Example: A 'primary' Alert Callout</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+<div class="callout callout--alert callout--primary">
+    <h4>Primary Colors!</h4>
+    <div class="content">
+        <p>This is a callout designed to emphasise the heading.</p>
+    </div>
+</div>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<div class="callout callout--primary callout--alert">
+    <h4>Primary Colors!</h4>
+    <div class="content">
+        <p>This is a callout designed to emphasise the heading.</p>
+    </div>
+</div>
+```
+        </div>
+    </div>
+</div>
+
+<div class="code-example">
+    <header>
+        <h4>Example: A 'secondary' Alert Callout</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+<div class="callout callout--alert callout--secondary">
+    <h4>Secondary Colors!</h4>
+    <div class="content">
+        <p>This is a callout designed to emphasise the heading.</p>
+    </div>
+</div>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<div class="callout callout--secondary callout--alert">
+    <h4>Secondary Colors!</h4>
+    <div class="content">
+        <p>This is a callout designed to emphasise the heading.</p>
+    </div>
+</div>
+```
+        </div>
+    </div>
+</div>
 
 <div class="code-example">
     <header>

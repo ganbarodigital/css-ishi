@@ -15,7 +15,7 @@ This page contains everything we know about the color `material-teal-200`:
     </div>
 </div>
 
-<div class="callout attention" markdown="1">
+<div class="callout callout--info" markdown="1">
 This page is auto-generated from the definition of `material-teal-200`. The code that built this page is largely contained in `build-color-detail-page.php`.
 
 To rebuild this page, run the `bin/build-colors.sh` script.
@@ -58,7 +58,7 @@ Need to learn how color can affect whether people can use your web app or not?
 * [Everything About Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/), by [Cathy O'Connor](http://www.twitter.com/cagocon)
 
 Let us know of any other articles that we should recommend, please!
-<div class="callout warning" markdown="1">
+<div class="callout callout--warning" markdown="1">
 #### This Color Is Usable, Just Not Great
 
 You can use `material-teal-200` as a background color behind normal paragraphs, and as a background color for large headings. It meets the WCAG 2.0 AA standard. But other colors will be even better!

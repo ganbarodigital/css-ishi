@@ -41,6 +41,6 @@ table + p, table + ol, table + ul, table + div {
 }
 
 table.table--striped tbody tr:nth-child(odd) td {
-    background-color: $color-component-content-bg--light;
+    background-color: get_color('component', 'content-bg--light');
 }
 

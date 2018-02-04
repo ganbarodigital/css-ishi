@@ -54,7 +54,7 @@ This page contains everything we know about the color `{$varName}`:
     </div>
 </div>
 
-<div class="callout attention" markdown="1">
+<div class="callout callout--info" markdown="1">
 This page is auto-generated from the definition of `{$varName}`. The code that built this page is largely contained in `build-color-detail-page.php`.
 
 To rebuild this page, run the `bin/build-colors.sh` script.
@@ -101,7 +101,7 @@ Let us know of any other articles that we should recommend, please!
 EOS;
     if ($goodBgContentChoice === 'no' && $goodBgHeadingChoice === 'no') {
         $content .= <<<EOS
-<div class="callout danger" markdown="1">
+<div class="callout callout--danger" markdown="1">
 #### This Color Has Accessibility Problems
 
 Some of your readers will find it hard to read any text you put on top of this color. Don't use `{$varName}` as a background color behind normal paragraphs or behind large headings.
@@ -112,7 +112,7 @@ EOS;
     }
     else if ($goodBgHeadingChoice === 'yes' && $AA_normal !== 'yes') {
         $content .= <<<EOS
-<div class="callout warning" markdown="1">
+<div class="callout callout--warning" markdown="1">
 #### This Color Is Usable, Just Not Great
 
 You can use `{$varName}` as a background color for large headings. It meets the WCAG 2.0 AA standard. Just don't use it as a background color behind normal paragraphs.
@@ -121,7 +121,7 @@ EOS;
     }
     else if ($goodBgHeadingChoice === 'yes' && $AA_normal === 'yes') {
         $content .= <<<EOS
-<div class="callout warning" markdown="1">
+<div class="callout callout--warning" markdown="1">
 #### This Color Is Usable, Just Not Great
 
 You can use `{$varName}` as a background color behind normal paragraphs, and as a background color for large headings. It meets the WCAG 2.0 AA standard. But other colors will be even better!
@@ -130,7 +130,7 @@ EOS;
     }
     else {
         $content .= <<<EOS
-<div class="callout success" markdown="1">
+<div class="callout callout--success" markdown="1">
 #### This Color Is Accessible
 
 It's safe to use `{$varName}` as a background color behind normal paragraphs, and as a background color for large headings. It meets the WCAG 2.0 AAA standard!

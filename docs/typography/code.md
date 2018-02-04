@@ -211,7 +211,7 @@ class ExampleClass
 
 Prism can inject a UNIX-like `user@hostname` command-line prompt.
 
-<div class="callout warning" markdown="1">
+<div class="callout callout--warning" markdown="1">
 #### Larger Screens Only
 
 We only show the command-line prompt on [group D displays](../concepts/device-groups.html). Anything smaller just doesn't have the horizontal space to show it.
