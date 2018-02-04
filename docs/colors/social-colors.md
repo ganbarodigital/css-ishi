@@ -9,7 +9,7 @@ We're using the color definitions from [MaterialUI](https://www.materialui.co).
 
 ## Pre-Defined Colors
 
-<div class="callout info" markdown="1">
+<div class="callout callout--info" markdown="1">
 #### Not Sure How To Use These Colors?
 
 Click on any color. This will load up a page full of details, including:

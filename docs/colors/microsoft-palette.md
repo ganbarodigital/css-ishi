@@ -17,7 +17,7 @@ The [Microsoft Design Language website](https://www.microsoft.com/en-us/design/)
 
 We're using the color definitions from [MaterialUI](https://www.materialui.co).
 
-<div class="callout info" markdown="1">
+<div class="callout callout--info" markdown="1">
 #### Not Sure How To Use These Colors?
 
 Click on any color. This will load up a page full of details, including:
@@ -79,7 +79,7 @@ The current Microsoft Design Language colors take advantage of improvements in s
 
 Alas, Microsoft has not given any offical names to these colors that we could find. We've come up with our own names, using the closest match to our collection of [miscellaneous colors](misc-palette.html).
 
-<div class="callout attention" markdown="1">
+<div class="callout callout--attention" markdown="1">
 Remember, these are not official Microsoft names for these colors!
 </div>
 

@@ -1,35 +1,15 @@
 @each $name, $map in $colors {
-    .#{$name}-bg {
-        background-color: mapped_color($map, 'content-bg');
-    }
-
-    .#{$name}-fg {
-        color: mapped_color($map, 'content-fg');
-    }
-
-    .#{$name} {
-        @extend .#{$name}-bg;
-        @extend .#{$name}-fg;
-    }
-
-    .#{$name}-bg--alert {
+    .block--#{$name}-bg {
         background-color: mapped_color($map, 'headline-bg');
     }
 
-    .#{$name}-fg--alert {
+    .block--#{$name}-fg {
         color: mapped_color($map, 'headline-fg');
     }
 
-    .#{$name}--alert {
-        @extend .#{$name}-bg--alert;
-        @extend .#{$name}-fg--alert;
-    }
-
-    .#{$name} .border {
+    .block--#{$name} {
+        @extend .block--#{$name}-bg;
+        @extend .block--#{$name}-fg;
         border-color: mapped_color($map, 'border');
-    }
-
-    .#{$name}--alert .border {
-        border-color: mapped_color($map, 'headline-bg');
     }
 }

@@ -16,7 +16,7 @@ Not sure which colors go well together? Search online for [Material Design color
 
 ## The Colors
 
-<div class="callout info" markdown="1">
+<div class="callout callout--info" markdown="1">
 #### Not Sure How To Use These Colors?
 
 Click on any color. This will load up a page full of details, including:

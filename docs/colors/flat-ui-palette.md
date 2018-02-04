@@ -13,7 +13,7 @@ These are the colors from [the Flat UI theme by DesignModo](http://designmodo.gi
 
 The Flat UI palette is very similar to the original 16-color VGA palette in style. It provides complementary light and dark shades for each color.
 
-<div class="callout info" markdown="1">
+<div class="callout callout--info" markdown="1">
 #### Not Sure How To Use These Colors?
 
 Click on any color. This will load up a page full of details, including:

@@ -11,7 +11,7 @@ These colors work well across most devices, especially devices with poor color r
 
 These are the colors of the pencils found in Apple MacOS' built-in color picker. There are three color ranges, grouped by their luminosity, plus a grayscale palette.
 
-<div class="callout info" markdown="1">
+<div class="callout callout--info" markdown="1">
 #### Not Sure How To Use These Colors?
 
 Click on any color. This will load up a page full of details, including:

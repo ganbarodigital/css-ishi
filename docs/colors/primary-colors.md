@@ -7,6 +7,17 @@ Ishi uses color as part of presenting different typography and components. These
 
 ## The Colors
 
+<div class="callout callout--info" markdown="1">
+#### Not Sure How To Use These Colors?
+
+Click on any color. This will load up a page full of details, including:
+
+- SCSS variable(s),
+- SCSS mixin(s),
+- accessibility details
+- automated analysis of the color's properties
+</div>
+
 <div class="grid">
     <div class="cell">
         <div class="swatch">

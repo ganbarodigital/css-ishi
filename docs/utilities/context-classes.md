@@ -6,18 +6,20 @@ You can use the class to change all of the content, or selectively apply just th
 
 CSS Class | Background Only | Foreground Only
 ----------|------------------|-----------------
-`attention` | `attention-bg` | `attention-fg`
-`info` | `info-bg` | `info-fg`
-`success` | `success-bg` | `success-fg`
-`warning` | `warning-bg` | `warning-fg`
-`danger` | `danger-bg` | `danger-fg`
+`block--attention` | `block--attention-bg` | `block--attention-fg`
+`block--info` | `block--info-bg` | `block--info-fg`
+`block--success` | `block--success-bg` | `block--success-fg`
+`block--warning` | `block--warning-bg` | `block--warning-fg`
+`block--danger` | `block--danger-bg` | `block--danger-fg`
 
 Ishi also provides several non-semantic context classes. Use them to provide your own visual styling on your content.
 
 CSS Class | Background Only | Foreground Only
 ----------|------------------|-----------------
-`light` | `light-bg` | `light-fg`
-`dark` | `dark-bg` | `dark-fg`
+`block--primary` | `block--primary-bg` | `block--primary-fg`
+`block--secondary` | `block--secondary-bg` | `block--secondary-fg`
+`block--light` | `block--light-bg` | `block--light-fg`
+`block--dark` | `block--dark-bg` | `block--dark-fg`
 
 ### Full Context Class
 
@@ -29,61 +31,69 @@ Each of the context classes sets:
 
 to any HTML element that you apply it to.
 
-<div class="attention block border">
+<div class="block block--primary border">
+    <p>Full primary class</p>
+</div>
+
+<div class="block block--secondary border">
+    <p>Full secondary class</p>
+</div>
+
+<div class="block block--attention border">
     <p>Full attention class</p>
 </div>
 
-<div class="info block border">
+<div class="block block--info border">
     <p>Full info class</p>
 </div>
 
-<div class="success block border">
+<div class="block block--success border">
     <p>Full success class</p>
 </div>
 
-<div class="warning block border">
+<div class="block block--warning border">
     <p>Full warning class</p>
 </div>
 
-<div class="danger block border">
+<div class="block block--danger border">
     <p>Full danger class</p>
 </div>
 
-<div class="light block border">
+<div class="block block--light border">
     <p>Full light class</p>
 </div>
 
-<div class="dark block border">
+<div class="block block--dark border">
     <p>Full dark class</p>
 </div>
 
 ### Context Backgrounds
 
-<div class="attention-bg block">
+<div class="block--attention-bg block">
     <p>Attention background</p>
 </div>
 
-<div class="info-bg block">
+<div class="block--info-bg block">
     <p>Info background</p>
 </div>
 
-<div class="success-bg block">
+<div class="block--success-bg block">
     <p>Success background</p>
 </div>
 
-<div class="warning-bg block">
+<div class="block--warning-bg block">
     <p>Warning background</p>
 </div>
 
-<div class="danger-bg block">
+<div class="block--danger-bg block">
     <p>Danger background</p>
 </div>
 
-<div class="light-bg block">
+<div class="block--light-bg block">
     <p>Light background</p>
 </div>
 
-<div class="dark-bg block">
+<div class="block--dark-bg block">
     <p>Dark background</p>
 </div>
 

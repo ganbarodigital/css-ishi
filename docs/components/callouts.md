@@ -242,6 +242,28 @@ Add any one of the [context classes](../utilities/context-classes.html) to your 
 
 <div class="code-example">
     <header>
+        <h4>Example: A Default Callout</h4>
+    </header>
+    <div class="example-content">
+        <div class="example-output">
+<div class="callout">
+    <h4>Default Colors!</h4>
+    <p>This is a callout that isn't using any extra classes. You might find one of the examples below much more pleasing.</p>
+</div>
+        </div>
+        <div class="example-source hidden" data-type="HTML" markdown="1">
+```html
+<div class="callout">
+    <h4>Default Colors!</h4>
+    <p>This is a callout that isn't using any extra classes. You might find one of the examples below much more pleasing.</p>
+</div>
+```
+        </div>
+    </div>
+</div>
+
+<div class="code-example">
+    <header>
         <h4>Example: A Primary Callout</h4>
     </header>
     <div class="example-content">

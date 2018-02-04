@@ -11,7 +11,7 @@ Finally, Ishi includes a miscellaneous collection of colors. They're taken from:
 
 We'll add more colors to this list as and when we come across them :)
 
-<div class="callout warning" markdown="1">
+<div class="callout callout--warning" markdown="1">
 #### Here Be Dragons!
 
 They're not designed to provide a consistent or complementary color palette on their own.
@@ -37,7 +37,7 @@ Here are all the colors, sorted by their name (not by their prefix). For example
 
 We feel it's more natural than using the whole SCSS variable name to sort the colors. Don't forget you can always use <kbd>CTRL</kbd>+<kbd>F</kbd> (or <kbd>CMD</kbd>+<kbd>F</kbd> on MacOS) to search this page for the color you're looking for too.
 
-<div class="callout info" markdown="1">
+<div class="callout callout--info" markdown="1">
 #### Not Sure How To Use These Colors?
 
 Click on any color. This will load up a page full of details, including:
