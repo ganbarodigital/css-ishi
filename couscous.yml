@@ -181,6 +181,9 @@ navigation:
             anchors:
                 text: Anchors for Headings
                 relativeUrl: components/anchors-for-headings.html
+            badges:
+                text: Badges
+                relativeUrl: components/badges.html
             callstoaction:
                 text: Calls to Action
                 relativeUrl: components/callstoaction.html

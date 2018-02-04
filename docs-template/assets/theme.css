@@ -1456,17 +1456,17 @@ table.table--striped tbody tr:nth-child(odd) td {
   background-color: #eee; }
 
 table.table--attention {
-  border-color: #234f83; }
+  border-color: #fff; }
   table.table--attention thead, table.table--attention thead tr, table.table--attention tbody, table.table--attention tbody tr, table.table--attention tfoot {
-    border-color: #234f83; }
+    border-color: #fff; }
 
 thead.table--attention.table--alert, tfoot.table--attention.table--alert {
-  color: #fff;
-  background-color: #234f83; }
+  color: #234f83;
+  background-color: #fff; }
 
 table.table--attention.table--alert thead, table.table--attention.table--alert tfoot {
-  color: #fff;
-  background-color: #234f83; }
+  color: #234f83;
+  background-color: #fff; }
 
 table.table--info {
   border-color: #34789a; }
@@ -1638,6 +1638,44 @@ table.table--attention tbody tr, table.table--info tbody tr, table.table--succes
   .grid[class*="1row"] {
     flex-wrap: nowrap; } }
 
+.badge {
+  border-radius: 1em;
+  padding: 0.1rem 0.2rem;
+  font-size: 0.85rem;
+  line-height: 1.2em;
+  vertical-align: top;
+  display: inline-block;
+  color: #fff;
+  background-color: #234f83; }
+
+.badge.badge--attention {
+  color: #fff;
+  background-color: #234f83; }
+
+.badge.badge--info {
+  color: #34789a;
+  background-color: #f4f8fa; }
+
+.badge.badge--success {
+  color: #3c763d;
+  background-color: #dff0d8; }
+
+.badge.badge--warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3; }
+
+.badge.badge--danger {
+  color: #c7254e;
+  background-color: #f2dede; }
+
+.badge.badge--light {
+  color: #404040;
+  background-color: #ebe7e2; }
+
+.badge.badge--dark {
+  color: #fff;
+  background-color: #242628; }
+
 a.calltoaction {
   padding: 0.5rem;
   font-weight: bolder;
@@ -1672,15 +1710,15 @@ a.calltoaction {
     background-color: #404040; }
 
 a.calltoaction.calltoaction--attention {
-  border: 2px solid #234f83; }
+  border: 2px solid #fff; }
   a.calltoaction.calltoaction--attention:link, a.calltoaction.calltoaction--attention:focus, a.calltoaction.calltoaction--attention:visited {
-    color: #234f83;
-    background-color: #fff; }
-  a.calltoaction.calltoaction--attention:visited {
-    border: 2px solid #234f83; }
-  a.calltoaction.calltoaction--attention:hover {
     color: #fff;
     background-color: #234f83; }
+  a.calltoaction.calltoaction--attention:visited {
+    border: 2px solid #fff; }
+  a.calltoaction.calltoaction--attention:hover {
+    color: #234f83;
+    background-color: #fff; }
 
 a.calltoaction.calltoaction--info {
   border: 2px solid #34789a; }
@@ -1765,22 +1803,22 @@ a.calltoaction.calltoaction--danger {
   background-image: linear-gradient(to bottom, #e6e1da 0%, #f0edea 100%); }
 
 .callout--attention {
-  color: #234f83;
-  background-color: #fff;
-  border-color: #234f83; }
+  color: #fff;
+  background-color: #234f83;
+  border-color: #fff; }
   .callout--attention h1, .callout--attention h2, .callout--attention h3, .callout--attention h4, .callout--attention h5, .callout--attention h6 {
-    color: #234f83;
-    background-color: #fff; }
-  .callout--attention table.table--striped tr:nth-child(odd) td {
-    background-color: #234f83; }
-  .callout--attention tbody tr {
-    border-color: #234f83; }
-
-.callout--attention.callout--alert {
-  border-color: #234f83; }
-  .callout--attention.callout--alert h1, .callout--attention.callout--alert h2, .callout--attention.callout--alert h3, .callout--attention.callout--alert h4, .callout--attention.callout--alert h5, .callout--attention.callout--alert h6 {
     color: #fff;
     background-color: #234f83; }
+  .callout--attention table.table--striped tr:nth-child(odd) td {
+    background-color: #fff; }
+  .callout--attention tbody tr {
+    border-color: #fff; }
+
+.callout--attention.callout--alert {
+  border-color: #fff; }
+  .callout--attention.callout--alert h1, .callout--attention.callout--alert h2, .callout--attention.callout--alert h3, .callout--attention.callout--alert h4, .callout--attention.callout--alert h5, .callout--attention.callout--alert h6 {
+    color: #234f83;
+    background-color: #fff; }
 
 .callout--info {
   color: #34789a;
@@ -1953,18 +1991,18 @@ a.calltoaction.calltoaction--danger {
     padding: 0.5rem; }
 
 .panel--attention {
-  background-color: #fff;
-  color: #234f83;
-  border: 1px solid #234f83; }
+  background-color: #234f83;
+  color: #fff;
+  border: 1px solid #fff; }
   .panel--attention h1, .panel--attention h2, .panel--attention h3, .panel--attention h4, .panel--attention h5, .panel--attention h5 {
-    color: #234f83;
-    background-color: #fff; }
+    color: #fff;
+    background-color: #234f83; }
 
 .panel--attention.panel--alert {
   padding: 0px; }
   .panel--attention.panel--alert h1, .panel--attention.panel--alert h2, .panel--attention.panel--alert h3, .panel--attention.panel--alert h4, .panel--attention.panel--alert h5, .panel--attention.panel--alert h6 {
-    background-color: #234f83;
-    color: #fff;
+    background-color: #fff;
+    color: #234f83;
     padding: 0.5rem;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2345,40 +2383,40 @@ nav.pageflow {
   margin-bottom: 1rem; }
 
 .attention-bg {
-  background-color: #fff; }
-
-.attention-bg.alert {
   background-color: #234f83; }
 
-.attention-fg {
-  color: #234f83; }
+.attention-bg.alert {
+  background-color: #fff; }
 
-.attention-fg.alert {
+.attention-fg {
   color: #fff; }
 
-.attention-border {
-  border-color: #234f83; }
+.attention-fg.alert {
+  color: #234f83; }
 
-.attention-border.alert {
+.attention-border {
   border-color: #fff; }
 
-.attention {
-  color: #234f83;
-  background-color: #fff;
+.attention-border.alert {
   border-color: #234f83; }
-  .attention h1, .attention h2, .attention h3, .attention h4, .attention h5, .attention h6 {
-    color: #234f83;
-    background-color: #fff; }
-  .attention table.table--striped tr:nth-child(odd) td {
-    background-color: #234f83; }
-  .attention tbody tr {
-    border-color: #234f83; }
 
-.attention.alert, .alert.attention {
-  border-color: #234f83; }
-  .attention.alert h1, .attention.alert h2, .attention.alert h3, .attention.alert h4, .attention.alert h5, .attention.alert h6, .alert.attention h1, .alert.attention h2, .alert.attention h3, .alert.attention h4, .alert.attention h5, .alert.attention h6 {
+.attention {
+  color: #fff;
+  background-color: #234f83;
+  border-color: #fff; }
+  .attention h1, .attention h2, .attention h3, .attention h4, .attention h5, .attention h6 {
     color: #fff;
     background-color: #234f83; }
+  .attention table.table--striped tr:nth-child(odd) td {
+    background-color: #fff; }
+  .attention tbody tr {
+    border-color: #fff; }
+
+.attention.alert, .alert.attention {
+  border-color: #fff; }
+  .attention.alert h1, .attention.alert h2, .attention.alert h3, .attention.alert h4, .attention.alert h5, .attention.alert h6, .alert.attention h1, .alert.attention h2, .alert.attention h3, .alert.attention h4, .alert.attention h5, .alert.attention h6 {
+    color: #234f83;
+    background-color: #fff; }
 
 .info-bg {
   background-color: #f4f8fa; }

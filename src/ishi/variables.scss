@@ -19,12 +19,14 @@ $font-serif: serif !default;
 $font-system: system-ui !default;
 $font-monospace: Menlo, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !default;
 
-// states
-$color-primary-fg: $ganbaro-blue-500 !default;
-$color-primary-bg: $web-white !default;
+// brand
+$color-primary-fg: $ganbaro-mono-0 !default;
+$color-primary-bg: $ganbaro-blue-500 !default;
 
-//$color-secondary:
+$color-secondary-fg: $ganbaro-green-500 !default;
+$color-secondary-bg: $ganbaro-mono-0 !default;
 
+// context colors
 $color-attention-fg: $color-primary-fg !default;
 $color-attention-bg: $color-primary-bg !default;
 $color-attention-border: $color-attention-fg !default;
@@ -45,6 +47,7 @@ $color-danger-fg: $ishi-red !default;
 $color-danger-bg: $ishi-lightred !default;
 $color-danger-border: $color-danger-fg !default;
 
+// visual colors
 $color-light-fg: $ganbaro-mono-600 !default;
 $color-light-bg: $ganbaro-tan-50 !default;
 $color-light-border: $ganbaro-mono-200 !default;

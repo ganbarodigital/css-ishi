@@ -1,0 +1,44 @@
+@mixin badge-context($color-fg, $color-bg) {
+    color: $color-fg;
+    background-color: $color-bg;
+}
+
+.badge {
+    border-radius: 1em;
+    @include util-pad-inline();
+    @include type-pica-mono-inline();
+    line-height: 1.2em;
+
+    vertical-align: top;
+    display: inline-block;
+
+    @include badge-context($color-primary-fg, $color-primary-bg);
+}
+
+.badge.badge--attention {
+    @include badge-context($color-attention-fg, $color-attention-bg);
+}
+
+.badge.badge--info {
+    @include badge-context($color-info-fg, $color-info-bg);
+}
+
+.badge.badge--success {
+    @include badge-context($color-success-fg, $color-success-bg);
+}
+
+.badge.badge--warning {
+    @include badge-context($color-warning-fg, $color-warning-bg);
+}
+
+.badge.badge--danger {
+    @include badge-context($color-danger-fg, $color-danger-bg);
+}
+
+.badge.badge--light {
+    @include badge-context($color-light-fg, $color-light-bg);
+}
+
+.badge.badge--dark {
+    @include badge-context($color-dark-fg, $color-dark-bg);
+}
