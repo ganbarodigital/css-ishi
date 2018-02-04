@@ -136,7 +136,7 @@ $main-ins-bg-color: transparent !default;
 $main-del-fg-color: lighten($main-fg-color, 10%) !default;
 $main-del-bg-color: transparent !default;
 
-$sidebar-fg-color: $ganbaro-mono-600 !default;
+$sidebar-fg-color: $ganbaro-mono-700 !default;
 $sidebar-bg-color: transparent !default;
 $sidebar-ins-fg-color: $sidebar-fg-color !default;
 $sidebar-ins-bg-color: transparent !default;
@@ -196,20 +196,26 @@ $main-a-link-bg-color: $a-link-bg-color !default;
 $main-a-link-border-color: $a-link-border-color !default;
 $main-a-visited-fg-color: $a-visited-fg-color !default;
 $main-a-visited-bg-color: $a-visited-bg-color !default;
+$main-a-visited-border-color: $a-link-border-color !default;
 $main-a-hover-fg-color: $a-hover-fg-color !default;
 $main-a-hover-bg-color: $a-hover-bg-color !default;
+$main-a-hover-border-color: $main-fg-color !default;
 $main-a-active-fg-color: $a-hover-fg-color !default;
 $main-a-active-bg-color: $a-hover-bg-color !default;
+$main-a-active-border-color: $main-fg-color !default;
 
 $sidebar-a-link-fg-color: $a-link-fg-color !default;
 $sidebar-a-link-bg-color: $a-link-bg-color !default;
 $sidebar-a-link-border-color: $a-link-border-color !default;
 $sidebar-a-visited-fg-color: $a-visited-fg-color !default;
 $sidebar-a-visited-bg-color: $a-visited-bg-color !default;
+$sidebar-a-visited-border-color: $sidebar-a-link-border-color !default;
 $sidebar-a-hover-fg-color: $a-hover-fg-color !default;
 $sidebar-a-hover-bg-color: $a-hover-bg-color !default;
+$sidebar-a-hover-border-color: $sidebar-fg-color !default;
 $sidebar-a-active-fg-color: $a-hover-fg-color !default;
 $sidebar-a-active-bg-color: $a-hover-bg-color !default;
+$sidebar-a-active-border-color: $sidebar-fg-color !default;
 
 $footer-a-link-fg-color: #eee !default;
 $footer-a-link-bg-color: transparent !default;

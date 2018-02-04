@@ -37,13 +37,13 @@
     a:hover {
         color: $sidebar-a-hover-fg-color;
         background-color: $sidebar-a-hover-bg-color;
-        border-bottom: 1px solid $sidebar-type-p-fg-color;
+        border-bottom: 1px solid $sidebar-a-hover-border-color;
     }
 
     a:active, a:focus {
         color: $sidebar-a-active-fg-color;
         background-color: $sidebar-a-active-bg-color;
-        border-bottom: 1px solid $sidebar-type-p-fg-color;
+        border-bottom: 1px solid $sidebar-a-active-border-color;
     }
 
     @media #{$media-group-d} {

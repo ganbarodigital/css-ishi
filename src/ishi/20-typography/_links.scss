@@ -15,17 +15,17 @@ a:visited {
 a:hover {
     color: $main-a-hover-fg-color;
     background-color: $main-a-hover-bg-color;
-    border-bottom: 1px solid $main-type-p-fg-color;
+    border-bottom: 1px solid $main-a-hover-border-color;
 }
 
 a:active, a:focus {
     color: $main-a-active-fg-color;
     background-color: $main-a-active-bg-color;
-    border-bottom: 1px solid $main-type-p-fg-color;
+    border-bottom: 1px solid $main-a-active-border-color;
 }
 
 a.anchorjs-link {
-    color: $main-type-p-fg-color;
+    color: $main-h-fg-color;
     text-decoration: none;
     border-bottom: none;
 }

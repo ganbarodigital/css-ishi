@@ -982,7 +982,7 @@ a:active, a:focus {
   border-bottom: 1px solid #404040; }
 
 a.anchorjs-link {
-  color: #404040;
+  color: #222;
   text-decoration: none;
   border-bottom: none; }
 
@@ -3008,10 +3008,10 @@ body > main {
     color: #222;
     background-color: transparent; }
   .sidebar ins {
-    color: #404040;
+    color: #303030;
     background-color: transparent; }
   .sidebar del {
-    color: #5a5a5a;
+    color: #4a4a4a;
     background-color: transparent; }
   .sidebar a:link {
     color: #234f83;
