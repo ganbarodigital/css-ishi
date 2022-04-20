@@ -2,9 +2,54 @@
  * styles
  */
 
+div.colorswatch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+    font-weight: bold;
+    color: $material-gray-900;
+
+    span.name {
+        a:link, a:visited {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    span.shade {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+
+        a:link, a:visited {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    span.hex {
+        text-align: right;
+        a:link, a:visited {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+    }
+}
+
+div.colorswatch.dark-bg {
+    color: $material-gray-100;
+}
+
 .swatch {
     margin-bottom: $type-p-spacing;
     width: 100%;
+
+    .dark-bg {
+
+    }
 
     ul {
         list-style: none;

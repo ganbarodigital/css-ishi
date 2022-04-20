@@ -24,6 +24,30 @@
     width: auto;
 }
 
+.grid > .cell[class*="pad-right-1"] {
+    padding-right: 1em;
+}
+
+.grid > .cell[class*="pad-right-2"] {
+    padding-right: 2em;
+}
+
+.grid[class*="vertical-center"] > .cell {
+    align-items: center;
+}
+
+.grid > .cell[class*="vertical-center"] {
+    align-items: center;
+}
+
+.grid > .cell[class*="align-right"] > nav.navbar > ul {
+    justify-content: flex-end;
+}
+
+.grid > .cell[class*="align-right"] {
+    justify-content: flex-end;
+}
+
 .grid > .cell[class*="1of1"] {
     flex-basis: 100%;
 }

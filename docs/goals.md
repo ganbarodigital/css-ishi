@@ -1,3 +1,6 @@
+---
+next_file: inspirations.html
+---
 {% import "ishi.twig" as ishi %}
 # Goals
 

@@ -1,4 +1,8 @@
-# Getting Started
+---
+stu_title: Getting Started STU!!!
+next_file: goals.html
+---
+# {{stu_title}}
 
 Ishi runs on any computer which is already setup for Node.JS.
 

@@ -1,3 +1,6 @@
+---
+next_file: code-of-conduct.html
+---
 {% import "ishi.twig" as ishi %}
 # Contributing
 

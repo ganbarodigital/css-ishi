@@ -1,7 +1,14 @@
 $body-bg-color: #fff;
 
-$header-nav-topbar-bg-color: #000;
-$header-nav-topbar-fg-color: #fff;
+$header-bg-color: $ganbaro-blue-900;
+$header-fg-color: #fff;
+
+$header-navbar-bg-color: $header-bg-color;
+$header-navbar-a-link-bg-color: $header-bg-color;
+$header-navbar-a-visited-bg-color: $header-bg-color;
+$header-navbar-a-hover-bg-color: $header-bg-color;
+$header-nav-topbar-bg-color: $header-bg-color;
+$header-nav-topbar-fg-color: $header-fg-color;
 $header-nav-topbar-a-link-color: #fff;
 $header-nav-topbar-a-visited-color: #fff;
 
@@ -34,6 +41,10 @@ $lighten-amount: 10%;
 
 $main-p-color: #404040;
 $main-strapline-color: #000;
+
+$body-fg-primary: $ganbaro-blue-400;
+
+$body-alt-fg-color: $ganbaro-mono-50;
 
 $footer-content-bg-color: #303030;
 $footer-content-fg-color: #ddd;

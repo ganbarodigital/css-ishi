@@ -1,6 +1,6 @@
-body > footer, body > footer p {
-    @include type-brevier-block();
-}
+// body > footer, body > footer p {
+//     @include type-brevier-block();
+// }
 
 body > footer {
     color: $footer-fg-color;
@@ -40,14 +40,14 @@ body > footer {
         color: $footer-a-link-fg-color;
         background-color: $footer-a-link-bg-color;
         text-decoration: none;
-        border-bottom: 1px solid $footer-a-link-border-color;
+        // border-bottom: 1px solid $footer-a-link-border-color;
         display: inline-block;
     }
 
     a:visited {
         color: $footer-a-visited-fg-color;
         background-color: $footer-a-visited-bg-color;
-        border-bottom: 1px solid $footer-a-visited-border-color;
+        // border-bottom: 1px solid $footer-a-visited-border-color;
         text-decoration: none;
     }
 
@@ -63,7 +63,20 @@ body > footer {
         border-bottom: 1px solid $footer-a-active-border-color;
     }
 
+    a.social-icon {
+        font-size: 1.5em;
+        display: inline;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        border-bottom: 0px;
+    }
+
     .strapline p {
         margin-bottom: 0px;
+    }
+
+    .nav-navbar ul {
+        justify-content: center;
+        overflow: visible;
     }
 }

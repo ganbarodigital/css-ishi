@@ -1,0 +1,83 @@
+# Create The App's Config Role
+
+Your app's config goes into an Ansible role called `apps/<vendor>/<app>/rollout-app-config/`.
+
+{% verbatim %}
+```
+cd $HOME/epaas-v2/epaas2-ansible
+mkdir -p roles/target-k8s/k8s-common/apps/<vendor>/<app>/rollout-app-config/defaults
+mkdir -p roles/target-k8s/k8s-common/apps/<vendor>/<app>/rollout-app-config/files
+mkdir -p roles/target-k8s/k8s-common/apps/<vendor>/<app>/rollout-app-config/tasks
+mkdir -p roles/target-k8s/k8s-common/apps/<vendor>/<app>/rollout-app-config/templates
+```
+{% endverbatim %}
+
+Create an empty `defaults/main.yaml` file. This is where you'll list all the variables the role supports, along with sensible default values. The empty file should have `---` at the top of the file, to signal that it is a YAML file:
+
+{% verbatim %}
+```yaml
+---
+```
+{% endverbatim %}
+
+Create a `tasks/main.yaml` file. This is where you'll create the Kubernetes ConfigMap object(s). Config files and environment variables go into Kubernetes ConfigMap objects.
+
+{% verbatim %}
+```yaml
+---
+
+- name: Deploy 'apps/<vendor>/<app>' config files
+  epaas_k8s_configmap_fromfiles:
+    name: <app>-conf
+    namespace: '{{ k8s_namespace }}'
+    state: present
+    files:
+    - <file1>: "{{ lookup('template', '<file1>') }}"
+      <file2>: "{{ lookup('template', '<file2>') }}"
+
+- name: Deploy '<vendor>/<app>' ENV config
+  epaas_k8s_configmap_fromfiles:
+    name: <app>-env
+    namespace: '{{ k8s_namespace }}'
+    state: present
+    env: "{{ lookup('template', 'env') }}"
+```
+{% endverbatim %}
+
+Put `<file1>`, `<file2>` etc into the role's `templates/` folder if you're going to parameterise them. Put them in the role's `files/` folder otherwise.
+
+Anything you parameterise in the templates, make sure there's a sensible default value in the `defaults/main.yaml` file you created earlier.
+
+In Ansible, all variables exist inside the same global scope. Any parameters you add to the `defaults/main.yaml` file should be prefixed with the app's name, e.g.:
+
+{% verbatim %}
+```yaml
+---
+bitbucket_db_username: bitbucket
+bitbucket_db_password: jellyfish
+```
+{% endverbatim %}
+
+If your app supports environment variables, put these into a `templates/env` file. This is a simple `key=value` type of file:
+
+{% verbatim %}
+```
+bitbucket_db_username={{ bitbucket_db_username }}
+bitbucket_db_password={{ bitbucket_db_password }}
+```
+{% endverbatim %}
+
+How many ConfigMaps should you create? One per tree of config files, plus one for your environment variables.
+
+- Each ConfigMap will be mounted as a folder inside the running container(s).
+- Each mounted ConfigMap will replace the folder (and its existing contents) wherever it is mounted.
+- If the app supports two different locations of config (e.g. `/etc/<app>` and `/etc/defaults/<app>`), you'll need to create a ConfigMap for each of those locations.
+
+The environment variables have to go in their own ConfigMap.
+
+
+<pre><code class="language-yaml">
+Hello Stu
+Hello Stu
+</code></pre>
+

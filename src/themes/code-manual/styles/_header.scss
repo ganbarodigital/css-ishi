@@ -17,12 +17,13 @@ body > div.site {
     background-color: #DBD7D2;
     border-bottom: 2px solid #ABA7A2;
     padding-bottom: 0.8rem;
+}
 
+body > div.site, body > div.banner {
     header {
         .logo {
-            width: 1.4rem;
-            height: 1.4rem;
-            vertical-align: text-bottom;
+            width: 4rem;
+            height: 4rem;
         }
 
         a:link {
@@ -49,11 +50,19 @@ body > div.site {
         }
 
         .brand {
-            font-size: 1.1rem;
+            font-size: 2rem;
             font-weight: 700;
+            margin-bottom: 3px;
         }
 
-        font-size: 1.0rem;
+        .strapline {
+            font-size: 1rem;
+            margin-bottom: 0px;
+        }
+
+        .navbar ul li {
+            font-size: 1.2rem !important;
+        }
         align-items: baseline;
         width: 100%;
     }

@@ -1,3 +1,8 @@
+---
+title: Welcome To Ishi
+next_file: getting-started.html
+next_section: concepts/index.html
+---
 {% import "ishi.twig" as ishi %}
 # Welcome To Ishi
 

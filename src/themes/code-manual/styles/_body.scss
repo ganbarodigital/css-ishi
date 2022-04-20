@@ -1,4 +1,20 @@
 body {
     // font-weight: 500;
     background-color: $body-bg-color;
+
+    .icon-primary {
+        color: $body-fg-primary;
+    }
+
+    .icon-medium {
+        font-size: 2.5em;
+    }
+
+    .icon-large {
+        font-size: 4em;
+    }
+
+    .icon-x-large {
+        font-size: 6em;
+    }
 }

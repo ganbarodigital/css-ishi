@@ -1,3 +1,6 @@
+---
+next_file: license.html
+---
 # Authors
 
 ## Maintainers

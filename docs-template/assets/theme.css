@@ -372,7 +372,8 @@ td,
 th {
   padding: 0; }
 
-/* ========================================================================== *   Base -> Reset ($base-reset)
+/* ========================================================================== *\
+   Base -> Reset ($base-reset)
 \* ========================================================================== */
 /**
  * `border-box`... ALL THE THINGS!
@@ -545,7 +546,7 @@ li.align-right {
 
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   html {
-    font-size: 15px; } }
+    font-size: 16px; } }
 
 body {
   font-family: Lato, Helvetica, Roboto, Arial, sans-serif;
@@ -1360,6 +1361,24 @@ table.table--component.table--alert thead, table.table--component.table--alert t
   flex-basis: auto;
   width: auto; }
 
+.grid > .cell[class*="pad-right-1"] {
+  padding-right: 1em; }
+
+.grid > .cell[class*="pad-right-2"] {
+  padding-right: 2em; }
+
+.grid[class*="vertical-center"] > .cell {
+  align-items: center; }
+
+.grid > .cell[class*="vertical-center"] {
+  align-items: center; }
+
+.grid > .cell[class*="align-right"] > nav.navbar > ul {
+  justify-content: flex-end; }
+
+.grid > .cell[class*="align-right"] {
+  justify-content: flex-end; }
+
 .grid > .cell[class*="1of1"] {
   flex-basis: 100%; }
 
@@ -1446,6 +1465,49 @@ table.table--component.table--alert thead, table.table--component.table--alert t
 @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
   .grid[class*="1row"] {
     flex-wrap: nowrap; } }
+
+.grid-1-2-3 {
+  display: grid;
+  grid-column-gap: 0.25em;
+  grid-auto-flow: row;
+  margin-bottom: 1rem; }
+  @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
+    .grid-1-2-3 {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 601px) and (max-width: 1007px) {
+    .grid-1-2-3 {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 319px), (min-width: 320px) and (max-width: 600px) {
+    .grid-1-2-3 {
+      grid-template-columns: 1fr; } }
+
+.grid-1-1-3 {
+  display: grid;
+  grid-column-gap: 0.25em;
+  grid-auto-flow: row;
+  margin-bottom: 1rem; }
+  @media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
+    .grid-1-1-3 {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 319px), (min-width: 320px) and (max-width: 600px), (min-width: 601px) and (max-width: 1007px) {
+    .grid-1-1-3 {
+      grid-template-columns: 1fr; } }
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .grid-next-column-c {
+    margin-bottom: 1rem; } }
+
+@media (min-width: 601px) and (max-width: 1007px) {
+  .grid-next-column-c {
+    grid-row-start: 1; } }
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .grid-next-column-d {
+    margin-bottom: 1rem; } }
+
+@media (min-width: 1007px) and (max-width: 1280px), (min-width: 1281px) {
+  .grid-next-column-d {
+    grid-row-start: 1; } }
 
 .badge {
   border-radius: 1em;
@@ -2146,6 +2208,34 @@ a.calltoaction.calltoaction--component {
 /**
  * styles
  */
+div.colorswatch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  font-weight: bold;
+  color: #212121; }
+  div.colorswatch span.name a:link, div.colorswatch span.name a:visited {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent; }
+  div.colorswatch span.shade {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word; }
+    div.colorswatch span.shade a:link, div.colorswatch span.shade a:visited {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent; }
+  div.colorswatch span.hex {
+    text-align: right; }
+    div.colorswatch span.hex a:link, div.colorswatch span.hex a:visited {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid transparent; }
+
+div.colorswatch.dark-bg {
+  color: #f5f5f5; }
+
 .swatch {
   margin-bottom: 1rem;
   width: 100%; }
@@ -2522,7 +2612,7 @@ body header {
 
 body > .banner {
   color: #fff;
-  background-color: #000; }
+  background-color: #132b47; }
   body > .banner ins {
     color: #fff;
     background-color: transparent; }
@@ -2531,18 +2621,18 @@ body > .banner {
     background-color: transparent; }
   body > .banner nav.navbar a:link, body > .banner div.navbar_dropdown a:link {
     color: #ddd;
-    background-color: #000;
+    background-color: #132b47;
     text-decoration: none;
     display: inline-block;
-    border-bottom: 2px solid #000; }
+    border-bottom: 2px solid #132b47; }
   body > .banner nav.navbar a:visited, body > .banner div.navbar_dropdown a:visited {
     color: #ddd;
-    background-color: #000;
+    background-color: #132b47;
     text-decoration: none;
-    border-bottom: 2px solid #000; }
+    border-bottom: 2px solid #132b47; }
   body > .banner nav.navbar a:hover, body > .banner div.navbar_dropdown a:hover {
     color: #fff;
-    background-color: #000;
+    background-color: #132b47;
     border-bottom: 2px solid #0C94F5; }
   body > .banner nav.navbar a:active, body > .banner nav.navbar a:focus, body > .banner div.navbar_dropdown a:active, body > .banner div.navbar_dropdown a:focus {
     color: #fff;
@@ -2665,10 +2755,6 @@ body > main {
     .sidebar ul, .sidebar ol {
       padding-left: 1rem; } }
 
-body > footer, body > footer p {
-  font-size: 0.85rem;
-  line-height: 1rem; }
-
 body > footer {
   color: #fff;
   background-color: transparent; }
@@ -2693,12 +2779,10 @@ body > footer {
     color: #eee;
     background-color: transparent;
     text-decoration: none;
-    border-bottom: 1px solid #ddd;
     display: inline-block; }
   body > footer a:visited {
     color: #eee;
     background-color: transparent;
-    border-bottom: 1px solid #ddd;
     text-decoration: none; }
   body > footer a:hover {
     color: #fff;
@@ -2708,8 +2792,17 @@ body > footer {
     color: #fff;
     background-color: transparent;
     border-bottom: 1px solid #fff; }
+  body > footer a.social-icon {
+    font-size: 1.5em;
+    display: inline;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-bottom: 0px; }
   body > footer .strapline p {
     margin-bottom: 0px; }
+  body > footer .nav-navbar ul {
+    justify-content: center;
+    overflow: visible; }
 
 @media (min-width: 601px) and (max-width: 1007px) {
   div.navbar_dropdown ul {
@@ -3026,7 +3119,7 @@ body > footer {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: center;
       align-content: flex-start;
       align-items: stretch;
       flex-basis: 100%;
@@ -3061,9 +3154,17 @@ body > footer {
 
 body {
   background-color: #fff; }
+  body .icon-primary {
+    color: #2e67ab; }
+  body .icon-medium {
+    font-size: 2.5em; }
+  body .icon-large {
+    font-size: 4em; }
+  body .icon-x-large {
+    font-size: 6em; }
 
 header nav.topbar {
-  background-color: #000;
+  background-color: #132b47;
   color: #fff; }
   header nav.topbar a:link {
     text-decoration: none;
@@ -3076,47 +3177,54 @@ body > div.site {
   background-color: #DBD7D2;
   border-bottom: 2px solid #ABA7A2;
   padding-bottom: 0.8rem; }
-  body > div.site header {
-    font-size: 1.0rem;
-    align-items: baseline;
-    width: 100%; }
-    body > div.site header .logo {
-      width: 1.4rem;
-      height: 1.4rem;
-      vertical-align: text-bottom; }
-    body > div.site header a:link {
-      color: inherit;
-      text-decoration: none;
-      display: inline-block;
-      border-bottom: 2px solid #DBD7D2; }
-    body > div.site header a:visited {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 2px solid #DBD7D2; }
-    body > div.site header a:hover {
-      color: inherit;
-      border-bottom: 2px solid #000; }
-    body > div.site header a:active, body > div.site header a:focus {
-      color: inherit;
-      border-bottom: 2px solid #000; }
-    body > div.site header .brand {
-      font-size: 1.1rem;
-      font-weight: 700; }
-  body > div.site nav#sitemenu ul {
-    margin-top: 1.2rem;
-    border-top: 2px groove #000;
-    padding-top: 0.2rem; }
-    body > div.site nav#sitemenu ul li {
-      padding-top: 1.0rem;
-      line-height: 1.0rem; }
-  body > div.site div.navbar_dropdown ul {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 2px groove #ddd; }
-    body > div.site div.navbar_dropdown ul li {
-      padding-bottom: 1rem; }
-    body > div.site div.navbar_dropdown ul li:nth-last-child(1) {
-      padding-bottom: 0px; }
+
+body > div.site header, body > div.banner header {
+  align-items: baseline;
+  width: 100%; }
+  body > div.site header .logo, body > div.banner header .logo {
+    width: 4rem;
+    height: 4rem; }
+  body > div.site header a:link, body > div.banner header a:link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid #DBD7D2; }
+  body > div.site header a:visited, body > div.banner header a:visited {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px solid #DBD7D2; }
+  body > div.site header a:hover, body > div.banner header a:hover {
+    color: inherit;
+    border-bottom: 2px solid #000; }
+  body > div.site header a:active, body > div.site header a:focus, body > div.banner header a:active, body > div.banner header a:focus {
+    color: inherit;
+    border-bottom: 2px solid #000; }
+  body > div.site header .brand, body > div.banner header .brand {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3px; }
+  body > div.site header .strapline, body > div.banner header .strapline {
+    font-size: 1rem;
+    margin-bottom: 0px; }
+  body > div.site header .navbar ul li, body > div.banner header .navbar ul li {
+    font-size: 1.2rem !important; }
+
+body > div.site nav#sitemenu ul, body > div.banner nav#sitemenu ul {
+  margin-top: 1.2rem;
+  border-top: 2px groove #000;
+  padding-top: 0.2rem; }
+  body > div.site nav#sitemenu ul li, body > div.banner nav#sitemenu ul li {
+    padding-top: 1.0rem;
+    line-height: 1.0rem; }
+
+body > div.site div.navbar_dropdown ul, body > div.banner div.navbar_dropdown ul {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px groove #ddd; }
+  body > div.site div.navbar_dropdown ul li, body > div.banner div.navbar_dropdown ul li {
+    padding-bottom: 1rem; }
+  body > div.site div.navbar_dropdown ul li:nth-last-child(1), body > div.banner div.navbar_dropdown ul li:nth-last-child(1) {
+    padding-bottom: 0px; }
 
 body > main {
   max-width: 50em; }

@@ -1,38 +1,45 @@
 {% macro content(name) %}
-    {% include ".i/content/" ~ name ~ ".twig" %}
+{% include ".i/content/" ~ name ~ ".twig" %}
 {% endmacro %}
 
 {% macro externallink(name, text) %}
-    {% include ".i/externalurls/" ~ name ~ ".twig" %}
+{% include ".i/externalurls/" ~ name ~ ".twig" %}
 {% endmacro %}
 
 {% macro large_colorswatch(prefix, shade, hex, lightOrDarkBg) %}
-    <li class="{{lightOrDarkBg}}" style="background-color: {{hex}}">
-        <span class="name"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{prefix}}</a></span>
-        <div class="spec">
-        <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
-        <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
-        </div>
-    </li>
+<li class="{{lightOrDarkBg}}" style="background-color: {{hex}}">
+    <span class="name"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{prefix}}</a></span>
+    <div class="spec">
+    <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
+    <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
+    </div>
+</li>
 {% endmacro %}
 
 {% macro small_colorswatch(name, hex, lightOrDarkBg) %}
-    <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
-        <span class="shade"><a href="../color-details/{{name|lower}}.html">{{name}}</a></span>
-        <span class="hex"><a href="../color-details/{{name|lower}}.html">{{hex|upper}}</a></span>
-    </li>
+<li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
+    <span class="shade"><a href="../color-details/{{name|lower}}.html">{{name}}</a></span>
+    <span class="hex"><a href="../color-details/{{name|lower}}.html">{{hex|upper}}</a></span>
+</li>
+{% endmacro %}
+
+{% macro small_colorswatch_css_grid(name, hex, lightOrDarkBg) %}
+<div class="colorswatch {{lightOrDarkBg}}" style="background-color: {{hex}}">
+    <span class="shade"><a href="../color-details/{{name|lower}}.html">{{name}}</a></span>
+    <span class="hex"><a href="../color-details/{{name|lower}}.html">{{hex|upper}}</a></span>
+</div>
 {% endmacro %}
 
 {% macro sub_colorswatch(prefix, shade, hex, lightOrDarkBg) %}
-    <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
-        <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
-        <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
-    </li>
+<li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
+    <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
+    <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
+</li>
 {% endmacro %}
 
 {% macro prefix_colorswatch(shade, prefix, hex, lightOrDarkBg) %}
-    <li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
-        <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
-        <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
-    </li>
+<li class="{{lightOrDarkBg}} spec" style="background-color: {{hex}}">
+    <span class="shade"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{shade}}</a></span>
+    <span class="hex"><a href="../color-details/{{prefix|lower}}-{{shade|lower}}.html">{{hex|upper}}</a></span>
+</li>
 {% endmacro %}

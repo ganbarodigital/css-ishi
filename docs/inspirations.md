@@ -1,3 +1,6 @@
+---
+next_file: changelog.html
+---
 {% import "ishi.twig" as ishi %}
 # Inspirations
 
